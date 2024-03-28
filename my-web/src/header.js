@@ -5,7 +5,7 @@ function Header() {
         <div>
             <nav className="navBar">
                 <ul className="nav-item">
-                    <NavBarImg className="Logo" src="Logo" />
+                    <NavBarImg className="Logo" />
                     <NavBarLink href="#!" title="商店" />
                     <NavBarLink href="#!" title="Mac" />
                     <NavBarLink href="#!" title="ipad" />
@@ -15,8 +15,8 @@ function Header() {
                     <NavBarLink href="#!" title="娛樂" />
                     <NavBarLink href="#!" title="配件" />
                     <NavBarLink href="#!" title="支援服務" />
-                    <NavBarImg className="Search" src="Search" />
-                    <NavBarImg className="Shop-Cart" src="Shop-Cart" />
+                    <NavBarImg className="Search" />
+                    <NavBarImg className="Shop-Cart" />
                 </ul>
             </nav>
 
@@ -25,18 +25,27 @@ function Header() {
                     這是最好的方式。</span>
             </h1>
             <div className="product-item">
-                <div className="col">
-                    <div className="item-image"></div>
-                    <div className="item-info">1</div>
-                </div>
-                <div className="col">
-                    <div className="item-image"></div>
-                    <div className="item-info">2</div>
-                </div>
-                <div className="col">
-                    <div className="item-image"></div>
-                    <div className="item-info">3</div>
-                </div>
+                <ProItem 
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202310?wid=400&hei=260&fmt=png-alpha&.v=1696964122666"
+                text = "Mac"
+                />
+                <ProItem 
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202310?wid=400&hei=260&fmt=png-alpha&.v=1696964122666"
+                text = "Mac"
+                />
+                <ProItem 
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202310?wid=400&hei=260&fmt=png-alpha&.v=1696964122666"
+                text = "Mac"
+                />
+                <ProItem 
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202310?wid=400&hei=260&fmt=png-alpha&.v=1696964122666"
+                text = "Mac"
+                />
+                <ProItem 
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202310?wid=400&hei=260&fmt=png-alpha&.v=1696964122666"
+                text = "Mac"
+                />
+
             </div>
 
         </div>
@@ -55,7 +64,18 @@ function NavBarLink(props) {
 function NavBarImg(props) {
     return (
         <li>
-            <img className={props.className} src={props.src}></img>
+            <div className={props.className}></div>
         </li>
+    )
+}
+
+function ProItem(props) {
+    return (
+        <div className="col">
+            <div className="item-image">
+                <img src= {props.src} />
+            </div>
+            <div className="item-info">{props.text}</div>
+        </div>
     )
 }
