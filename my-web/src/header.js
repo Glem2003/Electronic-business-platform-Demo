@@ -93,7 +93,7 @@ function ProItem(props) {
     return (
         <div className="col-10">
             <div className="item-image">
-                <img src= {props.src} />
+                <img src= {props.src} alt=""/>
             </div>
             <div className="item-info">{props.text}</div>
         </div>
