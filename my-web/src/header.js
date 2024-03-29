@@ -5,7 +5,7 @@ function Header() {
         <div>
             <nav className="navBar">
                 <ul className="nav-item">
-                    <NavBarImg className="Logo" />
+                    <NavBarImg className="Logo" src="/images/AppleLogo.png" alt="Apple.logo"/>
                     <NavBarLink href="#!" title="商店" />
                     <NavBarLink href="#!" title="Mac" />
                     <NavBarLink href="#!" title="ipad" />
@@ -15,8 +15,8 @@ function Header() {
                     <NavBarLink href="#!" title="娛樂" />
                     <NavBarLink href="#!" title="配件" />
                     <NavBarLink href="#!" title="支援服務" />
-                    <NavBarImg className="Search" />
-                    <NavBarImg className="Shop-Cart" />
+                    <NavBarImg className="Search" src="/images/search-icon.png" alt="Search"/>
+                    <NavBarImg className="Shop-Cart" src="/images/shopp-cart.png" alt="Shop-Cart"/>
                 </ul>
             </nav>
 
@@ -26,43 +26,53 @@ function Header() {
             </h1>
             <div className="product-item">
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202310?wid=400&hei=260&fmt=png-alpha&.v=1696964122666"
+                src="/images/mac.png"
+                alt="Mac"
                 text = "Mac"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-iphone-nav-202309?wid=400&hei=260&fmt=png-alpha&.v=1692971740452"
+                src="/images/iPhone.png"
+                alt="iPhone"
                 text = "iPhone"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-ipad-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=1664912135437"
+                src="/images/iPad.png"
+                alt="iPad"
                 text = "iPad"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-watch-nav-202309_GEO_TW?wid=400&hei=260&fmt=png-alpha&.v=1693703822492"
+                src="/images/Applewatch.png"
+                alt="Apple Watch"
                 text = "Apple Watch"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-airpods-nav-202209?wid=400&hei=260&fmt=png-alpha&.v=1660676485885"
+                src="/images/airpods.png"
+                alt="Airpods"
                 text = "Airpods"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=1625783380000"
+                src="/images/airTags.png"
+                alt="AirTag"
                 text = "AirTag"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=1664628458484"
+                src="/images/appletv.png"
+                alt="Apple TV 4K"
                 text = "Apple TV 4K"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=1670389216654"
+                src="/images/homePod.png"
+                alt="HomePod"
                 text = "HomePod"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-accessories-nav-202403?wid=400&hei=260&fmt=png-alpha&.v=1707850611597"
+                src="/images/accessories.png"
+                alt="配件"
                 text = "配件"
                 />
                 <ProItem 
-                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-holiday-giftcards-asc-nav-202111?wid=400&hei=260&fmt=png-alpha&.v=1635264814000"
+                src="/images/giftcards.png"
+                alt="Apple Store 禮品卡"
                 text = "Apple Store 禮品卡"
                 />
 
@@ -84,7 +94,9 @@ function NavBarLink(props) {
 function NavBarImg(props) {
     return (
         <li>
-            <div className={props.className}></div>
+            <div className={props.className}>
+                <img src={props.src} alt={props.alt}></img>
+            </div>
         </li>
     )
 }
@@ -93,7 +105,7 @@ function ProItem(props) {
     return (
         <div className="col-10">
             <div className="item-image">
-                <img src= {props.src} alt=""/>
+                <img src= {props.src} alt={props.alt}/>
             </div>
             <div className="item-info">{props.text}</div>
         </div>
