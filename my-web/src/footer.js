@@ -6,7 +6,11 @@ function Footer() {
             <hr></hr>
             <div className="footer-info">
                 <div className="footer-logo">
+<<<<<<< HEAD
                     <img className="Logo" src="/images/AppleLogo.png" alt="AppleLogo"></img>
+=======
+                    <img src="" alt="apple.png"></img>
+>>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
                     <h6 className="logo-title">Apple Store 線上商店</h6>
                 </div>
                 <div className="footer-item">

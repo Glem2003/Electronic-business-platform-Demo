@@ -7,6 +7,7 @@ function Main() {
             <div className="section section1">
                 <div className="sec-title">最新登場。<span style={{ color: 'grey' }}>現在就來看看有哪些新品推薦。</span></div>
                 <div className="sec-item">
+<<<<<<< HEAD
 
                     <SectionItem
                         name="MACBOOK AIR"
@@ -91,6 +92,48 @@ function Main() {
                         alt="APPLE WATCH SE"
                     />
 
+=======
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+>>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
                 </div>
             </div>
             {/*  End section1 */}
@@ -99,6 +142,7 @@ function Main() {
             <div className="section section2">
                 <div className="sec-title">周邊配件 <span style={{ color: 'grey' }}>精彩配件，款款都是心愛裝置的必搭絕配。</span></div>
                 <div className="sec-item">
+<<<<<<< HEAD
 
                     <SectionItem
                         title="跟緊潮流新色。"
@@ -263,6 +307,48 @@ function Main() {
                         alt="accessories-explore"
                     />
 
+=======
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+>>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
                 </div>
             </div>
             {/* End section2 */}
@@ -271,6 +357,7 @@ function Main() {
             <div className="section section3">
                 <div className="sec-title">清亮動聽。<span style={{ color: 'grey' }}>層次豐富的高音質，款款都是好選擇。</span></div>
                 <div className="sec-item">
+<<<<<<< HEAD
 
                     <SectionItem
                         title="免費試用 Apple Music 6 個月。"
@@ -308,6 +395,48 @@ function Main() {
 
                     </div>
 
+=======
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+                    <div className="item-col">
+                        <div className="col-wrapper"></div>
+                        <div className="col-info"></div>
+                    </div>
+>>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
                 </div>
             </div>
             {/* End section3 */}
