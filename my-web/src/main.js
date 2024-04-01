@@ -7,7 +7,6 @@ function Main() {
             <div className="section section1">
                 <div className="sec-title">最新登場。<span style={{ color: 'grey' }}>現在就來看看有哪些新品推薦。</span></div>
                 <div className="sec-item">
-<<<<<<< HEAD
 
                     <SectionItem
                         name="MACBOOK AIR"
@@ -92,48 +91,6 @@ function Main() {
                         alt="APPLE WATCH SE"
                     />
 
-=======
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
->>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
                 </div>
             </div>
             {/*  End section1 */}
@@ -142,7 +99,6 @@ function Main() {
             <div className="section section2">
                 <div className="sec-title">周邊配件 <span style={{ color: 'grey' }}>精彩配件，款款都是心愛裝置的必搭絕配。</span></div>
                 <div className="sec-item">
-<<<<<<< HEAD
 
                     <SectionItem
                         title="跟緊潮流新色。"
@@ -155,6 +111,7 @@ function Main() {
 
                         <WrapperImg src="/images/MWND3.jpg" alt="MWND3" />
 
+                    
                         <div className="colorbox">
                             <div className="box" id="A"></div>
                             <div className="box" id="B"></div>
@@ -164,10 +121,10 @@ function Main() {
                             <div className="box" id="F"></div>
                         </div>
 
-                        <ProText 
-                        new="全新" 
-                        name="iPhone 15 MagSafe 矽膠保護殼 - 淡藍色"
-                        price="NT$1,590"
+                        <ProText
+                            new="全新"
+                            name="iPhone 15 MagSafe 矽膠保護殼 - 淡藍色"
+                            price="NT$1,590"
                         />
 
                     </div>
@@ -184,9 +141,9 @@ function Main() {
                             <div className="box" id="E"></div>
                         </div>
 
-                        <ProText 
-                        name="Tech21 FlexQuartz，適用於iPhone 15 (MegSafe 相容) - ..."
-                        price="NT$1,490"
+                        <ProText
+                            name="Tech21 FlexQuartz，適用於iPhone 15 (MegSafe 相容) - ..."
+                            price="NT$1,490"
                         />
 
                     </div>
@@ -195,9 +152,9 @@ function Main() {
 
                         <WrapperImg src="/images/HRDZ2.jpg" alt="HRDZ2" />
 
-                        <ProText 
-                        name="Tech21 EvoPink，適用於AirTag (2件裝)"
-                        price="NT$990"
+                        <ProText
+                            name="Tech21 EvoPink，適用於AirTag (2件裝)"
+                            price="NT$990"
                         />
 
                     </div>
@@ -215,10 +172,10 @@ function Main() {
                             <div className="box" id="F"></div>
                         </div>
 
-                        <ProText 
-                        new="全新" 
-                        name="45 公釐淡薄荷色運動型錶環"
-                        price="NT$1,600"
+                        <ProText
+                            new="全新"
+                            name="45 公釐淡薄荷色運動型錶環"
+                            price="NT$1,600"
                         />
 
                     </div>
@@ -236,10 +193,10 @@ function Main() {
                             <div className="box" id="F"></div>
                         </div>
 
-                        <ProText 
-                        new="全新" 
-                        name="45 公釐日照色運動型錶帶 - M/L"
-                        price="NT$1,600"
+                        <ProText
+                            new="全新"
+                            name="45 公釐日照色運動型錶帶 - M/L"
+                            price="NT$1,600"
                         />
 
                     </div>
@@ -256,9 +213,9 @@ function Main() {
                             <div className="box" id="E"></div>
                         </div>
 
-                        <ProText 
-                        name="iPhone MagSafe 精細織紋卡套"
-                        price="NT$1,890"
+                        <ProText
+                            name="iPhone MagSafe 精細織紋卡套"
+                            price="NT$1,890"
                         />
 
                     </div>
@@ -275,9 +232,9 @@ function Main() {
                             <div className="box" id="E"></div>
                         </div>
 
-                        <ProText 
-                        name="iPhone 15 Pro MagSafe 精細織紋保護套 - 萬年青色"
-                        price="NT$1,890"
+                        <ProText
+                            name="iPhone 15 Pro MagSafe 精細織紋保護套 - 萬年青色"
+                            price="NT$1,890"
                         />
 
                     </div>
@@ -294,9 +251,9 @@ function Main() {
                             <div className="box" id="E"></div>
                         </div>
 
-                        <ProText 
-                        name="AirTag 精細織紋鑰匙圈 - 珊瑚色"
-                        price="NT$1,290"
+                        <ProText
+                            name="AirTag 精細織紋鑰匙圈 - 珊瑚色"
+                            price="NT$1,290"
                         />
 
                     </div>
@@ -307,48 +264,6 @@ function Main() {
                         alt="accessories-explore"
                     />
 
-=======
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
->>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
                 </div>
             </div>
             {/* End section2 */}
@@ -357,7 +272,6 @@ function Main() {
             <div className="section section3">
                 <div className="sec-title">清亮動聽。<span style={{ color: 'grey' }}>層次豐富的高音質，款款都是好選擇。</span></div>
                 <div className="sec-item">
-<<<<<<< HEAD
 
                     <SectionItem
                         title="免費試用 Apple Music 6 個月。"
@@ -371,10 +285,10 @@ function Main() {
 
                         <WrapperImg src="/images/MTJV3.jpg" alt="MTJV3" />
 
-                        <ProText 
-                        new="免額外付費鐫刻服務" 
-                        name="AirPods Pro (第2代) 搭配 MagSafe 充電盒 (USB-C)"
-                        price="NT$7,490"
+                        <ProText
+                            new="免額外付費鐫刻服務"
+                            name="AirPods Pro (第2代) 搭配 MagSafe 充電盒 (USB-C)"
+                            price="NT$7,490"
                         />
 
                     </div>
@@ -388,55 +302,74 @@ function Main() {
                             <div className="box" id="B"></div>
                         </div>
 
-                        <ProText 
-                        name="HomePod - 午夜色"
-                        price="NT$9,300"
+                        <ProText
+                            name="HomePod - 午夜色"
+                            price="NT$9,300"
                         />
 
                     </div>
 
-=======
                     <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
+
+                        <WrapperImg src="/images/homepod-mini-select-yellow-202110.jpg" alt="homepod-mini" />
+
+                        <div className="colorbox">
+                            <div className="box" id="A"></div>
+                            <div className="box" id="B"></div>
+                        </div>
+
+                        <ProText
+                            name="HomePod mini - 黃色"
+                            price="NT$3,000"
+                        />
+
                     </div>
+
                     <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
+
+                        <WrapperImg src="/images/airpods-max-select-silver-202011.jpg" alt="airpods-max-silver" />
+
+                        <div className="colorbox">
+                            <div className="box" id="A"></div>
+                            <div className="box" id="B"></div>
+                        </div>
+
+                        <ProText
+                            new="免額外付費鐫刻服務"
+                            name="AirPods Max - 銀色"
+                            price="NT$17,990"
+                        />
+
                     </div>
+
                     <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
+
+                        <WrapperImg src="/images/MME73.jpg" alt="MME73" />
+
+                        <ProText
+                            new="免額外付費鐫刻服務"
+                            name="AirPods (第 3 代) 搭配 Lightning 充電盒"
+                            price="NT$5,590"
+                        />
+
                     </div>
+
                     <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
+
+                        <WrapperImg src="/images/MQLK3.jpg" alt="MQLK3" />
+
+                        <div className="colorbox">
+                            <div className="box" id="A"></div>
+                            <div className="box" id="B"></div>
+                        </div>
+
+                        <ProText
+                            name="Beats Studio Buds + 真無線降噪耳塞式耳機 — 透明"
+                            price="NT$5,990"
+                        />
+
                     </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
-                    <div className="item-col">
-                        <div className="col-wrapper"></div>
-                        <div className="col-info"></div>
-                    </div>
->>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
+
                 </div>
             </div>
             {/* End section3 */}

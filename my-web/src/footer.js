@@ -6,11 +6,7 @@ function Footer() {
             <hr></hr>
             <div className="footer-info">
                 <div className="footer-logo">
-<<<<<<< HEAD
                     <img className="Logo" src="/images/AppleLogo.png" alt="AppleLogo"></img>
-=======
-                    <img src="" alt="apple.png"></img>
->>>>>>> 76d6df7d40391f5970bde02c5bb69f5cc678bb6f
                     <h6 className="logo-title">Apple Store 線上商店</h6>
                 </div>
                 <div className="footer-item">
@@ -119,7 +115,10 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer-more">
-                    <h6>更多選購方式：尋找當地的 Apple 直營店或其他零售商，或致電0800-020-021。</h6>
+                    <h6>更多選購方式：
+                        <a href="#!">尋找當地的 Apple 直營店</a>或
+                        <a href="#!">其他零售商</a>
+                        ，或致電0800-020-021。</h6>
                 </div>
             </div>
             
