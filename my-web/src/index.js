@@ -1,10 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.sass';
+import Header from './header';
+import Main from './main';
+import Footer from './footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <h1>React 0327</h1>
+
+    <Header />
+    <Main />
+    <Footer />
+
   </React.StrictMode>
 );
