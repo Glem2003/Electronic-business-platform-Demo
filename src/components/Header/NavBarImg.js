@@ -1,11 +1,5 @@
 function NavBarImg({className , src , alt}){
-    return(
-        <li>
-            <div className={className}>
-                <img src={src} alt={alt}></img>
-            </div>
-        </li>
-    )
+        return <img className={className} src={src} alt={alt} />
 }
 
 export default NavBarImg;
