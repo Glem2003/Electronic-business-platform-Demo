@@ -1,5 +1,3 @@
-import './footer.sass';
-
 function Footer() {
     return (
         <div className="footer">
