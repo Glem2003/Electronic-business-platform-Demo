@@ -4,7 +4,7 @@ import ProductPage from '../components/Header/ProductPage';
 
 function Header() {
     return (
-        <div>
+        <div className="header">
             <nav className="navBar">
                 <ul className="nav-item">
                     <NavBarImg className="Logo" src="/images/AppleLogo.png" alt="Apple.logo"/>
