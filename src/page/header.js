@@ -33,15 +33,3 @@ function Header() {
 }
 
 export default Header;
-//--------------------------------------------------
-
-function ProItem(props) {
-    return (
-        <div className="col-10">
-            <div className="item-image">
-                <img src= {props.src} alt={props.alt}/>
-            </div>
-            <div className="item-info">{props.text}</div>
-        </div>
-    )
-}
