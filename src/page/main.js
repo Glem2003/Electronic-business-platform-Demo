@@ -376,11 +376,6 @@ function Main() {
     )
 }
 
-<<<<<<< HEAD
-=======
-const Test = () => <h1>Hallo</h1>
->>>>>>> 90482cee5d826a3e2c93596c5d7ce4561b82fa03
-
 export default Main;
 //----------------------------------------------------
 function SectionItem(props) {

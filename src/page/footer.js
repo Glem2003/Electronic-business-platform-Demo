@@ -112,32 +112,49 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="footer-more">
-                    <h6>更多選購方式：
-                        <a href="#!">尋找當地的 Apple 直營店</a>或
-                        <a href="#!">其他零售商</a>
-                        ，或致電0800-020-021。</h6>
-                </div>
+                <FooterMore />
             </div>
-            
-            <hr></hr>
 
-            <div className="Copyright">
-                <h6>Copyright © 2024 Apple Inc. 保留一切權利。</h6>
-                <div className="copy-Link">
-                    <div className="left-Link">
-                        <ul>
-                            <li>隱私權政策</li>
-                            <li>使用條款</li>
-                            <li>銷售及退款</li>
-                            <li>網站地圖</li>
-                        </ul>
-                    </div>
-                    <div className="right-Link">台灣</div>
-                </div>
-            </div>
+            <hr></hr>
+            <Copyright />
+
         </div>
     )
 }
 
 export default Footer;
+
+//-----------------------------------------
+function FooterMore() {
+    return (
+        <div className="footer-more">
+            <h6>
+                更多選購方式：
+                <a href="#!">尋找當地的 Apple 直營店</a>或
+                <a href="#!">其他零售商</a>
+                ，或致電0800-020-021。
+            </h6>
+        </div>
+    )
+}
+
+
+
+function Copyright() {
+    return (
+        <div className="Copyright">
+            <h6>Copyright © 2024 Apple Inc. 保留一切權利。</h6>
+            <div className="copy-Link">
+                <div className="left-Link">
+                    <ul>
+                        <li>隱私權政策</li>
+                        <li>使用條款</li>
+                        <li>銷售及退款</li>
+                        <li>網站地圖</li>
+                    </ul>
+                </div>
+                <div className="right-Link">台灣</div>
+            </div>
+        </div>
+    )
+}
