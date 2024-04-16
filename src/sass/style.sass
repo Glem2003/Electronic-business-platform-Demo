@@ -1,0 +1,227 @@
+*
+    margin: 0
+    padding: 0
+    position: relative
+    font-family: '微軟正黑體'
+    box-sizing: border-box
+    //border: 1px solid #000
+
+li
+    list-style-type: none
+
+html
+    width: 85%
+    margin: 0 auto
+    display: block
+
+img
+    width: 100%
+
+/* layout */
+// NavBar
+.navBar
+    display: block
+    width: 60%
+    margin: 0 auto
+
+.nav-item
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 10px
+    > li
+        cursor: pointer
+
+.Logo,.Search,.Shop-Cart
+    width: 20px
+    height: 20px
+    background-position: center
+    background-size: contain
+    cursor: pointer
+
+li
+    font-size: 14px
+    a
+        text-decoration: none
+        color: #000
+
+// Main section
+.title
+    margin: 80px 0
+
+.product-item
+    width: 90%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-left: -10px
+
+.col-10
+    margin-left: 10px
+    margin-right: 10px
+    flex: 0 0 100px
+    cursor: pointer
+
+.item-image
+    display: flex
+    justify-content: center
+    img
+        width: 90%
+
+.item-info
+    margin-top: 10px
+    text-align: center
+    font-size: 13px
+    font-weight: 800
+
+// section
+.section
+    margin: 50px 0
+
+.sec-title
+    font-size: 20px
+    font-weight: 800
+    margin-bottom: 20px
+.sec-item
+    width: 100%
+    display: flex
+    margin-left: -16px
+    margin-right: -16px
+
+.item-col
+    overflow: hidden
+    flex: 0 0 350px
+    border-radius: 10px
+    margin-left: 16px
+    margin-right: 16px
+    height: 430px
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5)
+    cursor: pointer
+    transition: all 0.3s
+    &:hover
+        scale: 1.01
+
+// section 1
+.col-info
+    z-index: 10
+    margin: 20px 0 0 20px
+    position: absolute
+    .title
+        margin: 10px 0
+        font-size: 22px
+    .price,.name
+        color: grey
+
+#white
+    color: white
+    .price,.name
+        color: white
+
+#narrow
+    margin: 20px 100px 0 20px
+
+.col-wrapper
+    z-index: 1
+
+// section 2
+.pro-wrapper
+    height: 60%
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    img
+        width: 60%
+
+.colorbox
+    display: flex
+    justify-content: center
+    height: 20px
+    margin-top: 5px
+    .box
+        border-radius: 50%
+        width: 10px
+        height: 10px
+        margin: 0 5px
+    #A
+        background-color: yellow
+    #B
+        background-color: #374247
+    #C
+        background-color: #96ba43
+    #D
+        background-color: #b32b56
+    #E
+        background-color: #36bbbb
+    #F
+        background-color: #92caad
+
+.pro-info
+    z-index: 10
+    margin: 20px 0 0 20px
+    padding-right: 90px
+    position: absolute
+    bottom: 20px
+    .new
+        color: red
+    .proName
+        margin-top: 10px
+        margin-bottom: 20px
+    .price
+        font-weight: 400
+
+.footer-info
+    margin-top: 20px
+
+.footer-logo
+    display: flex
+    align-items: center
+    .logo-title
+        margin-left: 12px
+        &::before
+            position: absolute
+            content: '>'
+            display: block
+            top: 0
+            left: -9px
+            opacity: 0.6
+
+.footer-item
+    display: flex
+    margin-top: 20px
+    .item-column
+        width: 100%
+        height: 300px
+        .list-col
+            margin-bottom: 15px
+            h6
+                font-weight: bold
+            li
+                font-size: 12px
+                margin: 8px 0
+                cursor: pointer
+
+.footer-more
+    margin: 40px 0 20px 0
+
+.Copyright
+    margin: 20px 0
+    display: flex
+    align-items: center
+    h6
+        width: 25%
+        margin-right: 30px
+    .copy-Link
+        width: 75%
+        display: flex
+        justify-content: space-between
+        font-size: 13px
+        ul
+            display: flex
+            li
+                margin-right: 15px
+                padding: 0 6px
+                border-right: 1px solid #000
+                cursor: pointer
+
+        .right-Link
+            cursor: pointer
