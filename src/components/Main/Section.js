@@ -6,7 +6,11 @@ function Section ({ title , subtitle, items }) {
             <div className="sec-title">{title}<span style={{ color: 'grey' }}>{subtitle}</span></div>
             <div className="sec-item">
                 {items.map((item,index) =>(
-                    <SectionItem key={index} {...item} />
+                    <SectionItem 
+                        key={index} 
+                        {...item} 
+                        titleColor={item.titleColor} 
+                    />
                 ))}
             </div>
         </div>
