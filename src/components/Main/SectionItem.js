@@ -1,7 +1,7 @@
 function SectionItem ({ name, title, price , src ,alt}) {
     return(
         <div className="item-col">
-            <div className="col-info">
+            <div className="col-info" style={{ color: titleColor }}>
                 <h6 className="name">{name}</h6>
                 <h2 className="title">{title}</h2>
                 <h5 className="price">{price}</h5>
