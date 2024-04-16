@@ -21,13 +21,15 @@ function Main() {
                         price: "NT$36,900 起",
                         src: "/images/iphone-15-pro.jpg",
                         alt: "IPHONE 15 PRO",
+                        titleColor: "white"
                     },
                     {
                         name:"APPLE WATCH SERIES 9",
                         title:"智慧升級，亮度、實力再晉級。",
                         price:"NT$13,500 起",
                         src:"/images/watch-s9.jpg",
-                        alt:"APPLE WATCH SERIES 9"
+                        alt:"APPLE WATCH SERIES 9",
+                        titleColor: "white"
                     },
                     {
                         name:"IPAD",
@@ -63,20 +65,7 @@ function Main() {
                         price:"NT$27,900 起",
                         src:"/images/ipad-pro.jpg",
                         alt:"IPAD PRO",
-                    },
-                    {
-                        name:"IPAD PRO",
-                        title:"來自 M2 的超強驅動。",
-                        price:"NT$27,900 起",
-                        src:"/images/ipad-pro.jpg",
-                        alt:"IPAD PRO"
-                    },
-                    {
-                        name:"IPAD PRO",
-                        title:"來自 M2 的超強驅動。",
-                        price:"NT$27,900 起",
-                        src:"/images/ipad-pro.jpg",
-                        alt:"IPAD PRO",
+                        titleColor: "white"
                     },
                     {
                         name:"APPLE WATCH SE",
