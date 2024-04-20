@@ -12,13 +12,13 @@ function ProductPage() {
             />
 
             <ProItem
-                src="/images/iPhone.png"
+                src="/images/iphone.png"
                 alt="iPhone"
                 text="iPhone"
             />
 
             <ProItem
-                src="/images/iPad.png"
+                src="/images/ipad.png"
                 alt="iPad"
                 text="iPad"
             />
@@ -36,7 +36,7 @@ function ProductPage() {
             />
 
             <ProItem
-                src="/images/airTags.png"
+                src="/images/airtags.png"
                 alt="AirTag"
                 text="AirTag"
             />
@@ -48,7 +48,7 @@ function ProductPage() {
             />
 
             <ProItem
-                src="/images/homePod.png"
+                src="/images/homepod.png"
                 alt="HomePod"
                 text="HomePod"
             />

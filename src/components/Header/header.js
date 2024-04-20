@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import NavBarImg from '../components/Header/NavBarImg';
-import NavBarLink from '../components/Header/NavBarLink';
-import ProductPage from '../components/Header/ProductPage';
+import NavBarImg from './NavBarImg';
+import NavBarLink from './NavBarLink';
+import ProductPage from './ProductPage';
 
 function Header() {
     return (

@@ -1,7 +1,7 @@
-import Separator from "../components/Common/Separator";
-import FooterInfo from "../components/Footer/FooterInfo";
-import FooterMore from "../components/Footer/FooterMore";
-import Copyright from "../components/Footer/Copyright";
+import Separator from "../Common/Separator";
+import FooterInfo from "./FooterInfo";
+import FooterMore from "./FooterMore";
+import Copyright from "./Copyright";
 
 
 function Footer() {
