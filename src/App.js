@@ -11,7 +11,6 @@ const App = () => {
 				element={<HomePages />}
 			/>
 			<Route
-				index
 				path="/store"
 				element={<StorePages />}
 			/>
