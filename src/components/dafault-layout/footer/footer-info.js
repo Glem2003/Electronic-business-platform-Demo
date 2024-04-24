@@ -1,4 +1,4 @@
-import ColumnList from './ColumnList.js'
+import ColumnList from './column-list.js'
 
 function FooterInfo() {
     return (

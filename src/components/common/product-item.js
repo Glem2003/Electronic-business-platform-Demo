@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ProItem({ src, alt, text}){
+function ProductItem({ src, alt, text}){
     return(
         <div className='col-10'>
             <div className='item-image'>
@@ -11,4 +11,4 @@ function ProItem({ src, alt, text}){
     )
 }
 
-export default ProItem;
+export default ProductItem;

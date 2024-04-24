@@ -1,65 +1,66 @@
 import React from "react";
-import ProItem from "../Common/ProItem";
+import ProductItem from "../../common/product-item";
+
 
 function ProductPage() {
     return (
         <div className="product-item">
 
-            <ProItem
+            <ProductItem
                 src="/images/mac.png"
                 alt="Mac"
                 text="Mac"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/iphone.png"
                 alt="iPhone"
                 text="iPhone"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/ipad.png"
                 alt="iPad"
                 text="iPad"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/Applewatch.png"
                 alt="Apple Watch"
                 text="Apple Watch"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/airpods.png"
                 alt="Airpods"
                 text="Airpods"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/airtags.png"
                 alt="AirTag"
                 text="AirTag"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/appletv.png"
                 alt="Apple TV 4K"
                 text="Apple TV 4K"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/homepod.png"
                 alt="HomePod"
                 text="HomePod"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/accessories.png"
                 alt="配件"
                 text="配件"
             />
 
-            <ProItem
+            <ProductItem
                 src="/images/giftcards.png"
                 alt="Apple Store 禮品卡"
                 text="Apple Store 禮品卡"
