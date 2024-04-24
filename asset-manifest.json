@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Electronic-business-platform-Demo/static/css/main.8360bac1.css",
+    "main.js": "/Electronic-business-platform-Demo/static/js/main.4d887ce2.js",
+    "index.html": "/Electronic-business-platform-Demo/index.html",
+    "main.8360bac1.css.map": "/Electronic-business-platform-Demo/static/css/main.8360bac1.css.map",
+    "main.4d887ce2.js.map": "/Electronic-business-platform-Demo/static/js/main.4d887ce2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8360bac1.css",
+    "static/js/main.4d887ce2.js"
+  ]
+}
