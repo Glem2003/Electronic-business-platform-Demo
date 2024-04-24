@@ -1,5 +1,5 @@
 import React from "react";
-import ProductItem from "../../common/product-item";
+import ProductItem from "../common/product-item";
 
 
 function ProductPage() {

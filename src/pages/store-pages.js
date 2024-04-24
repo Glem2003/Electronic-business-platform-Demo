@@ -1,8 +1,10 @@
+import DafaultLayout from "../components/dafault-layout/dafault-layout";
+
 const StorePages = () => {
     return (
-        <>
-            <h1>StorePages</h1>
-        </>
+        <DafaultLayout>
+            <h1>This is StorePages</h1>
+        </DafaultLayout>
     )
 }
 
