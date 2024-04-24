@@ -1,5 +1,5 @@
-import NavBarImg from './NavBarImg';
-import NavBarLink from './NavBarLink';
+import NavBarImg from './nav-bar-img';
+import NavBarLink from './nav-bar-link';
 
 function NavBar() {
     return (

@@ -1,5 +1,5 @@
-import NavBar from './NavBar';
-import ProductPage from './ProductPage';
+import NavBar from './nav-bar';
+import ProductPage from './product-page';
 
 function Header() {
     return (

@@ -1,4 +1,4 @@
-import SectionItem from "./SectionItem";
+import SectionItem from "./section-item";
 
 function Section ({ title , subtitle, items }) {
     return (

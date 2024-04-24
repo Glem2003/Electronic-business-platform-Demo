@@ -1,6 +1,6 @@
 import Separator from "../Common/Separator";
-import FooterInfo from "./FooterInfo";
-import FooterMore from "./FooterMore";
+import FooterInfo from "./footer-info";
+import FooterMore from "./footer-more";
 import Copyright from "./Copyright";
 
 
