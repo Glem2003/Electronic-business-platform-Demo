@@ -20,7 +20,7 @@ function NavBar() {
                     children="商店"
                 />
                 <NavBarLink
-                    to="/Mac"
+                    to="/mac"
                     children="Mac"
                 />
                 <NavBarLink
@@ -28,19 +28,19 @@ function NavBar() {
                     children="ipad"
                 />
                 <NavBarLink
-                    to="/Watch"
+                    to="/watch"
                     children="Watch"
                 />
                 <NavBarLink
-                    to="/AirPods"
+                    to="/airPods"
                     children="AirPods"
                 />
                 <NavBarLink
-                    to="/Tv and Family"
+                    to="/tv-and-family"
                     children="TV 和家庭"
                 />
                 <NavBarLink
-                    to="/Funny"
+                    to="/funny"
                     children="娛樂"
                 />
                 <NavBarLink
@@ -48,7 +48,7 @@ function NavBar() {
                     children="配件"
                 />
                 <NavBarLink
-                    to="/other serve"
+                    to="/other-serve"
                     children="支援服務"
                 />
                 <NavBarImg className="Search" src="/images/search-icon.png" alt="Search" />
