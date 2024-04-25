@@ -1,3 +1,4 @@
+/* Global*/
 *
     margin: 0
     padding: 0
@@ -11,6 +12,7 @@ li
 
 html
     width: 85%
+    overflow-x: hidden
     margin: 0 auto
     display: block
 
@@ -22,6 +24,7 @@ img
 .navBar
     display: block
     width: 60%
+    height: 35px
     margin: 0 auto
 
 .nav-item
@@ -225,3 +228,50 @@ li
 
         .right-Link
             cursor: pointer
+// index-images
+.index-images
+    height: 60vh
+    margin-left: -10%
+    margin-right: -10%
+    margin-bottom: 5px
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    >h1
+        font-size: 50px
+        margin-top: 30px
+    >h2
+        font-size: 24px
+    >.button-item
+        >h4.btn
+            display: inline-block
+            border-radius: 20px
+            padding: 10px
+            margin: 15px 10px
+            font-size: 16px
+            cursor: pointer
+            &.more
+                color: white
+                background-color: blue
+                width: 120px
+                &:hover
+                    background-color: #0c01db
+                    color: white
+            &.buy
+                border: 1px solid blue
+                color: blue
+                width: 80px
+                &:hover
+                    background-color: blue
+                    color: white
+
+.second-section
+    display: flex
+    margin: 0 -8%
+    justify-content: space-between
+    >.index-images
+        margin: 5px
