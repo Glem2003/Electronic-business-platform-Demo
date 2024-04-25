@@ -1,9 +1,10 @@
 import DafaultLayout from "../components/dafault-layout/dafault-layout";
+import Main from "../components/main/main";
 
 const StorePages = () => {
     return (
         <DafaultLayout>
-            <h1>This is StorePages</h1>
+            <Main/>
         </DafaultLayout>
     )
 }
