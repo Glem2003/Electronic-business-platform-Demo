@@ -3,7 +3,7 @@
     margin: 0
     padding: 0
     position: relative
-    font-family: '微軟正黑體'
+    font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "Helvetica Neue", Helvetica, Arial, sans-serif
     box-sizing: border-box
     //border: 1px solid #000
 
@@ -11,8 +11,7 @@ li
     list-style-type: none
 
 html
-    width: 85%
-    overflow-x: hidden
+    width: 80%
     margin: 0 auto
     display: block
 
@@ -43,7 +42,8 @@ img
     cursor: pointer
 
 li
-    font-size: 14px
+    font-size: 12px
+    font-weight: 400
     a
         text-decoration: none
         color: #000
@@ -196,8 +196,9 @@ li
         height: 300px
         .list-col
             margin-bottom: 15px
-            h6
+            h3
                 font-weight: bold
+                font-size: 12px
             li
                 font-size: 12px
                 margin: 8px 0
@@ -227,13 +228,18 @@ li
                 cursor: pointer
 
         .right-Link
+            font-size: 12px
             cursor: pointer
+
+// index-section
+.home
+    width: 99.3vw
+    margin: 0 0 5px -13%
+    overflow: hidden        
 // index-images
 .index-images
+    border: 1px solid black
     height: 60vh
-    margin-left: -10%
-    margin-right: -10%
-    margin-bottom: 5px
     text-align: center
     display: flex
     flex-direction: column
@@ -271,7 +277,10 @@ li
 
 .second-section
     display: flex
-    margin: 0 -8%
-    justify-content: space-between
-    >.index-images
-        margin: 5px
+    justify-content: center
+    flex-wrap: wrap
+    > .index-images
+        width: 50%
+        margin: 10px
+        flex: 0 0 48%
+        
