@@ -11,7 +11,7 @@ function NavBar() {
                         <NavBarImg
                             className="Logo"
                             src="/images/AppleLogo.png"
-							alt="Apple.logo"
+                            alt="Apple.logo"
                         />
                     }
                 />
@@ -52,7 +52,17 @@ function NavBar() {
                     children="支援服務"
                 />
                 <NavBarImg className="Search" src="/images/search-icon.png" alt="Search" />
-                <NavBarImg className="Shop-Cart" src="/images/shopp-cart.png" alt="Shop-Cart" />
+                <NavBarLink
+                    to="/cart"
+                    children={
+                        <NavBarImg
+                            className="Shop-Cart"
+                            src="/images/shopp-cart.png"
+                            alt="Shop-Cart"
+                        />
+                    }
+                />
+
             </ul>
         </nav>
     )

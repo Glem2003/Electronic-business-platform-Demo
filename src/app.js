@@ -5,6 +5,10 @@ import StorePages from './pages/store-pages';
 import MacPages from "./pages/mac-pages";
 import IpadPages from "./pages/ipad-pages";
 import WatchPages from "./pages/watch-pages";
+import AirpodsPages from "./pages/airpods-pages";
+import FunnyPages from "./pages/funny-pages";
+import CartPages from "./pages/cart-pages";
+import TvAndFamilyPages from "./pages/tv-and-family-pages";
 
 const App = () => {
     return (
@@ -29,6 +33,22 @@ const App = () => {
 			<Route
 				path="/watch"
 				element={<WatchPages/>}
+			/>
+			<Route
+				path="/airPods"
+				element={<AirpodsPages/>}
+			/>
+			<Route
+				path="/funny"
+				element={<FunnyPages/>}
+			/>
+			<Route
+				path="/cart"
+				element={<CartPages/>}
+			/>
+			<Route
+				path="/tv-and-family"
+				element={<TvAndFamilyPages/>}
 			/>
 
 		</Routes>
