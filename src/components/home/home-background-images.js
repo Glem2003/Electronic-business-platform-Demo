@@ -1,9 +1,8 @@
-const IndexBackgroundImages = ({ title, subtitle, backgroundImage, color, width }) => {
+const HomeBackgroundImages = ({ title, subtitle, backgroundImage, color}) => {
     return (
         <div className="index-images"
             style={{
-                backgroundImage: `url(${backgroundImage})`,
-                width: `${width || "100vw"}`
+                backgroundImage: `url(${backgroundImage})`
             }}>
 
             <h1 style={{ color: `${color}` }}>{title}</h1>
@@ -17,4 +16,4 @@ const IndexBackgroundImages = ({ title, subtitle, backgroundImage, color, width 
     )
 }
 
-export default IndexBackgroundImages;
+export default HomeBackgroundImages;
