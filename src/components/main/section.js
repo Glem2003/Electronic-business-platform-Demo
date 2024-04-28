@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import SectionItem from "./section-item";
 
-const Section = React.forwardRef(({ title, subtitle, items }, ref) => {
+const Section = React.forwardRef(({ items }, ref) => {
 
     const ITEM_WIDTH = 500;
 
@@ -28,7 +28,6 @@ const Section = React.forwardRef(({ title, subtitle, items }, ref) => {
 
     return (
         <div className="section" ref={ref}>
-            <div className="sec-title">{title}<span style={{ color: 'grey' }}>{subtitle}</span></div>
 
             <div className="scrollbar">
                 <div className="sec-item" ref={containerRef}>
