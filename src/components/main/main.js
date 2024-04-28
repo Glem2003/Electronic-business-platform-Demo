@@ -1,6 +1,7 @@
 import ContantTitle from "./contant-title";
 import ProductPage from "./product-page";
 import Section from "./section";
+import SectionItem from "./section-item";
 
 function Main() {
     return (
@@ -406,21 +407,6 @@ function Main() {
 
 export default Main;
 //----------------------------------------------------
-function SectionItem(props) {
-    return (
-        <div className="item-col">
-            <div className="col-info" id={props.id}>
-                <h6 className="name">{props.name}</h6>
-                <h2 className="title">{props.title}</h2>
-                <h5 className="price">{props.price}</h5>
-            </div>
-            <div className="col-wrapper">
-                <img src={props.src} alt={props.alt}></img>
-            </div>
-        </div>
-    )
-}
-
 function WrapperImg(props) {
     return (
         <div className="pro-wrapper">
