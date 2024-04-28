@@ -1,3 +1,4 @@
+import ContantTitle from "./contant-title";
 import ProductPage from "./product-page";
 import Section from "./section";
 
@@ -5,16 +6,27 @@ function Main() {
     return (
         <div className="main">
 
-            <h1 className="title">
-                商店。 <span style={{ color: 'grey' }}>購買你喜愛的產品，<br></br>
-                    這是最好的方式。</span>
-            </h1>
-            <ProductPage/>
+            <ContantTitle
+                style={{
+                    margin: "80px 0 64px 0",
+                    fontSize: "48px",
+                    width: "600px"
+                }}
+                title="商店。"
+                subtitle="購買你喜愛的產品，這是最好的方式。"
+            />
+            <ProductPage />
 
 
-            <Section
+            <ContantTitle
+                style={{
+                    fontSize: "28px"
+                }}
                 title="最新登場。"
                 subtitle="現在就來看看有哪些新品推薦。"
+            />
+
+            <Section
                 items={[
                     {
                         name: "MACBOOK AIR",
@@ -96,7 +108,14 @@ function Main() {
 
             {/* Start section2 */}
             <div className="section section2">
-                <div className="sec-title">周邊配件 <span style={{ color: 'grey' }}>精彩配件，款款都是心愛裝置的必搭絕配。</span></div>
+                <ContantTitle
+                    style={{
+                        fontSize: "28px"
+                    }}
+                    title="周邊配件。"
+                    subtitle="精彩配件，款款都是心愛裝置的必搭絕配。"
+                />
+
                 <div className="sec-item">
 
                     <SectionItem
@@ -269,7 +288,15 @@ function Main() {
 
             {/* Start section3 */}
             <div className="section section3">
-                <div className="sec-title">清亮動聽。<span style={{ color: 'grey' }}>層次豐富的高音質，款款都是好選擇。</span></div>
+
+                <ContantTitle
+                    style={{
+                        fontSize: "28px"
+                    }}
+                    title="清亮動聽。"
+                    subtitle="層次豐富的高音質，款款都是好選擇。"
+                />
+
                 <div className="sec-item">
 
                     <SectionItem
