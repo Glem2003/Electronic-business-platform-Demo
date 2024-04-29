@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import SectionItem from "./section-item";
 
-const Section = React.forwardRef(({ items }, ref) => {
+const Section = React.forwardRef(({ children }, ref) => {
 
     const ITEM_WIDTH = 500;
 
@@ -30,14 +30,8 @@ const Section = React.forwardRef(({ items }, ref) => {
         <div className="section" ref={ref}>
 
             <div className="scrollbar">
-                <div className="sec-item" ref={containerRef}>
-                    {items.map((item, index) => (
-                        <SectionItem
-                            key={index}
-                            {...item}
-                            titleColor={item.titleColor}
-                        />
-                    ))}
+                <div className="scroll" ref={containerRef}>
+                    {children}
                 </div>
             </div>
 

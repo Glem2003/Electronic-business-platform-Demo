@@ -108,6 +108,7 @@ li
     font-size: 20px
     font-weight: 800
     margin-bottom: 20px
+
 .sec-item
     width: 100%
     display: flex
@@ -116,7 +117,7 @@ li
 
 .item-col
     overflow: hidden
-    flex: 0 0 350px
+    flex: 0 0 400px
     border-radius: 10px
     margin-left: 16px
     margin-right: 16px
@@ -127,28 +128,6 @@ li
     &:hover
         scale: 1.01
 
-// section 1
-.col-info
-    z-index: 10
-    margin: 20px 0 0 20px
-    position: absolute
-    .title
-        margin: 10px 0
-        font-size: 22px
-    .price,.name
-        color: grey
-
-#white
-    color: white
-    .price,.name
-        color: white
-
-#narrow
-    margin: 20px 100px 0 20px
-
-.col-wrapper
-    z-index: 1
-
 // section 2
 .pro-wrapper
     height: 60%
@@ -158,7 +137,7 @@ li
     img
         width: 60%
 
-.colorbox
+.color-box
     display: flex
     justify-content: center
     height: 20px
@@ -168,18 +147,6 @@ li
         width: 10px
         height: 10px
         margin: 0 5px
-    #A
-        background-color: yellow
-    #B
-        background-color: #374247
-    #C
-        background-color: #96ba43
-    #D
-        background-color: #b32b56
-    #E
-        background-color: #36bbbb
-    #F
-        background-color: #92caad
 
 .pro-info
     z-index: 10
@@ -307,6 +274,7 @@ li
         margin: 10px
         flex: 0 0 48%
 
+// scrollbar
 .scrollbar
     +transparent-scrollbar
     overflow-x: scroll
@@ -353,3 +321,40 @@ li
 .action-btns button:hover
     opacity: 1
     background-color: #D7CCC8
+
+// product-card
+.product-card
+    height: 500px
+    border-radius: 10px
+    overflow: hidden
+    position: relative
+    >.card-info
+        padding: 10px
+
+.product-card.wrapper   
+    >.card-info
+        position: absolute
+        z-index: 10
+        width: 100%
+        top: 0
+        left: 0
+        padding: 10px
+        line-height: 40px
+        >h5
+            font-size: 12px
+        >h4
+            font-size: 17px
+        >h6
+            font-size: 28px
+
+.product-card.center
+    display: flex
+    flex-direction: column
+    align-items: center
+    >.card-image
+        border: 1px solid black
+        width: 60%
+    >.card-info
+        border: 1px solid black
+        width: 100%
+        height: 100%

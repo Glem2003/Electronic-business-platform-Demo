@@ -2,109 +2,44 @@ import ContantTitle from "./contant-title";
 import ProductPage from "./product-page";
 import Section from "./section";
 import SectionItem from "./section-item";
+import SectionProductItem from "./section1-product-item";
 
 function Main() {
     return (
         <div className="main">
 
-            <ContantTitle
-                style={{
-                    margin: "80px 0 64px 0",
-                    fontSize: "48px",
-                    width: "600px"
-                }}
-                title="商店。"
-                subtitle="購買你喜愛的產品，這是最好的方式。"
-            />
-            <ProductPage />
+            {/* Start section1 */}
+            <div className="section-title">
+                <ContantTitle
+                    style={{
+                        margin: "80px 0 64px 0",
+                        fontSize: "48px",
+                        width: "600px"
+                    }}
+                    title="商店。"
+                    subtitle="購買你喜愛的產品，這是最好的方式。"
+                />
+                <ProductPage />
+            </div>
 
 
-            <ContantTitle
-                style={{
-                    fontSize: "28px"
-                }}
-                title="最新登場。"
-                subtitle="現在就來看看有哪些新品推薦。"
-            />
+            <div className="section section1">
+                <ContantTitle
+                    style={{
+                        fontSize: "28px"
+                    }}
+                    title="最新登場。"
+                    subtitle="現在就來看看有哪些新品推薦。"
+                />
+                
+                <Section>
+                    <SectionProductItem/>
+                </Section>
+                
+            </div>
 
-            <Section
-                items={[
-                    {
-                        name: "MACBOOK AIR",
-                        title: "為行動而設計。",
-                        price: "NT$32,900 起",
-                        src: "/images/macbook.jpg",
-                        alt: "MACBOOK AIR",
 
-                    },
-                    {
-                        name: "IPHONE 15 PRO",
-                        title: "鈦金屬",
-                        price: "NT$36,900 起",
-                        src: "/images/iphone-15-pro.jpg",
-                        alt: "IPHONE 15 PRO",
-                        titleColor: "white"
-                    },
-                    {
-                        name: "APPLE WATCH SERIES 9",
-                        title: "智慧升級，亮度、實力再晉級。",
-                        price: "NT$13,500 起",
-                        src: "/images/watch-s9.jpg",
-                        alt: "APPLE WATCH SERIES 9",
-                        titleColor: "white"
-                    },
-                    {
-                        name: "IPAD",
-                        title: "可愛、可畫，可圈可點。",
-                        price: "NT$14,900 起",
-                        src: "/images/ipad.jpg",
-                        alt: "IPAD"
-                    },
-                    {
-                        name: "IPHONE 15",
-                        title: "新的愛，狂比心。",
-                        price: "NT$29,900 起",
-                        src: "/images/iphone-15.jpg",
-                        alt: "IPHONE 15"
-                    },
-                    {
-                        name: "MACBOOK PRO",
-                        title: "炫技，炫目。",
-                        price: "NT$54,900 起",
-                        src: "/images/macbook-pro.jpg",
-                        alt: "MACBOOK PRO"
-                    },
-                    {
-                        name: "APPLE WATCH ULTRA 2",
-                        title: "征途，再超越。",
-                        price: "NT$27,900 起",
-                        src: "/images/watch-ultra.jpg",
-                        alt: "APPLE WATCH ULTRA 2"
-                    },
-                    {
-                        name: "IPAD PRO",
-                        title: "來自 M2 的超強驅動。",
-                        price: "NT$27,900 起",
-                        src: "/images/ipad-pro.jpg",
-                        alt: "IPAD PRO",
-                        titleColor: "white"
-                    },
-                    {
-                        name: "APPLE WATCH SE",
-                        title: "超有才，輕鬆愛",
-                        price: "NT$27,900 起",
-                        src: "/images/watch-se.jpg",
-                        alt: "APPLE WATCH SE",
-                    },
-                    {
-                        name: "全新",
-                        title: "吸睛新色，腕上放閃。",
-                        price: "選購最新款式與顏色的錶帶",
-                        src: "/images/watch-bands.jpg",
-                        alt: "APPLE WATCH SE",
-                    },
-                ]}
-            />
+            
             {/*  End section1 */}
 
             {/* Start section2 */}
@@ -129,7 +64,6 @@ function Main() {
                     <div className="item-col">
 
                         <WrapperImg src="/images/MWND3.jpg" alt="MWND3" />
-
 
                         <div className="colorbox">
                             <div className="box" id="A"></div>
