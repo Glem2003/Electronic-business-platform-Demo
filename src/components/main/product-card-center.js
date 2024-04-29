@@ -1,12 +1,11 @@
 import ColorBox from "./color-box";
 
-const ProductCardCenter = ({children}) => {
+const ProductCardCenter = ({children,src,alt}) => {
     return (
         <div className="product-card center">
             <div className="card-image">
-                <img src="/images/applemusic.jpg" alt="wrapper-images" />
+                <img src={src} alt={alt}/>
             </div>
-
             <ColorBox colorItems={[
                 { className: "yellow", style: "yellow" },
                 { className: "red", style: "red" },
@@ -18,4 +17,14 @@ const ProductCardCenter = ({children}) => {
     )
 }
 
-export default ProductCardCenter;
+const CardInfo = ({title,price,subtitle ,style}) => {
+    return (
+        <div style={style}className="card-info">
+            <h5>{subtitle}</h5>
+            <h6>{title}</h6>
+            <h4>{price}</h4>
+        </div>
+    )
+}
+
+export  {ProductCardCenter ,CardInfo};

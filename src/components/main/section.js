@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import SectionItem from "./section-item";
 
 const Section = React.forwardRef(({ children }, ref) => {
 

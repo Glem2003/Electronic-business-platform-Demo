@@ -83,7 +83,7 @@ const SectionProductItem = () => {
 
             {products.map((product, index) => (
                 <div className="item-col">
-                    <ProductCardWrapper src={product.src} alt={product.alt}>
+                    <ProductCardWrapper key={index} src={product.src} alt={product.alt}>
                         <CardInfo style={{ color: product.style }} title={product.title} price={product.price} subtitle={product.subtitle} />
                     </ProductCardWrapper>
                 </div>
