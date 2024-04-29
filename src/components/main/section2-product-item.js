@@ -86,7 +86,7 @@ const Section2ProductItem = () => {
             {productTitle.map((item, index) => (
                 <div className="item-col">
                     <ProductCardWrapper key={index} src={item.src} alt={item.alt}>
-                        <CardInfo title={item.title} price={item.price} subtitle={item.subtitle} />
+                        <CardInfo className="section-title" title={item.title} price={item.price} subtitle={item.subtitle} />
                     </ProductCardWrapper>
                 </div>
             ))}
