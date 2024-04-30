@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 
-const Section = React.forwardRef(({ children }, ref) => {
+const ScrollBar = React.forwardRef(({ children }) => {
 
     const ITEM_WIDTH = 500;
 
-    const [scrollPosition, setscrollPosition] = useState(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
     const containerRef = useRef();
@@ -12,7 +12,7 @@ const Section = React.forwardRef(({ children }, ref) => {
     // Function to handle scrolling when the button is clicked
     const handleScroll = (scrollAmount) => {
         const newScrollPosition = scrollPosition + scrollAmount;
-        setscrollPosition(newScrollPosition);
+        setScrollPosition(newScrollPosition);
         containerRef.current.scrollLeft = newScrollPosition;
     }
 
@@ -26,12 +26,10 @@ const Section = React.forwardRef(({ children }, ref) => {
     }
 
     return (
-        <div className="section" ref={ref}>
+        <div className="section">
 
-            <div className="scrollbar">
-                <div className="scroll" ref={containerRef}>
-                    {children}
-                </div>
+            <div className="scrollbar" ref={containerRef}>
+                {children}
             </div>
 
             <div
@@ -58,4 +56,4 @@ const Section = React.forwardRef(({ children }, ref) => {
     )
 });
 
-export default Section;
+export default ScrollBar;

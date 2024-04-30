@@ -1,6 +1,6 @@
 import ContantTitle from "./contant-title";
 import ProductPage from "./product-page";
-import Section from "./section";
+import ScrollBar from "./scroll-bar";
 import SectionProductItem from "./section1-product-item";
 import Section2ProductItem from "./section2-product-item";
 import Section3ProductItem from "./section3-product-item";
@@ -33,9 +33,9 @@ function Main() {
                     subtitle="現在就來看看有哪些新品推薦。"
                 />
 
-                <Section>
+                <ScrollBar>
                     <SectionProductItem />
-                </Section>
+                </ScrollBar>
 
             </div>
             {/*  End section1 */}
@@ -50,9 +50,9 @@ function Main() {
                     subtitle="精彩配件，款款都是心愛裝置的必搭絕配。"
                 />
 
-                <Section>
+                <ScrollBar>
                     <Section2ProductItem />
-                </Section>
+                </ScrollBar>
 
             </div>
             {/* End section2 */}
@@ -69,9 +69,9 @@ function Main() {
                 />
 
 
-                <Section>
+                <ScrollBar>
                     <Section3ProductItem/>
-                </Section>
+                </ScrollBar>
             </div>
             {/* End section3 */}
 
