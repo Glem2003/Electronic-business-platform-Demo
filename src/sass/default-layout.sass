@@ -1,0 +1,89 @@
+/* header */
+// NavBar
+.navBar
+    display: block
+    width: 60%
+    height: 35px
+    margin: 0 auto
+
+.nav-item
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 10px
+    > li
+        cursor: pointer
+
+.Logo,.Search,.Shop-Cart
+    width: 20px
+    height: 20px
+    background-position: center
+    background-size: contain
+    cursor: pointer
+
+li
+    font-size: 12px
+    font-weight: 400
+    a
+        text-decoration: none
+        color: #000
+    
+/* footer */
+.footer-info
+    margin-top: 20px
+
+.footer-logo
+    display: flex
+    align-items: center
+    .logo-title
+        margin-left: 12px
+        &::before
+            position: absolute
+            content: '>'
+            display: block
+            top: 0
+            left: -9px
+            opacity: 0.6
+
+.footer-item
+    display: flex
+    margin-top: 20px
+    .item-column
+        width: 100%
+        height: 300px
+        .list-col
+            margin-bottom: 15px
+            h3
+                font-weight: bold
+                font-size: 12px
+            li
+                font-size: 12px
+                margin: 8px 0
+                cursor: pointer
+
+.footer-more
+    margin: 40px 0 20px 0
+
+.Copyright
+    margin: 20px 0
+    display: flex
+    align-items: center
+    h6
+        width: 25%
+        margin-right: 30px
+    .copy-Link
+        width: 75%
+        display: flex
+        justify-content: space-between
+        font-size: 13px
+        ul
+            display: flex
+            li
+                margin-right: 15px
+                padding: 0 6px
+                border-right: 1px solid #000
+                cursor: pointer
+
+        .right-Link
+            font-size: 12px
+            cursor: pointer

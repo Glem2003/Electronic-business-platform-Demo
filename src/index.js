@@ -5,6 +5,7 @@ import App from './app'
 
 
 import './sass/style.sass';
+import './sass/default-layout.sass';
 
 
 //--------------------------------------------------------
