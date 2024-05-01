@@ -1,3 +1,4 @@
+import ColorBox from "./color-box";
 import { ProductCardCenter, CardInfo } from "./product-card-center";
 import { ProductCardWrapper } from "./product-card-wrapper";
 
@@ -26,66 +27,95 @@ const Section2ProductItem = () => {
             title: "iPhone 15 MagSafe 矽膠保護殼 - 淡藍色",
             price: "NT$1,590",
             src: "/images/MWND3.jpg",
-            alt: "MWND3"
+            alt: "MWND3",
+            colorItems:[
+                { className: "yellow", style: "yellow" },
+                { className: "red", style: "red" },
+            ]
         },
         {
             subtitle: "--",
             title: "Tech21 FlexQuartz，適用於iPhone 15 (MegSafe 相容) - ...",
             price: "NT$1,490",
             src: "/images/HRDT2.jpg",
-            alt: "HRDT2"
+            alt: "HRDT2",
+            colorItems:[
+                { className: "yellow", style: "yellow" },
+                { className: "red", style: "red" },
+            ]
         },
         {
             subtitle: "--",
             title: "Tech21 EvoPink，適用於AirTag (2件裝)",
             price: "NT$990",
             src: "/images/HRDZ2.jpg",
-            alt: "HRDZ2"
+            alt: "HRDZ2",
+            colorItems:[
+                { className: "yellow", style: "yellow" },
+                { className: "red", style: "red" },
+            ]
         },
         {
             subtitle: "全新",
             title: "45 公釐淡薄荷色運動型錶環",
             price: "NT$1,600",
             src: "/images/MW4Q3.jpg",
-            alt: "MW4Q3"
+            alt: "MW4Q3",
+            colorItems:[
+                { className: "yellow", style: "yellow" },
+                { className: "red", style: "red" },
+            ]
         },
         {
             subtitle: "全新",
             title: "45 公釐日照色運動型錶帶 - M/L",
             price: "NT$1,600",
             src: "/images/MWMW3ref.jpg",
-            alt: "MWMW3ref"
+            alt: "MWMW3ref",
+            colorItems:[
+                { className: "yellow", style: "yellow" },
+                { className: "red", style: "red" },
+            ]
         },
         {
             subtitle: "--",
             title: "iPhone MagSafe 精細織紋卡套",
             price: "NT$1,890",
             src: "/images/MT263.jpg",
-            alt: "MT263"
+            alt: "MT263",
+            colorItems:[
+                { className: "yellow", style: "yellow" },
+                { className: "red", style: "red" },
+            ]
         },
         {
             subtitle: "--",
             title: "iPhone 15 Pro MagSafe 精細織紋保護套 - 萬年青色",
             price: "NT$1,890",
             src: "/images/MT4U3.jpg",
-            alt: "MT4U3"
+            alt: "MT4U3",
+            colorItems:[
+                { className: "yellow", style: "yellow" },
+                { className: "red", style: "red" },
+            ]
         },
         {
             subtitle: "--",
             title: "AirTag 精細織紋鑰匙圈 - 珊瑚色",
             price: "NT$1,290",
             src: "/images/MT2M3.jpg",
-            alt: "MT2M3"
+            alt: "MT2M3",
+            colorItems:[]
         }
     ]
 
     return (
 
-        <div className="sec-item">
+        <div className="section-items">
 
             {productTitle.map((item, index) => (
                 <div className="item-col">
-                    <ProductCardWrapper key={index} src={item.src} alt={item.alt}>
+                    <ProductCardWrapper key={index} src={item.src} alt={item.alt}>  
                         <CardInfo className="section-title" title={item.title} price={item.price} subtitle={item.subtitle} />
                     </ProductCardWrapper>
                 </div>
@@ -93,8 +123,9 @@ const Section2ProductItem = () => {
 
 
             {products.map((product, index) => (
-                <div className="item-col">
-                    <ProductCardCenter key={index} src={product.src} alt={product.alt}>
+                <div className="item-col"  key={index} >
+                    <ProductCardCenter src={product.src} alt={product.alt}>
+                        <ColorBox colorItems={product.colorItems}/>
                         <CardInfo style={{ color: product.style }} title={product.title} price={product.price} subtitle={product.subtitle} />
                     </ProductCardCenter>
                 </div>

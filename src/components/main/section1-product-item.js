@@ -8,7 +8,10 @@ const SectionProductItem = () => {
             title: "為行動而設計。",
             price: "NT$32,900 起",
             src: "/images/macbook.jpg",
-            alt: "MACBOOK AIR"
+            alt: "MACBOOK AIR",
+            subtitleStyle: { color: "gray"},
+            priceStyle: {color: "gray"}
+
         },
         {
             subtitle: "IPHONE 15 PRO",
@@ -16,7 +19,7 @@ const SectionProductItem = () => {
             price: "NT$36,900 起",
             src: "/images/iphone-15-pro.jpg",
             alt: "IPHONE 15 PRO",
-            style: "white"
+            cardStyle: { color: "white"}
         },
         {
             subtitle: "APPLE WATCH SERIES 9",
@@ -24,35 +27,43 @@ const SectionProductItem = () => {
             price: "NT$13,500 起",
             src: "/images/watch-s9.jpg",
             alt: "APPLE WATCH SERIES 9",
-            style: "white"
+            cardStyle: { color: "white"}
         },
         {
             subtitle: "IPAD",
             title: "可愛、可畫，可圈可點。",
             price: "NT$14,900 起",
             src: "/images/ipad.jpg",
-            alt: "IPAD"
+            alt: "IPAD",
+            subtitleStyle: { color: "gray"},
+            priceStyle: {color: "gray"}
         },
         {
             subtitle: "IPHONE 15",
             title: "新的愛，狂比心。",
             price: "NT$29,900 起",
             src: "/images/iphone-15.jpg",
-            alt: "IPHONE 15"
+            alt: "IPHONE 15",
+            subtitleStyle: { color: "gray"},
+            priceStyle: {color: "gray"}
         },
         {
             subtitle: "MACBOOK PRO",
             title: "炫技，炫目。",
             price: "NT$54,900 起",
             src: "/images/macbook-pro.jpg",
-            alt: "MACBOOK PRO"
+            alt: "MACBOOK PRO",
+            subtitleStyle: { color: "gray"},
+            priceStyle: {color: "gray"}
         },
         {
             subtitle: "APPLE WATCH ULTRA 2",
             title: "征途，再超越。",
             price: "NT$27,900 起",
             src: "/images/watch-ultra.jpg",
-            alt: "APPLE WATCH ULTRA 2"
+            alt: "APPLE WATCH ULTRA 2",
+            subtitleStyle: { color: "gray"},
+            priceStyle: {color: "gray"}
         },
         {
             subtitle: "IPAD PRO",
@@ -60,7 +71,7 @@ const SectionProductItem = () => {
             price: "NT$27,900 起",
             src: "/images/ipad-pro.jpg",
             alt: "IPAD PRO",
-            style: "white"
+            cardStyle: { color: "white"}
         },
         {
             subtitle: "APPLE WATCH SE",
@@ -68,6 +79,8 @@ const SectionProductItem = () => {
             price: "NT$27,900 起",
             src: "/images/watch-se.jpg",
             alt: "APPLE WATCH SE",
+            subtitleStyle: { color: "gray"},
+            priceStyle: {color: "gray"}
         },
         {
             subtitle: "全新",
@@ -75,6 +88,8 @@ const SectionProductItem = () => {
             price: "選購最新款式與顏色的錶帶",
             src: "/images/watch-bands.jpg",
             alt: "APPLE WATCH SE",
+            subtitleStyle: { color: "gray"},
+            priceStyle: {color: "gray"}
         },
     ];
 
@@ -84,7 +99,14 @@ const SectionProductItem = () => {
             {products.map((product, index) => (
                 <div className="item-col">
                     <ProductCardWrapper key={index} src={product.src} alt={product.alt}>
-                        <CardInfo style={{ color: product.style }} title={product.title} price={product.price} subtitle={product.subtitle} />
+                        <CardInfo 
+                            cardInfoStyle={product.cardStyle} 
+                            subtitleStyle={product.subtitleStyle}
+                            priceStyle={product.priceStyle}
+                            title={product.title} 
+                            price={product.price} 
+                            subtitle={product.subtitle} 
+                        />
                     </ProductCardWrapper>
                 </div>
             ))}

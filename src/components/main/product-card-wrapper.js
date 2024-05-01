@@ -1,20 +1,20 @@
-const ProductCardWrapper = ({children,src,alt}) =>{
-    return(
+const ProductCardWrapper = ({ children, src, alt }) => {
+    return (
         <div className="product-card wrapper">
             <div>
-                <img src={src} alt={alt}/>
+                <img src={src} alt={alt} />
             </div>
             {children}
         </div>
     )
 }
 
-const CardInfo = ({title,price,subtitle ,style}) => {
+const CardInfo = ({ title, price, subtitle, cardInfoStyle, subtitleStyle, priceStyle }) => {
     return (
-        <div style={style}className="card-info">
-            <h5>{subtitle}</h5>
+        <div style={cardInfoStyle} className="card-info">
+            <h5 style={subtitleStyle}>{subtitle}</h5>
             <h6>{title}</h6>
-            <h4>{price}</h4>
+            <h4 style={priceStyle}>{price}</h4>
         </div>
     )
 }

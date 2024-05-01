@@ -6,23 +6,17 @@ const ProductCardCenter = ({children,src,alt}) => {
             <div className="card-image">
                 <img src={src} alt={alt}/>
             </div>
-            <ColorBox colorItems={[
-                { className: "yellow", style: "yellow" },
-                { className: "red", style: "red" },
-                { className: "black", style: "black" }
-            ]}
-            />
             {children}
         </div>
     )
 }
 
-const CardInfo = ({title,price,subtitle ,style}) => {
+const CardInfo = ({ title, price, subtitle, cardInfoStyle, subtitleStyle, priceStyle }) => {
     return (
-        <div style={style}className="card-info">
-            <h5>{subtitle}</h5>
+        <div style={cardInfoStyle} className="card-info">
+            <h5 style={subtitleStyle}>{subtitle}</h5>
             <h6>{title}</h6>
-            <h4>{price}</h4>
+            <h4 style={priceStyle}>{price}</h4>
         </div>
     )
 }
