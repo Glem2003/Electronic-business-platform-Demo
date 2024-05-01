@@ -9,11 +9,11 @@ const ProductCardWrapper = ({ children, src, alt }) => {
     )
 }
 
-const CardInfo = ({ title, price, subtitle, cardInfoStyle, subtitleStyle, priceStyle }) => {
+const CardInfo = ({ title, price, subtitle, cardInfoStyle, subtitleStyle, priceStyle, titleStyle }) => {
     return (
         <div style={cardInfoStyle} className="card-info">
             <h5 style={subtitleStyle}>{subtitle}</h5>
-            <h6>{title}</h6>
+            <h6 style={titleStyle}>{title}</h6>
             <h4 style={priceStyle}>{price}</h4>
         </div>
     )
