@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import ArrowButton from '../common/arrow-button';
 
-const ScrollBar = React.forwardRef(({ children }) => {
+const ScrollBar = React.forwardRef(({ children}) => {
 
-    const ITEM_WIDTH = 500;
+    const ITEM_WIDTH = 400;
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
