@@ -1,7 +1,7 @@
 import React from 'react';
 
-function ProductItem({ src, alt, text}){
-    return(
+const ProductItem = ({ src, alt, text }) => {
+    return (
         <div className='col-10'>
             <div className='item-image'>
                 <img src={src} alt={alt}></img>

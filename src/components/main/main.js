@@ -1,5 +1,5 @@
 import ContantTitle from "./contant-title";
-import ProductPage from "./product-page";
+import ProductItems from "./product-item";
 import ScrollBar from "./scroll-bar";
 import SectionProductItem from "./section1-product-item";
 import Section2ProductItem from "./section2-product-item";
@@ -20,7 +20,7 @@ function Main() {
                     title="商店。"
                     subtitle="購買你喜愛的產品，這是最好的方式。"
                 />
-                <ProductPage />
+                <ProductItems />
             </div>
 
 

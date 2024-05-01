@@ -2,7 +2,7 @@ import React from "react";
 import ProductItem from "../common/product-item";
 
 
-function ProductPage() {
+function ProductItems() {
     return (
         <div className="product-item">
 
@@ -70,4 +70,4 @@ function ProductPage() {
     )
 }
 
-export default ProductPage;
+export default ProductItems;
