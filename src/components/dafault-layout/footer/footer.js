@@ -4,15 +4,14 @@ import Copyright from "./copyright";
 import Separator from "../../common/separator";
 
 
-function Footer() {
+function Footer({ logoTitle }) {
     return (
         <div className="footer">
-            <Separator/>
-            <FooterInfo />
+            <Separator />
+            <FooterInfo logoTitle={logoTitle} />
             <FooterMore />
             <Separator />
             <Copyright />
-
         </div>
     )
 }

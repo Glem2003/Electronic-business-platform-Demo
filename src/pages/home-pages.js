@@ -5,7 +5,7 @@ import '../sass/home-pages.sass';
 
 const HomePages = () => {
     return (
-        <DafaultLayout>
+        <DafaultLayout logoTitle="Apple store">
             <Home/>
         </DafaultLayout>
     )

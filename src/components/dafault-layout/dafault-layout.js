@@ -1,12 +1,12 @@
 import Footer from "./footer/footer";
 import Header from "./header/header";
 
-const DafaultLayout = ({children}) =>{
-    return(
+const DafaultLayout = ({ children, logoTitle }) => {
+    return (
         <div>
-            <Header/>
+            <Header />
             {children}
-            <Footer/>
+            <Footer logoTitle={logoTitle} />
         </div>
     )
 }

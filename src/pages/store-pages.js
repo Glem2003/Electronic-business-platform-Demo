@@ -9,7 +9,7 @@ import '../sass/comonent/scroll-bar.sass';
 
 const StorePages = () => {
     return (
-        <DafaultLayout>
+        <DafaultLayout logoTitle="Apple Store 線上商店">
             <Main/>
         </DafaultLayout>
     )

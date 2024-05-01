@@ -1,11 +1,11 @@
 import ColumnList from './column-list.js'
 
-function FooterInfo() {
+const FooterInfo = ({logoTitle}) => {
     return (
         <div className="footer-info">
             <div className="footer-logo">
                 <img className="Logo" src="/images/AppleLogo.png" alt="AppleLogo"></img>
-                <h6 className="logo-title">Apple Store 線上商店</h6>
+                <h6 className="logo-title">{logoTitle}</h6>
             </div>
             <div className="footer-item">
                 <div className="item-column">
