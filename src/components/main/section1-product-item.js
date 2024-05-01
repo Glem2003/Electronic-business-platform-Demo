@@ -94,7 +94,7 @@ const SectionProductItem = () => {
     ];
 
     return (
-        <div className="sec-item">
+        <div className="section-items">
 
             {products.map((product, index) => (
                 <div className="item-col">
