@@ -9,6 +9,7 @@ import AirpodsPages from "./pages/airpods-pages";
 import FunnyPages from "./pages/funny-pages";
 import CartPages from "./pages/cart-pages";
 import TvAndFamilyPages from "./pages/tv-and-family-pages";
+import IphonePages from "./pages/iphone-page";
 
 const App = () => {
     return (
@@ -49,6 +50,10 @@ const App = () => {
 			<Route
 				path="/tv-and-family"
 				element={<TvAndFamilyPages/>}
+			/>
+			<Route
+				path="/iPhone"
+				element={<IphonePages/>}
 			/>
 
 		</Routes>

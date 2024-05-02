@@ -1,6 +1,6 @@
 import ProductItem from "../common/product-item"
 
-const MacProductItems = () => {
+const IphoneProductItems = () => {
     return (
         <div className="Product-items">
             <ProductItem
@@ -67,4 +67,4 @@ const MacProductItems = () => {
     )
 }
 
-export default MacProductItems;
+export default IphoneProductItems;

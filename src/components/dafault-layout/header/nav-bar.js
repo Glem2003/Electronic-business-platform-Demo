@@ -28,6 +28,10 @@ function NavBar() {
                     children="ipad"
                 />
                 <NavBarLink
+                    to="/iPhone"
+                    children="iPhone"
+                />
+                <NavBarLink
                     to="/watch"
                     children="Watch"
                 />

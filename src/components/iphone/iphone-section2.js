@@ -2,7 +2,7 @@ import SectionTitle from "../common/section-title";
 import SectionSecondInfoItem from "./section2-info-item";
 import ScrollBar from '../main/scroll-bar';
 
-const MacSecondSection = () =>{
+const IphoneSecondSection = () =>{
     return(
         <div className="section section2">
             <SectionTitle title="了解iPhone。"/>
@@ -14,4 +14,4 @@ const MacSecondSection = () =>{
     )
 }
 
-export default MacSecondSection;
+export default IphoneSecondSection;

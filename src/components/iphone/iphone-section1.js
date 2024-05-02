@@ -1,6 +1,6 @@
 import SectionTitle from "../common/section-title";
 
-const MacFirstSection = () =>{
+const IphoneFirstSection = () =>{
     return(
         <div className="section section1">
             <SectionTitle title="iPhone" subtitle="精心設計討人愛"/>
@@ -9,4 +9,4 @@ const MacFirstSection = () =>{
     )
 }
 
-export default MacFirstSection;
+export default IphoneFirstSection;

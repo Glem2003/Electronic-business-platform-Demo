@@ -1,12 +1,9 @@
 import DafaultLayout from "../components/dafault-layout/dafault-layout";
-import Mac from "../components/mac/mac";
-
-import '../sass/mac-pages.sass';
 
 const MacPages = () => {
     return (
         <DafaultLayout logoTitle="Mac">
-            <Mac/>
+            <h1>MacPages</h1>
         </DafaultLayout>
     )
 }
