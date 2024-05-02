@@ -6,7 +6,6 @@ const ScrollBar = React.forwardRef(({ children}) => {
     const ITEM_WIDTH = 400;
 
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [isHovered, setIsHovered] = useState(false);
 
     const containerRef = useRef();
 
@@ -15,15 +14,6 @@ const ScrollBar = React.forwardRef(({ children}) => {
         const newScrollPosition = scrollPosition + scrollAmount;
         setScrollPosition(newScrollPosition);
         containerRef.current.scrollLeft = newScrollPosition;
-    }
-
-    // Function to handle when the mouse is enter
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    }
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
     }
 
     return (
@@ -35,8 +25,6 @@ const ScrollBar = React.forwardRef(({ children}) => {
 
             <div
                 className="action-btns"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
             >
                 <button
                     className="left-button"

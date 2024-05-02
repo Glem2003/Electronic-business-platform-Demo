@@ -1,10 +1,16 @@
+import { FaApple } from 'react-icons/fa';
+import { IoIosArrowForward } from 'react-icons/io';
 import ColumnList from './column-list.js'
 
 const FooterInfo = ({logoTitle}) => {
+
+    const svgStyle = {width:"1.2rem",height:"1.2rem"}
+
     return (
         <div className="footer-info">
             <div className="footer-logo">
-                <img className="Logo" src="/images/AppleLogo.png" alt="AppleLogo"></img>
+                <FaApple style={svgStyle}/>
+                <IoIosArrowForward/>
                 <h6 className="logo-title">{logoTitle}</h6>
             </div>
             <div className="footer-item">

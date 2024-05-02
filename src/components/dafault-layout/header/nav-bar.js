@@ -1,18 +1,18 @@
-import NavBarImg from './nav-bar-img';
 import NavBarLink from './nav-bar-link';
 
+import { FaApple,FaShoppingCart } from 'react-icons/fa';
+import { CiSearch } from 'react-icons/ci';
+
 function NavBar() {
+    const svgStyle = {width:"1.5em",height:"1.5em"}
+
     return (
         <nav className="navBar">
             <ul className="nav-item">
                 <NavBarLink
                     to="/"
                     children={
-                        <NavBarImg
-                            className="Logo"
-                            src="/images/AppleLogo.png"
-                            alt="Apple.logo"
-                        />
+                        <FaApple style={svgStyle}/>
                     }
                 />
                 <NavBarLink
@@ -51,15 +51,13 @@ function NavBar() {
                     to="/other-serve"
                     children="支援服務"
                 />
-                <NavBarImg className="Search" src="/images/search-icon.png" alt="Search" />
+                
+                <CiSearch  style={svgStyle}/>
+
                 <NavBarLink
                     to="/cart"
                     children={
-                        <NavBarImg
-                            className="Shop-Cart"
-                            src="/images/shopp-cart.png"
-                            alt="Shop-Cart"
-                        />
+                        <FaShoppingCart  style={svgStyle}/>
                     }
                 />
 
