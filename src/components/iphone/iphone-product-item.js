@@ -1,38 +1,26 @@
-import ProductItem from "../common/product-item"
+import React from 'react';
+import ProductItem from "../common/product-item";
 
 const IphoneProductItems = () => {
+
+    React.useEffect(() => {
+        fetch('/iphone-product-data')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    })
+
     return (
         <div className="Product-items">
-            <ProductItem
-                src="/images/mac.png"
-                alt="iPhone 15 Pro"
-                text="iPhone 15 Pro"
-            />
-            <ProductItem
-                src="/images/mac.png"
-                alt="iPhone 15"
-                text="iPhone 15"
-            />
-            <ProductItem
-                src="/images/mac.png"
-                alt="iPhone 14"
-                text="iPhone 14"
-            />
-            <ProductItem
-                src="/images/mac.png"
-                alt="iPhone 13"
-                text="iPhone 13"
-            />
-            <ProductItem
-                src="/images/mac.png"
-                alt="iPhone SE"
-                text="iPhone SE"
-            />
-            <ProductItem
-                src="/images/mac.png"
-                alt="iPhone 15 Pro"
-                text="iPhone 15 Pro"
-            />
             <ProductItem
                 src="/images/mac.png"
                 alt="比較"
