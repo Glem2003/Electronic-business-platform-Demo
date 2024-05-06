@@ -6,7 +6,7 @@ import App from './app';
 
 import './sass/style.sass';
 import './sass/default-layout.sass';
-
+import './api/data.json';
 
 //--------------------------------------------------------
 const root = ReactDOM.createRoot(document.getElementById('root'));
