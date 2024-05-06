@@ -1,4 +1,4 @@
-import HomeBackgroundImages from "./home-background-images"
+import HomeBackgroundImages from "./home-background-images";
 
 const Home = () => {
 
@@ -29,6 +29,7 @@ const Home = () => {
                         />
                     )
                 })}
+
             </div>
             <div className="second-section">
                 {IndexShortSectionItem.map((item, index) => {

@@ -17,7 +17,7 @@ const WebRoute = () => {
             <Route
                 index
                 path="/"
-                element={<HomePages />}
+                element={<HomePages/>}
             />
             <Route
                 path="/store"
