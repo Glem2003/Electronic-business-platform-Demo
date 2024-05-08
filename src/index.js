@@ -10,7 +10,7 @@ import './sass/default-layout.sass';
 const Index = () => {
 
   React.useEffect(() => {
-    fetch("../public/api/data.json")
+    fetch("api/data.json")
       .then((response) => {
         return response.json();
       })
@@ -21,6 +21,7 @@ const Index = () => {
         console.log(error); 
       });
   }, []);
+
 }
 
 //--------------------------------------------------------
