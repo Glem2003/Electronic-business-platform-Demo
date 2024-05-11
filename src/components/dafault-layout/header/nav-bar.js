@@ -1,90 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBarLink from './nav-bar-link';
-
 import '../../../sass/component/nav-bar.sass';
-
-
 import { FaApple, FaShoppingCart } from 'react-icons/fa';
 import { CiSearch } from 'react-icons/ci';
 
 function NavBar() {
-    const svgStyle = { width: "1.5em", height: "1.5em" }
+    const svgStyle = { width: "1.5em", height: "1.5em" };
 
-    const [isFlyoutContent, setFlyoutContent] = React.useState(false);
-    const [isStoreContent,setStoreContent] = React.useState(false);
-    const [isMacContent,setMacContent] = React.useState(false);
+    const [flyoutContent, setFlyoutContent] = useState({
+        store: false,
+        mac: false,
+        ipad: false,
+        iphone: false,
+        watch: false,
+        airpods: false,
+    });
 
+    const handleMouseLeave = () => {
+        setFlyoutContent({
+            store: false,
+            mac: false,
+            ipad: false,
+            iphone: false,
+            watch: false,
+            airpods: false,
+        });
+    };
 
-    const handleMouseLeave = () =>{
-        setFlyoutContent(false);
-        setStoreContent(false);
-        setMacContent(false);
-    }
+    const handleMouseOver = (content) => {
+        const newFlyoutContent = {
+            store: false,
+            mac: false,
+            ipad: false,
+            iphone: false,
+            watch: false,
+            airpods: false,
+        };
+        newFlyoutContent[content] = true;
+        setFlyoutContent(newFlyoutContent);
+    };
 
-    const handleStoreMouseOver = () =>{
-        setFlyoutContent(true);
-        setStoreContent(true);
-        setMacContent(false);
-    }
-
-    const handleMacMouseOver = () =>{
-        setFlyoutContent(true);
-        setStoreContent(false);
-        setMacContent(true);
-    }
+    const navItems = [
+        { to: "/", icon: <FaApple style={svgStyle} />, text: "首頁" },
+        { to: "/store", text: "商店", onMouseOver: () => handleMouseOver('store') },
+        { to: "/mac", text: "Mac", onMouseOver: () => handleMouseOver('mac') },
+        { to: "/iPad", text: "iPad" },
+        { to: "/iPhone", text: "iPhone" },
+        { to: "/watch", text: "Watch" },
+        { to: "/airPods", text: "AirPods" },
+        { to: "/tv-and-family", text: "TV 和家庭" },
+        { to: "/funny", text: "娛樂" },
+        { icon: <CiSearch style={svgStyle} /> },
+        { icon: <FaShoppingCart style={svgStyle} /> }
+    ];
 
     return (
         <nav>
             <div className='content'>
                 <ul className='content-list'>
-
-                    <NavBarLink
-                        to="/"
-                    >
-                        <FaApple style={svgStyle} />
-                    </NavBarLink>
-
-
-                    <NavBarLink
-                        to="store"
-                        onMouseOver={handleStoreMouseOver}
-                        className="store"
-                    >
-                        <p>Store</p>
-                    </NavBarLink>
-
-                    <NavBarLink
-                        to="mac"
-                        onMouseOver={handleMacMouseOver}
-                        className="mac">
-                        <p>Mac</p>
-                    </NavBarLink>
-
-                    <NavBarLink 
-                        to="iPhone"
-                        className="iPhone">
-                        <p>iPhone</p>
-                    </NavBarLink>
-
-
-                    <NavBarLink>
-                        <CiSearch style={svgStyle} />
-                    </NavBarLink>
-                    <NavBarLink>
-                        <FaShoppingCart style={svgStyle} />
-                    </NavBarLink>
-
+                    {navItems.map((item, index) => (
+                        <NavBarLink
+                            key={index}
+                            to={item.to}
+                            onMouseOver={item.onMouseOver}
+                            className={item.text ? item.text.toLowerCase() : ""}
+                        >
+                            {item.icon ? item.icon : <p>{item.text}</p>}
+                        </NavBarLink>
+                    ))}
                 </ul>
             </div>
 
-            <div
-                onMouseLeave={handleMouseLeave}
-                className={`flyout-content ${isFlyoutContent === true ? 'show': ''}`}
-            >
-                <div
-                    className={`content-item ${isStoreContent === true ? 'show':''}`}
-                    id="store"
-                >
+            <div onMouseLeave={handleMouseLeave} className={`flyout-content ${Object.values(flyoutContent).some((value) => value) ? 'show' : ''}`}>
+                <div className={`content-item ${flyoutContent.store ? 'show' : ''}`} id="store">
                     <div className="content-group">
                         <ul>
                             <h2>選擇</h2>
@@ -106,10 +94,7 @@ function NavBar() {
                         </ul>
                     </div>
                 </div>
-                <div
-                    className={`content-item ${isMacContent === true ? 'show':''}`}
-                    id="mac"
-                >
+                <div className={`content-item ${flyoutContent.mac ? 'show' : ''}`} id="mac">
                     <div className="content-group">
                         <ul>
                             <h2>選擇</h2>
@@ -136,8 +121,7 @@ function NavBar() {
                 </div>
             </div>
         </nav>
-    )
+    );
 }
-
 
 export default NavBar;
