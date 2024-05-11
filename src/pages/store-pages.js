@@ -3,8 +3,8 @@ import Main from "../components/main/main";
 
 
 import '../sass/store-pages.sass';
-import '../sass/comonent/product-card.sass';
-import '../sass/comonent/scroll-bar.sass';
+import '../sass/component/product-card.sass';
+import '../sass/component/scroll-bar.sass';
 
 
 const StorePages = () => {
