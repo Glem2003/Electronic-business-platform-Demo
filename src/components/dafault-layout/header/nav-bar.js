@@ -41,17 +41,36 @@ function NavBar() {
     };
 
     const navItems = [
-        { to: "/", icon: <FaApple style={svgStyle} />, text: "首頁" },
+        {
+            to: "/", icon: <FaApple style={svgStyle} />, text: "首頁",
+            onMouseOver: () => {
+                handleMouseOver('home');
+                setFlyoutContent(false);
+            }
+        },
         { to: "/store", text: "商店", onMouseOver: () => handleMouseOver('store') },
         { to: "/mac", text: "Mac", onMouseOver: () => handleMouseOver('mac') },
-        { to: "/iPad", text: "iPad" },
-        { to: "/iPhone", text: "iPhone" },
-        { to: "/watch", text: "Watch" },
-        { to: "/airPods", text: "AirPods" },
-        { to: "/tv-and-family", text: "TV 和家庭" },
-        { to: "/funny", text: "娛樂" },
-        { icon: <CiSearch style={svgStyle} /> },
-        { icon: <FaShoppingCart style={svgStyle} /> }
+        { to: "/iPad", text: "iPad", onMouseOver: () => handleMouseOver('ipad') },
+        { to: "/iPhone", text: "iPhone", onMouseOver: () => handleMouseOver('iphone') },
+        { to: "/watch", text: "Watch", onMouseOver: () => handleMouseOver('watch') },
+        { to: "/airPods", text: "AirPods", onMouseOver: () => handleMouseOver('airpods') },
+        { to: "/tv-and-family", text: "TV 和家庭", onMouseOver: () => handleMouseOver('') },
+        { to: "/funny", text: "娛樂", onMouseOver: () => handleMouseOver('') },
+
+        {
+            icon: <CiSearch style={svgStyle} />,
+            onMouseOver: () => {
+                handleMouseOver('search');
+                setFlyoutContent(false);
+            }
+        },
+        {
+            icon: <FaShoppingCart style={svgStyle} />,
+            onMouseOver: () => {
+                handleMouseOver('cart');
+                setFlyoutContent(false);
+            }
+        }
     ];
 
     return (
@@ -71,51 +90,192 @@ function NavBar() {
                 </ul>
             </div>
 
-            <div onMouseLeave={handleMouseLeave} className={`flyout-content ${Object.values(flyoutContent).some((value) => value) ? 'show' : ''}`}>
-                <div className={`content-item ${flyoutContent.store ? 'show' : ''}`} id="store">
+            <div className={`flyout-content ${Object.values(flyoutContent).some((value) => value) ? 'show' : ''}`}>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.store ? 'show' : ''}`} id="store">
                     <div className="content-group">
                         <ul>
-                            <h2>選擇</h2>
-                            <li>1111</li>
-                            <li>22222</li>
-                            <li>333</li>
+                            <h6>選購</h6>
+                            <h1>選購最新產品</h1>
+                            <h1>Mac</h1>
+                            <h1>iPad</h1>
+                            <h1>iPhone</h1>
+                            <h1>Apple Watch</h1>
+                            <h1>配件</h1>
                         </ul>
                         <ul>
-                            <h2>選擇</h2>
-                            <li>1111</li>
-                            <li>22222</li>
-                            <li>333</li>
+                            <h6>選購</h6>
+                            <h4>尋找直營店</h4>
+                            <h4>訂單狀態</h4>
+                            <h4>Apple Trade In 換購方案</h4>
+                            <h4>信用卡分期付款</h4>
                         </ul>
                         <ul>
-                            <h2>選擇</h2>
-                            <li>1111</li>
-                            <li>22222</li>
-                            <li>333</li>
+                            <h6>特定商品選購</h6>
+                            <h4>認證整修品</h4>
+                            <h4>教育</h4>
+                            <h4>商務</h4>
                         </ul>
                     </div>
                 </div>
-                <div className={`content-item ${flyoutContent.mac ? 'show' : ''}`} id="mac">
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.mac ? 'show' : ''}`} id="mac">
                     <div className="content-group">
                         <ul>
-                            <h2>選擇</h2>
-                            <li>1111</li>
-                            <li>22222</li>
-                            <li>333</li>
-                            <li>1111</li>
-                            <li>22222</li>
-                            <li>333</li>
+                            <h6>探索 Mac</h6>
+                            <h1>探索所有 Mac</h1>
+                            <h1>MacBook Air</h1>
+                            <h1>MacBook Pro</h1>
+                            <h1>iMac</h1>
+                            <h1>Mac mini</h1>
+                            <h1>Mac Studio</h1>
+                            <h1>Mac Pro</h1>
+                            <h1>顯示器</h1>
+                            <br/>
+                            <h4>比較 Mac 模型</h4>
+                            <h4>Mac 辦得到</h4>
+
                         </ul>
                         <ul>
-                            <h2>選擇</h2>
-                            <li>1111</li>
-                            <li>22222</li>
-                            <li>333</li>
+                            <h6>選購 Mac</h6>
+                            <h4>選購 Mac</h4>
+                            <h4>Mac 配件</h4>
+                            <h4>Apple Trade In 換購方案</h4>
+                            <h4>信用卡分期付款</h4>
                         </ul>
                         <ul>
-                            <h2>選擇</h2>
-                            <li>1111</li>
-                            <li>22222</li>
-                            <li>333</li>
+                            <h6>Mac 相關</h6>
+                            <h4>適用於 Mac 的 AppleCare+ 服務專案</h4>
+                            <h4>macOS Sonoma</h4>
+                            <h4>Apple 出品的 App</h4>
+                            <h4>接續互通</h4>
+                            <h4>iCloud+</h4>
+                            <h4>Mac 商務應用</h4>
+                            <h4>教育</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.ipad ? 'show' : ''}`} id="ipad">
+                    <div className="content-group">
+                        <ul>
+                            <h6>探索 iPad</h6>
+                            <h1>探索所有 iPad</h1>
+                            <h1>iPad Pro</h1>
+                            <h1>iPad Air</h1>
+                            <h1>iPad</h1>
+                            <h1>iPad mini</h1>
+                            <h1>Apple Pencil</h1>
+                            <h1>鍵盤</h1>
+                            <br/>
+                            <h4>比較 iPad 機型</h4>
+                            <h4>選 iPad 理由</h4>
+
+                        </ul>
+                        <ul>
+                            <h6>選購 iPad</h6>
+                            <h4>選購 iPad</h4>
+                            <h4>iPad 配件</h4>
+                            <h4>Apple Trade In 換購方案</h4>
+                            <h4>信用卡分期付款</h4>
+                        </ul>
+                        <ul>
+                            <h6>iPad 相關</h6>
+                            <h4>適用於 iPad 的 AppleCare+ 服務專案</h4>
+                            <h4>iPadOS 17</h4>
+                            <h4>Apple 出品的 App</h4>
+                            <h4>iCloud+</h4>
+                            <h4>教育</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.iphone ? 'show' : ''}`} id="iphone">
+                    <div className="content-group">
+                        <ul>
+                            <h6>探索 iPhone</h6>
+                            <h1>探索所有 iPhone</h1>
+                            <h1>iPhone 15 Pro</h1>
+                            <h1>iPhone 14</h1>
+                            <h1>iPhone 13</h1>
+                            <h1>iPhone SE</h1>
+                            <br/>
+                            <h4>比較 iPhone 機型</h4>
+                            <h4>從 Android 轉用</h4>
+
+                        </ul>
+                        <ul>
+                            <h6>選購 iPhone</h6>
+                            <h4>選購 iPhone</h4>
+                            <h4>iPhone 配件</h4>
+                            <h4>Apple Trade In 換購方案</h4>
+                            <h4>信用卡分期付款</h4>
+                        </ul>
+                        <ul>
+                            <h6>iPhone 相關</h6>
+                            <h4>iPhone 支援服務</h4>
+                            <h4>適用於 iPhone 的 AppleCare+ 服務專案</h4>
+                            <h4>iOS 17</h4>
+                            <h4>Apple 出品的 App</h4>
+                            <h4>iPhone 隱私權</h4>
+                            <h4>iCloud+</h4>
+                            <h4>Apple Pay</h4>
+                            <h4>Siri</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.watch ? 'show' : ''}`} id="watch">
+                    <div className="content-group">
+                        <ul>
+                            <h6>探索 Watch</h6>
+                            <h1>探索所有的 Apple Watch</h1>
+                            <h1>Apple Watch Series 9</h1>
+                            <h1>Apple Watch Ultra 2</h1>
+                            <h1>Apple Watch SE</h1>
+                            <h1>Apple Watch Nike</h1>
+                            <h1>Apple Watch Hermès</h1>
+                            <br/>
+                            <h4>比較 Watch 錶款</h4>
+                            <h4>Apple Watch 的好處</h4>
+
+                        </ul>
+                        <ul>
+                            <h6>選購 Watch</h6>
+                            <h4>選購 Apple Watch</h4>
+                            <h4>Apple Watch 工坊</h4>
+                            <h4>Apple Watch 錶帶</h4>
+                            <h4>Apple Watch 配件</h4>
+                            <h4>Apple Trade In 換購方案</h4>
+                            <h4>信用卡分期付款</h4>
+                        </ul>
+                        <ul>
+                            <h6>Watch 相關</h6>
+                            <h4>Apple Watch 支援服務</h4>
+                            <h4>AppleCare+ 服務專案</h4>
+                            <h4>watchOS 10</h4>
+                            <h4>Apple 出品的 App</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.airpods ? 'show' : ''}`} id="airpods">
+                    <div className="content-group">
+                        <ul>
+                            <h6>探索 AirPods</h6>
+                            <h1>探索所有的 AirPods</h1>
+                            <h1>AirPods Pro 第2代</h1>
+                            <h1>AirPods 第2代</h1>
+                            <h1>AirPods 第3代</h1>
+                            <h1>AirPods Max</h1>
+                            <br/>
+                            <h4>比較 AirPods 機型</h4>
+
+                        </ul>
+                        <ul>
+                            <h6>選購 AirPods</h6>
+                            <h4>選購 AirPods</h4>
+                            <h4>AirPods 配件</h4>
+                        </ul>
+                        <ul>
+                            <h6>AirPods 相關</h6>
+                            <h4>AirPods 支援服務</h4>
+                            <h4>適用於耳機的 AppleCare+ 服務專線</h4>
+                            <h4>Apple Music</h4>
                         </ul>
                     </div>
                 </div>
