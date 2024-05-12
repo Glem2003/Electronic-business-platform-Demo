@@ -34,13 +34,15 @@ const Home = () => {
             <div className="second-section">
                 {IndexShortSectionItem.map((item, index) => {
                     return (
-                        <HomeBackgroundImages
-                            key={index}
-                            title={item.title}
-                            subtitle={item.subtitle}
-                            color={item.color}
-                            backgroundImage={item.backgroundImage}
-                        />
+                        <div className="section-col-6">
+                            <HomeBackgroundImages
+                                key={index}
+                                title={item.title}
+                                subtitle={item.subtitle}
+                                color={item.color}
+                                backgroundImage={item.backgroundImage}
+                            />
+                        </div>
                     )
                 })}
             </div>

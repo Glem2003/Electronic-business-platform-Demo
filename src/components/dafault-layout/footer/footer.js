@@ -6,13 +6,13 @@ import Separator from "../../common/separator";
 
 function Footer({ logoTitle }) {
     return (
-        <div className="footer">
+        <footer>
             <Separator />
             <FooterInfo logoTitle={logoTitle} />
             <FooterMore />
             <Separator />
             <Copyright />
-        </div>
+        </footer>
     )
 }
 
