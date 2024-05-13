@@ -16,7 +16,9 @@ function NavBar() {
         airpods: false,
         tvAndFamily: false,
         funny: false,
-        shop: false
+        shop: false,
+        search: true,
+        cart: false
     });
 
     const handleMouseLeave = () => {
@@ -29,7 +31,9 @@ function NavBar() {
             airpods: false,
             tvAndFamily: false,
             funny: false,
-            shop: false
+            shop: false,
+            search: false,
+            cart: false
         });
     };
 
@@ -43,7 +47,9 @@ function NavBar() {
             airpods: false,
             tvAndFamily: false,
             funny: false,
-            shop: false
+            shop: false,
+            search: false,
+            cart: false
         };
         newFlyoutContent[content] = true;
         setFlyoutContent(newFlyoutContent);
@@ -66,19 +72,18 @@ function NavBar() {
         { to: "/tv-and-family", text: "TV 和家庭", onMouseOver: () => handleMouseOver('tvAndFamily') },
         { to: "/funny", text: "娛樂", onMouseOver: () => handleMouseOver('funny') },
         { to: "/shop", text: "配件", onMouseOver: () => handleMouseOver('shop') },
-        { to: "/support", text: "支援服務", onMouseOver: () => handleMouseOver('support') }
+        { to: "/support", text: "支援服務", onMouseOver: () => handleMouseOver('support') },
 
         {
             icon: <CiSearch style={svgStyle} />,
             onMouseOver: () => {
-                handleMouseOver('');
-                setFlyoutContent(false);
+                handleMouseOver('search');
             }
         },
         {
             icon: <FaShoppingCart style={svgStyle} />,
             onMouseOver: () => {
-                handleMouseOver('');
+                handleMouseOver('cart');
                 setFlyoutContent(false);
             }
         }
@@ -389,6 +394,22 @@ function NavBar() {
                             <h4>帳單和訂閱項目</h4>
                             <h4>「尋找」App</h4>
                             <h4>輔助使用</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.search ? 'show' : ''}`} id="search">
+                    <div className="content-group">
+                        <form>
+                            <CiSearch style={svgStyle} />
+                            <input type='search' placeholder='搜尋 apple.com'/>
+                        </form>
+                        <ul>
+                            <h6>快速連結</h6>
+                            <h4>→ 尋找直營店</h4>
+                            <h4>→ 配件</h4>
+                            <h4>→ AirPods</h4>
+                            <h4>→ AirTag</h4>
+                            <h4>→ Apple Trade In 換購方案</h4>
                         </ul>
                     </div>
                 </div>
