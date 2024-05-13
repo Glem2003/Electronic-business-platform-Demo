@@ -1,10 +1,17 @@
 import React from "react";
 import ProductItem from "../common/product-item";
+import { productData } from "../../api";
 
 
 function ProductItems() {
+    productData().then((productData) => {
+        console.log(productData)
+    })
+
     return (
         <div className="product-item">
+            
+            
 
             <ProductItem
                 src="/images/mac.png"

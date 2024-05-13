@@ -1,22 +1,9 @@
-import React from 'react';
-
-const ApiData = () => {
-  const [data, setData] = React.useState([]);
-
-  React.useEffect(() => {
-    fetch("api/data.json")
-      .then((response) => {
-        return response.json();
-      })
-      .then((jsonData) => {
-        console.log(jsonData);
-        setData(jsonData);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
+export const productData = () => {
+  return fetch("api/data.json")
+    .then((response) => {
+      return response.json();
+    })
+    .catch((error) => {
+      console.log('Error fetching productData:', error);
+    })
 }
-
-export default ApiData;
