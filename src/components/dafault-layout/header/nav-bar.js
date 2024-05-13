@@ -14,6 +14,9 @@ function NavBar() {
         iphone: false,
         watch: false,
         airpods: false,
+        tvAndFamily: false,
+        funny: false,
+        shop: false
     });
 
     const handleMouseLeave = () => {
@@ -24,6 +27,9 @@ function NavBar() {
             iphone: false,
             watch: false,
             airpods: false,
+            tvAndFamily: false,
+            funny: false,
+            shop: false
         });
     };
 
@@ -35,6 +41,9 @@ function NavBar() {
             iphone: false,
             watch: false,
             airpods: false,
+            tvAndFamily: false,
+            funny: false,
+            shop: false
         };
         newFlyoutContent[content] = true;
         setFlyoutContent(newFlyoutContent);
@@ -44,7 +53,7 @@ function NavBar() {
         {
             to: "/", icon: <FaApple style={svgStyle} />, text: "首頁",
             onMouseOver: () => {
-                handleMouseOver('home');
+                handleMouseOver('');
                 setFlyoutContent(false);
             }
         },
@@ -54,20 +63,22 @@ function NavBar() {
         { to: "/iPhone", text: "iPhone", onMouseOver: () => handleMouseOver('iphone') },
         { to: "/watch", text: "Watch", onMouseOver: () => handleMouseOver('watch') },
         { to: "/airPods", text: "AirPods", onMouseOver: () => handleMouseOver('airpods') },
-        { to: "/tv-and-family", text: "TV 和家庭", onMouseOver: () => handleMouseOver('') },
-        { to: "/funny", text: "娛樂", onMouseOver: () => handleMouseOver('') },
+        { to: "/tv-and-family", text: "TV 和家庭", onMouseOver: () => handleMouseOver('tvAndFamily') },
+        { to: "/funny", text: "娛樂", onMouseOver: () => handleMouseOver('funny') },
+        { to: "/shop", text: "配件", onMouseOver: () => handleMouseOver('shop') },
+        { to: "/support", text: "支援服務", onMouseOver: () => handleMouseOver('support') }
 
         {
             icon: <CiSearch style={svgStyle} />,
             onMouseOver: () => {
-                handleMouseOver('search');
+                handleMouseOver('');
                 setFlyoutContent(false);
             }
         },
         {
             icon: <FaShoppingCart style={svgStyle} />,
             onMouseOver: () => {
-                handleMouseOver('cart');
+                handleMouseOver('');
                 setFlyoutContent(false);
             }
         }
@@ -276,6 +287,108 @@ function NavBar() {
                             <h4>AirPods 支援服務</h4>
                             <h4>適用於耳機的 AppleCare+ 服務專線</h4>
                             <h4>Apple Music</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.tvAndFamily ? 'show' : ''}`} id="tv-and-family">
+                    <div className="content-group">
+                        <ul>
+                            <h6>探索 TV 和家庭</h6>
+                            <h1>探索 TV 和家庭</h1>
+                            <h1>Apple TV 4K</h1>
+                            <h1>HomePod</h1>
+                            <h1>HomePod mini</h1>
+                        </ul>
+                        <ul>
+                            <h6>選購 TV 和家庭</h6>
+                            <h4>選購 Apple TV 4K</h4>
+                            <h4>選購 HomePod</h4>
+                            <h4>選購 HomePod mini</h4>
+                            <h4>選購 Siri Remote</h4>
+                            <h4>TV 和家庭配件</h4>
+                        </ul>
+                        <ul>
+                            <h6>TV 和家庭相關</h6>
+                            <h4>Apple TV 支援服務</h4>
+                            <h4>HomePod 支援服務</h4>
+                            <h4>AppleCare+ 服務專案</h4>
+                            <h4>Apple TV App</h4>
+                            <h4>Apple TV+</h4>
+                            <h4>家庭 App</h4>
+                            <h4>Apple Music</h4>
+                            <h4>Siri</h4>
+                            <h4>AirPlay</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.funny ? 'show' : ''}`} id="funny">
+                    <div className="content-group">
+                        <ul>
+                            <h6>探索娛樂</h6>
+                            <h1>探索娛樂</h1>
+                            <h1>Apple One</h1>
+                            <h1>Apple TV+</h1>
+                            <h1>Apple Music</h1>
+                            <h1>Apple Arcade</h1>
+                            <h1>Apple Podcast</h1>
+                            <h1>Apple Books</h1>
+                            <h1>Apple Store</h1>
+                        </ul>
+                        <ul>
+                            <h6>支援服務</h6>
+                            <h4>Apple TV+ 支援服務</h4>
+                            <h4>Apple Music 支援服務</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.shop ? 'show' : ''}`} id="shop">
+                    <div className="content-group">
+                        <ul>
+                            <h6>選購配件</h6>
+                            <h1>選購各款配件</h1>
+                            <h1>Mac</h1>
+                            <h1>iPad</h1>
+                            <h1>iPhone</h1>
+                            <h1>Apple Watch</h1>
+                            <h1>AirPods</h1>
+                            <h1>TV 和家庭</h1>
+                        </ul>
+                        <ul>
+                            <h6>探索配件</h6>
+                            <h4>Apple 出品</h4>
+                            <h4>Beats by Dr.Dre</h4>
+                            <h4>AirTag</h4>
+                        </ul>
+                    </div>
+                </div>
+                <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.support ? 'show' : ''}`} id="support">
+                    <div className="content-group">
+                        <ul>
+                            <h6>探索支援服務</h6>
+                            <h1>iPhone</h1>
+                            <h1>Mac</h1>
+                            <h1>iPad</h1>
+                            <h1>Watch</h1>
+                            <h1>AirPods</h1>
+                            <h1>Music</h1>
+                            <h1>TV</h1>
+                            <br/>
+                            <h4>探索支援服務</h4>
+                        </ul>
+                        <ul>
+                            <h6>取得協助</h6>
+                            <h4>社群</h4>
+                            <h4>查看保固範圍</h4>
+                            <h4>維修</h4>
+                            <h4>聯絡我們</h4>
+                        </ul>
+                        <ul>
+                            <h6>實用主題</h6>
+                            <h4>取得 AppleCare+ 服務專案</h4>
+                            <h4>Apple ID 和密碼</h4>
+                            <h4>帳單和訂閱項目</h4>
+                            <h4>「尋找」App</h4>
+                            <h4>輔助使用</h4>
                         </ul>
                     </div>
                 </div>
