@@ -3,9 +3,9 @@ import NavBar from './nav-bar';
 
 function Header() {
     return (
-        <div className="header">
+        <header>
             <NavBar/>
-        </div>
+        </header>
     )
 }
 
