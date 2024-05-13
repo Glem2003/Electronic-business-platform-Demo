@@ -17,7 +17,7 @@ function NavBar() {
         tvAndFamily: false,
         funny: false,
         shop: false,
-        search: true,
+        search: false,
         cart: false
     });
 
