@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { iPhoneProductData } from "../../api";
+import { iPadProductData } from "../../api";
 import ProductItem from "../common/product-item";
-
-import ProductInfoItem from "../common/product-info-item";
-import IphoneFirstSection from "./iphone-section1";
-import IphoneSecondSection from "./iphone-section2";
 
 import '../../sass/component/product-item.sass';
 
-const Iphone = () => {
+const IPad = () =>{
     const [data, setData] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
-            const products = await iPhoneProductData();
+            const products = await iPadProductData();
             setData(products);
         };
         fetchData();
@@ -22,9 +18,8 @@ const Iphone = () => {
     if (data === null) {
         return <div></div>;
     }
-
-    return (
-        <div className="iphone">
+    return(
+        <div className="iPad">
             <div className="Product-items">
                 {data.map((item)=>{
                     return(
@@ -38,13 +33,8 @@ const Iphone = () => {
                     )
                 })}
             </div>
-            <ProductInfoItem
-                textInfo="以iPhone 11 或後續機型升級換購 iPhone 15 或 iPhone 15 Pro。獲享 NT$4,500 至 NT$22,900 的折抵優惠。"
-            />
-            <IphoneFirstSection/>
-            <IphoneSecondSection/>
         </div>
     )
 }
 
-export default Iphone;
+export default IPad;

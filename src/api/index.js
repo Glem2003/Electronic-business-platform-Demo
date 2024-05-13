@@ -17,3 +17,42 @@ export const productTextData = () => {
       console.log('Error fetching productText:', error);
     })
 }
+
+export const macProductData = () => {
+  return fetch("/api/allProductData.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      return data.mac;
+    })
+    .catch((error) => {
+      console.log('Error fetching macProductData:', error);
+    })
+}
+
+export const iPadProductData = () => {
+  return fetch("/api/allProductData.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      return data.iPad;
+    })
+    .catch((error) => {
+      console.log('Error fetching macProductData:', error);
+    })
+}
+
+export const iPhoneProductData = () => {
+  return fetch("/api/allProductData.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      return data.iPhone;
+    })
+    .catch((error) => {
+      console.log('Error fetching macProductData:', error);
+    })
+}

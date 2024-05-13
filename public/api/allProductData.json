@@ -1,0 +1,197 @@
+{
+    "mac": [
+        {
+            "id": 1,
+            "text": "MacBook Air",
+            "src": "/images/mac.png",
+            "postscript": "全新"
+        },
+        {
+            "id": 2,
+            "text": "MacBook Pro",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 3,
+            "text": "iMac",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 4,
+            "text": "Mac mini",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 5,
+            "text": "Mac Studio",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 6,
+            "text": "Mac Pro",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 7,
+            "text": "比較",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 8,
+            "text": "顯示器",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 9,
+            "text": "配件",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 10,
+            "text": "Sonoma",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 11,
+            "text": "選購 Mac",
+            "src": "/images/mac.png"
+        }
+    ],
+    "iPad": [
+        {
+            "id": 1,
+            "text": "iPad Pro",
+            "src": "/images/mac.png",
+            "postscript": "全新"
+        },
+        {
+            "id": 2,
+            "text": "iPad Air",
+            "src": "/images/mac.png",
+            "postscript": "全新"
+        },
+        {
+            "id": 3,
+            "text": "iPad",
+            "src": "/images/mac.png",
+            "postscript": "新價格"
+        },
+        {
+            "id": 3,
+            "text": "iPad mini",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 4,
+            "text": "比較",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 5,
+            "text": "Apple Pencil",
+            "src": "/images/mac.png",
+            "postscript": "全新"
+        },
+        {
+            "id": 6,
+            "text": "鍵盤",
+            "src": "/images/mac.png",
+            "postscript": "全新"
+        },
+        {
+            "id": 7,
+            "text": "配件",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 8,
+            "text": "iPadOS 17",
+            "src": "/images/mac.png"
+        },
+        {
+            "id": 9,
+            "text": "選購 iPad",
+            "src": "/images/mac.png"
+        }
+    ],
+    "iPhone": [
+        {
+            "id": 1,
+            "text":"iPhone 15 Pro",
+            "src":"/images/mac.png"
+        },
+        {
+            "id": 2,
+            "text":"iPhone 15",
+            "src":"/images/mac.png"
+        },
+        {
+            "id": 3,
+            "text":"iPhone 14",
+            "src":"/images/mac.png"
+        },
+        {
+            "id": 4,
+            "text":"iPhone 13",
+            "src":"/images/mac.png"
+        },
+        {
+            "id": 4,
+            "text":"iPhone SE",
+            "src":"/images/mac.png"
+        },
+        {
+            
+            "id": 5,
+            "text":"比較",
+            "src":"/images/mac.png"
+        },
+        {
+            
+            "id": 6,
+            "text":"AirPods",
+            "src":"/images/mac.png"
+        },
+        {
+            
+            "id": 7,
+            "text":"AirTag",
+            "src":"/images/mac.png"
+        },
+        {
+            
+            "id": 8,
+            "text":"配件",
+            "src":"/images/mac.png"
+        },
+        {
+            
+            "id": 9,
+            "text":"IOS 17",
+            "src":"/images/mac.png"
+        },
+        {
+            
+            "id": 10,
+            "text":"選購IPhone",
+            "src":"/images/mac.png"
+        }
+        
+    ],
+    "Watch": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        }
+    ],
+    "Airpods": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        }
+    ]
+}
