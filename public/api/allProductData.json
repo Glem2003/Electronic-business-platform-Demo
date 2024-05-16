@@ -3,18 +3,18 @@
         {
             "id": 1,
             "text": "MacBook Air",
-            "src": "/images/mac.png",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/macbookair_light__dfypt7o3xfgy_large.svg",
             "postscript": "全新"
         },
         {
             "id": 2,
             "text": "MacBook Pro",
-            "src": "/images/mac.png"
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/macbook_pro_light__bvnmtmeikj1e_large.svg"
         },
         {
             "id": 3,
             "text": "iMac",
-            "src": "/images/mac.png"
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/imac_light__cx5ex9nbqxme_large.svg"
         },
         {
             "id": 4,

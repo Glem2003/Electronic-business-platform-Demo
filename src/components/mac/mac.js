@@ -4,6 +4,8 @@ import ProductItem from "../common/product-item";
 
 import MacFirstSection from './mac-section1.js';
 import MacSecondSection from './mac-section2.js';
+import MacThirdSection from './mac-section3.js';
+
 
 import '../../sass/component/product-item.sass';
 
@@ -39,6 +41,7 @@ const Mac = () => {
             </div>
             <MacFirstSection />
             <MacSecondSection />
+            <MacThirdSection />
         </div>
     )
 }

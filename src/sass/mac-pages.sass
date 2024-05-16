@@ -36,3 +36,44 @@
                 opacity: 1
                 margin-top: 30px
                 gap: 30px
+                button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40px
+                    height: 40px
+                    >img
+                        width: 20px
+                        opacity: 0.8
+    .section3
+        >.title
+            >h2
+                font-size: 56px
+        >.section3-info
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            border: 1px solid #000
+            height: 600px
+            border-radius: 15px
+            cursor: pointer
+            transition: all 1s
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            background-image: url("https://www.apple.com/tw/mac/includes/campaigns-seasonal/mac-smb-saturnbird/images/mac_saturnbird__bem8q6ssu98i_large.jpg")
+            >.info
+                width: 350px
+                text-align: center
+                transform: translateX(-350px)
+                >*
+                    color: white
+                    margin-bottom: 10px
+                >h5
+                    color: blue
+                    &::after
+                        content: '>'
+                        width: 15px
+            &:hover
+                transform: scale(1.04)
