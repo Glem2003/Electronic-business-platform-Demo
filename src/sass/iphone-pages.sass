@@ -1,27 +1,31 @@
 //iPhone
-.iphone      
-    .product-info-item
+.iphone
+    >.product-info-item
         padding: 10px
         text-align: center
         font-size: 14px
         line-height: 21px
         background-color: #e5e5ed
+    >.wrapper-layout
+        background-color: rgb(236, 236, 247)
+        padding: 10px
+        font-size: 12px
+        text-align: center
 
-    .card-info
-        >h5
-            font-size: 17px !important
-
-    .section
+    >.section
+        padding: 0 10%
         >.title
             display: flex
             justify-content: space-between
 
     .section1
+        padding: 30px 10%
         >.title
             align-items: center
             >h2
                 font-size: 80px
             >h3
+                max-width: 220px
                 font-size: 28px
         >.video
             border: 1px solid black
@@ -33,9 +37,28 @@
             >h2
                 font-size: 56px
         >.section
+            padding-right: 10px
             >.action-btns
                 justify-content: flex-end
                 position: relative
                 opacity: 1
                 margin-top: 30px
                 gap: 30px
+                button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40px
+                    height: 40px
+                    >img
+                        width: 20px
+                        opacity: 0.8
+            .item-col
+                border-radius: 25px
+                flex: 0 0 350px
+                height: 600px
+            .product-card.wrapper
+                img
+                    height: 600px
+                >.card-info
+                    padding-left: 15px

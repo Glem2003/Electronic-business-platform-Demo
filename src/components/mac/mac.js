@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { macProductData } from "../../api";
 import ProductItem from "../common/product-item";
 
+import ProductInfoItem from "../common/product-info-item";
 import MacFirstSection from './mac-section1.js';
 import MacSecondSection from './mac-section2.js';
 import MacThirdSection from './mac-section3.js';
@@ -39,6 +40,7 @@ const Mac = () => {
                     )
                 })}
             </div>
+            <ProductInfoItem textInfo="在我們的教育商店購買 MacBook Air 和 MacBook Pro 可享優惠。"/>
             <MacFirstSection />
             <MacSecondSection />
             <MacThirdSection />

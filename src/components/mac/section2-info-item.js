@@ -7,20 +7,19 @@ const SectionSecondInfoItem = () => {
         {
             subtitle: "輕鬆啟用",
             title: "容易用，容易愛上。",
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
+            cardStyle: {color: "white"},
+            src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_ease__bvgkz2zdltxy_medium.jpg",
         },
         {
             subtitle: "效能表現與電池續航",
             title: "速度快，持續耐久",
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
+            cardStyle: {color: "white"},
+            src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_performance__dh5hyac1zf8m_medium.jpg",
         },
         {
             subtitle: "Mac 與 iPhone",
             title: "夢幻組合",
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
+            src: "https://www.apple.com/tw/mac/home/images/overview/consider/mac_iphone__gh1tblkt6bqm_medium.jpg",
         },
         {
             subtitle: "相容性",
@@ -30,54 +29,38 @@ const SectionSecondInfoItem = () => {
                     你常用的 App。
                 </>
             ),
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
+            src: "https://www.apple.com/tw/mac/home/images/overview/consider/mac_compatibility__cu59oukz81ci_medium.jpg",
         },
         {
-            subtitle: "先進的相機",
+            subtitle: "隱私權與安全保護",
             title: (
                 <>
-                    玩自拍、<br />
-                    玩拍片、<br />
-                    玩出新格局。
+                    你的私事，<br />
+                    誰都無權知道。
                 </>
             ),
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
+            cardStyle: {color: "white"},
+            src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_security__gfwda10khdym_xlarge.jpg",
         },
         {
-            subtitle: "先進的相機",
+            subtitle: "經久耐用",
             title: (
                 <>
-                    速度快，<br />
-                    超有感。
+                    精心打造<br />
+                    經得起時間考驗。
                 </>
             ),
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
+            src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_durability__epiwcuk7zkeq_xlarge.jpg",
         },
         {
-            subtitle: "先進的相機",
+            subtitle: "Apple 價值理念",
             title: (
                 <>
-                    玩自拍、<br />
-                    玩拍片、<br />
-                    玩出新格局。
+                    我們做的每件事<br />
+                    都體現我們的價值理念。
                 </>
             ),
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
-        },
-        {
-            subtitle: "先進的相機",
-            title: (
-                <>
-                    速度快，<br />
-                    超有感。
-                </>
-            ),
-            src: "/images/MWND3.jpg",
-            alt: "MWND3",
+            src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_values__c9gck9qi4kia_xlarge.jpg",
         },
     ]
 
