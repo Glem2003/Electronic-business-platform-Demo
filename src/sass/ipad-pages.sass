@@ -1,5 +1,5 @@
 //ipad
-.ipad
+.iPad
     .Product-items
         display: flex
         justify-content: center
@@ -7,4 +7,70 @@
         >.col-10
             flex: 0 0 120px
             height: 150px
-            border: 1px solid #000
+
+    >.section
+        padding: 0 10%
+        >.title
+            display: flex
+            justify-content: space-between
+
+    .section1
+        padding: 30px 10%
+        >.title
+            align-items: center
+            >h2
+                font-size: 80px
+            >h3
+                max-width: 285px
+                font-size: 28px
+        >.video
+            border: 1px solid black
+            border-radius: 20px
+            height: 500px
+    .section2
+        >.title
+            >h2
+                font-size: 56px
+        >.section
+            padding-right: 10px
+            >.action-btns
+                justify-content: flex-end
+                position: relative
+                opacity: 1
+                margin-top: 30px
+                gap: 30px
+                button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40px
+                    height: 40px
+                    >img
+                        width: 20px
+                        opacity: 0.8
+            .item-col
+                border-radius: 25px
+                flex: 0 0 350px
+                height: 600px
+                z-index: 1
+                &::before
+                    display: flex
+                    position: absolute
+                    bottom: 20px
+                    right: 20px
+                    z-index: 5
+                    content: '＋'
+                    color: white
+                    font-size: 30px
+                    line-height: 30px
+                    width: 30px
+                    height: 30px
+                    border-radius: 50%
+                    border: 1px solid #000
+                    background-color: rgb(51,51,54)
+
+            .product-card.wrapper
+                img
+                    height: 600px
+                >.card-info
+                    padding-left: 15px
