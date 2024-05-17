@@ -41,7 +41,6 @@ nav
   opacity: 0
   transition: all 1s
 
-
 .content-group 
   display: flex
   gap: 80px
@@ -61,7 +60,7 @@ nav
   >.content-group
     flex-direction: column
     gap: 40px
-    >form
+    form
       display: flex
       align-items: center
       justify-content: flex-start
@@ -79,3 +78,12 @@ nav
       >svg
         width: 2em !important
         height: 2em !important
+    >ul
+      h4
+        &::before
+          position: relative
+          content: '→ '
+          font-weight: 600
+          bottom: 1px
+
+          
