@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import NavBarLink from './nav-bar-link';
+import { navBarStoreList, navBarMacList } from '../../../content/content.js';
 import '../../../sass/component/nav-bar.sass';
 import { FaApple, FaShoppingCart } from 'react-icons/fa';
 import { CiSearch } from 'react-icons/ci';
+import { NavBarLargeList, NavBarSmallList } from '../../common/navbar-list.js';
 
 function NavBar() {
     const svgStyle = { width: "1.5em", height: "1.5em" };
+
+    const selectedNavBarStoreData = navBarStoreList[0]
+    const otherNavBarStoreData = navBarStoreList.slice(1)
+
+    const selectedNavBarMacData = navBarMacList[0]
+    const otherNavBarMacData = navBarMacList.slice(1)
 
     const [flyoutContent, setFlyoutContent] = useState({
         store: false,
@@ -109,64 +117,35 @@ function NavBar() {
             <div className={`flyout-content ${Object.values(flyoutContent).some((value) => value) ? 'show' : ''}`}>
                 <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.store ? 'show' : ''}`} id="store">
                     <div className="content-group">
-                        <ul>
-                            <h6>選購</h6>
-                            <h1>選購最新產品</h1>
-                            <h1>Mac</h1>
-                            <h1>iPad</h1>
-                            <h1>iPhone</h1>
-                            <h1>Apple Watch</h1>
-                            <h1>配件</h1>
-                        </ul>
-                        <ul>
-                            <h6>選購</h6>
-                            <h4>尋找直營店</h4>
-                            <h4>訂單狀態</h4>
-                            <h4>Apple Trade In 換購方案</h4>
-                            <h4>信用卡分期付款</h4>
-                        </ul>
-                        <ul>
-                            <h6>特定商品選購</h6>
-                            <h4>認證整修品</h4>
-                            <h4>教育</h4>
-                            <h4>商務</h4>
-                        </ul>
+                        <NavBarLargeList>
+                            title={selectedNavBarStoreData.title}
+                            items={selectedNavBarStoreData.listItem}
+                        </NavBarLargeList>
+                        {otherNavBarStoreData.map((data, index) => (
+                            <NavBarSmallList
+                                key={index}
+                                title={data.title}
+                                items={data.listItem}
+                            />
+                        ))}
                     </div>
                 </div>
                 <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.mac ? 'show' : ''}`} id="mac">
                     <div className="content-group">
-                        <ul>
-                            <h6>探索 Mac</h6>
-                            <h1>探索所有 Mac</h1>
-                            <h1>MacBook Air</h1>
-                            <h1>MacBook Pro</h1>
-                            <h1>iMac</h1>
-                            <h1>Mac mini</h1>
-                            <h1>Mac Studio</h1>
-                            <h1>Mac Pro</h1>
-                            <h1>顯示器</h1>
-                            <br />
+                        <NavBarLargeList>
+                            title={selectedNavBarMacData.title}
+                            items={selectedNavBarMacData.listItem}
+                            <hr/>
                             <h4>比較 Mac 模型</h4>
                             <h4>Mac 辦得到</h4>
-
-                        </ul>
-                        <ul>
-                            <h6>選購 Mac</h6>
-                            <h4>選購 Mac</h4>
-                            <h4>Mac 配件</h4>
-                            <h4>Apple Trade In 換購方案</h4>
-                            <h4>信用卡分期付款</h4>
-                        </ul>
-                        <ul>
-                            <h6>Mac 相關</h6>
-                            <h4>適用於 Mac 的 AppleCare+ 服務專案</h4>
-                            <h4>macOS Sonoma</h4>
-                            <h4>Apple 出品的 App</h4>
-                            <h4>接續互通</h4>
-                            <h4>iCloud+</h4>
-                            <h4>Mac 商務應用</h4>
-                            <h4>教育</h4>
-                        </ul>
+                        </NavBarLargeList>
+                        {otherNavBarMacData.map((data, index) => (
+                            <NavBarSmallList
+                                key={index}
+                                title={data.title}
+                                items={data.listItem}
+                            />
+                        ))}
                     </div>
                 </div>
                 <div onMouseLeave={handleMouseLeave} className={`content-item ${flyoutContent.ipad ? 'show' : ''}`} id="ipad">
