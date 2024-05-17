@@ -6,9 +6,16 @@ import SectionTitle from '../common/section-title.js';
 import MacSecondSection from './mac-section2.js';
 import MacThirdSection from './mac-section3.js';
 
+import { NavBarLargeList , NavBarSmallList} from "../common/navbar-list.js";
+import { navBarMacList } from '../../content/content';
+
 import '../../sass/component/product-item.sass';
 
 const Mac = () => {
+
+    const selectedData = navBarMacList[0];
+    const otherData = navBarMacList.slice(1);
+
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -43,6 +50,25 @@ const Mac = () => {
             </div>
             <MacSecondSection />
             <MacThirdSection />
+            <div className="section last">
+                <h1 className="title">Mac</h1>
+                <div className="section-last-info">
+                    
+                    <NavBarLargeList
+                        title={selectedData.title}
+                        items={selectedData.listItem}
+                    >
+                        <>
+                            <br/>
+                            <h4>比較 Mac 機型</h4>
+                            <h4>Mac 辦得到</h4>
+                        </>
+                    </NavBarLargeList>
+                    {otherData.map((data, index) => (
+                        <NavBarSmallList key={index} title={data.title} items={data.listItem} />
+                    ))}
+                </div>
+                </div>
         </div>
     )
 }
