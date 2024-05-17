@@ -18,6 +18,7 @@ export const productTextData = () => {
     })
 }
 
+/* mac pages product data */
 export const macProductData = () => {
   return fetch("/api/allProductData.json")
     .then((response) => {
@@ -31,6 +32,7 @@ export const macProductData = () => {
     })
 }
 
+/* ipad pages product data */
 export const iPadProductData = () => {
   return fetch("/api/allProductData.json")
     .then((response) => {

@@ -145,7 +145,7 @@ function NavBar() {
                             <h1>Mac Studio</h1>
                             <h1>Mac Pro</h1>
                             <h1>顯示器</h1>
-                            <br/>
+                            <br />
                             <h4>比較 Mac 模型</h4>
                             <h4>Mac 辦得到</h4>
 
@@ -180,7 +180,7 @@ function NavBar() {
                             <h1>iPad mini</h1>
                             <h1>Apple Pencil</h1>
                             <h1>鍵盤</h1>
-                            <br/>
+                            <br />
                             <h4>比較 iPad 機型</h4>
                             <h4>選 iPad 理由</h4>
 
@@ -211,7 +211,7 @@ function NavBar() {
                             <h1>iPhone 14</h1>
                             <h1>iPhone 13</h1>
                             <h1>iPhone SE</h1>
-                            <br/>
+                            <br />
                             <h4>比較 iPhone 機型</h4>
                             <h4>從 Android 轉用</h4>
 
@@ -246,7 +246,7 @@ function NavBar() {
                             <h1>Apple Watch SE</h1>
                             <h1>Apple Watch Nike</h1>
                             <h1>Apple Watch Hermès</h1>
-                            <br/>
+                            <br />
                             <h4>比較 Watch 錶款</h4>
                             <h4>Apple Watch 的好處</h4>
 
@@ -278,7 +278,7 @@ function NavBar() {
                             <h1>AirPods 第2代</h1>
                             <h1>AirPods 第3代</h1>
                             <h1>AirPods Max</h1>
-                            <br/>
+                            <br />
                             <h4>比較 AirPods 機型</h4>
 
                         </ul>
@@ -377,7 +377,7 @@ function NavBar() {
                             <h1>AirPods</h1>
                             <h1>Music</h1>
                             <h1>TV</h1>
-                            <br/>
+                            <br />
                             <h4>探索支援服務</h4>
                         </ul>
                         <ul>
@@ -401,7 +401,7 @@ function NavBar() {
                     <div className="content-group">
                         <form>
                             <CiSearch style={svgStyle} />
-                            <input type='search' placeholder='搜尋 apple.com'/>
+                            <input type='search' placeholder='搜尋 apple.com' />
                         </form>
                         <ul>
                             <h6>快速連結</h6>
