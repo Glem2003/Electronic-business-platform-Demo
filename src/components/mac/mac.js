@@ -3,11 +3,12 @@ import { macProductData } from "../../api";
 import ProductItem from "../common/product-item";
 
 import SectionTitle from '../common/section-title.js';
+import ProductInfoItem from "../common/product-info-item";
 import MacSecondSection from './mac-section2.js';
 import MacThirdSection from './mac-section3.js';
 
-import { NavBarLargeList , NavBarSmallList} from "../common/navbar-list.js";
-import { navBarMacList } from '../../content/content';
+import { NavBarLargeList, NavBarSmallList } from "../common/navbar-list.js";
+import { navBarMacList, macContent } from '../../content/content';
 
 import '../../sass/component/product-item.sass';
 
@@ -45,21 +46,41 @@ const Mac = () => {
                     )
                 })}
             </div>
+            {macContent.map((item) => {
+                return item.ads_text.map((ads, index) => {
+                    return (
+                        <ProductInfoItem
+                            key={index}
+                            text={ads.text}
+                            linkText={ads.link}
+                        />
+                    )
+                })
+            })}
+
             <div className="section section1">
-                <SectionTitle title="Mac" subtitle="你能想到的，Mac 就能做到。" />
+                {macContent.map((item) => {
+                    return item.header.map((header, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={header.title}
+                            subtitle={header.subtitle}
+                        />
+                    ));
+                })}
             </div>
             <MacSecondSection />
             <MacThirdSection />
             <div className="section last">
                 <h1 className="title">Mac</h1>
                 <div className="section-last-info">
-                    
+
                     <NavBarLargeList
                         title={selectedData.title}
                         items={selectedData.listItem}
                     >
                         <>
-                            <br/>
+                            <br />
                             <h4>比較 Mac 機型</h4>
                             <h4>Mac 辦得到</h4>
                         </>
@@ -68,7 +89,7 @@ const Mac = () => {
                         <NavBarSmallList key={index} title={data.title} items={data.listItem} />
                     ))}
                 </div>
-                </div>
+            </div>
         </div>
     )
 }

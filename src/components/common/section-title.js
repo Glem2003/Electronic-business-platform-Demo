@@ -1,4 +1,4 @@
-const SectionTitle = ({title,subtitle}) => {
+const SectionTitle = ({ title, subtitle }) => {
     return (
         <>
             <div className="title">

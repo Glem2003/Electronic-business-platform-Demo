@@ -1,11 +1,11 @@
 export const homeLargeBanner = ([
-    { title: "iPhone 15 Pro", subtitle: "鈦金屬，超堅固、超輕、超 Pro。" ,btn_text: ["進一步了解","購買"]},
-    { title: "iPhone 15", subtitle: "新相機，新設計，新的愛，狂比心" ,btn_text: ["進一步了解","購買"]}
+    { title: "iPhone 15 Pro", subtitle: "鈦金屬，超堅固、超輕、超 Pro。", btn_text: ["進一步了解", "購買"] },
+    { title: "iPhone 15", subtitle: "新相機，新設計，新的愛，狂比心", btn_text: ["進一步了解", "購買"] }
 ])
 
 export const homeSmallBanner = ([
-    { title: "MacBook Air", subtitle: "輕裝，重擊，M3 出招" ,btn_text: ["進一步了解","購買"]},
-    { title: "Apple WATCH", subtitle: "智慧升級，亮度、實力再晉級。" ,btn_text: ["進一步了解","購買"]}
+    { title: "MacBook Air", subtitle: "輕裝，重擊，M3 出招", btn_text: ["進一步了解", "購買"] },
+    { title: "Apple WATCH", subtitle: "智慧升級，亮度、實力再晉級。", btn_text: ["進一步了解", "購買"] }
 ])
 
 export const navBarStoreList = ([
@@ -369,7 +369,7 @@ export const copyrightInfo = ([
 export const footerInfoList = ([
     {
         title: "選購與了解產品",
-        list: ["商店","Mac","iPad","iPhone","Watch","AirPods","TV 和家庭","AirTag","配件","禮品卡"]
+        list: ["商店", "Mac", "iPad", "iPhone", "Watch", "AirPods", "TV 和家庭", "AirTag", "配件", "禮品卡"]
     },
     {
         title: "Apple 錢包",
@@ -381,11 +381,11 @@ export const footerInfoList = ([
     },
     {
         title: "娛樂",
-        list: ["Apple One","Apple TV+","Apple Music","Apple Arcade","Apple Podcasts","Apple Books","App Store"]
+        list: ["Apple One", "Apple TV+", "Apple Music", "Apple Arcade", "Apple Podcasts", "Apple Books", "App Store"]
     },
     {
         title: "Apple Store",
-        list: ["尋找商店","Genius Bar","Today at Apple","Apple 夏令營","Apple Store App","認證整修品","Apple Trade In 換購方案","信用卡分期付款","訂單狀態","購物協助"]
+        list: ["尋找商店", "Genius Bar", "Today at Apple", "Apple 夏令營", "Apple Store App", "認證整修品", "Apple Trade In 換購方案", "信用卡分期付款", "訂單狀態", "購物協助"]
     },
     {
         title: "商務應用",
@@ -402,5 +402,37 @@ export const footerInfoList = ([
     {
         title: "關於 Apple",
         list: ["Newsroom", "Apple 領導團隊", "工作機會", "商業倫理與法規遵循", "活動", "聯絡 Apple"]
+    }
+])
+
+export const macContent = ([
+    {
+        header: [
+            { title: "Mac", subtitle: "你能想到的，Mac 就能做到。" }
+        ],
+        ads_text:[
+            {text: "在我們的教育商店購買 MacBook Air 和 MacBook Pro 可享優惠。",link:"選購 > "}
+        ]
+
+    }
+])
+
+export const ipadContent = ([
+    {
+        header: [
+            { title: "iPad", subtitle: "可點、可畫、可打字，各種妙用集一身。" }
+        ]
+
+    }
+])
+
+export const iphoneContent = ([
+    {
+        header: [
+            { title: "iPhone", subtitle: "精心設計討人愛" }
+        ],
+        ads_text: [
+            { text: "以 iPhone 11 或後續機型升級換購 iPhone 15 或 iPhone 15 Pro。獲享 NT$4,500 至 NT$22,900 的折抵優惠。" ,link:"選購 iPhone >"}
+        ]
     }
 ])

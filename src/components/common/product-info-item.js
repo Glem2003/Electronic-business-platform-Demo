@@ -1,8 +1,8 @@
-const ProductInfoItem = ({ textInfo }) => {
+const ProductInfoItem = ({ text ,linkText}) => {
     return (
         <div className="wrapper-layout">
             <div className="product-info-item">
-                <h3>{textInfo}<a href="#!">選購</a></h3>
+                <h3>{text}<a href="#!">{linkText}</a></h3>
             </div>
         </div>
 

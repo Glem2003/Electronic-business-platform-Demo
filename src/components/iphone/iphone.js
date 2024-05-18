@@ -5,6 +5,7 @@ import ProductItem from "../common/product-item";
 import SectionTitle from '../common/section-title.js';
 import ProductInfoItem from "../common/product-info-item";
 import IphoneSecondSection from "./iphone-section2";
+import { iphoneContent } from '../../content/content.js';
 
 import '../../sass/component/product-item.sass';
 
@@ -39,11 +40,29 @@ const Iphone = () => {
                 })}
             </div>
 
-            <ProductInfoItem
-                textInfo="以iPhone 11 或後續機型升級換購 iPhone 15 或 iPhone 15 Pro。獲享 NT$4,500 至 NT$22,900 的折抵優惠。"
-            />
+            {iphoneContent.map((item) => {
+                return item.ads_text.map((ads, index) => {
+                    return (
+                        <ProductInfoItem
+                            key={index}
+                            text={ads.text}
+                            linkText={ads.link}
+                        />
+                    )
+                })
+            })}
             <div className="section section1">
-                <SectionTitle title="iPhone" subtitle="精心設計討人愛" />
+                {iphoneContent.map((item) => {
+                    return item.header.map((header, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={header.title}
+                                subtitle={header.subtitle}
+                            />
+                        )
+                    })
+                })}
             </div>
             <IphoneSecondSection />
         </div>
