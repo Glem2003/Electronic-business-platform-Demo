@@ -1,16 +1,17 @@
 import FooterInfo from "./footer-info";
 import FooterMore from "./footer-more";
 import Copyright from "./copyright";
-import Separator from "../../common/separator";
+
+import { footerLink } from '../../../content/content.js';
 
 
 function Footer({ logoTitle }) {
     return (
         <footer>
-            <Separator />
+            <hr />
             <FooterInfo logoTitle={logoTitle} />
-            <FooterMore />
-            <Separator />
+            <FooterMore props={footerLink[0].text} />
+            <hr />
             <Copyright />
         </footer>
     )

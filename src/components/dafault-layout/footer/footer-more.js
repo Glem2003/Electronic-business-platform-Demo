@@ -1,14 +1,19 @@
-function FooterMore() {
+import React from 'react';
+
+const FooterMore = ({props}) =>{
     return (
         <div className="footer-more">
             <h6>
-                更多選購方式：
-                <a href="#!">尋找當地的 Apple 直營店</a>或
-                <a href="#!">其他零售商</a>
-                ，或致電0800-020-021。
+                {props.map((item, index) => (
+                    typeof item === 'string' ? (
+                        item
+                    ) : (
+                        <a href="#!" key={index}>{item.text}</a>
+                    )
+                ))}
             </h6>
         </div>
-    )
+    );
 }
 
 export default FooterMore;
