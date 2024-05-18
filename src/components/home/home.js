@@ -1,5 +1,6 @@
 import HomeBackgroundImages from "./home-background-images";
 import { homeLargeBanner, homeSmallBanner } from '../../content/content.js';
+import ButtonItem from "../common/button-item.js";
 
 const Home = () => {
     return (
@@ -12,7 +13,11 @@ const Home = () => {
                             className={`index-images item-${index + 1}`}
                             title={item.title}
                             subtitle={item.subtitle}
-                        />
+                        >
+                            <ButtonItem
+                                props={item.btn_text}
+                            />
+                        </HomeBackgroundImages>
                     )
                 })}
 
@@ -26,7 +31,11 @@ const Home = () => {
                                 className={`index-images item-${index + 1}`}
                                 title={item.title}
                                 subtitle={item.subtitle}
-                            />
+                            >
+                                <ButtonItem
+                                    props={item.btn_text}
+                                />
+                            </HomeBackgroundImages>
                         </div>
                     )
                 })}

@@ -14,25 +14,7 @@
             margin-bottom: 10px
             >*
                 margin-bottom: 10px
-            .button-item
-                display: flex
-                gap: 15px
-                >h4.btn
-                    padding: 10px 18px
-                    border-radius: 20px
-                    border: 1px solid blue
-                    cursor: pointer
-                    &.more
-                        color: white
-                        background-color: blue
-                        &:hover
-                            background-color: #4814d6
-                            color: white
-                    &.buy
-                        color: blue
-                        &:hover
-                            background-color: blue
-                            color: white
+
     .second-section
         .section-col-6
             height: 500px
@@ -48,39 +30,41 @@
                 padding-top: 30px
                 >*
                     margin-bottom: 10px
-            .button-item
-                display: flex
-                gap: 15px
-                >h4.btn
-                    padding: 10px 18px
-                    border-radius: 20px
-                    border: 1px solid blue
-                    cursor: pointer
-                    &.more
-                        color: white
-                        background-color: blue
-                        &:hover
-                            background-color: #4814d6
-                            color: white
-                    &.buy
-                        color: blue
-                        &:hover
-                            background-color: blue
-                            color: white
-
 
 /* component */
+.home .button-item
+    display: flex
+    gap: 15px
+    >h4.btn
+        padding: 10px 18px
+        border-radius: 20px
+        border: 1px solid blue
+        cursor: pointer
+    .btn:first-child
+        background-color: blue
+        color: white
+        &:hover
+            background-color: #050ddc
+    .btn:last-child
+        background-color: transparents
+        color: blue
+        &:hover
+            background-color: blue
+            color: white
+
 //first-section
 .home .first-section .index-images.item-1
     h1,h2
         color: white
     background-image: url("https://www.apple.com/v/home/bn/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_large.jpg")
+
 .home .first-section .index-images.item-2
     background-image: url("https://www.apple.com/v/home/bn/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large.jpg")
 
 //second-section
 .home .second-section .index-images.item-1
     background-image: url("https://www.apple.com/v/home/bn/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_large.jpg")
+
 .home .second-section .index-images.item-2
     h1,h2
         color: white
