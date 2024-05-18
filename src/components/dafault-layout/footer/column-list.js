@@ -1,14 +1,14 @@
-function ColumnList(props) {
+const ColumnList = ({ title, items }) => {
     return (
-        <div className="list-col">
-            <h3>{props.title}</h3>
+        <div className="column-list">
+            <h6>{title}</h6>
             <ul>
-                {props.item.map((item, index) => (
+                {items.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}
             </ul>
         </div>
-    )
-}
+    );
+};
 
 export default ColumnList;
