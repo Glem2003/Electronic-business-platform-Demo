@@ -7,8 +7,8 @@ const ProductItem = ({ src, alt, text ,PS}) => {
                 <img src={src} alt={alt}></img>
             </div>
             <div className='item-info'>
-                <h3>{text}</h3>
-                <h4 style={{color: "red"}}>{PS}</h4>
+                <h3 className="text">{text}</h3>
+                <h4 className="ps">{PS}</h4>
             </div>
         </div>
     )

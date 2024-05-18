@@ -3,14 +3,14 @@ import { macProductData } from "../../api";
 import ProductItem from "../common/product-item";
 
 import SectionTitle from '../common/section-title.js';
+import ScrollBar from '../main/scroll-bar.js';
 import ProductInfoItem from "../common/product-info-item";
-import MacSecondSection from './mac-section2.js';
 import MacThirdSection from './mac-section3.js';
 
 import { NavBarLargeList, NavBarSmallList } from "../common/navbar-list.js";
-import { navBarMacList, macContent } from '../../content/content';
-
-import '../../sass/component/product-item.sass';
+import { ProductCardWrapper, CardInfo } from '../common/product-card.js';
+import LinkButton from '../common/link-button.js';
+import { navBarMacList, macContent } from '../../content/content.js';
 
 const Mac = () => {
 
@@ -69,7 +69,33 @@ const Mac = () => {
                     ));
                 })}
             </div>
-            <MacSecondSection />
+
+            <div className="section section2">
+
+                <ScrollBar>
+                    <div className="section-items">
+                        {macContent.map((item) => {
+                            return item.section_info.map((items) => {
+                                return items.info_item.map((info, index) => {
+                                    return (
+                                        <ProductCardWrapper
+                                            key={index}
+                                            src={info.src}
+                                        >
+                                            <CardInfo
+                                                title={info.title}
+                                                subtitle={info.subtitle}
+                                            />
+                                            <LinkButton/>
+                                        </ProductCardWrapper>
+                                    )
+                                })
+                            })
+                        })}
+                    </div>
+                </ScrollBar>
+            </div>
+
             <MacThirdSection />
             <div className="section last">
                 <h1 className="title">Mac</h1>

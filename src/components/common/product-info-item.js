@@ -1,3 +1,5 @@
+import '../../sass/component/product-item.sass';
+
 const ProductInfoItem = ({ text ,linkText}) => {
     return (
         <div className="wrapper-layout">
