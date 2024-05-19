@@ -13,5 +13,3 @@ const IphoneSecondSection = () =>{
         </div>
     )
 }
-
-export default IphoneSecondSection;

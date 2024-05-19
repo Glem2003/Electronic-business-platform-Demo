@@ -410,20 +410,42 @@ export const macContent = ([
         header: [
             { title: "Mac", subtitle: "你能想到的，Mac 就能做到。" }
         ],
-        ads_text:[
-            {text: "在我們的教育商店購買 MacBook Air 和 MacBook Pro 可享優惠。",link:"選購 > "}
+        ads_text: [
+            { text: "在我們的教育商店購買 MacBook Air 和 MacBook Pro 可享優惠。", link: "選購 > " }
         ],
-        section_info:[
+        section_info: [
             {
-                title:"來了解 Mac。",
-                info_item:[
-                    {title:"輕鬆啟用",subtitle:"容易用，容易愛上。",src:"https://www.apple.com/v/mac/home/by/images/overview/consider/mac_ease__bvgkz2zdltxy_medium.jpg"},
-                    {title:"效能表現與電池續航",subtitle:"速度快，持續耐久",src:"https://www.apple.com/v/mac/home/by/images/overview/consider/mac_performance__dh5hyac1zf8m_medium.jpg"},
-                    {title:"Mac 與 iPhone",subtitle:"夢幻組合",src:"https://www.apple.com/tw/mac/home/images/overview/consider/mac_iphone__gh1tblkt6bqm_medium.jpg"},
-                    {title:"相容性",subtitle: (<>Mac 可執行<br />你常用的 App。</>),src:"https://www.apple.com/tw/mac/home/images/overview/consider/mac_compatibility__cu59oukz81ci_medium.jpg"},
-                    {title:"隱私權與安全保護",subtitle: (<>你的私事，<br />誰都無權知道。</>),src:"https://www.apple.com/v/mac/home/by/images/overview/consider/mac_security__gfwda10khdym_xlarge.jpg"},
-                    {title:"經久耐用",subtitle: (<>精心打造<br />經得起時間考驗。</>),src:"https://www.apple.com/v/mac/home/by/images/overview/consider/mac_durability__epiwcuk7zkeq_xlarge.jpg"},
-                    {title:"Apple 價值理念",subtitle: (<>我們做的每件事<br />都體現我們的價值理念。</>),src:"https://www.apple.com/v/mac/home/by/images/overview/consider/mac_values__c9gck9qi4kia_xlarge.jpg"},
+                title: "來了解 Mac。",
+                info_item: [
+                    { title: "輕鬆啟用", subtitle: "容易用，容易愛上。", src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_ease__bvgkz2zdltxy_medium.jpg" },
+                    { title: "效能表現與電池續航", subtitle: "速度快，持續耐久", src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_performance__dh5hyac1zf8m_medium.jpg" },
+                    { title: "Mac 與 iPhone", subtitle: "夢幻組合", src: "https://www.apple.com/tw/mac/home/images/overview/consider/mac_iphone__gh1tblkt6bqm_medium.jpg" },
+                    { title: "相容性", subtitle: (<>Mac 可執行<br />你常用的 App。</>), src: "https://www.apple.com/tw/mac/home/images/overview/consider/mac_compatibility__cu59oukz81ci_medium.jpg" },
+                    { title: "隱私權與安全保護", subtitle: (<>你的私事，<br />誰都無權知道。</>), src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_security__gfwda10khdym_xlarge.jpg" },
+                    { title: "經久耐用", subtitle: (<>精心打造<br />經得起時間考驗。</>), src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_durability__epiwcuk7zkeq_xlarge.jpg" },
+                    { title: "Apple 價值理念", subtitle: (<>我們做的每件事<br />都體現我們的價值理念。</>), src: "https://www.apple.com/v/mac/home/by/images/overview/consider/mac_values__c9gck9qi4kia_xlarge.jpg" },
+                ]
+            }
+        ],
+        section_banner: [
+            {
+                title: "看 Mac 在企業顯身手。",
+                banner_info: [
+                    {
+                        title: (
+                            <>
+                                在三頓半，人人愛用 Mac，<br />
+                                個個超能力爆棚。
+                            </>
+                        ),
+                        text: [
+                            {
+                                des: "從設計、研發到法務，Mac 激發全員滿滿能量",
+                                linkText_1: "看看三頓半如何成為 Mac 粉絲 ",
+                                linkText_2: "商務選 Mac 的理由 "
+                            }
+                        ]
+                    }
                 ]
             }
         ]
@@ -435,6 +457,19 @@ export const ipadContent = ([
     {
         header: [
             { title: "iPad", subtitle: "可點、可畫、可打字，各種妙用集一身。" }
+        ],
+        section_info: [
+            {
+                title: "了解iPad。",
+                info_item: [
+                    { title: "生產力", subtitle: (<>任何地方，<br />都是工作的好地方。</>), src: "https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_productivity__d55aee5so6ky_medium.jpg" },
+                    { title: "創造力", subtitle: "讓你的藝術天分馳騁", src: "https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_creativity__gcfv7x90x42u_medium.jpg" },
+                    { title: "學習", subtitle: (<>課堂，<br />無處不在。</>), src: "https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_learning__es1tt702bf6u_medium.jpg" },
+                    { title: "娛樂", subtitle: (<>休閒、玩樂、打遊戲，<br />都奉陪。</>), src: "https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_entertainment__dcynvyyoe7iq_medium.jpg" },
+                    { title: "Apple Pencil", subtitle: (<>隨心所想<br />隨筆記下。</>), src: "https://www.apple.com/tw/ipad/home/images/overview/consider/fc_pencil__coz76i7lwsuq_medium.jpg" },
+                    { title: "iPadOS + App", subtitle: (<>日常必備超能力，<br />內建其中。</>), src: "https://www.apple.com/tw/ipad/home/images/overview/consider/fc_ipados__urrua12bwaqy_medium.jpg" }
+                ]
+            }
         ]
 
     }
@@ -446,7 +481,22 @@ export const iphoneContent = ([
             { title: "iPhone", subtitle: "精心設計討人愛" }
         ],
         ads_text: [
-            { text: "以 iPhone 11 或後續機型升級換購 iPhone 15 或 iPhone 15 Pro。獲享 NT$4,500 至 NT$22,900 的折抵優惠。" ,link:"選購 iPhone >"}
+            { text: "以 iPhone 11 或後續機型升級換購 iPhone 15 或 iPhone 15 Pro。獲享 NT$4,500 至 NT$22,900 的折抵優惠。", link: "選購 iPhone >" }
+        ],
+        section_info: [
+            {
+                title: "了解iPhone。",
+                info_item: [
+                    { title: "先進的相機", subtitle: (<>玩自拍、<br />玩拍片、<br />玩出新格局。</>), src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/camera__cerpczobiwwi_medium.jpg" },
+                    { title: "Apple 設計的晶片", subtitle: (<>速度快，<br />超有感。</>), src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/chip__cpj93oio1oya_xlarge.jpg" },
+                    { title: "電池", subtitle: (<>超強續航<br />動力十足。</>), src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/battery__f9km4l6jlv6u_xlarge.jpg" },
+                    { title: "創新", subtitle: (<>精心設計，<br />精美又耐用。</>), src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/innovation__b03hhgj3xx9e_medium.jpg" },
+                    { title: "設定你的 iPhone 風格", subtitle: (<>徹徹底底<br />就很你。</>), src: "https://www.apple.com/tw/iphone/home/images/overview/consider/personalize__f51wh6aiosya_medium.jpg" },
+                    { title: "倍感安心", subtitle: (<>各種實用的功能，<br />有備無患。</>), src: "https://www.apple.com/tw/iphone/home/images/overview/consider/safety__d9zsvrorjfcm_xlarge.jpg" },
+                    { title: "隱私權", subtitle: (<>你的資料，<br />保存在安全的地方。</>), src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/privacy__cum61s425o6e_medium.jpg" },
+                    { title: "環境", subtitle: "再回收、再利用、再循環。", src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/environment__d1g8uhlvrccy_xlarge.jpg" }
+                ]
+            }
         ]
     }
 ])

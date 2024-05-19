@@ -1,3 +1,5 @@
+import '../../sass/component/product-card.sass';
+
 export const ProductCardWrapper = ({ children, src, alt }) => {
     return (
         <div className="product-card wrapper">

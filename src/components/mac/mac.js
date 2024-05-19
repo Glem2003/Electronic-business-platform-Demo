@@ -5,12 +5,12 @@ import ProductItem from "../common/product-item";
 import SectionTitle from '../common/section-title.js';
 import ScrollBar from '../main/scroll-bar.js';
 import ProductInfoItem from "../common/product-info-item";
-import MacThirdSection from './mac-section3.js';
 
 import { NavBarLargeList, NavBarSmallList } from "../common/navbar-list.js";
 import { ProductCardWrapper, CardInfo } from '../common/product-card.js';
 import LinkButton from '../common/link-button.js';
 import { navBarMacList, macContent } from '../../content/content.js';
+import MacInfoBox from "./mac-info-box.js";
 
 const Mac = () => {
 
@@ -34,7 +34,7 @@ const Mac = () => {
     return (
         <div className="mac">
             <div className="Product-items">
-                {data.map((item) => {
+                {data && data.map((item) => {
                     return (
                         <ProductItem
                             key={item.id}
@@ -46,8 +46,8 @@ const Mac = () => {
                     )
                 })}
             </div>
-            {macContent.map((item) => {
-                return item.ads_text.map((ads, index) => {
+            {macContent && macContent.map((item) => {
+                return item.ads_text && item.ads_text.map((ads, index) => {
                     return (
                         <ProductInfoItem
                             key={index}
@@ -59,8 +59,8 @@ const Mac = () => {
             })}
 
             <div className="section section1">
-                {macContent.map((item) => {
-                    return item.header.map((header, index) => (
+                {macContent && macContent.map((item) => {
+                    return item.header && item.header.map((header, index) => (
                         <SectionTitle
                             key={index}
                             title={header.title}
@@ -71,7 +71,14 @@ const Mac = () => {
             </div>
 
             <div className="section section2">
-
+                {macContent && macContent.map((item) => {
+                    return item.section_info && item.section_info.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                        />
+                    ));
+                })}
                 <ScrollBar>
                     <div className="section-items">
                         {macContent.map((item) => {
@@ -86,7 +93,7 @@ const Mac = () => {
                                                 title={info.title}
                                                 subtitle={info.subtitle}
                                             />
-                                            <LinkButton/>
+                                            <LinkButton />
                                         </ProductCardWrapper>
                                     )
                                 })
@@ -96,7 +103,37 @@ const Mac = () => {
                 </ScrollBar>
             </div>
 
-            <MacThirdSection />
+            <div className="section section3">
+                {macContent && macContent.map((items) => {
+                    return items.section_banner && items.section_banner.map((text, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={text.title}
+                            />
+                        )
+                    })
+                })}
+
+                {macContent && macContent.map((items) => {
+                    return items.section_banner && items.section_banner.map((item) => {
+                        return item.banner_info && item.banner_info.map((info) => {
+                            return info.text && info.text.map((text, index) => {
+                                return (
+                                    <MacInfoBox
+                                        key={index}
+                                        title={info.title}
+                                        text={text.des}
+                                        linkText_1={text.linkText_1}
+                                        linkText_2={text.linkText_2}
+                                    />
+                                )
+                            })
+                        })
+                    })
+                })}
+            </div>
+
             <div className="section last">
                 <h1 className="title">Mac</h1>
                 <div className="section-last-info">
@@ -111,7 +148,7 @@ const Mac = () => {
                             <h4>Mac 辦得到</h4>
                         </>
                     </NavBarLargeList>
-                    {otherData.map((data, index) => (
+                    {otherData && otherData.map((data, index) => (
                         <NavBarSmallList key={index} title={data.title} items={data.listItem} />
                     ))}
                 </div>

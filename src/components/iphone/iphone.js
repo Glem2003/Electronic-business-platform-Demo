@@ -4,7 +4,6 @@ import ProductItem from "../common/product-item";
 
 import SectionTitle from '../common/section-title.js';
 import ProductInfoItem from "../common/product-info-item";
-import IphoneSecondSection from "./iphone-section2";
 import { iphoneContent } from '../../content/content.js';
 
 import '../../sass/component/product-item.sass';
@@ -64,7 +63,10 @@ const Iphone = () => {
                     })
                 })}
             </div>
-            <IphoneSecondSection />
+
+            <div className="section section2">
+            
+            </div>
         </div>
     )
 }

@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="home">
             <div className="first-section">
-                {homeLargeBanner.map((item, index) => {
+                {homeLargeBanner && homeLargeBanner.map((item, index) => {
                     return (
                         <HomeBackgroundImages
                             key={index}
@@ -23,7 +23,7 @@ const Home = () => {
 
             </div>
             <div className="second-section">
-                {homeSmallBanner.map((item, index) => {
+                {homeSmallBanner && homeSmallBanner.map((item, index) => {
                     return (
                         <div className="section-col-6">
                             <HomeBackgroundImages
