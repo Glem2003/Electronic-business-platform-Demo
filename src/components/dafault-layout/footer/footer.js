@@ -1,5 +1,5 @@
-import FooterInfo from "./footer-info";
-import FooterMore from "./footer-more";
+import FooterInfo from "./footerInfo";
+import FooterMore from "./footerMore";
 import Copyright from "./copyright";
 
 import { footerLink, copyrightInfo } from '../../../content/content.js';

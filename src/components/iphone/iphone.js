@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { iPhoneProductData } from "../../api";
-import ProductItem from "../common/product-item";
+import ProductItem from "../common/productItem";
 
-import SectionTitle from '../common/section-title.js';
-import ProductInfoItem from "../common/product-info-item";
+import SectionTitle from '../common/sectionTitle.js';
+import ProductInfoItem from "../common/productInfoItem";
 import { iphoneContent } from '../../content/content.js';
 
 import '../../sass/component/product-item.sass';

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductItem from "../common/product-item";
+import ProductItem from "../common/productItem";
 import { productData } from "../../api";
 
 

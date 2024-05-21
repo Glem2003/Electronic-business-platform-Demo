@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { iPadProductData } from "../../api";
-import ProductItem from "../common/product-item";
+import ProductItem from "../common/productItem";
 
-import SectionTitle from '../common/section-title.js';
+import SectionTitle from '../common/sectionTitle.js';
 import ScrollBar from '../main/scroll-bar.js';
-import LinkButton from '../common/link-button.js';
-import { ProductCardWrapper, CardInfo } from '../common/product-card.js';
+import LinkButton from '../common/linkButton.js';
+import { ProductCardWrapper, CardInfo } from '../common/productCard.js';
 
 import { ipadContent } from '../../content/content.js';
 

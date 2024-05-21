@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { macProductData } from "../../api";
-import ProductItem from "../common/product-item";
+import ProductItem from "../common/productItem";
 
-import SectionTitle from '../common/section-title.js';
+import SectionTitle from '../common/sectionTitle.js';
 import ScrollBar from '../main/scroll-bar.js';
-import ProductInfoItem from "../common/product-info-item";
+import ProductInfoItem from "../common/productInfoItem";
 
-import { NavBarLargeList, NavBarSmallList } from "../common/navbar-list.js";
-import { ProductCardWrapper, CardInfo } from '../common/product-card.js';
-import LinkButton from '../common/link-button.js';
+import { NavBarLargeList, NavBarSmallList } from "../common/navbarList.js";
+import { ProductCardWrapper, CardInfo } from '../common/productCard.js';
+import LinkButton from '../common/linkButton.js';
 import { navBarMacList, macContent } from '../../content/content.js';
 import MacInfoBox from "./mac-info-box.js";
 

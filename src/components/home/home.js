@@ -1,6 +1,6 @@
 import HomeBackgroundImages from "./home-background-images";
 import { homeLargeBanner, homeSmallBanner } from '../../content/content.js';
-import ButtonItem from "../common/button-item.js";
+import ButtonItem from "../common/buttonItem.js";
 
 const Home = () => {
     return (

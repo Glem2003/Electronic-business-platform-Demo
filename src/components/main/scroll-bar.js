@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import ArrowButton from '../common/arrow-button';
+import ArrowButton from '../common/arrowButton';
 
 const ScrollBar = React.forwardRef(({ children}) => {
 

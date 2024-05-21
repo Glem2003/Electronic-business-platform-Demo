@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import NavBarLink from './nav-bar-link';
+import NavBarLink from './navBarLink';
 import { FaApple, FaShoppingCart } from 'react-icons/fa';
 import { CiSearch } from 'react-icons/ci';
-import { NavBarLargeList, NavBarSmallList } from '../../common/navbar-list';
+import { NavBarLargeList, NavBarSmallList } from '../../common/navbarList';
 import {
     navBarStoreList,
     navBarMacList,
