@@ -1,4 +1,4 @@
-import '../../sass/component/product-card.sass';
+import '../../Sass/component/productCard.sass';
 
 export const ProductCardWrapper = ({ children, src, alt }) => {
     return (

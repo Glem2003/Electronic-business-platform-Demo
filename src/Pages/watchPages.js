@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
 
 const WatchPages = () => {
     return (

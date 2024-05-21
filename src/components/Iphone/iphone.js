@@ -6,7 +6,7 @@ import SectionTitle from '../Common/sectionTitle.js';
 import ProductInfoItem from "../Common/productInfoItem";
 import { iphoneContent } from '../../Content/content.js';
 
-import '../../sass/component/product-item.sass';
+import '../../Sass/component/productItem.sass';
 
 const Iphone = () => {
     const [data, setData] = useState(null);

@@ -1,7 +1,7 @@
-import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
 import Iphone from "../components/Iphone/iphone";
 
-import '../sass/iphone-pages.sass';
+import '../Sass/iphonePages.sass';
 
 const IphonePages = () => {
     return (

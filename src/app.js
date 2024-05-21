@@ -1,4 +1,4 @@
-import WebRoute from "./routes/route";
+import WebRoute from "./Routes/index.js";
 
 const App = () => {
 	return(

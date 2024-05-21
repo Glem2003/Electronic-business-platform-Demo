@@ -1,10 +1,10 @@
-import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
 import Main from "../components/Main/main";
 
 
-import '../sass/store-pages.sass';
-import '../sass/component/product-card.sass';
-import '../sass/component/scroll-bar.sass';
+import '../Sass/storePages.sass';
+import '../Sass/component/productCard.sass';
+import '../Sass/component/scrollBar.sass';
 
 
 const StorePages = () => {

@@ -16,7 +16,7 @@ import {
     navBarSupportList,
     navBarSearchList
 } from '../../../Content/content';
-import '../../../sass/component/nav-bar.sass';
+import '../../../Sass/component/navBar.sass';
 
 const NavBar = () => {
     const svgStyle = { width: "1.5em", height: "1.5em" };

@@ -1,4 +1,4 @@
-import '../../sass/component/product-item.sass';
+import '../../Sass/component/productItem.sass';
 
 const ProductInfoItem = ({ text ,linkText}) => {
     return (

@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router";
 
-import HomePages from '../pages/home-pages';
-import StorePages from '../pages/store-pages';
-import MacPages from "../pages/mac-pages";
-import IpadPages from "../pages/ipad-pages";
-import WatchPages from "../pages/watch-pages";
-import AirpodsPages from "../pages/airpods-pages";
-import FunnyPages from "../pages/funny-pages";
-import CartPages from "../pages/cart-pages";
-import TvAndFamilyPages from "../pages/tv-and-family-pages";
-import IphonePages from "../pages/iphone-page";
+import HomePages from '../Pages/homePages.js';
+import StorePages from '../Pages/storePages.js';
+import MacPages from "../Pages/macPages.js";
+import IpadPages from "../Pages/ipadPages.js";
+import WatchPages from "../Pages/watchPages.js";
+import AirpodsPages from "../Pages/airpodsPages.js";
+import FunnyPages from "../Pages/funnyPages.js";
+import CartPages from "../Pages/cartPages.js";
+import TvAndFamilyPages from "../Pages/tvAndFamilyPages.js";
+import IphonePages from "../Pages/iphonePages.js";
 
 const WebRoute = () => {
     return (

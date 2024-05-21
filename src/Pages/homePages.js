@@ -1,7 +1,7 @@
-import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
 import Home from "../components/Home/home";
 
-import '../sass/home-pages.sass';
+import '../Sass/homePages.sass';
 
 const HomePages = () => {
     return (

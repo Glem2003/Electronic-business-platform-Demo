@@ -1,4 +1,4 @@
-import '../../sass/component/link-button.sass';
+import '../../Sass/component/linkButton.sass';
 
 const LinkButton = ()=>{
     return(

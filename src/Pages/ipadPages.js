@@ -1,7 +1,7 @@
-import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import DafaultLayout from "../components/DafaultLayout/dafaultLayout.js";
 import IPad from "../components/Ipad/ipad.js";
 
-import '../sass/ipad-pages.sass';
+import '../Sass/ipadPages.sass';
 
 const IpadPages = () => {
     return (

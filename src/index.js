@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './app';
 
-import './sass/style.sass';
-import './sass/default-layout.sass';
+import './Sass/style.sass';
+import './Sass/defaultLayout.sass';
 
 
 //--------------------------------------------------------
