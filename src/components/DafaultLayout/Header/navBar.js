@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NavBarLink from './navBarLink';
 import { FaApple, FaShoppingCart } from 'react-icons/fa';
 import { CiSearch } from 'react-icons/ci';
-import { NavBarLargeList, NavBarSmallList } from '../../common/navbarList';
+import { NavBarLargeList, NavBarSmallList } from '../../Common/navbarList';
 import {
     navBarStoreList,
     navBarMacList,
@@ -15,7 +15,7 @@ import {
     navBarShopList,
     navBarSupportList,
     navBarSearchList
-} from '../../../content/content';
+} from '../../../Content/content';
 import '../../../sass/component/nav-bar.sass';
 
 const NavBar = () => {

@@ -1,9 +1,9 @@
-import ContantTitle from "./contant-title";
-import ProductItems from "./product-item";
-import ScrollBar from "./scroll-bar";
-import SectionProductItem from "./section1-product-item";
-import Section2ProductItem from "./section2-product-item";
-import Section3ProductItem from "./section3-product-item";
+import ContantTitle from "./contantTitle";
+import ProductItems from "./productItem";
+import ScrollBar from "./scrollBar";
+import SectionProductItem from "./section1ProductItem";
+import Section2ProductItem from "./section2ProductItem";
+import Section3ProductItem from "./section3ProductItem";
 
 function Main() {
     return (

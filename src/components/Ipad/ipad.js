@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { iPadProductData } from "../../api";
-import ProductItem from "../common/productItem";
+import { iPadProductData } from "../../Api/index.js";
+import ProductItem from "../Common/productItem.js";
 
-import SectionTitle from '../common/sectionTitle.js';
-import ScrollBar from '../main/scroll-bar.js';
-import LinkButton from '../common/linkButton.js';
-import { ProductCardWrapper, CardInfo } from '../common/productCard.js';
+import SectionTitle from '../Common/sectionTitle.js';
+import ScrollBar from '../Main/scrollBar.js';
+import LinkButton from '../Common/linkButton.js';
+import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 
-import { ipadContent } from '../../content/content.js';
+import { ipadContent } from '../../Content/content.js';
 
 const IPad = () => {
     const [data, setData] = useState(null);

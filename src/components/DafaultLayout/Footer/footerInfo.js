@@ -1,7 +1,7 @@
 import { FaApple } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 import ColumnList from './columnList.js';
-import { footerInfoList } from '../../../content/content.js';
+import { footerInfoList } from '../../../Content/content.js';
 
 const FooterInfo = ({ logoTitle }) => {
 

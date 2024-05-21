@@ -1,6 +1,6 @@
-import ColorBox from "./color-box";
-import { ProductCardCenter, CardInfo } from "./product-card-center";
-import { ProductCardWrapper } from "./product-card-wrapper";
+import ColorBox from "./colorBox";
+import { ProductCardCenter, CardInfo } from "./productCardCenter";
+import { ProductCardWrapper } from "./productCardWrapper";
 
 const Section3ProductItem = () => {
 

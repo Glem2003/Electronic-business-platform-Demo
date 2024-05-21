@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ProductItem from "../common/productItem";
-import { productData } from "../../api";
+import ProductItem from "../Common/productItem";
+import { productData } from "../../Api";
 
 
 function ProductItems() {

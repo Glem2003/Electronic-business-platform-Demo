@@ -1,5 +1,5 @@
-import DafaultLayout from "../components/dafault-layout/dafault-layout";
-import Iphone from "../components/iphone/iphone";
+import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import Iphone from "../components/Iphone/iphone";
 
 import '../sass/iphone-pages.sass';
 

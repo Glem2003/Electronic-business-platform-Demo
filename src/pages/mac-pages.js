@@ -1,5 +1,5 @@
-import DafaultLayout from "../components/dafault-layout/dafault-layout";
-import Mac from '../components/mac/mac.js';
+import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import Mac from '../components/Mac/mac.js';
 
 import '../sass/mac-pages.sass';
 

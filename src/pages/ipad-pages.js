@@ -1,5 +1,5 @@
-import DafaultLayout from "../components/dafault-layout/dafault-layout";
-import IPad from "../components/iPad/iPad.js";
+import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import IPad from "../components/Ipad/ipad.js";
 
 import '../sass/ipad-pages.sass';
 

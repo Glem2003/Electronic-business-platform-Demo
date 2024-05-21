@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/dafault-layout/dafault-layout";
+import DafaultLayout from "../components/DafaultLayout/dafault-layout";
 
 const AirpodsPages = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { ProductCardWrapper, CardInfo } from "./product-card-wrapper";
-import { productTextData } from "../../api";
+import { ProductCardWrapper, CardInfo } from "./productCardWrapper";
+import { productTextData } from "../../Api";
 
 
 const SectionProductItem = () => {

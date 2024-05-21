@@ -1,8 +1,8 @@
-import FooterInfo from "./footerInfo";
-import FooterMore from "./footerMore";
-import Copyright from "./copyright";
+import FooterInfo from "./footerInfo.js";
+import FooterMore from "./footerMore.js";
+import Copyright from "./copyright.js";
 
-import { footerLink, copyrightInfo } from '../../../content/content.js';
+import { footerLink, copyrightInfo } from '../../../Content/content.js';
 
 
 function Footer({ logoTitle }) {

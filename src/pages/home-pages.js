@@ -1,5 +1,5 @@
-import DafaultLayout from "../components/dafault-layout/dafault-layout";
-import Home from "../components/home/home";
+import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import Home from "../components/Home/home";
 
 import '../sass/home-pages.sass';
 

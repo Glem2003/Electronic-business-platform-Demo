@@ -1,5 +1,5 @@
-import DafaultLayout from "../components/dafault-layout/dafault-layout";
-import Main from "../components/main/main";
+import DafaultLayout from "../components/DafaultLayout/dafault-layout";
+import Main from "../components/Main/main";
 
 
 import '../sass/store-pages.sass';
