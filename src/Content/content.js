@@ -8,7 +8,7 @@ export const homeSmallBanner = ([
     { title: "Apple WATCH", subtitle: "智慧升級，亮度、實力再晉級。", btn_text: ["進一步了解", "購買"] }
 ])
 
-export const navBarStoreList = ([
+export const navBarMainList = ([
     {
         title: "選購",
         listItem: [
@@ -506,5 +506,14 @@ export const mainContent = ([
         header: [
             { title: "商店。", subtitle: "購買你喜愛的產品，這是最好的方式。" }
         ],
+        section_1: [
+            { title: "最新登場。", subtitle: "現在就來看看有哪些新品推薦。" }
+        ],
+        section_2: [
+            { title: "周邊配件。", subtitle: "精彩配件，款款都是心愛裝置的必搭絕配。" }
+        ],
+        section_3: [
+            { title: "清亮動聽。", subtitle: "層次豐富的高音質，款款都是好選擇。" }
+        ]
     }
 ])

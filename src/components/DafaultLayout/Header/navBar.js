@@ -4,7 +4,7 @@ import { FaApple, FaShoppingCart } from 'react-icons/fa';
 import { CiSearch } from 'react-icons/ci';
 import { NavBarLargeList, NavBarSmallList } from '../../Common/navbarList';
 import {
-    navBarStoreList,
+    navBarMainList,
     navBarMacList,
     navBarIpadList,
     navBarIphoneList,
@@ -24,7 +24,7 @@ const NavBar = () => {
     const svgStyle = { width: "1.5em", height: "1.5em" };
 
     const navData = {
-        store: navBarStoreList,
+        main: navBarMainList,
         mac: navBarMacList,
         ipad: navBarIpadList,
         iphone: navBarIphoneList,
@@ -38,7 +38,7 @@ const NavBar = () => {
     };
 
     const initialFlyoutState = {
-        store: false,
+        main: false,
         mac: false,
         ipad: false,
         iphone: false,
@@ -128,7 +128,7 @@ const NavBar = () => {
 
     const navItems = [
         { to: "/", icon: <FaApple style={svgStyle} />, text: "首頁", onMouseOver: () => setFlyoutContent(false) },
-        { to: "/store", text: "商店", onMouseOver: () => handleMouseOver('store') },
+        { to: "/main", text: "商店", onMouseOver: () => handleMouseOver('main') },
         { to: "/mac", text: "Mac", onMouseOver: () => handleMouseOver('mac') },
         { to: "/iPad", text: "iPad", onMouseOver: () => handleMouseOver('ipad') },
         { to: "/iPhone", text: "iPhone", onMouseOver: () => handleMouseOver('iphone') },

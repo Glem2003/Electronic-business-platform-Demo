@@ -3,7 +3,7 @@ import React, { lazy, Suspense } from 'react';
 
 // Lazy load pages
 const HomePages = lazy(() => import('../Pages/homePages'));
-const StorePages = lazy(() => import('../Pages/storePages'));
+const MainPages = lazy(() => import('../Pages/mainPages'));
 const MacPages = lazy(() => import("../Pages/macPages"));
 const IpadPages = lazy(() => import("../Pages/ipadPages"));
 const WatchPages = lazy(() => import("../Pages/watchPages"));
@@ -16,7 +16,7 @@ const IphonePages = lazy(() => import("../Pages/iphonePages"));
 // Routes configuration
 const routes = [
     { path: "/", element: <HomePages />, index: true },
-    { path: "/store", element: <StorePages /> },
+    { path: "/main", element: <MainPages /> },
     { path: "/mac", element: <MacPages /> },
     { path: "/ipad", element: <IpadPages /> },
     { path: "/watch", element: <WatchPages /> },

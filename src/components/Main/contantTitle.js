@@ -1,8 +1,10 @@
 const ContantTitle = ({ title, subtitle }) => {
     return (
         <div className="title">
-            <p>{title}</p>
-            <span>{subtitle}</span>
+            <p>
+                {title}
+                <span>{subtitle}</span>
+            </p>
         </div>
     )
 }
