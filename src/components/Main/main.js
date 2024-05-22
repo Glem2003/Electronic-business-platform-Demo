@@ -5,7 +5,7 @@ import { mainContent } from '../../Content/content';
 import ContantTitle from "./contantTitle";
 import ScrollBar from "../Common/scrollBar";
 import ProductItem from "../Common/productItem";
-import ColorBox from "./colorBox";
+import ColorBox from "../Common/colorBox";
 import { CardInfo, ProductCardWrapper, ProductCardCenter } from "../Common/productCard";
 
 const Main = () => {

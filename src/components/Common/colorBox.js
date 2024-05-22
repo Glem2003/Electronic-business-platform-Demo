@@ -1,3 +1,5 @@
+import '../../Sass/component/colorBox.sass';
+
 const ColorBox = ({ color }) => {
     return (
         <div
