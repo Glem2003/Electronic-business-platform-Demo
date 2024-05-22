@@ -5,9 +5,8 @@ import { mainContent } from '../../Content/content';
 import ContantTitle from "./contantTitle";
 import ScrollBar from "../Common/scrollBar";
 import ProductItem from "../Common/productItem";
-import Section2ProductItem from "./section2ProductItem";
-import Section3ProductItem from "./section3ProductItem";
-import { CardInfo, ProductCardWrapper } from "../Common/productCard";
+import ColorBox from "./colorBox";
+import { CardInfo, ProductCardWrapper, ProductCardCenter } from "../Common/productCard";
 
 const Main = () => {
     const [isProductData, setProductData] = useState(null);
@@ -82,7 +81,7 @@ const Main = () => {
                 <ScrollBar>
                     <div className="section-items">
 
-                        {isProductTextData.map((product, index) => (
+                        {isProductTextData && isProductTextData.map((product, index) => (
                             <div className="item-col">
                                 <ProductCardWrapper
                                     key={index}
@@ -116,7 +115,80 @@ const Main = () => {
                 })}
 
                 <ScrollBar>
-                    <Section2ProductItem />
+                    <div className="section-items">
+                        {mainContent && mainContent.map((item) => {
+                            return item.section_2_info.map((info, index) => {
+                                const titleInfo = info.title;
+                                return (
+                                    <div className="item-col">
+                                        <ProductCardWrapper
+                                            key={index}
+                                            src={titleInfo.src}
+                                            alt={titleInfo.alt}
+                                        >
+                                            <CardInfo
+                                                title={titleInfo.title}
+                                                subtitle={titleInfo.subtitle}
+                                            />
+                                        </ProductCardWrapper>
+                                    </div>
+                                )
+                            })
+                        })}
+
+                        {mainContent && mainContent.map((item) => {
+                            return item.section_2_info.map((info) => {
+                                return info.content.map((item, index) => {
+                                    return (
+                                        <div className="item-col">
+                                            <ProductCardCenter
+                                                key={index}
+                                                src={item.src}
+                                                alt={item.alt}
+                                            >
+                                                <div className="color-box">
+                                                    {Array.isArray(item.color) && item.color.map((item, index) => {
+                                                        return (
+                                                            <ColorBox
+                                                                key={index}
+                                                                color={item}
+                                                            />
+                                                        )
+                                                    })}
+                                                </div>
+                                                <CardInfo
+                                                    title={item.subtitle}
+                                                    subtitle={item.title}
+                                                    text={item.price}
+                                                />
+                                            </ProductCardCenter>
+                                        </div>
+                                    )
+                                })
+                            })
+                        })}
+
+                        {mainContent && mainContent.map((item) => {
+                            return item.section_2_info.map((info, index) => {
+                                const lastInfo = info.more
+                                return (
+                                    <div className="item-col">
+                                        <ProductCardWrapper
+                                            key={index}
+                                            src={lastInfo.src}
+                                            alt={lastInfo.alt}
+                                        >
+                                            <CardInfo
+                                                title={lastInfo.subtitle}
+                                                subtitle={lastInfo.title}
+                                                text={lastInfo.price}
+                                            />
+                                        </ProductCardWrapper>
+                                    </div>
+                                )
+                            })
+                        })}
+                    </div>
                 </ScrollBar>
 
             </div>
@@ -135,7 +207,51 @@ const Main = () => {
                 })}
 
                 <ScrollBar>
-                    <Section3ProductItem />
+                    <div className="section-items">
+                        {mainContent && mainContent.map((item) => {
+                            return item.section_3_info.map((info, index) => {
+                                const titleInfo = info.title
+                                return (
+                                    <div className="item-col">
+                                        <ProductCardWrapper
+                                            key={index}
+                                            src={titleInfo.src}
+                                            alt={titleInfo.alt}
+                                        >
+                                            <CardInfo
+                                                title={titleInfo.subtitle}
+                                                subtitle={titleInfo.title}
+                                                text={titleInfo.price}
+                                            />
+                                        </ProductCardWrapper>
+                                    </div>
+                                )
+                            })
+                        })}
+
+                        {mainContent && mainContent.map((item) => {
+                            return item.section_3_info.map((info) => {
+                                return info.content.map((text, index) => {
+                                    return (
+                                        <div className="item-col">
+                                            <ProductCardCenter
+                                                key={index}
+                                                src={text.src}
+                                                alt={text.alt}
+                                            >
+                                                <CardInfo
+                                                    title={text.subtitle}
+                                                    subtitle={text.title}
+                                                    text={text.price}
+                                                />
+                                            </ProductCardCenter>
+                                        </div>
+                                    )
+                                })
+
+                            })
+                        })}
+                    </div>
                 </ScrollBar>
 
             </div>

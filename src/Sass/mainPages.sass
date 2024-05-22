@@ -1,4 +1,6 @@
 // main
+*
+    border: 1px solid #000
 .main
     padding-left: 10%
     >.section-title
@@ -35,64 +37,85 @@
         font-size: 13px
         font-weight: 800
 
-// section
-.section
-    position: relative
-    margin-bottom: 54px
-    >.title
-        font-size: 28px
-        font-weight: 550
-        span
-            color: grey
-
-    // scroll bar 
-    .section-items
-        width: 1800px
-        display: flex
-        margin-left: -16px
-        margin-right: -16px
-        padding: 10px 0
-        .item-col
-            overflow: hidden
-            flex: 0 0 400px
-            border-radius: 10px
-            margin-left: 16px
-            margin-right: 16px
-            height: 500px
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.5)
-            cursor: pointer
-            transition: all 0.3s
-            &:hover
-                scale: 1.01
-
-//  section_1
-.section1
-    .section-items
-        .item-col
-            h5
+    // section
+    .section
+        position: relative
+        margin-bottom: 54px
+        >.title
+            font-size: 28px
+            font-weight: 550
+            span
                 color: grey
-        .item-col:nth-child(2),.item-col:nth-child(3),.item-col:nth-child(8)
-            color: white
-            h5
+
+        // scroll bar 
+        .scrollbar
+            margin: 0 0 0 -12%
+        .section-items
+            display: flex
+            margin-left: -16px
+            margin-right: -16px
+            padding: 10px 0
+            .item-col
+                overflow: hidden
+                flex: 0 0 400px
+                border-radius: 10px
+                margin-left: 16px
+                margin-right: 16px
+                height: 500px
+                box-shadow: 2px 2px 8px rgba(0,0,0,0.5)
+                cursor: pointer
+                transition: all 0.3s
+                &:hover
+                    scale: 1.01
+
+    //  section_1
+    .section1
+        .section-items
+            .item-col
+                h5
+                    color: grey
+            .item-col:nth-child(2),.item-col:nth-child(3),.item-col:nth-child(8)
                 color: white
+                h5
+                    color: white
 
-// section 2 ,3
-.color-box
-    display: flex
-    justify-content: center
-    height: 20px
-    margin-top: 5px
-    .box
-        border-radius: 50%
-        width: 10px
-        height: 10px
-        margin: 0 5px
+    // section 2 ,3
+    .color-box
+        display: flex
+        justify-content: center
+        margin-top: 5px
+        .box
+            border-radius: 50%
+            width: 12px
+            height: 12px
+            margin: 0 5px
+            border: 1px solid #000
+        #red
+            background-color: red
+        #skyblue
+            background-color: skyblue
+        #black
+            background-color: black
+        #yellow
+            background-color: yellow
+        #orange
+            background-color: orange
+        #green
+            background-color: green
+        #white
+            background-color: #ece6e6
+        #darkblue
+            background-color: darkblue
+        #darkpurple
+            background-color: #5b00ae
+        #lightgrey
+            background-color: lightgrey
 
-.second-section
-    width: 100%
-    display: flex
-    flex-wrap: wrap
-    padding: 5px
-    > .section-col-6
-        width: 50%
+    .second-section
+        width: 100%
+        display: flex
+        flex-wrap: wrap
         padding: 5px
+        > .section-col-6
+            width: 50%
+            padding: 5px
