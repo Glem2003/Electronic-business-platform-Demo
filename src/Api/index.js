@@ -1,60 +1,83 @@
 export const productData = () => {
-  return fetch("api/productData.json")
-    .then((response) => {
-      return response.json();
-    })
-    .catch((error) => {
-      console.log('Error fetching productData:', error);
-    })
+  return new Promise((reslove, reject) => {
+    fetch("api/productData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data);
+      })
+      .catch((error) => {
+        console.log('Error fetching productData:', error);
+        reject(error);
+      })
+  })
+
 }
 
 export const productTextData = () => {
-  return fetch("api/productText.json")
-    .then((response) => {
-      return response.json();
-    })
-    .catch((error) => {
-      console.log('Error fetching productText:', error);
-    })
+  return new Promise((reslove, reject) => {
+    fetch("api/productText.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data);
+      })
+      .catch((error) => {
+        console.log('Error fetching productText:', error);
+        reject(error);
+      })
+  })
 }
 
 /* mac pages product data */
 export const macProductData = () => {
-  return fetch("/api/allProductData.json")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      return data.mac;
-    })
-    .catch((error) => {
-      console.log('Error fetching macProductData:', error);
-    })
+  return new Promise((reslove, reject) => {
+    fetch("/api/allProductData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data.mac);
+      })
+      .catch((error) => {
+        console.log('Error fetching macProductData:', error);
+        reject(error);
+      })
+  })
 }
 
 /* ipad pages product data */
 export const iPadProductData = () => {
-  return fetch("/api/allProductData.json")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      return data.iPad;
-    })
-    .catch((error) => {
-      console.log('Error fetching macProductData:', error);
-    })
+  return new Promise((reslove, reject) => {
+    fetch("/api/allProductData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data.iPad);
+      })
+      .catch((error) => {
+        console.log('Error fetching macProductData:', error);
+        reject(error);
+      })
+  })
 }
 
 export const iPhoneProductData = () => {
-  return fetch("/api/allProductData.json")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      return data.iPhone;
-    })
-    .catch((error) => {
-      console.log('Error fetching macProductData:', error);
-    })
+  return new Promise((reslove, reject) => {
+    fetch("/api/allProductData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data.iPhone);
+        console.log(data.iPhone)
+      })
+      .catch((error) => {
+        console.log('Error fetching macProductData:', error);
+        reject(error);
+      })
+  })
 }
