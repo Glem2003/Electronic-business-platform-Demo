@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import HomePages from '../Pages/homePages.js';
 import StorePages from '../Pages/storePages.js';
@@ -11,53 +11,55 @@ import CartPages from "../Pages/cartPages.js";
 import TvAndFamilyPages from "../Pages/tvAndFamilyPages.js";
 import IphonePages from "../Pages/iphonePages.js";
 
-const WebRoute = () => {
+const AppRoute = () => {
     return (
-        <Routes>
-            <Route
-                index
-                path="/"
-                element={<HomePages/>}
-            />
-            <Route
-                path="/store"
-                element={<StorePages />}
-            />
-            <Route
-                path="/mac"
-                element={<MacPages />}
-            />
-            <Route
-                path="/ipad"
-                element={<IpadPages />}
-            />
-            <Route
-                path="/watch"
-                element={<WatchPages />}
-            />
-            <Route
-                path="/airPods"
-                element={<AirpodsPages />}
-            />
-            <Route
-                path="/funny"
-                element={<FunnyPages />}
-            />
-            <Route
-                path="/cart"
-                element={<CartPages />}
-            />
-            <Route
-                path="/tv-and-family"
-                element={<TvAndFamilyPages />}
-            />
-            <Route
-                path="/iPhone"
-                element={<IphonePages />}
-            />
+        <Router>
+            <Routes>
+                <Route
+                    index
+                    path="/"
+                    element={<HomePages />}
+                />
+                <Route
+                    path="/store"
+                    element={<StorePages />}
+                />
+                <Route
+                    path="/mac"
+                    element={<MacPages />}
+                />
+                <Route
+                    path="/ipad"
+                    element={<IpadPages />}
+                />
+                <Route
+                    path="/watch"
+                    element={<WatchPages />}
+                />
+                <Route
+                    path="/airPods"
+                    element={<AirpodsPages />}
+                />
+                <Route
+                    path="/funny"
+                    element={<FunnyPages />}
+                />
+                <Route
+                    path="/cart"
+                    element={<CartPages />}
+                />
+                <Route
+                    path="/tv-and-family"
+                    element={<TvAndFamilyPages />}
+                />
+                <Route
+                    path="/iPhone"
+                    element={<IphonePages />}
+                />
 
-        </Routes>
+            </Routes>
+        </Router>
     )
 }
 
-export default WebRoute;
+export default AppRoute;

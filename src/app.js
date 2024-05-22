@@ -1,8 +1,8 @@
-import WebRoute from "./Routes/index.js";
+import AppRoute from "./Routes/index.js";
 
 const App = () => {
 	return(
-		<WebRoute/>
+		<AppRoute/>
 	)
 }
 
