@@ -1,4 +1,4 @@
-import React from 'react';
+import '../../Sass/component/productItem.sass';
 
 const ProductItem = ({ src, alt, text ,PS}) => {
     return (

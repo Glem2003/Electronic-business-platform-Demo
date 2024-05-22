@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { iPhoneProductData } from "../../Api";
-import ProductItem from "../Common/productItem";
-
-import SectionTitle from '../Common/sectionTitle.js';
-import ProductInfoItem from "../Common/productInfoItem";
 import { iphoneContent } from '../../Content/content.js';
 
-import '../../Sass/component/productItem.sass';
+//import component
+import ProductItem from "../Common/productItem";
+import SectionTitle from '../Common/sectionTitle.js';
+import ProductInfoItem from "../Common/productInfoItem";
+import ScrollBar from '../Main/scrollBar.js';
+import LinkButton from '../Common/linkButton.js';
+import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 
 const Iphone = () => {
     const [data, setData] = useState(null);
@@ -26,7 +28,7 @@ const Iphone = () => {
     return (
         <div className="iphone">
             <div className="Product-items">
-                {data.map((item) => {
+                {data && data.map((item) => {
                     return (
                         <ProductItem
                             key={item.id}
@@ -39,7 +41,7 @@ const Iphone = () => {
                 })}
             </div>
 
-            {iphoneContent.map((item) => {
+            {iphoneContent && iphoneContent.map((item) => {
                 return item.ads_text.map((ads, index) => {
                     return (
                         <ProductInfoItem
@@ -51,7 +53,7 @@ const Iphone = () => {
                 })
             })}
             <div className="section section1">
-                {iphoneContent.map((item) => {
+                {iphoneContent && iphoneContent.map((item) => {
                     return item.header.map((header, index) => {
                         return (
                             <SectionTitle
@@ -65,7 +67,36 @@ const Iphone = () => {
             </div>
 
             <div className="section section2">
-            
+                {iphoneContent && iphoneContent && iphoneContent.map((item) => {
+                    return item.section_info && item.section_info.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                        />
+                    ));
+                })}
+                <ScrollBar>
+                    <div className="section-items">
+                        {iphoneContent && iphoneContent.map((item) => {
+                            return item.section_info.map((items) => {
+                                return items.info_item.map((info, index) => {
+                                    return (
+                                        <ProductCardWrapper
+                                            key={index}
+                                            src={info.src}
+                                        >
+                                            <CardInfo
+                                                title={info.title}
+                                                subtitle={info.subtitle}
+                                            />
+                                            <LinkButton />
+                                        </ProductCardWrapper>
+                                    )
+                                })
+                            })
+                        })}
+                    </div>
+                </ScrollBar>
             </div>
         </div>
     )
