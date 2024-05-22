@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import ArrowButton from '../Common/arrowButton';
+import ArrowButton from './arrowButton';
 
 // import sass
 import '../../Sass/component/scrollBar.sass';
@@ -35,8 +35,6 @@ const ScrollBar = React.forwardRef(({ children}) => {
                 >
                     <ArrowButton style={{transform: "rotate(180deg)"}}/>
                 </button>
-
-                
 
                 <button
                     className="right-button"

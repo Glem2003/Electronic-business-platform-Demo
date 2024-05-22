@@ -5,7 +5,7 @@ import { ipadContent } from '../../Content/content.js';
 // import component
 import ProductItem from "../Common/productItem.js";
 import SectionTitle from '../Common/sectionTitle.js';
-import ScrollBar from '../Main/scrollBar.js';
+import ScrollBar from '../Common/scrollBar.js';
 import LinkButton from '../Common/linkButton.js';
 import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 

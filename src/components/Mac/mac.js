@@ -3,7 +3,7 @@ import { macProductData } from "../../Api/index.js";
 import ProductItem from "../Common/productItem.js";
 
 import SectionTitle from '../Common/sectionTitle.js';
-import ScrollBar from '../Main/scrollBar.js';
+import ScrollBar from '../Common/scrollBar.js';
 import ProductInfoItem from "../Common/productInfoItem.js";
 
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";

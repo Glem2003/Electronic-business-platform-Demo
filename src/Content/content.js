@@ -500,3 +500,11 @@ export const iphoneContent = ([
         ]
     }
 ])
+
+export const mainContent = ([
+    {
+        header: [
+            { title: "商店。", subtitle: "購買你喜愛的產品，這是最好的方式。" }
+        ],
+    }
+])

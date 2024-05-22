@@ -1,10 +1,8 @@
-const ContantTitle = ({title , subtitle ,style}) => {
+const ContantTitle = ({ title, subtitle }) => {
     return (
-        <div className="title" style={style}>
-            <p>
-                {title}
-                <span style={{ color: 'grey' }}>{subtitle}</span>
-            </p>
+        <div className="title">
+            <p>{title}</p>
+            <span>{subtitle}</span>
         </div>
     )
 }
