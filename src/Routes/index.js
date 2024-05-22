@@ -1,65 +1,42 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { lazy, Suspense } from 'react';
 
-import HomePages from '../Pages/homePages.js';
-import StorePages from '../Pages/storePages.js';
-import MacPages from "../Pages/macPages.js";
-import IpadPages from "../Pages/ipadPages.js";
-import WatchPages from "../Pages/watchPages.js";
-import AirpodsPages from "../Pages/airpodsPages.js";
-import FunnyPages from "../Pages/funnyPages.js";
-import CartPages from "../Pages/cartPages.js";
-import TvAndFamilyPages from "../Pages/tvAndFamilyPages.js";
-import IphonePages from "../Pages/iphonePages.js";
+// Lazy load pages
+const HomePages = lazy(() => import('../Pages/homePages'));
+const StorePages = lazy(() => import('../Pages/storePages'));
+const MacPages = lazy(() => import("../Pages/macPages"));
+const IpadPages = lazy(() => import("../Pages/ipadPages"));
+const WatchPages = lazy(() => import("../Pages/watchPages"));
+const AirpodsPages = lazy(() => import("../Pages/airpodsPages"));
+const FunnyPages = lazy(() => import("../Pages/funnyPages"));
+const CartPages = lazy(() => import("../Pages/cartPages"));
+const TvAndFamilyPages = lazy(() => import("../Pages/tvAndFamilyPages"));
+const IphonePages = lazy(() => import("../Pages/iphonePages"));
 
-const AppRoute = () => {
-    return (
-        <Router>
+// Routes configuration
+const routes = [
+    { path: "/", element: <HomePages />, index: true },
+    { path: "/store", element: <StorePages /> },
+    { path: "/mac", element: <MacPages /> },
+    { path: "/ipad", element: <IpadPages /> },
+    { path: "/watch", element: <WatchPages /> },
+    { path: "/airPods", element: <AirpodsPages /> },
+    { path: "/funny", element: <FunnyPages /> },
+    { path: "/cart", element: <CartPages /> },
+    { path: "/tv-and-family", element: <TvAndFamilyPages /> },
+    { path: "/iPhone", element: <IphonePages /> },
+];
+
+const AppRoute = () => (
+    <Router>
+        <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-                <Route
-                    index
-                    path="/"
-                    element={<HomePages />}
-                />
-                <Route
-                    path="/store"
-                    element={<StorePages />}
-                />
-                <Route
-                    path="/mac"
-                    element={<MacPages />}
-                />
-                <Route
-                    path="/ipad"
-                    element={<IpadPages />}
-                />
-                <Route
-                    path="/watch"
-                    element={<WatchPages />}
-                />
-                <Route
-                    path="/airPods"
-                    element={<AirpodsPages />}
-                />
-                <Route
-                    path="/funny"
-                    element={<FunnyPages />}
-                />
-                <Route
-                    path="/cart"
-                    element={<CartPages />}
-                />
-                <Route
-                    path="/tv-and-family"
-                    element={<TvAndFamilyPages />}
-                />
-                <Route
-                    path="/iPhone"
-                    element={<IphonePages />}
-                />
-
+                {routes.map(({ path, element, index }) => (
+                    <Route key={path} path={path} element={element} index={index} />
+                ))}
             </Routes>
-        </Router>
-    )
-}
+        </Suspense>
+    </Router>
+);
 
 export default AppRoute;

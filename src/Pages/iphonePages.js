@@ -1,6 +1,7 @@
 import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
 import Iphone from "../components/Iphone/iphone";
 
+// import sass
 import '../Sass/iphonePages.sass';
 
 const IphonePages = () => {

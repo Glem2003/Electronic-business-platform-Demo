@@ -16,6 +16,8 @@ import {
     navBarSupportList,
     navBarSearchList
 } from '../../../Content/content';
+
+//import sass
 import '../../../Sass/component/navBar.sass';
 
 const NavBar = () => {

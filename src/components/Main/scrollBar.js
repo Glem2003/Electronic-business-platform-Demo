@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import ArrowButton from '../Common/arrowButton';
 
+// import sass
+import '../../Sass/component/scrollBar.sass';
+
 const ScrollBar = React.forwardRef(({ children}) => {
 
     const ITEM_WIDTH = 400;
