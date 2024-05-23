@@ -8,6 +8,7 @@ import SectionTitle from '../Common/sectionTitle.js';
 import ScrollBar from '../Common/scrollBar.js';
 import LinkButton from '../Common/linkButton.js';
 import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import ProductInformationCard from "../Common/productInformationCard.js";
 
 const IPad = () => {
     const [data, setData] = useState(null);
@@ -83,6 +84,23 @@ const IPad = () => {
                         })}
                     </div>
                 </ScrollBar>
+            </div>
+
+            <div className="section section3">
+                <ProductInformationCard
+                    src="src"
+                    alt="alt"
+                    color={["red", "yellow"]}
+                    postscript="new"
+                    title="iPhone 15 Pro"
+                    text="lorem lorem lorem lorem"
+                    price="$36,900起"
+                    btn={["buy","more"]}
+                    productInfoItem={[
+                        { src: "src1", alt: "alt1", text: "text1" },
+                        { src: "src2", alt: "alt2", text: "text2" }
+                    ]}
+                />
             </div>
 
         </div>

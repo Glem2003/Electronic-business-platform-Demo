@@ -1,6 +1,6 @@
-const ArrowButton = ({style }) => {
+const ArrowButton = () => {
     return (
-        <img src="/images/arrow.png" style={style} alt="button"/>
+        <img src="/images/arrow.png" alt="button"/>
     )
 }
 
