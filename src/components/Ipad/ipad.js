@@ -5,8 +5,8 @@ import { ipadContent } from '../../Content/content.js';
 // import component
 import ProductItem from "../Common/productItem.js";
 import SectionTitle from '../Common/sectionTitle.js';
-import ScrollBar from '../Common/scrollBar.js';
 import LinkButton from '../Common/linkButton.js';
+import ScrollBar from '../Common/scrollBar.js';
 import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 import ProductInformationCard from "../Common/productInformationCard.js";
 
@@ -98,29 +98,30 @@ const IPad = () => {
                         )
                     })
                 })}
-
-                <div className="product-items">
-                    {ipadContent && ipadContent.map((item) => {
-                        return item.product_info_item.map((info, index) => {
-                            return (
-                                <ProductInformationCard
-                                    key={index}
-                                    src={info.src}
-                                    alt={info.alt}
-                                    color={info.color}
-                                    postscript={info.postscript}
-                                    title={info.title}
-                                    text={info.text}
-                                    price={info.price}
-                                    btn={info.btn}
-                                    cardTitle={info.cardTitle}
-                                    cardText={info.cardText}
-                                    productInfoItem={info.productInfoItem}
-                                />
-                            )
-                        })
-                    })}
-                </div>
+                <ScrollBar>
+                    <div className="product-items">
+                        {ipadContent && ipadContent.map((item) => {
+                            return item.product_info_item.map((info, index) => {
+                                return (
+                                    <ProductInformationCard
+                                        key={index}
+                                        src={info.src}
+                                        alt={info.alt}
+                                        color={info.color}
+                                        postscript={info.postscript}
+                                        title={info.title}
+                                        text={info.text}
+                                        price={info.price}
+                                        btn={info.btn}
+                                        cardTitle={info.cardTitle}
+                                        cardText={info.cardText}
+                                        productInfoItem={info.productInfoItem}
+                                    />
+                                )
+                            })
+                        })}
+                    </div>
+                </ScrollBar>
 
             </div>
 
