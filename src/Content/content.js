@@ -471,37 +471,44 @@ export const ipadContent = ([
                 ]
             }
         ],
+        section_3: [
+            { title: "探索全系列產品。", subtitle: "比較所有機型 > " }
+        ],
         product_info_item: [
             {
-                src:"src",
-                alt:"alt",
-                color:["red", "yellow"],
-                postscript:"new",
-                title:"iPhone 12 Pro",
-                text:"lorem lorem lorem lorem",
-                price:"$34,900起",
-                btn:["buy", "more >"],
+                src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_pro__6bgrkek0jnm2_xlarge.png",
+                alt: "iPad Pro",
+                color: ["white", "black"],
+                postscript: "全新",
+                title: "iPad Pro",
+                text: "極致 iPad 體驗，來自最先進科技。",
+                price: "$34,900起",
+                btn: ["進一步了解", "查看價格 >"],
+                cardTitle:"13 吋或 11 吋",
+                cardText:(<>Ultra Retina XDR 顯示器3<br/>ProMotion 自動適應更新頻率技術<br/>P3 廣色域<br/>1TB 與 2TB 機型可選配 Nano-texture 顯示器玻璃</>),
                 productInfoItem:
-                [
-                    { src: "src1", alt: "alt1", text: "text1" },
-                    { src: "src2", alt: "alt2", text: "text2" }
-                ]
+                    [
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_m4__b2ujor0cthv6_large.png", alt: "M4 晶片", text: "M4 晶片" },
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadpro13_gen7_camera__dgh2hv5gfrqu_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 的 ProRes 錄影</>) }
+                    ]
             },
             {
-                src:"src",
-                alt:"alt",
-                color:["red", "yellow"],
-                postscript:"new",
-                title:"iPhone 12 Pro",
-                text:"lorem lorem lorem lorem",
-                price:"$34,900起",
-                btn:["buy", "more >"],
+                src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_pro__6bgrkek0jnm2_xlarge.png",
+                alt: "iPad Pro",
+                color: ["white", "black"],
+                postscript: "全新",
+                title: "iPad Pro",
+                text: "極致 iPad 體驗，來自最先進科技。",
+                price: "$34,900起",
+                btn: ["進一步了解", "查看價格 >"],
+                cardTitle:"13 吋或 11 吋",
+                cardText:(<>Ultra Retina XDR 顯示器3<br/>ProMotion 自動適應更新頻率技術<br/>P3 廣色域<br/>1TB 與 2TB 機型可選配 Nano-texture 顯示器玻璃</>),
                 productInfoItem:
-                [
-                    { src: "src1", alt: "alt1", text: "text1" },
-                    { src: "src2", alt: "alt2", text: "text2" }
-                ]
-            }
+                    [
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_m4__b2ujor0cthv6_large.png", alt: "M4 晶片", text: "M4 晶片" },
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadpro13_gen7_camera__dgh2hv5gfrqu_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 的 ProRes 錄影</>) }
+                    ]
+            },
         ]
 
     }

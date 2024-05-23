@@ -87,6 +87,18 @@ const IPad = () => {
             </div>
 
             <div className="section section3">
+                {ipadContent && ipadContent.map((item) => {
+                    return item.section_3.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                                subtitle={info.subtitle}
+                            />
+                        )
+                    })
+                })}
+
                 <div className="product-items">
                     {ipadContent && ipadContent.map((item) => {
                         return item.product_info_item.map((info, index) => {
@@ -101,6 +113,8 @@ const IPad = () => {
                                     text={info.text}
                                     price={info.price}
                                     btn={info.btn}
+                                    cardTitle={info.cardTitle}
+                                    cardText={info.cardText}
                                     productInfoItem={info.productInfoItem}
                                 />
                             )
