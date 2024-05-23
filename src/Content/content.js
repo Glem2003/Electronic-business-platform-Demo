@@ -486,6 +486,21 @@ export const ipadContent = ([
                     { src: "src1", alt: "alt1", text: "text1" },
                     { src: "src2", alt: "alt2", text: "text2" }
                 ]
+            },
+            {
+                src:"src",
+                alt:"alt",
+                color:["red", "yellow"],
+                postscript:"new",
+                title:"iPhone 12 Pro",
+                text:"lorem lorem lorem lorem",
+                price:"$34,900起",
+                btn:["buy", "more >"],
+                productInfoItem:
+                [
+                    { src: "src1", alt: "alt1", text: "text1" },
+                    { src: "src2", alt: "alt2", text: "text2" }
+                ]
             }
         ]
 

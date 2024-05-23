@@ -87,24 +87,26 @@ const IPad = () => {
             </div>
 
             <div className="section section3">
-                {ipadContent && ipadContent.map((item) => {
-                    return item.product_info_item.map((info, index) => {
-                        return (
-                            <ProductInformationCard
-                                key={index}
-                                src={info.src}
-                                alt={info.alt}
-                                color={info.color}
-                                postscript={info.postscript}
-                                title={info.title}
-                                text={info.text}
-                                price={info.price}
-                                btn={info.btn}
-                                productInfoItem={info.productInfoItem}
-                            />
-                        )
-                    })
-                })}
+                <div className="product-items">
+                    {ipadContent && ipadContent.map((item) => {
+                        return item.product_info_item.map((info, index) => {
+                            return (
+                                <ProductInformationCard
+                                    key={index}
+                                    src={info.src}
+                                    alt={info.alt}
+                                    color={info.color}
+                                    postscript={info.postscript}
+                                    title={info.title}
+                                    text={info.text}
+                                    price={info.price}
+                                    btn={info.btn}
+                                    productInfoItem={info.productInfoItem}
+                                />
+                            )
+                        })
+                    })}
+                </div>
 
             </div>
 
