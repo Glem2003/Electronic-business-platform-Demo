@@ -470,6 +470,23 @@ export const ipadContent = ([
                     { title: "iPadOS + App", subtitle: (<>日常必備超能力，<br />內建其中。</>), src: "https://www.apple.com/tw/ipad/home/images/overview/consider/fc_ipados__urrua12bwaqy_medium.jpg" }
                 ]
             }
+        ],
+        product_info_item: [
+            {
+                src:"src",
+                alt:"alt",
+                color:["red", "yellow"],
+                postscript:"new",
+                title:"iPhone 12 Pro",
+                text:"lorem lorem lorem lorem",
+                price:"$34,900起",
+                btn:["buy", "more >"],
+                productInfoItem:
+                [
+                    { src: "src1", alt: "alt1", text: "text1" },
+                    { src: "src2", alt: "alt2", text: "text2" }
+                ]
+            }
         ]
 
     }
@@ -530,14 +547,14 @@ export const mainContent = ([
                         price: "NT$1,590",
                         src: "/images/MWND3.jpg",
                         alt: "MWND3",
-                        color:["red","orange","green"]
+                        color: ["red", "orange", "green"]
                     },
                     {
                         title: "Tech21 FlexQuartz，適用於iPhone 15 (MegSafe 相容) - ...",
                         price: "NT$1,490",
                         src: "/images/HRDT2.jpg",
                         alt: "HRDT2",
-                        color:["skyblue","white"]
+                        color: ["skyblue", "white"]
                     },
                     {
                         title: "Tech21 EvoPink，適用於AirTag (2件裝)",
@@ -558,28 +575,28 @@ export const mainContent = ([
                         price: "NT$1,600",
                         src: "/images/MWMW3ref.jpg",
                         alt: "MWMW3ref",
-                        color:["yellow","orange"]
+                        color: ["yellow", "orange"]
                     },
                     {
                         title: "iPhone MagSafe 精細織紋卡套",
                         price: "NT$1,890",
                         src: "/images/MT263.jpg",
                         alt: "MT263",
-                        color:["darkpurple","lightgrey"]
+                        color: ["darkpurple", "lightgrey"]
                     },
                     {
                         title: "iPhone 15 Pro MagSafe 精細織紋保護套 - 萬年青色",
                         price: "NT$1,890",
                         src: "/images/MT4U3.jpg",
                         alt: "MT4U3",
-                        color:["red","darkblue","black"]
+                        color: ["red", "darkblue", "black"]
                     },
                     {
                         title: "AirTag 精細織紋鑰匙圈 - 珊瑚色",
                         price: "NT$1,290",
                         src: "/images/MT2M3.jpg",
                         alt: "MT2M3",
-                        color:["red","orange","skyblue"]
+                        color: ["red", "orange", "skyblue"]
                     }
 
                 ],

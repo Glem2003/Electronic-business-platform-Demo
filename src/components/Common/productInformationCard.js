@@ -13,15 +13,16 @@ const ProductInformationCard = ({ src, alt, color, postscript, title, text, pric
                 src={src}
                 alt={alt}
             >
-                {color.map((item, index) => {
-                    return (
-                        <ColorBox
-                            key={index}
-                            color={item}
-                        />
-                    )
-                })}
-
+                <div className="color-item">
+                    {color.map((item, index) => {
+                        return (
+                            <ColorBox
+                                key={index}
+                                color={item}
+                            />
+                        )
+                    })}
+                </div>
                 <CardInfo
                     ps={postscript}
                     title={title}
@@ -33,16 +34,18 @@ const ProductInformationCard = ({ src, alt, color, postscript, title, text, pric
                 />
             </ProductCardCenter>
             <hr />
-            {productInfoItem && productInfoItem.map((item, index) => {
-                return (
-                    <CardInformationInProduct
-                        key={index}
-                        src={item.src}
-                        alt={item.alt}
-                        text={item.text}
-                    />
-                )
-            })}
+            <div className="info-item">
+                {productInfoItem && productInfoItem.map((item, index) => {
+                    return (
+                        <CardInformationInProduct
+                            key={index}
+                            src={item.src}
+                            alt={item.alt}
+                            text={item.text}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
 }

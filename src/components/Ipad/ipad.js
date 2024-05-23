@@ -87,20 +87,25 @@ const IPad = () => {
             </div>
 
             <div className="section section3">
-                <ProductInformationCard
-                    src="src"
-                    alt="alt"
-                    color={["red", "yellow"]}
-                    postscript="new"
-                    title="iPhone 15 Pro"
-                    text="lorem lorem lorem lorem"
-                    price="$36,900起"
-                    btn={["buy","more"]}
-                    productInfoItem={[
-                        { src: "src1", alt: "alt1", text: "text1" },
-                        { src: "src2", alt: "alt2", text: "text2" }
-                    ]}
-                />
+                {ipadContent && ipadContent.map((item) => {
+                    return item.product_info_item.map((info, index) => {
+                        return (
+                            <ProductInformationCard
+                                key={index}
+                                src={info.src}
+                                alt={info.alt}
+                                color={info.color}
+                                postscript={info.postscript}
+                                title={info.title}
+                                text={info.text}
+                                price={info.price}
+                                btn={info.btn}
+                                productInfoItem={info.productInfoItem}
+                            />
+                        )
+                    })
+                })}
+
             </div>
 
         </div>

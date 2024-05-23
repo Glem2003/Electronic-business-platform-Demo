@@ -1,7 +1,9 @@
 const CardInformationInProduct = ({ src, alt, text }) => {
     return (
-        <div className="cardImage">
-            <img src={src} alt={alt} />
+        <div className="card-images">
+            <div className="img-box">
+                <img src={src} alt={alt} />
+            </div>
             <p>{text}</p>
         </div>
     )
