@@ -9,8 +9,9 @@ import SectionTitle from '../Common/sectionTitle.js';
 import ProductInfoItem from "../Common/productInfoItem";
 import ScrollBar from '../Common/scrollBar.js';
 import LinkButton from '../Common/linkButton.js';
-import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import { ProductCardCenter,ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
+import ButtonItem from "../Common/buttonItem.js";
 
 const Iphone = () => {
 
@@ -73,7 +74,7 @@ const Iphone = () => {
             </div>
 
             <div className="section section2">
-                {iphoneContent && iphoneContent && iphoneContent.map((item) => {
+                {iphoneContent && iphoneContent.map((item) => {
                     return item.section_info && item.section_info.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -106,7 +107,7 @@ const Iphone = () => {
             </div>
 
             <div className="section section3">
-                {iphoneContent && iphoneContent && iphoneContent.map((item) => {
+                {iphoneContent && iphoneContent.map((item) => {
                     return item.section_3 && item.section_3.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -138,6 +139,67 @@ const Iphone = () => {
                         })}
                     </div>
                 </ScrollBar>
+
+            </div>
+
+            <div className="section section4">
+                {iphoneContent && iphoneContent.map((item) => {
+                    return item.section_4 && item.section_4.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                        />
+                    ));
+                })}
+
+                {iphoneContent && iphoneContent.map((item) => {
+                    return item.section_4_info && item.section_4_info.map((info) => {
+                        return (
+                            <ProductCardWrapper>
+                                <div className="text-info">
+                                    <CardInfo
+                                        text={info.text}
+                                    />
+                                    <ButtonItem
+                                        props={info.link}
+                                    />
+                                </div>
+                            </ProductCardWrapper>
+                        )
+                    })
+                })}
+            </div>
+
+            <div className="section section5">
+                {iphoneContent && iphoneContent.map((item) => {
+                    return item.section_5 && item.section_5.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                            subtitle={info.subtitle}
+                        />
+                    ));
+                })}
+
+                <div className="product-info-item">
+                    {iphoneContent && iphoneContent.map((item) => {
+                        return item.section_5_info_item && item.section_5_info_item.map((info, index) => {
+                            return (
+                                <ProductCardCenter
+                                    key={index}
+                                    src={info.src}
+                                    alt={info.alt}
+                                >
+                                    <CardInfo
+                                        title={info.title}
+                                        text={info.text}
+                                        subtitle={info.link}
+                                    />
+                                </ProductCardCenter>
+                            )
+                        })
+                    })}
+                </div>
 
             </div>
 
