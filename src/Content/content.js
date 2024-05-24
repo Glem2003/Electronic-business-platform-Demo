@@ -555,8 +555,14 @@ export const ipadContent = ([
                         { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard__bn0eizfdbgly_large.png", alt: "支援藍牙鍵盤", text: "支援藍牙鍵盤" }
                     ]
             }
+        ],
+        section_4: [
+            { title: "iPad 必備精選" }
+        ],
+        section_4_info_item:[
+            { postscript: "全新", title: "Apple Pencil", text: "隨心所想，隨筆記下。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_pencil__b1ze600aojyq_xlarge.png", alt: "Apple Pencil" },
+            { postscript: "全新", title: "專為 iPad 設計的鍵盤", text: "打字高手，隨手帶。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_keyboard__b2j4vh67cw76_xlarge.png", alt: "iPad keyboard" }
         ]
-
     }
 ])
 

@@ -7,7 +7,7 @@ import ProductItem from "../Common/productItem.js";
 import SectionTitle from '../Common/sectionTitle.js';
 import LinkButton from '../Common/linkButton.js';
 import ScrollBar from '../Common/scrollBar.js';
-import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import { ProductCardWrapper, CardInfo, ProductCardCenter } from '../Common/productCard.js';
 import ProductInformationCard from "../Common/productInformationCard.js";
 
 const IPad = () => {
@@ -24,6 +24,7 @@ const IPad = () => {
     if (data === null) {
         return <div></div>;
     }
+
     return (
         <div className="iPad">
             <div className="Product-items">
@@ -125,6 +126,40 @@ const IPad = () => {
 
             </div>
 
+            <div className="section section4">
+                {ipadContent && ipadContent.map((item) => {
+                    return item.section_4.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                            />
+                        )
+                    })
+                })}
+                <div className="product-info-item">
+                    {ipadContent.map((item) => {
+                        return item.section_4_info_item.map((info, index) => {
+                            return (
+                                <ProductCardCenter
+                                    key={index}
+                                    src={info.src}
+                                    alt={info.alt}
+                                >
+                                    <CardInfo
+                                        title={info.title}
+                                        text={info.text}
+                                        ps={info.postscript}
+                                        subtitle={info.link}
+                                    />
+                                </ProductCardCenter>
+                            )
+                        })
+
+                    })}
+                </div>
+
+            </div>
         </div>
     )
 }
