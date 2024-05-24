@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { macProductData } from "../../Api/index.js";
-import ProductItem from "../Common/productItem.js";
+import { navBarMacList, macContent } from '../../Content/content.js';
 
+//import component
+import ProductItem from "../Common/productItem.js";
 import SectionTitle from '../Common/sectionTitle.js';
 import ScrollBar from '../Common/scrollBar.js';
 import ProductInfoItem from "../Common/productInfoItem.js";
-
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
 import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 import LinkButton from '../Common/linkButton.js';
-import { navBarMacList, macContent } from '../../Content/content.js';
 import MacInfoBox from "./macInfoBox.js";
 
 const Mac = () => {

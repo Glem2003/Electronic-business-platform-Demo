@@ -174,63 +174,69 @@
     "Watch": [
         {
             "id": 1,
-            "text": "Apple Watch Series 9",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_series_8_dark__zjvrtpmopoi2_large.svg"
+            "text": "Apple Watch",
+            "postscript": "Series 9",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_series_8_light__f0gx30xkqhui_large.svg"
         },
         {
             "id": 2,
-            "text": "Apple Watch Series 9",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_ultra_dark__b52vmpf7i02q_large.svg"
+            "text": "Apple Watch",
+            "postscript": "Ultra 2",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_ultra_light__dnosu8kc2tme_large.svg"
         },
         {
             "id": 3,
-            "text": "Apple Watch SE",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_se_dark__t7wdkk6itr6i_large.svg"
+            "text": "Apple Watch",
+            "postscript": "SE",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_se_light__ch5dbdx2ybo2_large.svg"
         },
         {
             "id": 4,
-            "text": "Apple Watch Nike",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_nike_dark__c2w6qc3rgka6_large.svg"
+            "text": "Apple Watch",
+            "postscript": "Nike",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_nike_light__c36zk943xfo2_large.svg"
         },
         {
             "id": 5,
-            "text": "Apple Watch Hermès",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_hermes_dark__folme24d8fyy_large.svg"
+            "text": "Apple Watch",
+            "postscript": "Hermès",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_hermes_light__q9veqdmv73ey_large.svg"
         },
         {
             "id": 6,
-            "text": "Apple Watch 工坊",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_studio_dark__e5841serjac2_large.svg"
+            "text": "Apple Watch",
+            "postscript": "工坊",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_studio_light__dzd9rwk2242u_large.svg"
         },
         {
             "id": 7,
             "text": "比較",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_compare_dark__cnjesqa9weoi_large.svg"
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_compare__cdkbsrx8arw2_large.svg"
         },
         {
             "id": 8,
             "text": "錶帶",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_bands_dark__f3pv9vu78z2a_large.svg"
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_bands__b9c37m8hpgya_large.svg"
         },
         {
             "id": 9,
             "text": "AirPods",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_airpods_dark__ve9xj21ossy6_large.svg"
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_airpods__e9283t02ry2y_large.svg"
         },
         {
             "id": 10,
             "text": "配件",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_accessories_dark__dkqbbw9nllua_large.svg"
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_accessories__glsax9gul7ue_large.svg"
         },
         {
             "id": 11,
             "text": "watchOS 10",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_watch_os_dark__f6ar00m80k6e_large.svg"
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_watch_os__bpf576367ple_large.svg"
         },
         {
             "id": 12,
             "text": "選購 Watch",
-            "src": "https://www.apple.com/v/watch/bk/images/overview/icons/watch_nav_shop_watch_dark__b2e5764vec2u_large.svg"
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_shop_watch_light__f4fr5gzdhjyy_large.svg"
         }
     ],
     "Airpods": [
@@ -268,7 +274,7 @@
             "src": "Apple Music"
         }
     ],
-    "TV-home": [
+    "TvHome": [
         {
             "id": 1,
             "text": "Apple TV 4K",

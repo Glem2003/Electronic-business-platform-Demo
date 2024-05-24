@@ -1,9 +1,13 @@
 import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import Watch from '../components/Watch/watch';
+
+// import sass
+import '../Sass/watchPages.sass';
 
 const WatchPages = () => {
     return (
         <DafaultLayout logoTitle="Watch">
-            <h1>This is WatchPages</h1>
+            <Watch/>
         </DafaultLayout>
     )
 }

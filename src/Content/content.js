@@ -828,3 +828,11 @@ export const mainContent = ([
         ]
     }
 ])
+
+export const watchContent = ([
+    {
+        header:[
+            { title: "Apple Watch", subtitle: "戴著它，就會愛上它。" }
+        ]
+    }
+])

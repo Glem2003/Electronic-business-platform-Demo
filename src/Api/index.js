@@ -65,6 +65,7 @@ export const iPadProductData = () => {
   })
 }
 
+/* iPhone pages product data */
 export const iPhoneProductData = () => {
   return new Promise((reslove, reject) => {
     fetch("/api/allProductData.json")
@@ -73,7 +74,74 @@ export const iPhoneProductData = () => {
       })
       .then((data) => {
         reslove(data.iPhone);
-        console.log(data.iPhone)
+      })
+      .catch((error) => {
+        console.log('Error fetching macProductData:', error);
+        reject(error);
+      })
+  })
+}
+
+/* watch pages product data */
+export const watchProductData = () => {
+  return new Promise((reslove, reject) => {
+    fetch("/api/allProductData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data.Watch);
+      })
+      .catch((error) => {
+        console.log('Error fetching macProductData:', error);
+        reject(error);
+      })
+  })
+}
+
+/* airpod pages product data */
+export const airpodProductData = () => {
+  return new Promise((reslove, reject) => {
+    fetch("/api/allProductData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data.Airpod);
+      })
+      .catch((error) => {
+        console.log('Error fetching macProductData:', error);
+        reject(error);
+      })
+  })
+}
+
+/* Tv and Family pages product data */
+export const tvHomeProductData = () => {
+  return new Promise((reslove, reject) => {
+    fetch("/api/allProductData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data.TvHome);
+      })
+      .catch((error) => {
+        console.log('Error fetching macProductData:', error);
+        reject(error);
+      })
+  })
+}
+
+/* funny pages product data */
+export const funnyProductData = () => {
+  return new Promise((reslove, reject) => {
+    fetch("/api/allProductData.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        reslove(data.funny);
       })
       .catch((error) => {
         console.log('Error fetching macProductData:', error);
