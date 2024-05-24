@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { iPadProductData } from "../../Api/index.js";
-import { ipadContent } from '../../Content/content.js';
+import { ipadContent , navBarIpadList} from '../../Content/content.js';
 
 // import component
+import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
 import ProductItem from "../Common/productItem.js";
 import SectionTitle from '../Common/sectionTitle.js';
 import LinkButton from '../Common/linkButton.js';
@@ -11,6 +12,10 @@ import { ProductCardWrapper, CardInfo, ProductCardCenter } from '../Common/produ
 import ProductInformationCard from "../Common/productInformationCard.js";
 
 const IPad = () => {
+
+    const selectedData = navBarIpadList[0];
+    const otherData = navBarIpadList.slice(1);
+    
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -160,6 +165,27 @@ const IPad = () => {
                 </div>
 
             </div>
+
+            <div className="section last">
+                <h1 className="title">iPad</h1>
+                <div className="section-last-info">
+
+                    <NavBarLargeList
+                        title={selectedData.title}
+                        items={selectedData.listItem}
+                    >
+                        <>
+                            <br />
+                            <h4>比較 iPad</h4>
+                            <h4>選 iPad 的理由</h4>
+                        </>
+                    </NavBarLargeList>
+                    {otherData && otherData.map((data, index) => (
+                        <NavBarSmallList key={index} title={data.title} items={data.listItem} />
+                    ))}
+                </div>
+            </div>
+
         </div>
     )
 }

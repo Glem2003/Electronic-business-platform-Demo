@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { iPhoneProductData } from "../../Api";
-import { iphoneContent } from '../../Content/content.js';
+import { iphoneContent, navBarIphoneList } from '../../Content/content.js';
 
 //import component
+import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
 import ProductItem from "../Common/productItem";
 import SectionTitle from '../Common/sectionTitle.js';
 import ProductInfoItem from "../Common/productInfoItem";
@@ -12,6 +13,10 @@ import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
 
 const Iphone = () => {
+
+    const selectedData = navBarIphoneList[0];
+    const otherData = navBarIphoneList.slice(1);
+
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -134,6 +139,26 @@ const Iphone = () => {
                     </div>
                 </ScrollBar>
 
+            </div>
+
+            <div className="section last">
+                <h1 className="title">iPhone</h1>
+                <div className="section-last-info">
+
+                    <NavBarLargeList
+                        title={selectedData.title}
+                        items={selectedData.listItem}
+                    >
+                        <>
+                            <br />
+                            <h4>比較 iPhone</h4>
+                            <h4>從 Android 轉用</h4>
+                        </>
+                    </NavBarLargeList>
+                    {otherData && otherData.map((data, index) => (
+                        <NavBarSmallList key={index} title={data.title} items={data.listItem} />
+                    ))}
+                </div>
             </div>
 
         </div>
