@@ -529,9 +529,9 @@ export const ipadContent = ([
                 productInfoItem:
                     [
                         { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_a14__ew6phnozfs4m_large.png", alt: "A14 仿生晶片", text: "A14 仿生晶片" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadair13_gen6_camera__f3tksk5vlmq2_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br/>4K 錄影</>) },
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadair13_gen6_camera__f3tksk5vlmq2_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
                         { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png", alt: "前置相機", text: "橫向 1200 萬像素超廣角前置相機" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen3_gen1__f7yqqbhlbpe2_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (USB‑C)<br/>支援 Apple Pencil (第 1 代)</>) },
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen3_gen1__f7yqqbhlbpe2_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (USB‑C)<br />支援 Apple Pencil (第 1 代)</>) },
                         { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboardfolio_ipad__eyxf7748v802_large.png", alt: "支援巧控鍵盤雙面夾", text: "支援巧控鍵盤雙面夾" }
                     ]
             },
@@ -549,9 +549,9 @@ export const ipadContent = ([
                 productInfoItem:
                     [
                         { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_a15__dsg22feqeiuu_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadmini_gen6_camera__cwk7mc82wzma_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br/>4K 錄影</>) },
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadmini_gen6_camera__cwk7mc82wzma_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
                         { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera__dan9au5hbu0y_large.png", alt: "超廣角前置相機", text: "1200 萬像素超廣角前置相機" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen2_gen3__cvvp729jcbki_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (第 2 代)<br/>支援 Apple Pencil (USB‑C)</>) },
+                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen2_gen3__cvvp729jcbki_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (第 2 代)<br />支援 Apple Pencil (USB‑C)</>) },
                         { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard__bn0eizfdbgly_large.png", alt: "支援藍牙鍵盤", text: "支援藍牙鍵盤" }
                     ]
             }
@@ -559,7 +559,7 @@ export const ipadContent = ([
         section_4: [
             { title: "iPad 必備精選" }
         ],
-        section_4_info_item:[
+        section_4_info_item: [
             { postscript: "全新", title: "Apple Pencil", text: "隨心所想，隨筆記下。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_pencil__b1ze600aojyq_xlarge.png", alt: "Apple Pencil" },
             { postscript: "全新", title: "專為 iPad 設計的鍵盤", text: "打字高手，隨手帶。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_keyboard__b2j4vh67cw76_xlarge.png", alt: "iPad keyboard" }
         ]
@@ -587,6 +587,86 @@ export const iphoneContent = ([
                     { title: "隱私權", subtitle: (<>你的資料，<br />保存在安全的地方。</>), src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/privacy__cum61s425o6e_medium.jpg" },
                     { title: "環境", subtitle: "再回收、再利用、再循環。", src: "https://www.apple.com/v/iphone/home/bu/images/overview/consider/environment__d1g8uhlvrccy_xlarge.jpg" }
                 ]
+            }
+        ],
+        section_3: [
+            { title: "探索各個產品系列。", subtitle: "比較所有機型 > " }
+        ],
+        product_info_item: [
+            {
+                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15_pro__bpnjhcrxofqu_xlarge.png",
+                alt: "iPhone 15 Pro",
+                color: ["white", "black", "yellow", "purple"],
+                title: "iPhone 15 Pro",
+                text: "iPhone 的極致。",
+                price: "NT$36,900 起",
+                btn: ["進一步了解", "查看價格"],
+                productInfoItem:
+                    [
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a17_pro__dpmksmevf1m6_large.png", alt: "A17 Pro 晶片", text: "A17 Pro 晶片配備 6 核心 GPU" },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_pro_camera__cmmp7qw3bkia_large.png", alt: "超廣角相機", text: (<>Pro 相機系統<br/>我們最先進的 4800 萬像素主相機<br/>3 倍或 5 倍望遠相機<br/>超廣角相機</>) },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 29 小時" }
+                    ]
+            },
+            {
+                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15__fm75iyqlkjau_xlarge.png",
+                alt: "iPhone 15",
+                color: ["white", "black", "yellow", "purple","grey"],
+                title: "iPhone 15",
+                text: "滿載強大實力。",
+                price: "NT$29,900 起",
+                btn: ["進一步了解", "查看價格"],
+                productInfoItem:
+                    [
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a16__fo5o85ip3dui_large.png", alt: "A16 仿生晶片", text: "A16 仿生晶片配備 5 核心 GPU" },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_camera__ua2m41hu16qe_large.png", alt: "超廣角相機", text: (<>先進的雙相機系統<br/>4800 萬像素主相機<br/>2 倍望遠功能<br/>超廣角相機</>) },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 26 小時" }
+                    ]
+            },
+            {
+                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_14__cjgvgyn9cquu_xlarge.png",
+                alt: "iPhone 14",
+                color: ["white", "black", "yellow", "purple","red","orange"],
+                title: "iPhone 14",
+                text: "還是超讚，沒變",
+                price: "NT$25,900 起",
+                btn: ["進一步了解", "查看價格"],
+                productInfoItem:
+                    [
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 5 核心 GPU" },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_14_camera__euo3fr4f45iu_large.png", alt: "雙相機系統", text: (<>雙相機系統<br/>1200 萬像素主相機<br/>—<br/>超廣角相機</>) },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 26 小時" }
+                    ]
+            },
+            {
+                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_13__gnwdyqfq7i2y_xlarge.png",
+                alt: "iPhone 13",
+                color: ["white", "black", "yellow", "purple"],
+                title: "iPhone 13",
+                text: "各種厲害於一身。",
+                price: "NT$21,900 起",
+                btn: ["進一步了解", "查看價格"],
+                productInfoItem:
+                    [
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 4 核心 GPU" },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_13_camera__ep40fpr4piqa_large.png", alt: "雙相機系統", text: (<>雙相機系統<br/>1200 萬像素主相機<br/>—<br/>超廣角相機</>) },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 19 小時" }
+                    ]
+            },
+            {
+                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_se__gmvp19w01mum_xlarge.png",
+                alt: "iPhone SE",
+                color: ["white", "black", "yellow", "purple"],
+                title: "iPhone SE",
+                text: "強大實力，好超值。",
+                price: "NT$14,900 起",
+                btn: ["進一步了解", "查看價格"],
+                productInfoItem:
+                    [
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 4 核心 GPU" },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_se_camera__fjhchrid97e6_large.png", alt: "單相機系統", text: (<>單相機系統<br/>1200 萬像素主相機<br/>—<br/>—</>) },
+                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 15 小時" }
+                    ]
             }
         ]
     }

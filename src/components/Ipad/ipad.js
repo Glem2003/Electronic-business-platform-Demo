@@ -89,7 +89,7 @@ const IPad = () => {
 
             <div className="section section3">
                 {ipadContent && ipadContent.map((item) => {
-                    return item.section_3.map((info, index) => {
+                    return item.section_3 && item.section_3.map((info, index) => {
                         return (
                             <SectionTitle
                                 key={index}
@@ -102,7 +102,7 @@ const IPad = () => {
                 <ScrollBar>
                     <div className="product-items">
                         {ipadContent && ipadContent.map((item) => {
-                            return item.product_info_item.map((info, index) => {
+                            return item.product_info_item && item.product_info_item.map((info, index) => {
                                 return (
                                     <ProductInformationCard
                                         key={index}
@@ -138,8 +138,8 @@ const IPad = () => {
                     })
                 })}
                 <div className="product-info-item">
-                    {ipadContent.map((item) => {
-                        return item.section_4_info_item.map((info, index) => {
+                    {ipadContent && ipadContent.map((item) => {
+                        return item.section_4_info_item && item.section_4_info_item.map((info, index) => {
                             return (
                                 <ProductCardCenter
                                     key={index}

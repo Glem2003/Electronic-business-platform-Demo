@@ -9,6 +9,7 @@ import ProductInfoItem from "../Common/productInfoItem";
 import ScrollBar from '../Common/scrollBar.js';
 import LinkButton from '../Common/linkButton.js';
 import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import ProductInformationCard from '../Common/productInformationCard.js';
 
 const Iphone = () => {
     const [data, setData] = useState(null);
@@ -98,6 +99,43 @@ const Iphone = () => {
                     </div>
                 </ScrollBar>
             </div>
+
+            <div className="section section3">
+                {iphoneContent && iphoneContent && iphoneContent.map((item) => {
+                    return item.section_3 && item.section_3.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                            subtitle={info.subtitle}
+                        />
+                    ));
+                })}
+
+                <ScrollBar>
+                    <div className="product-items">
+                        {iphoneContent && iphoneContent.map((item) => {
+                            return item.product_info_item && item.product_info_item.map((info, index) => {
+                                return (
+                                    <ProductInformationCard
+                                        key={index}
+                                        src={info.src}
+                                        alt={info.alt}
+                                        color={info.color}
+                                        postscript={info.postscript}
+                                        title={info.title}
+                                        text={info.text}
+                                        price={info.price}
+                                        btn={info.btn}
+                                        productInfoItem={info.productInfoItem}
+                                    />
+                                )
+                            })
+                        })}
+                    </div>
+                </ScrollBar>
+
+            </div>
+
         </div>
     )
 }
