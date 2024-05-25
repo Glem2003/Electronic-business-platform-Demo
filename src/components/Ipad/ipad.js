@@ -171,7 +171,7 @@ const IPad = () => {
             </div>
 
             <div className="section last">
-                <h1 className="title">iPad</h1>
+                <h2 className="title">iPad</h2>
                 <div className="section-last-info">
 
                     <NavBarLargeList

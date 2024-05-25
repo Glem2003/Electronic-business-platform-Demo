@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { watchProductData } from "../../Api/index.js";
-import { watchContent } from '../../Content/content.js';
+import { watchContent, navBarWatchList } from '../../Content/content.js';
 
 //import component
+import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
 import ProductItem from "../Common/productItem.js";
 import SectionTitle from '../Common/sectionTitle.js';
 import ScrollBar from '../Common/scrollBar.js';
 import LinkButton from '../Common/linkButton.js';
-import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import { ProductCardWrapper, CardInfo, ProductCardCenter } from '../Common/productCard.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
 import ButtonItem from "../Common/buttonItem.js";
 
 const Watch = () => {
+
+    const selectedData = navBarWatchList[0];
+    const otherData = navBarWatchList.slice(1);
 
     const [data, setData] = useState(null);
 
@@ -140,7 +144,7 @@ const Watch = () => {
 
                 {watchContent && watchContent.map((item) => {
                     return item.section_4 && item.section_4.map((items) => {
-                        return items.section_4_info.map((info) => {
+                        return items.section_4_info && items.section_4_info.map((info) => {
                             return (
                                 <ProductCardWrapper>
                                     <div className="text-info">
@@ -157,6 +161,63 @@ const Watch = () => {
                         })
                     })
                 })}
+            </div>
+
+            <div className="section section5">
+                {watchContent && watchContent.map((item) => {
+                    return item.section_5 && item.section_5.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                            />
+                        )
+                    })
+                })}
+                <div className="product-info-item">
+                    {watchContent && watchContent.map((item) => {
+                        return item.section_5 && item.section_5.map((item) => {
+                            return item.info_item && item.info_item.map((info, index) => {
+                                return (
+                                    <ProductCardCenter
+                                        key={index}
+                                        src={info.src}
+                                        alt={info.alt}
+                                    >
+                                        <CardInfo
+                                            title={info.title}
+                                            text={info.text}
+                                            ps={info.postscript}
+                                            subtitle={info.link}
+                                        />
+                                    </ProductCardCenter>
+                                )
+                            })
+                        })
+
+                    })}
+                </div>
+
+            </div>
+
+            <div className="section last">
+                <h2 className="title">Apple Watch</h2>
+                <div className="section-last-info">
+
+                    <NavBarLargeList
+                        title={selectedData.title}
+                        items={selectedData.listItem}
+                    >
+                        <>
+                            <br />
+                            <h4>比較 Watch 錶款</h4>
+                            <h4>Apple Watch 的好處</h4>
+                        </>
+                    </NavBarLargeList>
+                    {otherData && otherData.map((data, index) => (
+                        <NavBarSmallList key={index} title={data.title} items={data.listItem} />
+                    ))}
+                </div>
             </div>
 
         </div>

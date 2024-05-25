@@ -117,75 +117,84 @@ const Main = () => {
                 <ScrollBar>
                     <div className="section-items">
                         {mainContent && mainContent.map((item) => {
-                            return item.section_2_info.map((info, index) => {
-                                const titleInfo = info.title;
-                                return (
-                                    <div className="item-col">
-                                        <ProductCardWrapper
-                                            key={index}
-                                            src={titleInfo.src}
-                                            alt={titleInfo.alt}
-                                        >
-                                            <CardInfo
-                                                title={titleInfo.title}
-                                                subtitle={titleInfo.subtitle}
-                                            />
-                                        </ProductCardWrapper>
-                                    </div>
-                                )
-                            })
-                        })}
-
-                        {mainContent && mainContent.map((item) => {
-                            return item.section_2_info.map((info) => {
-                                return info.content.map((item, index) => {
+                            return item.section_2 && item.section_2.map((item) => {
+                                return item.info_item && item.info_item.map((info, index) => {
+                                    const titleInfo = info.title;
                                     return (
                                         <div className="item-col">
-                                            <ProductCardCenter
+                                            <ProductCardWrapper
                                                 key={index}
-                                                src={item.src}
-                                                alt={item.alt}
+                                                src={titleInfo.src}
+                                                alt={titleInfo.alt}
                                             >
-                                                <div className="color-box">
-                                                    {Array.isArray(item.color) && item.color.map((item, index) => {
-                                                        return (
-                                                            <ColorBox
-                                                                key={index}
-                                                                color={item}
-                                                            />
-                                                        )
-                                                    })}
-                                                </div>
                                                 <CardInfo
-                                                    title={item.subtitle}
-                                                    subtitle={item.title}
-                                                    text={item.price}
+                                                    title={titleInfo.title}
+                                                    subtitle={titleInfo.subtitle}
                                                 />
-                                            </ProductCardCenter>
+                                            </ProductCardWrapper>
                                         </div>
                                     )
                                 })
+
                             })
                         })}
 
                         {mainContent && mainContent.map((item) => {
-                            return item.section_2_info.map((info, index) => {
-                                const lastInfo = info.more
-                                return (
-                                    <div className="item-col">
-                                        <ProductCardWrapper
-                                            key={index}
-                                            src={lastInfo.src}
-                                            alt={lastInfo.alt}
-                                        >
-                                            <CardInfo
-                                                title={lastInfo.subtitle}
-                                                subtitle={lastInfo.title}
-                                                text={lastInfo.price}
-                                            />
-                                        </ProductCardWrapper>
-                                    </div>
-                                )
+                            return item.section_2 && item.section_2.map((item) => {
+                                return item.info_item && item.info_item.map((info) => {
+                                    return info.content && info.content.map((item, index) => {
+                                        return (
+                                            <div className="item-col">
+                                                <ProductCardCenter
+                                                    key={index}
+                                                    src={item.src}
+                                                    alt={item.alt}
+                                                >
+                                                    <div className="color-box">
+                                                        {Array.isArray(item.color) && item.color.map((item, index) => {
+                                                            return (
+                                                                <ColorBox
+                                                                    key={index}
+                                                                    color={item}
+                                                                />
+                                                            )
+                                                        })}
+                                                    </div>
+                                                    <CardInfo
+                                                        title={item.subtitle}
+                                                        subtitle={item.title}
+                                                        text={item.price}
+                                                    />
+                                                </ProductCardCenter>
+                                            </div>
+                                        )
+                                    })
+                                })
+
+                            })
+                        })}
+
+                        {mainContent && mainContent.map((item) => {
+                            return item.section_2 && item.section_2.map((item) => {
+                                return item.info_item && item.info_item.map((info, index) => {
+                                    const lastInfo = info.more
+                                    return (
+                                        <div className="item-col">
+                                            <ProductCardWrapper
+                                                key={index}
+                                                src={lastInfo.src}
+                                                alt={lastInfo.alt}
+                                            >
+                                                <CardInfo
+                                                    title={lastInfo.subtitle}
+                                                    subtitle={lastInfo.title}
+                                                    text={lastInfo.price}
+                                                />
+                                            </ProductCardWrapper>
+                                        </div>
+                                    )
+                                })
+
                             })
                         })}
                     </div>
@@ -209,46 +218,50 @@ const Main = () => {
                 <ScrollBar>
                     <div className="section-items">
                         {mainContent && mainContent.map((item) => {
-                            return item.section_3_info.map((info, index) => {
-                                const titleInfo = info.title
-                                return (
-                                    <div className="item-col">
-                                        <ProductCardWrapper
-                                            key={index}
-                                            src={titleInfo.src}
-                                            alt={titleInfo.alt}
-                                        >
-                                            <CardInfo
-                                                title={titleInfo.subtitle}
-                                                subtitle={titleInfo.title}
-                                                text={titleInfo.price}
-                                            />
-                                        </ProductCardWrapper>
-                                    </div>
-                                )
-                            })
-                        })}
-
-                        {mainContent && mainContent.map((item) => {
-                            return item.section_3_info.map((info) => {
-                                return info.content.map((text, index) => {
+                            return item.section_3 && item.section_3.map((item) => {
+                                return item.info_item && item.info_item.map((info, index) => {
+                                    const titleInfo = info.title
                                     return (
                                         <div className="item-col">
-                                            <ProductCardCenter
+                                            <ProductCardWrapper
                                                 key={index}
-                                                src={text.src}
-                                                alt={text.alt}
+                                                src={titleInfo.src}
+                                                alt={titleInfo.alt}
                                             >
                                                 <CardInfo
-                                                    title={text.subtitle}
-                                                    subtitle={text.title}
-                                                    text={text.price}
+                                                    title={titleInfo.subtitle}
+                                                    subtitle={titleInfo.title}
+                                                    text={titleInfo.price}
                                                 />
-                                            </ProductCardCenter>
+                                            </ProductCardWrapper>
                                         </div>
                                     )
                                 })
 
+                            })
+                        })}
+
+                        {mainContent && mainContent.map((item) => {
+                            return item.section_3 && item.section_3.map((item) => {
+                                return item.info_item && item.info_item.map((info) => {
+                                    return info.content && info.content.map((text, index) => {
+                                        return (
+                                            <div className="item-col">
+                                                <ProductCardCenter
+                                                    key={index}
+                                                    src={text.src}
+                                                    alt={text.alt}
+                                                >
+                                                    <CardInfo
+                                                        title={text.subtitle}
+                                                        subtitle={text.title}
+                                                        text={text.price}
+                                                    />
+                                                </ProductCardCenter>
+                                            </div>
+                                        )
+                                    })
+                                })
                             })
                         })}
                     </div>

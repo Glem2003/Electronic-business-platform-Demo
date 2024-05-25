@@ -135,7 +135,7 @@ const Mac = () => {
             </div>
 
             <div className="section last">
-                <h1 className="title">Mac</h1>
+                <h2 className="title">Mac</h2>
                 <div className="section-last-info">
 
                     <NavBarLargeList
