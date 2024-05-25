@@ -9,7 +9,7 @@ import SectionTitle from '../Common/sectionTitle.js';
 import ProductInfoItem from "../Common/productInfoItem";
 import ScrollBar from '../Common/scrollBar.js';
 import LinkButton from '../Common/linkButton.js';
-import { ProductCardCenter,ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import { ProductCardCenter, ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
 import ButtonItem from "../Common/buttonItem.js";
 
@@ -120,21 +120,23 @@ const Iphone = () => {
                 <ScrollBar>
                     <div className="product-items">
                         {iphoneContent && iphoneContent.map((item) => {
-                            return item.product_info_item && item.product_info_item.map((info, index) => {
-                                return (
-                                    <ProductInformationCard
-                                        key={index}
-                                        src={info.src}
-                                        alt={info.alt}
-                                        color={info.color}
-                                        postscript={info.postscript}
-                                        title={info.title}
-                                        text={info.text}
-                                        price={info.price}
-                                        btn={info.btn}
-                                        productInfoItem={info.productInfoItem}
-                                    />
-                                )
+                            return item.section_3 && item.section_3.map((item) => {
+                                return item.product_info_item && item.product_info_item.map((info, index) => {
+                                    return (
+                                        <ProductInformationCard
+                                            key={index}
+                                            src={info.src}
+                                            alt={info.alt}
+                                            color={info.color}
+                                            postscript={info.postscript}
+                                            title={info.title}
+                                            text={info.text}
+                                            price={info.price}
+                                            btn={info.btn}
+                                            productInfoItem={info.productInfoItem}
+                                        />
+                                    )
+                                })
                             })
                         })}
                     </div>
@@ -153,50 +155,56 @@ const Iphone = () => {
                 })}
 
                 {iphoneContent && iphoneContent.map((item) => {
-                    return item.section_4_info && item.section_4_info.map((info) => {
-                        return (
-                            <ProductCardWrapper>
-                                <div className="text-info">
-                                    <CardInfo
-                                        text={info.text}
-                                    />
-                                    <ButtonItem
-                                        props={info.link}
-                                    />
-                                </div>
-                            </ProductCardWrapper>
-                        )
+                    return item.section_4 && item.section_4.map((items) => {
+                        return items.info && items.info.map((info) => {
+                            return (
+                                <ProductCardWrapper>
+                                    <div className="text-info">
+                                        <CardInfo
+                                            text={info.text}
+                                        />
+                                        <ButtonItem
+                                            props={info.link}
+                                        />
+                                    </div>
+                                </ProductCardWrapper>
+                            )
+                        })
                     })
                 })}
             </div>
 
             <div className="section section5">
                 {iphoneContent && iphoneContent.map((item) => {
-                    return item.section_5 && item.section_5.map((info, index) => (
-                        <SectionTitle
-                            key={index}
-                            title={info.title}
-                            subtitle={info.subtitle}
-                        />
-                    ));
+                    return item.section_5 && item.section_5.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                                subtitle={info.subtitle}
+                            />
+                        )
+                    });
                 })}
 
                 <div className="product-info-item">
                     {iphoneContent && iphoneContent.map((item) => {
-                        return item.section_5_info_item && item.section_5_info_item.map((info, index) => {
-                            return (
-                                <ProductCardCenter
-                                    key={index}
-                                    src={info.src}
-                                    alt={info.alt}
-                                >
-                                    <CardInfo
-                                        title={info.title}
-                                        text={info.text}
-                                        subtitle={info.link}
-                                    />
-                                </ProductCardCenter>
-                            )
+                        return item.section_5 && item.section_5.map((item) => {
+                            return item.info_item && item.info_item.map((info, index) => {
+                                return (
+                                    <ProductCardCenter
+                                        key={index}
+                                        src={info.src}
+                                        alt={info.alt}
+                                    >
+                                        <CardInfo
+                                            title={info.title}
+                                            text={info.text}
+                                            subtitle={info.link}
+                                        />
+                                    </ProductCardCenter>
+                                )
+                            })
                         })
                     })}
                 </div>

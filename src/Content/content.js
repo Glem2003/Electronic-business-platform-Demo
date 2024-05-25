@@ -1,3 +1,4 @@
+// home banner content
 export const homeLargeBanner = ([
     { title: "iPhone 15 Pro", subtitle: "鈦金屬，超堅固、超輕、超 Pro。", btn_text: ["進一步了解", "購買"] },
     { title: "iPhone 15", subtitle: "新相機，新設計，新的愛，狂比心", btn_text: ["進一步了解", "購買"] }
@@ -8,6 +9,7 @@ export const homeSmallBanner = ([
     { title: "Apple WATCH", subtitle: "智慧升級，亮度、實力再晉級。", btn_text: ["進一步了解", "購買"] }
 ])
 
+// navBar content
 export const navBarMainList = ([
     {
         title: "選購",
@@ -345,6 +347,7 @@ export const navBarSearchList = ([
     }
 ])
 
+// footer content
 export const footerLink = ([
     {
         text: [
@@ -405,6 +408,7 @@ export const footerInfoList = ([
     }
 ])
 
+// mac page content
 export const macContent = ([
     {
         header: [
@@ -432,12 +436,7 @@ export const macContent = ([
                 title: "看 Mac 在企業顯身手。",
                 banner_info: [
                     {
-                        title: (
-                            <>
-                                在三頓半，人人愛用 Mac，<br />
-                                個個超能力爆棚。
-                            </>
-                        ),
+                        title: (<>在三頓半，人人愛用 Mac，<br />個個超能力爆棚。</>),
                         text: [
                             {
                                 des: "從設計、研發到法務，Mac 激發全員滿滿能量",
@@ -449,10 +448,10 @@ export const macContent = ([
                 ]
             }
         ]
-
     }
 ])
 
+// ipad page content
 export const ipadContent = ([
     {
         header: [
@@ -472,100 +471,107 @@ export const ipadContent = ([
             }
         ],
         section_3: [
-            { title: "探索全系列產品。", subtitle: "比較所有機型 > " }
-        ],
-        product_info_item: [
-            {
-                src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_pro__6bgrkek0jnm2_xlarge.png",
-                alt: "iPad Pro",
-                color: ["white", "black"],
-                postscript: "全新",
-                title: "iPad Pro",
-                text: "極致 iPad 體驗，來自最先進科技。",
-                price: "$34,900起",
-                btn: ["進一步了解", "查看價格"],
-                cardTitle: "13 吋或 11 吋",
-                cardText: (<>Ultra Retina XDR 顯示器3<br />ProMotion 自動適應更新頻率技術<br />P3 廣色域<br />1TB 與 2TB 機型可選配 Nano-texture 顯示器玻璃</>),
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_m4__b2ujor0cthv6_large.png", alt: "M4 晶片", text: "M4 晶片" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadpro13_gen7_camera__dgh2hv5gfrqu_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 的 ProRes 錄影</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png", alt: "廣角前置相機", text: (<>橫向 1200 萬像素超廣角前置相機<br />原深感測相機系統</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen4_gen3__d7b45g01744m_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil Pro<br />支援 Apple Pencil (USB‑C)</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard_m4_ipad__ef4asgi8mvyq_large.png", alt: "iPad Pro 巧控鍵盤", text: "支援適用於 iPad Pro (M4) 的巧控鍵盤" }
-                    ]
-            },
-            {
-                src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_air__cr381zljqdiu_xlarge.png",
-                alt: "iPad Air",
-                color: ["white", "black", "white", "black"],
-                postscript: "全新",
-                title: "iPad Air",
-                text: "重量級表現，輕裝上陣。",
-                price: "NT$19,900 起",
-                btn: ["進一步了解", "查看價格"],
-                cardTitle: "13 吋或 11 吋",
-                cardText: (<>Liquid Retina 顯示器<br />P3 廣色域<br />以矩形對角線量測時，13 吋 iPad Air 機型為 12.9 吋；<br />11 吋 iPad Air 機型為 10.86 吋。實際可視區較小。</>),
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_m2__7lsu9mg7n2aa_large.png", alt: "M2 晶片", text: "M2 晶片" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadair13_gen6_camera__f3tksk5vlmq2_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png", alt: "超廣角前置相機", text: "橫向 1200 萬像素超廣角前置相機" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen4_gen3__d7b45g01744m_large.png", alt: "Apple Pencil Pro", text: (<>支援 Apple Pencil Pro<br />支援 Apple Pencil (USB‑C)</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard_ipad__h1dmesqz8cq6_large.png", alt: "支援巧控鍵盤", text: "支援巧控鍵盤" }
-                    ]
-            },
-            {
-                src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_10th_gen__ej5p5x6yf2gm_xlarge.png",
-                alt: "iPad",
-                color: ["white", "black", "yellow", "purple"],
-                postscript: "全新",
-                title: "iPad",
-                text: "多彩的全螢幕 iPad，助你做好日常大小事。",
-                price: "NT$11,900 起",
-                btn: ["進一步了解", "查看價格"],
-                cardTitle: "10.9 吋",
-                cardText: (<>Liquid Retina 顯示器<br />sRGB 色域</>),
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_a14__ew6phnozfs4m_large.png", alt: "A14 仿生晶片", text: "A14 仿生晶片" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadair13_gen6_camera__f3tksk5vlmq2_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png", alt: "前置相機", text: "橫向 1200 萬像素超廣角前置相機" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen3_gen1__f7yqqbhlbpe2_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (USB‑C)<br />支援 Apple Pencil (第 1 代)</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboardfolio_ipad__eyxf7748v802_large.png", alt: "支援巧控鍵盤雙面夾", text: "支援巧控鍵盤雙面夾" }
-                    ]
-            },
-            {
-                src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_mini__f3iy3qb50gia_xlarge.png",
-                alt: "iPad mini",
-                color: ["white", "black", "white", "black"],
-                postscript: "全新",
-                title: "iPad mini",
-                text: "完整 iPad 體驗，超好攜帶的設計。",
-                price: "NT$16,900 起",
-                btn: ["進一步了解", "查看價格"],
-                cardTitle: "8.3 吋",
-                cardText: (<>Liquid Retina 顯示器<br />P3 廣色域</>),
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_a15__dsg22feqeiuu_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadmini_gen6_camera__cwk7mc82wzma_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera__dan9au5hbu0y_large.png", alt: "超廣角前置相機", text: "1200 萬像素超廣角前置相機" },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen2_gen3__cvvp729jcbki_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (第 2 代)<br />支援 Apple Pencil (USB‑C)</>) },
-                        { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard__bn0eizfdbgly_large.png", alt: "支援藍牙鍵盤", text: "支援藍牙鍵盤" }
-                    ]
+            { 
+                title: "探索全系列產品。", 
+                subtitle: "比較所有機型 > " ,
+                product_info_item: [
+                    {
+                        src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_pro__6bgrkek0jnm2_xlarge.png",
+                        alt: "iPad Pro",
+                        color: ["white", "black"],
+                        postscript: "全新",
+                        title: "iPad Pro",
+                        text: "極致 iPad 體驗，來自最先進科技。",
+                        price: "$34,900起",
+                        btn: ["進一步了解", "查看價格"],
+                        cardTitle: "13 吋或 11 吋",
+                        cardText: (<>Ultra Retina XDR 顯示器3<br />ProMotion 自動適應更新頻率技術<br />P3 廣色域<br />1TB 與 2TB 機型可選配 Nano-texture 顯示器玻璃</>),
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_m4__b2ujor0cthv6_large.png", alt: "M4 晶片", text: "M4 晶片" },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadpro13_gen7_camera__dgh2hv5gfrqu_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 的 ProRes 錄影</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png", alt: "廣角前置相機", text: (<>橫向 1200 萬像素超廣角前置相機<br />原深感測相機系統</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen4_gen3__d7b45g01744m_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil Pro<br />支援 Apple Pencil (USB‑C)</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard_m4_ipad__ef4asgi8mvyq_large.png", alt: "iPad Pro 巧控鍵盤", text: "支援適用於 iPad Pro (M4) 的巧控鍵盤" }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_air__cr381zljqdiu_xlarge.png",
+                        alt: "iPad Air",
+                        color: ["white", "black", "white", "black"],
+                        postscript: "全新",
+                        title: "iPad Air",
+                        text: "重量級表現，輕裝上陣。",
+                        price: "NT$19,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        cardTitle: "13 吋或 11 吋",
+                        cardText: (<>Liquid Retina 顯示器<br />P3 廣色域<br />以矩形對角線量測時，13 吋 iPad Air 機型為 12.9 吋；<br />11 吋 iPad Air 機型為 10.86 吋。實際可視區較小。</>),
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_m2__7lsu9mg7n2aa_large.png", alt: "M2 晶片", text: "M2 晶片" },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadair13_gen6_camera__f3tksk5vlmq2_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png", alt: "超廣角前置相機", text: "橫向 1200 萬像素超廣角前置相機" },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen4_gen3__d7b45g01744m_large.png", alt: "Apple Pencil Pro", text: (<>支援 Apple Pencil Pro<br />支援 Apple Pencil (USB‑C)</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard_ipad__h1dmesqz8cq6_large.png", alt: "支援巧控鍵盤", text: "支援巧控鍵盤" }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_10th_gen__ej5p5x6yf2gm_xlarge.png",
+                        alt: "iPad",
+                        color: ["white", "black", "yellow", "purple"],
+                        postscript: "全新",
+                        title: "iPad",
+                        text: "多彩的全螢幕 iPad，助你做好日常大小事。",
+                        price: "NT$11,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        cardTitle: "10.9 吋",
+                        cardText: (<>Liquid Retina 顯示器<br />sRGB 色域</>),
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_a14__ew6phnozfs4m_large.png", alt: "A14 仿生晶片", text: "A14 仿生晶片" },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadair13_gen6_camera__f3tksk5vlmq2_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png", alt: "前置相機", text: "橫向 1200 萬像素超廣角前置相機" },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen3_gen1__f7yqqbhlbpe2_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (USB‑C)<br />支援 Apple Pencil (第 1 代)</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboardfolio_ipad__eyxf7748v802_large.png", alt: "支援巧控鍵盤雙面夾", text: "支援巧控鍵盤雙面夾" }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_mini__f3iy3qb50gia_xlarge.png",
+                        alt: "iPad mini",
+                        color: ["white", "black", "white", "black"],
+                        postscript: "全新",
+                        title: "iPad mini",
+                        text: "完整 iPad 體驗，超好攜帶的設計。",
+                        price: "NT$16,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        cardTitle: "8.3 吋",
+                        cardText: (<>Liquid Retina 顯示器<br />P3 廣色域</>),
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/icon_chip_a15__dsg22feqeiuu_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片" },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipadmini_gen6_camera__cwk7mc82wzma_large.png", alt: "廣角相機", text: (<>1200 萬像素廣角相機<br />4K 錄影</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/ipad_front_camera__dan9au5hbu0y_large.png", alt: "超廣角前置相機", text: "1200 萬像素超廣角前置相機" },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/applepencil_vertical_gen2_gen3__cvvp729jcbki_large.png", alt: "Apple Pencil", text: (<>支援 Apple Pencil (第 2 代)<br />支援 Apple Pencil (USB‑C)</>) },
+                                { src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/magickeyboard__bn0eizfdbgly_large.png", alt: "支援藍牙鍵盤", text: "支援藍牙鍵盤" }
+                            ]
+                    }
+                ]
             }
         ],
         section_4: [
-            { title: "iPad 必備精選" }
+            { 
+                title: "iPad 必備精選" ,
+                info_item: [
+                    { postscript: "全新", title: "Apple Pencil", text: "隨心所想，隨筆記下。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_pencil__b1ze600aojyq_xlarge.png", alt: "Apple Pencil" },
+                    { postscript: "全新", title: "專為 iPad 設計的鍵盤", text: "打字高手，隨手帶。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_keyboard__b2j4vh67cw76_xlarge.png", alt: "iPad keyboard" }
+                ]
+            }
         ],
-        section_4_info_item: [
-            { postscript: "全新", title: "Apple Pencil", text: "隨心所想，隨筆記下。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_pencil__b1ze600aojyq_xlarge.png", alt: "Apple Pencil" },
-            { postscript: "全新", title: "專為 iPad 設計的鍵盤", text: "打字高手，隨手帶。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_keyboard__b2j4vh67cw76_xlarge.png", alt: "iPad keyboard" }
-        ]
+        
     }
 ])
 
+// iphone page content
 export const iphoneContent = ([
     {
         header: [
@@ -590,101 +596,110 @@ export const iphoneContent = ([
             }
         ],
         section_3: [
-            { title: "探索各個產品系列。", subtitle: "比較所有機型 > " }
-        ],
-        product_info_item: [
-            {
-                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15_pro__bpnjhcrxofqu_xlarge.png",
-                alt: "iPhone 15 Pro",
-                color: ["white", "black", "yellow", "purple"],
-                title: "iPhone 15 Pro",
-                text: "iPhone 的極致。",
-                price: "NT$36,900 起",
-                btn: ["進一步了解", "查看價格"],
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a17_pro__dpmksmevf1m6_large.png", alt: "A17 Pro 晶片", text: "A17 Pro 晶片配備 6 核心 GPU" },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_pro_camera__cmmp7qw3bkia_large.png", alt: "超廣角相機", text: (<>Pro 相機系統<br />我們最先進的 4800 萬像素主相機<br />3 倍或 5 倍望遠相機<br />超廣角相機</>) },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 29 小時" }
-                    ]
-            },
-            {
-                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15__fm75iyqlkjau_xlarge.png",
-                alt: "iPhone 15",
-                color: ["white", "black", "yellow", "purple", "grey"],
-                title: "iPhone 15",
-                text: "滿載強大實力。",
-                price: "NT$29,900 起",
-                btn: ["進一步了解", "查看價格"],
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a16__fo5o85ip3dui_large.png", alt: "A16 仿生晶片", text: "A16 仿生晶片配備 5 核心 GPU" },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_camera__ua2m41hu16qe_large.png", alt: "超廣角相機", text: (<>先進的雙相機系統<br />4800 萬像素主相機<br />2 倍望遠功能<br />超廣角相機</>) },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 26 小時" }
-                    ]
-            },
-            {
-                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_14__cjgvgyn9cquu_xlarge.png",
-                alt: "iPhone 14",
-                color: ["white", "black", "yellow", "purple", "red", "orange"],
-                title: "iPhone 14",
-                text: "還是超讚，沒變",
-                price: "NT$25,900 起",
-                btn: ["進一步了解", "查看價格"],
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 5 核心 GPU" },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_14_camera__euo3fr4f45iu_large.png", alt: "雙相機系統", text: (<>雙相機系統<br />1200 萬像素主相機<br />—<br />超廣角相機</>) },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 26 小時" }
-                    ]
-            },
-            {
-                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_13__gnwdyqfq7i2y_xlarge.png",
-                alt: "iPhone 13",
-                color: ["white", "black", "yellow", "purple"],
-                title: "iPhone 13",
-                text: "各種厲害於一身。",
-                price: "NT$21,900 起",
-                btn: ["進一步了解", "查看價格"],
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 4 核心 GPU" },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_13_camera__ep40fpr4piqa_large.png", alt: "雙相機系統", text: (<>雙相機系統<br />1200 萬像素主相機<br />—<br />超廣角相機</>) },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 19 小時" }
-                    ]
-            },
-            {
-                src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_se__gmvp19w01mum_xlarge.png",
-                alt: "iPhone SE",
-                color: ["white", "black", "yellow", "purple"],
-                title: "iPhone SE",
-                text: "強大實力，好超值。",
-                price: "NT$14,900 起",
-                btn: ["進一步了解", "查看價格"],
-                productInfoItem:
-                    [
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 4 核心 GPU" },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_se_camera__fjhchrid97e6_large.png", alt: "單相機系統", text: (<>單相機系統<br />1200 萬像素主相機<br />—<br />—</>) },
-                        { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 15 小時" }
-                    ]
+            { 
+                title: "探索各個產品系列。", 
+                subtitle: "比較所有機型 > " ,
+                product_info_item: [
+                    {
+                        src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15_pro__bpnjhcrxofqu_xlarge.png",
+                        alt: "iPhone 15 Pro",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "iPhone 15 Pro",
+                        text: "iPhone 的極致。",
+                        price: "NT$36,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a17_pro__dpmksmevf1m6_large.png", alt: "A17 Pro 晶片", text: "A17 Pro 晶片配備 6 核心 GPU" },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_pro_camera__cmmp7qw3bkia_large.png", alt: "超廣角相機", text: (<>Pro 相機系統<br />我們最先進的 4800 萬像素主相機<br />3 倍或 5 倍望遠相機<br />超廣角相機</>) },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 29 小時" }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15__fm75iyqlkjau_xlarge.png",
+                        alt: "iPhone 15",
+                        color: ["white", "black", "yellow", "purple", "grey"],
+                        title: "iPhone 15",
+                        text: "滿載強大實力。",
+                        price: "NT$29,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a16__fo5o85ip3dui_large.png", alt: "A16 仿生晶片", text: "A16 仿生晶片配備 5 核心 GPU" },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_camera__ua2m41hu16qe_large.png", alt: "超廣角相機", text: (<>先進的雙相機系統<br />4800 萬像素主相機<br />2 倍望遠功能<br />超廣角相機</>) },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 26 小時" }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_14__cjgvgyn9cquu_xlarge.png",
+                        alt: "iPhone 14",
+                        color: ["white", "black", "yellow", "purple", "red", "orange"],
+                        title: "iPhone 14",
+                        text: "還是超讚，沒變",
+                        price: "NT$25,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 5 核心 GPU" },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_14_camera__euo3fr4f45iu_large.png", alt: "雙相機系統", text: (<>雙相機系統<br />1200 萬像素主相機<br />—<br />超廣角相機</>) },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 26 小時" }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_13__gnwdyqfq7i2y_xlarge.png",
+                        alt: "iPhone 13",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "iPhone 13",
+                        text: "各種厲害於一身。",
+                        price: "NT$21,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 4 核心 GPU" },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_13_camera__ep40fpr4piqa_large.png", alt: "雙相機系統", text: (<>雙相機系統<br />1200 萬像素主相機<br />—<br />超廣角相機</>) },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 19 小時" }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_se__gmvp19w01mum_xlarge.png",
+                        alt: "iPhone SE",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "iPhone SE",
+                        text: "強大實力，好超值。",
+                        price: "NT$14,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 4 核心 GPU" },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_se_camera__fjhchrid97e6_large.png", alt: "單相機系統", text: (<>單相機系統<br />1200 萬像素主相機<br />—<br />—</>) },
+                                { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png", alt: "power", text: "影片播放時間最長可達 15 小時" }
+                            ]
+                    }
+                ]
             }
         ],
         section_4: [
-            { title: "深入了解最新機型。" }
-        ],
-        section_4_info: [
-            { text: (<>帶你認識<br />iPhone 15 與<br />iPhone 15 Pro</>), link: ["觀看影片"] }
+            { 
+                title: "深入了解最新機型。" ,
+                info: [
+                    { text: (<>帶你認識<br />iPhone 15 與<br />iPhone 15 Pro</>), link: ["觀看影片"] }
+                ]
+            }
         ],
         section_5: [
-            { title: "iPhone 必備精選", subtitle: "各款 iPhone 配件 >" }
-        ],
-        section_5_info_item: [
-            { title: "MagSafe", text: (<>磁吸式保護殼、卡套都可貼合，還能同時貼。<br/>並且盡享快速、高效的無線充電。</>), link: "選購 MagSafe 配件", src: "https://www.apple.com/v/iphone/home/bu/images/overview/essentials/magsafe__bfji5hb1mqsy_xlarge.jpg", alt: "MagSafe" },
-            { title: "AirTag", text: (<>在鑰匙圈上掛一個，背包裡也放一個，遺失時，<br/>只要使用「尋找」app 就能找出它們的蹤跡。</>), link: "購買", src: "https://www.apple.com/tw/iphone/home/images/overview/essentials/airtag__b5lt0bcbd9ua_xlarge.jpg", alt: "AirTag" }
+            { 
+                title: "iPhone 必備精選", 
+                subtitle: "各款 iPhone 配件 >" ,
+                info_item: [
+                    { title: "MagSafe", text: (<>磁吸式保護殼、卡套都可貼合，還能同時貼。<br />並且盡享快速、高效的無線充電。</>), link: "選購 MagSafe 配件", src: "https://www.apple.com/v/iphone/home/bu/images/overview/essentials/magsafe__bfji5hb1mqsy_xlarge.jpg", alt: "MagSafe" },
+                    { title: "AirTag", text: (<>在鑰匙圈上掛一個，背包裡也放一個，遺失時，<br />只要使用「尋找」app 就能找出它們的蹤跡。</>), link: "購買", src: "https://www.apple.com/tw/iphone/home/images/overview/essentials/airtag__b5lt0bcbd9ua_xlarge.jpg", alt: "AirTag" }
+                ]
+            }
         ]
     }
 ])
 
+// main page content
 export const mainContent = ([
     {
         header: [
@@ -829,10 +844,240 @@ export const mainContent = ([
     }
 ])
 
+// watch page content
 export const watchContent = ([
     {
-        header:[
+        header: [
             { title: "Apple Watch", subtitle: "戴著它，就會愛上它。" }
+        ],
+        section_2: [
+            {
+                title: "了解 Apple Watch。",
+                info_item: [
+                    { title: "新款驕傲特別版錶帶", subtitle: "亮出你自帶的光彩。", src: "https://www.apple.com/v/watch/bm/images/overview/consider/feature_pride__kyvpfjjosjey_xlarge.jpg" },
+                    { title: "健身", subtitle: "一舉一動都算數。", src: "https://www.apple.com/tw/watch/images/overview/consider/feature_fitness__bqrhzxk45liu_xlarge.jpg" },
+                    { title: "健康", subtitle: "用心，知你心。", src: "https://www.apple.com/tw/watch/images/overview/consider/feature_health__b8l8jg8aa0b6_xlarge.jpg" },
+                    { title: "聯繫", subtitle: "保持聯繫通通行。", src: "https://www.apple.com/tw/watch/images/overview/consider/feature_connectivity__k68bkgj3a6ie_xlarge.jpg" },
+                    { title: "安全", subtitle: "好幫手，輕鬆找到。", src: "https://www.apple.com/v/watch/bm/images/overview/consider/feature_safety__c5gr3nzfh20y_xlarge.jpg" },
+                    { title: "個人化風格", subtitle: "創造你的獨一無二。", src: "https://www.apple.com/tw/watch/images/overview/consider/feature_personalization__fdz9dgc5afma_xlarge.jpg" },
+                    { title: "為征途而備", subtitle: "勇闖 Ultra 之路。", src: "https://www.apple.com/tw/watch/images/overview/consider/feature_adventure__dswfr09jo8q6_xlarge.jpg" },
+                    { title: "Apple Watch 家人共享設定", subtitle: (<>給孩子的好選擇，<br />沒有 iPhone 也好用。</>), src: "https://www.apple.com/v/watch/bm/images/overview/consider/feature_family_setup__ghz0t0it1hay_xlarge.jpg" }
+                ]
+            }
+        ],
+        section_3: [
+            {
+                title: "探索全系列產品。",
+                subtitle: "比較所有機型",
+                product_info_item: [
+                    {
+                        src: "https://www.apple.com/v/watch/bm/images/overview/select/product_se__frx4hb13romm_xlarge.png",
+                        alt: "Apple Watch SE",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "iPhone 15 Pro",
+                        text: (<>滿滿實用功能，<br />超值入手。</>),
+                        price: "NT$7,900 起",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_sizes__frpc80tcj9me_large.png", alt: "鋁金屬錶殼", text: (<>44 公釐或 40 公釐<br />鋁金屬錶殼</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_fill__fszn2l29zuy6_large.png", alt: "Retina 顯示器", text: (<>Retina 顯示器<br />最高可達 1000 尼特亮度</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_chip_s8__1dfxw5yx25u2_large.png", alt: "尋找 iPhone", text: (<>S8 SiP<br />—<br />尋找 iPhone</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_heart__d3nput42we0y_large.png", alt: "心率通知", text: (<>—<br />高心率與低心率通知<br />心律不整通知<br />低心適能通知</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_battery__cf9dxpv3s9iu_large.png", alt: "power", text: (<>最長可達 18 小時<br />低耗電模式<br />—</>) }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/tw/watch/images/overview/select/product_s9__b8uw2qgcgw1y_xlarge.png",
+                        alt: "Apple Watch Series 9",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "Apple Watch Series 9",
+                        text: (<>強大的感測器，<br />先進的健康功能。</>),
+                        price: "NT$13,500 起",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_sizes__frpc80tcj9me_large.png", alt: "鋁金屬錶殼", text: (<>45 公釐或 41 公釐<br />鋁金屬或不鏽鋼錶殼</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_fill__fszn2l29zuy6_large.png", alt: "Retina 顯示器", text: (<>隨顯 Retina 顯示器<br />最高可達 2000 尼特亮度</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_chip_s9_fill__bp2ck2cja6s2_large.png", alt: "尋找 iPhone", text: (<>S9 SiP<br />手勢操控<br />雙指互點兩下<br />精確尋找 iPhone</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_heart__d3nput42we0y_large.png", alt: "心率通知", text: (<>心電圖 app<br />高心率與低心率通知<br />心律不整通知<br />低心適能通知</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_battery__cf9dxpv3s9iu_large.png", alt: "power", text: (<>最長可達 18 小時<br />低耗電模式下最長可達 36 小時<br />快速充電</>) }
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/tw/watch/images/overview/select/product_u2__ebztafh9rvau_xlarge.png",
+                        alt: "Apple Watch Ultra 2",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "Apple Watch Ultra 2",
+                        text: (<>最堅固、最強大，<br />登峰造極。</>),
+                        price: "NT$27,900",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case__fnvx2dhaljue_large.png", alt: "鋁金屬錶殼", text: (<>49 公釐<br />鈦金屬錶殼</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_fill__fszn2l29zuy6_large.png", alt: "Retina 顯示器", text: (<>隨顯 Retina 顯示器<br />最高可達 3000 尼特亮度</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_chip_s9_fill__bp2ck2cja6s2_large.png", alt: "尋找 iPhone", text: (<>S9 SiP<br />手勢操控<br />雙指互點兩下<br />精確尋找 iPhone</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_heart__d3nput42we0y_large.png", alt: "心率通知", text: (<>心電圖 app<br />高心率與低心率通知<br />心律不整通知<br />低心適能通知</>) },
+                                { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_battery__cf9dxpv3s9iu_large.png", alt: "power", text: (<>最長可達 36 小時<br />低耗電模式下最長可達 72 小時<br />快速充電</>) }
+                            ]
+                    }
+                ]
+            }
+        ],
+        section_4: [
+            {
+                title: "Apple Watch 工坊",
+                section_4_info: [
+                    { title: "混著搭、選著配，創造你風格", text: (<>選錶殼，挑錶帶<br />搭出與你最相配的手錶</>), link: ["打造你的款式"] }
+                ]
+            }
+        ],
+        section_5: [
+            {
+                title: "Apple Watch 必備精選。",
+                subtitle: "各款 Apple Watch 配件",
+                section_5_info_item: [
+                    { title: (<>吸睛新色，<br />腕上放閃。</>), link: "選購 Apple Watch 錶帶", src: "https://www.apple.com/v/watch/bm/images/overview/essentials/banner_bands__fa2yj1435ia2_xlarge.jpg", alt: "Apple Watch 錶帶" },
+                    { title: (<>全系列，<br />款款巧妙。</>), text: (<>探索所有 AirPods 機型，<br />找出最適合你的耳機。</>), link: "進一步了解", src: "https://www.apple.com/v/watch/bm/images/overview/essentials/banner_airpods__bobqeod4vk1y_xlarge.jpg", alt: "AirPods 機型" }
+                ]
+            }
+        ],
+
+    }
+])
+
+// airpods page content
+export const airpodsContent = ([
+    {
+        ads_text: [
+            { text: "購買 AirPods，免費試用 Apple Music 6 個月。", link: "進一步了解 >" }
+        ],
+        banner_item: [
+            { title: "AirPods Pro", subtitle: (<><strong>第 2 代</strong><br />NT$7,490</>), btn_text: ["購買", "進一步了解",] },
+            { title: "AirPods", subtitle: (<><strong>第 3 代</strong><br />NT$5,590 起</>), btn_text: ["購買", "進一步了解",] },
+            { title: "AirPods", subtitle: (<><strong>第 2 代</strong>NT$4,290</>), btn_text: ["購買", "進一步了解",] },
+            { title: "AirPods Max", subtitle: (<>NT$17,990</>), btn_text: ["購買", "進一步了解",] }
+        ],
+        section_info: [
+            {
+                title: "巧妙連接你的各個裝置。",
+                info_item: [
+                    { title: "點一下就能設定", src: "https://www.apple.com/tw/airpods/images/overview/tile_onetap_setup__fzj1m8dhjoq6_large.jpg" },
+                    { title: "個人化空間音訊", src: "https://www.apple.com/tw/airpods/images/overview/tile_spatial_audio__c9aidaa6ntkm_large.jpg" },
+                    { title: "音訊共享", src: "https://www.apple.com/tw/airpods/images/overview/tile_audio_sharing__ord9ku1kssq6_large.jpg" },
+                    { title: "自動切換", src: "https://www.apple.com/tw/airpods/images/overview/tile_automatic_switching__etjisgj91gk2_large.jpg" },
+                    { title: "Siri", src: "https://www.apple.com/v/airpods/u/images/overview/tile_siri__8ksinuow82qq_large.jpg" },
+                    { title: "輔助使用", src: "https://www.apple.com/v/airpods/u/images/overview/tile_accessibility__dx54ht0ycb8m_large.jpg" }
+                ],
+            }
+        ],
+        section_3: [
+            {
+                title: "哪一款 AirPods 適合你？",
+                subtitle: "比較所有 AirPods 機型",
+                product_info_item: [
+                    {
+                        src: "",
+                        alt: "Apple Watch Ultra 2",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "Apple Watch Ultra 2",
+                        text: (<>最堅固、最強大，<br />登峰造極。</>),
+                        price: "NT$27,900",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "", alt: "", text: (<></>) },
+                            ]
+                    },
+                    {
+                        src: "",
+                        alt: "Apple Watch Ultra 2",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "Apple Watch Ultra 2",
+                        text: (<>最堅固、最強大，<br />登峰造極。</>),
+                        price: "NT$27,900",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "", alt: "", text: (<></>) },
+                            ]
+                    },
+                    {
+                        src: "",
+                        alt: "Apple Watch Ultra 2",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "Apple Watch Ultra 2",
+                        text: (<>最堅固、最強大，<br />登峰造極。</>),
+                        price: "NT$27,900",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "", alt: "", text: (<></>) },
+                            ]
+                    },
+                    {
+                        src: "",
+                        alt: "Apple Watch Ultra 2",
+                        color: ["white", "black", "yellow", "purple"],
+                        title: "Apple Watch Ultra 2",
+                        text: (<>最堅固、最強大，<br />登峰造極。</>),
+                        price: "NT$27,900",
+                        btn: ["進一步了解", "查看價格"],
+                        productInfoItem:
+                            [
+                                { src: "", alt: "", text: (<></>) },
+                            ]
+                    }
+                ],
+            }
+        ],
+        section_4_info: [
+            { title: "免額外付費的次日送達服務", text: (<>下午 3 點前訂購現貨商品，即可享有<br />下一工作日內送達服務。</>), link: ["進一步了解"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/shipping/icon_large.svg" },
+            { title: "零利率分期", text: "提供零利率分期優惠。", link: ["進一步了解"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/financing/twd/icon_large.svg" },
+            { title: "取得購物協助", text: (<>如果有疑問，歡迎打電話或於線上和<br />專員聊聊。<br />請致電 0800-020-021</>), link: ["與我們聯絡"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/help/icon_large.svg" },
+            { title: "由你訂製，專屬於你", text: (<>為你的 AirPods 鐫刻暱稱或喜愛的<br />表情符號，免額外付費。<br />只在 Apple 提供。</>), link: ["進一步了解"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/engraving/icon_large.svg" }
         ]
+    }
+])
+
+// Tv Family page content
+export const tvfamilyContent = ([
+    {
+        header: [
+            {
+                title: "未來直達你家。",
+                text: (
+                    <>
+                        輕鬆連接你愛用的裝置，讓你的住家成為匯聚智慧、便利且滿是娛樂的家。讓家中的電影之夜，升格為影院
+                        <br />
+                        級的影音享受。想在哪個房間放哪首歌，由你隨處掌控。還能以 Siri 控制電燈、門鎖及自動調溫器。一切的
+                        <br />
+                        安全與隱私，全都有 Apple 保護。
+                    </>
+                )
+            }
+        ],
+        banner_item: [
+            { title: "HomePod", text: "聲聲，內蘊深遠。", price: "NT$9,300", link: ["購買", "進一步了解"], src: "https://www.apple.com/v/tv-home/k/images/overview/homepod__eam53jjm772a_large.jpg" },
+            { title: "HomePod mini", text: (<>身形小巧，<br />聲音大大驚豔。</>), price: "NT$3,000", link: ["購買", "進一步了解"], src: "https://www.apple.com/v/tv-home/k/images/overview/room_filling_sound__zagu3551kwyi_large.jpg" },
+            { title: (<>極致的電視娛樂體驗，<br />等你來電感受。</>), price: "NT$4,490 起", link: ["購買", "進一步了解"], src: "https://www.apple.com/v/tv-home/k/images/overview/apple_tv_4k__b30wcqp0pdle_large.jpg" },
+            { title: "家庭 App", text: (<>更智慧的家，<br />由此開啟。</>), link: ["進一步了解"], src: "https://www.apple.com/tw/tv-home/images/overview/homeapp__cpc1k972xys2_large.jpg" }
+        ],
+        section_2_item: [
+            { text: (<>用你常用的裝置，<br />隨時隨地輕鬆掌控你的家。</>), link: ["進一步了解家庭 App"] },
+            { text: "影音娛樂在每個房間，銜接無間。", link: ["進一步了解 HomePod"] },
+            { text: "動動口，全搞定。", link: ["進一步了解 Siri"] },
+            { text: (<>Apple 全面保護<br />安全與隱私。</>), link: ["進一步了解隱私權"] }
+        ],
+        section_3: [
+            { 
+                title: (<>眾多配件，家中各處可用，<br />跨越裝置也好用。</>), 
+                subtitle: "選購配件" ,
+                info_item: [
+                    { title: "燈光照明", text: (<>以燈光、開關，安排你的日常作息，<br />營造家居氛圍。</>), link: ["選購電燈與燈泡、插座與開關"], src: "https://www.apple.com/tw/tv-home/images/overview/lighting__bwpnaru6q1w2_large.jpg", img_text: "Opro9 iU9 智慧燈泡插座" },
+                    { title: "安全保護", text: "以攝影機、門鈴等，看顧你最在乎的一切。", link: ["選購攝影機與感測器"], src: "https://www.apple.com/tw/tv-home/images/overview/security__dbctk5zp4gcy_large.jpg", img_text: (<>Logitech Circle View 保全攝影機<br />(支援 Apple HomeKit)</>) }
+                ]
+            }
+        ],
     }
 ])

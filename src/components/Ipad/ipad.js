@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { iPadProductData } from "../../Api/index.js";
-import { ipadContent , navBarIpadList} from '../../Content/content.js';
+import { ipadContent, navBarIpadList } from '../../Content/content.js';
 
 // import component
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
@@ -15,7 +15,7 @@ const IPad = () => {
 
     const selectedData = navBarIpadList[0];
     const otherData = navBarIpadList.slice(1);
-    
+
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -107,23 +107,25 @@ const IPad = () => {
                 <ScrollBar>
                     <div className="product-items">
                         {ipadContent && ipadContent.map((item) => {
-                            return item.product_info_item && item.product_info_item.map((info, index) => {
-                                return (
-                                    <ProductInformationCard
-                                        key={index}
-                                        src={info.src}
-                                        alt={info.alt}
-                                        color={info.color}
-                                        postscript={info.postscript}
-                                        title={info.title}
-                                        text={info.text}
-                                        price={info.price}
-                                        btn={info.btn}
-                                        cardTitle={info.cardTitle}
-                                        cardText={info.cardText}
-                                        productInfoItem={info.productInfoItem}
-                                    />
-                                )
+                            return item.section_3 && item.section_3.map((item) => {
+                                return item.product_info_item && item.product_info_item.map((info, index) => {
+                                    return (
+                                        <ProductInformationCard
+                                            key={index}
+                                            src={info.src}
+                                            alt={info.alt}
+                                            color={info.color}
+                                            postscript={info.postscript}
+                                            title={info.title}
+                                            text={info.text}
+                                            price={info.price}
+                                            btn={info.btn}
+                                            cardTitle={info.cardTitle}
+                                            cardText={info.cardText}
+                                            productInfoItem={info.productInfoItem}
+                                        />
+                                    )
+                                })
                             })
                         })}
                     </div>
@@ -133,7 +135,7 @@ const IPad = () => {
 
             <div className="section section4">
                 {ipadContent && ipadContent.map((item) => {
-                    return item.section_4.map((info, index) => {
+                    return item.section_4 && item.section_4.map((info, index) => {
                         return (
                             <SectionTitle
                                 key={index}
@@ -144,21 +146,23 @@ const IPad = () => {
                 })}
                 <div className="product-info-item">
                     {ipadContent && ipadContent.map((item) => {
-                        return item.section_4_info_item && item.section_4_info_item.map((info, index) => {
-                            return (
-                                <ProductCardCenter
-                                    key={index}
-                                    src={info.src}
-                                    alt={info.alt}
-                                >
-                                    <CardInfo
-                                        title={info.title}
-                                        text={info.text}
-                                        ps={info.postscript}
-                                        subtitle={info.link}
-                                    />
-                                </ProductCardCenter>
-                            )
+                        return item.section_4 && item.section_4.map((item) => {
+                            return item.info_item && item.info_item.map((info, index) => {
+                                return (
+                                    <ProductCardCenter
+                                        key={index}
+                                        src={info.src}
+                                        alt={info.alt}
+                                    >
+                                        <CardInfo
+                                            title={info.title}
+                                            text={info.text}
+                                            ps={info.postscript}
+                                            subtitle={info.link}
+                                        />
+                                    </ProductCardCenter>
+                                )
+                            })
                         })
 
                     })}
