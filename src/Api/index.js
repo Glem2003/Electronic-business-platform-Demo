@@ -107,7 +107,7 @@ export const airpodProductData = () => {
         return response.json();
       })
       .then((data) => {
-        reslove(data.Airpod);
+        reslove(data.Airpods);
       })
       .catch((error) => {
         console.log('Error fetching macProductData:', error);

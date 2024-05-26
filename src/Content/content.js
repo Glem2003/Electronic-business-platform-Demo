@@ -959,10 +959,10 @@ export const airpodsContent = ([
             { text: "購買 AirPods，免費試用 Apple Music 6 個月。", link: "進一步了解 >" }
         ],
         banner_item: [
-            { title: "AirPods Pro", subtitle: (<><strong>第 2 代</strong><br />NT$7,490</>), btn_text: ["購買", "進一步了解",] },
-            { title: "AirPods", subtitle: (<><strong>第 3 代</strong><br />NT$5,590 起</>), btn_text: ["購買", "進一步了解",] },
-            { title: "AirPods", subtitle: (<><strong>第 2 代</strong>NT$4,290</>), btn_text: ["購買", "進一步了解",] },
-            { title: "AirPods Max", subtitle: (<>NT$17,990</>), btn_text: ["購買", "進一步了解",] }
+            { title: "AirPods Pro", subtitle: (<><strong>第 2 代</strong><br />NT$7,490</>), link: ["購買", "進一步了解",] },
+            { title: "AirPods", subtitle: (<><strong>第 3 代</strong><br />NT$5,590 起</>), link: ["購買", "進一步了解",] },
+            { title: "AirPods", subtitle: (<><strong>第 2 代</strong><br />NT$4,290</>), link: ["購買", "進一步了解",] },
+            { title: "AirPods Max", subtitle: (<>NT$17,990</>), link: ["購買", "進一步了解",] }
         ],
         section_info: [
             {

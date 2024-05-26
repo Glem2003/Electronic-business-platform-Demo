@@ -242,21 +242,18 @@
     "Airpods": [
         {
             "id": 1,
-            "text": "AirPods",
-            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_2gen_light__ckwbqlgv1r9e_large.svg",
-            "postscript": "第2代"
+            "text": ["AirPods","第2代"],
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_2gen_light__ckwbqlgv1r9e_large.svg"
         },
         {
             "id": 2,
-            "text": "AirPods",
-            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_3gen_light__6r7zooyk4lua_large.svg",
-            "postscript": "第3代"
+            "text": ["AirPods","第3代"],
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_3gen_light__6r7zooyk4lua_large.svg"
         },
         {
             "id": 3,
-            "text": "AirPods Pro",
-            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_pro_light__ets5a19rt3au_large.svg",
-            "postscript": "第2代"
+            "text": ["AirPods Pro","第2代"],
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_pro_light__ets5a19rt3au_large.svg"
         },
         {
             "id": 4,
@@ -270,8 +267,8 @@
         },
         {
             "id": 6,
-            "text": "https://www.apple.com/v/airpods/u/images/chapternav/apple_music_light__fexraacz3dme_large.svg",
-            "src": "Apple Music"
+            "text": "Apple Music",
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/apple_music_light__fexraacz3dme_large.svg"
         }
     ],
     "TvHome": [

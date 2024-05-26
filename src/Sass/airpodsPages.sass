@@ -1,0 +1,110 @@
+// airpods
+.airpods
+    .Product-items 
+        .col-10 .item-info h3.text
+            font-weight: 100
+            line-height: 1.5
+        .col-10:nth-child(1),.col-10:nth-child(2)
+            h3.text
+                width: 50px
+                text-wrap: wrap
+        .col-10:nth-child(3)
+            h3.text
+                width: 70px
+                text-wrap: wrap
+
+    >.wrapper-layout
+        background-color: #f5f5f7
+        padding: 10px
+        font-size: 10px
+        text-align: center
+        h3
+            font-weight: 100
+        a
+            color: blue
+
+    >.section
+        padding: 30px 10%
+        >.title
+            margin-bottom: 25px
+            display: flex
+            justify-content: space-between
+            >h2
+                font-size: 50px
+
+    .section1
+        padding: 30px 30px
+        background-color: #fafafc
+        >.card-item
+            background-color: white
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+            border-radius: 15px
+            height: 650px
+            margin-bottom: 30px
+            background-position: center
+            background-size: contain
+            background-repeat: no-repeat
+            >.button-item
+                position: absolute
+                bottom: 30px
+                display: flex
+                gap: 30px
+                .btn
+                    cursor: pointer
+                    padding: 10px 20px
+                    font-size: 17px
+                    border-radius: 25px
+                .btn:first-child
+                    color: white
+                    background-color: blue
+                    &:hover
+                        background-color: #050ddc
+
+                .btn:last-child
+                    color: blue
+                    &::after
+                        content: ' > '
+                    &:hover
+                        text-decoration-line: underline
+            
+            >.text-info
+                z-index: 10
+                h1
+                    font-size: 120px
+                h2
+                    font-size: 21px
+                    font-weight: 200
+                    line-height: 1.5
+
+        .card-item:nth-child(3)
+            .wrapper-item
+                display: flex
+                position: absolute
+                width: 50%
+                height: 100%
+                >div
+                    width: 50%
+                    height: 100%
+                    background-position: center
+                    background-size: contain
+                    background-repeat: no-repeat
+
+        //component
+        .card-item:nth-child(2)
+            background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_3rd_gen__dhy5bknhvtqq_large.jpg)
+
+        .card-item:nth-child(3) .wrapper-item
+            div:first-child
+                background-size: 300px
+                background-position-y: 50px
+                background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_2ndgen_left__gjpt8k836yy6_large.png)
+            div:last-child
+                background-position-y: 290px
+                background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_2ndgen_right__gahfggwvcx6q_large.png)
+
+        .card-item:nth-child(4)
+            background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_max__f265q4g4ddym_large.png)

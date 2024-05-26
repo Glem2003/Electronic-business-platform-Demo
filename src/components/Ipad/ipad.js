@@ -32,6 +32,7 @@ const IPad = () => {
 
     return (
         <div className="iPad">
+
             <div className="Product-items">
                 {data && data.map((item) => {
                     return (
@@ -45,6 +46,7 @@ const IPad = () => {
                     )
                 })}
             </div>
+            
             <div className="section section1">
                 {ipadContent && ipadContent.map((item) => {
                     return item.header.map((header, index) => {

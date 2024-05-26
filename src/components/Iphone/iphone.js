@@ -49,7 +49,7 @@ const Iphone = () => {
             </div>
 
             {iphoneContent && iphoneContent.map((item) => {
-                return item.ads_text.map((ads, index) => {
+                return item.ads_text && item.ads_text.map((ads, index) => {
                     return (
                         <ProductInfoItem
                             key={index}

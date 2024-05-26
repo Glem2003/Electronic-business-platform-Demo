@@ -1,5 +1,7 @@
-import HomeBackgroundImages from "./homeBackgroundImages";
 import { homeLargeBanner, homeSmallBanner } from '../../Content/content.js';
+
+// import component
+import WrapperCard from "../Common/wrapperCard.js";
 import ButtonItem from "../Common/buttonItem.js";
 
 const Home = () => {
@@ -8,7 +10,7 @@ const Home = () => {
             <div className="first-section">
                 {homeLargeBanner && homeLargeBanner.map((item, index) => {
                     return (
-                        <HomeBackgroundImages
+                        <WrapperCard
                             key={index}
                             className={`index-images item-${index + 1}`}
                             title={item.title}
@@ -17,7 +19,7 @@ const Home = () => {
                             <ButtonItem
                                 props={item.btn_text}
                             />
-                        </HomeBackgroundImages>
+                        </WrapperCard>
                     )
                 })}
 
@@ -26,7 +28,7 @@ const Home = () => {
                 {homeSmallBanner && homeSmallBanner.map((item, index) => {
                     return (
                         <div className="section-col-6">
-                            <HomeBackgroundImages
+                            <WrapperCard
                                 key={index}
                                 className={`index-images item-${index + 1}`}
                                 title={item.title}
@@ -35,7 +37,7 @@ const Home = () => {
                                 <ButtonItem
                                     props={item.btn_text}
                                 />
-                            </HomeBackgroundImages>
+                            </WrapperCard>
                         </div>
                     )
                 })}
