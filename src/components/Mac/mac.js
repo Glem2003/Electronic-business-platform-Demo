@@ -60,28 +60,32 @@ const Mac = () => {
 
             <div className="section section1">
                 {macContent && macContent.map((item) => {
-                    return item.header && item.header.map((header, index) => (
-                        <SectionTitle
-                            key={index}
-                            title={header.title}
-                            subtitle={header.subtitle}
-                        />
-                    ));
+                    return item.header && item.header.map((header, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={header.title}
+                                subtitle={header.subtitle}
+                            />
+                        )
+                    });
                 })}
             </div>
 
             <div className="section section2">
                 {macContent && macContent.map((item) => {
-                    return item.section_info && item.section_info.map((info, index) => (
-                        <SectionTitle
-                            key={index}
-                            title={info.title}
-                        />
-                    ));
+                    return item.section_info && item.section_info.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                            />
+                        )
+                    });
                 })}
                 <ScrollBar>
                     <div className="section-items">
-                        {macContent.map((item) => {
+                        {macContent && macContent.map((item) => {
                             return item.section_info.map((items) => {
                                 return items.info_item.map((info, index) => {
                                     return (
@@ -153,7 +157,7 @@ const Mac = () => {
                     ))}
                 </div>
             </div>
-            
+
         </div>
     )
 }

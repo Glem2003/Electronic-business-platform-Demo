@@ -1,6 +1,6 @@
 // airpods
 .airpods
-    .Product-items 
+    .Product-items
         .col-10 .item-info h3.text
             font-weight: 100
             line-height: 1.5
@@ -70,7 +70,7 @@
                         content: ' > '
                     &:hover
                         text-decoration-line: underline
-            
+
             >.text-info
                 z-index: 10
                 h1
@@ -108,3 +108,82 @@
 
         .card-item:nth-child(4)
             background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_max__f265q4g4ddym_large.png)
+
+    .section2
+        background-color: #f5f5f7
+        >.title
+            justify-content: center
+        >.section
+            padding-right: 10px
+            >.scrollbar
+                padding-left: 3%
+            >.action-btns
+                justify-content: center
+                position: relative
+                opacity: 1
+                margin-top: 30px
+                gap: 15px
+                transform: translate(-78px, -30px)
+                button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 30px
+                    height: 30px
+                    padding: 0
+                    border: 1px solid black
+                    background: transparent
+                    >img
+                        width: 10px
+                        height: auto
+
+            .product-card.center
+                flex: 0 0 350px
+                justify-content: space-between
+                margin-right: 15px
+                cursor: pointer
+                transition: all 0.5s
+                height: 450px
+                background-color: white
+                &:hover
+                    transform: scale(1.02)
+                .card-image
+                    display: grid
+                    width: auto
+                    height: 80%
+                    img
+                        height: auto
+                        align-self: center
+                .infos-item
+                    display: flex
+                    width: 100%
+                    height: 15%
+                    justify-content: space-between
+                    align-items: center
+                    >.card-info
+                        padding-left: 20px
+                        .title
+                            font-size: 24px
+                        .postscript,.subtitle,.text
+                            display: none
+                    .link_btn
+                        background: black
+                        span
+                            opacity: 1
+                        &:hover
+                            background-color: #333333
+
+    .section3
+        background-color: #f5f5f7
+        .title
+            h3
+                color: blue
+                cursor: pointer
+                line-height: 76px
+                &:hover
+                    text-decoration-line: underline
+
+        .product-items
+            display: flex
+            .information-card
+                flex: 0 0 300px

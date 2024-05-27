@@ -7,6 +7,11 @@ import ProductItem from "../Common/productItem.js";
 import ProductInfoItem from "../Common/productInfoItem";
 import WrapperCard from '../Common/wrapperCard.js';
 import ButtonItem from '../Common/buttonItem.js';
+import SectionTitle from '../Common/sectionTitle.js';
+import ScrollBar from '../Common/scrollBar.js';
+import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
+import LinkButton from '../Common/linkButton.js';
+import ProductInformationCard from '../Common/productInformationCard.js';
 
 const Airpods = () => {
 
@@ -70,12 +75,87 @@ const Airpods = () => {
                                 <ButtonItem
                                     props={item.link}
                                 />
-                            </WrapperCard>  
+                            </WrapperCard>
                         )
                     })
                 })}
             </div>
 
+            <div className="section section2">
+                {airpodsContent && airpodsContent.map((item) => {
+                    return item.section_info && item.section_info.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                            />
+                        )
+                    });
+                })}
+
+                <ScrollBar>
+                    <div className="section-items">
+                        {airpodsContent && airpodsContent.map((item) => {
+                            return item.section_info.map((items) => {
+                                return items.info_item.map((info, index) => {
+                                    return (
+                                        <ProductCardCenter
+                                            key={index}
+                                            src={info.src}
+                                        >
+                                            <div className="infos-item">
+                                                <CardInfo
+                                                    title={info.title}
+                                                    subtitle={info.subtitle}
+                                                />
+                                                <LinkButton />
+                                            </div>
+
+                                        </ProductCardCenter>
+                                    )
+                                })
+                            })
+                        })}
+                    </div>
+                </ScrollBar>
+
+            </div>
+
+            <div className="section section3">
+                {airpodsContent && airpodsContent.map((item) => {
+                    return item.section_3 && item.section_3.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                            subtitle={info.subtitle}
+                        />
+                    ));
+                })}
+
+                <div className="product-items">
+                    {airpodsContent && airpodsContent.map((item) => {
+                        return item.section_3 && item.section_3.map((item) => {
+                            return item.product_info_item && item.product_info_item.map((info, index) => {
+                                return (
+                                    <ProductInformationCard
+                                        key={index}
+                                        src={info.src}
+                                        alt={info.alt}
+                                        postscript={info.postscript}
+                                        title={info.title}
+                                        text={info.text}
+                                        price={info.price}
+                                        btn={info.btn}
+                                        productInfoItem={info.productInfoItem}
+                                    />
+                                )
+                            })
+                        })
+                    })}
+                </div>
+
+
+            </div>
 
         </div>
     )

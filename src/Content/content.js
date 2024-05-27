@@ -983,53 +983,48 @@ export const airpodsContent = ([
                 subtitle: "比較所有 AirPods 機型",
                 product_info_item: [
                     {
-                        src: "",
-                        alt: "Apple Watch Ultra 2",
-                        color: ["white", "black", "yellow", "purple"],
-                        title: "Apple Watch Ultra 2",
-                        text: (<>最堅固、最強大，<br />登峰造極。</>),
-                        price: "NT$27,900",
+                        src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/compare_airpods_2nd_gen__fw52r8rxrpyu_large.png",
+                        alt: "AirPods",
+                        title: "AirPods",
+                        text: "第 2 代",
+                        price: "NT$4,290",
                         btn: ["進一步了解", "查看價格"],
-                        productInfoItem:
+                        product_info_item:
+                            [
+                                { src: "", alt: "", text: "—" },
+                            ]
+                    },
+                    {
+                        src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/compare_airpods_3rd_gen__dyuzfy04ht0m_large.png",
+                        alt: "AirPods",
+                        title: "AirPods",
+                        text: "第 3 代",
+                        price: "NT$5,590 起",
+                        btn: ["進一步了解", "查看價格"],
+                        product_info_item:
                             [
                                 { src: "", alt: "", text: (<></>) },
                             ]
                     },
                     {
-                        src: "",
-                        alt: "Apple Watch Ultra 2",
-                        color: ["white", "black", "yellow", "purple"],
-                        title: "Apple Watch Ultra 2",
-                        text: (<>最堅固、最強大，<br />登峰造極。</>),
-                        price: "NT$27,900",
+                        src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/compare_airpods_pro__e9uzt0mzviem_large.png",
+                        alt: "AirPods Pro",
+                        title: "AirPods Pro",
+                        text: (<>第 2 代<br />(USB-C)</>),
+                        price: "NT$7,490",
                         btn: ["進一步了解", "查看價格"],
-                        productInfoItem:
+                        product_info_item:
                             [
                                 { src: "", alt: "", text: (<></>) },
                             ]
                     },
                     {
-                        src: "",
-                        alt: "Apple Watch Ultra 2",
-                        color: ["white", "black", "yellow", "purple"],
-                        title: "Apple Watch Ultra 2",
-                        text: (<>最堅固、最強大，<br />登峰造極。</>),
-                        price: "NT$27,900",
+                        src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/compare_airpods_max__b14s2x6q07rm_large.png",
+                        alt: "AirPods Max",
+                        title: "AirPods Max",
+                        price: "NT$17,990",
                         btn: ["進一步了解", "查看價格"],
-                        productInfoItem:
-                            [
-                                { src: "", alt: "", text: (<></>) },
-                            ]
-                    },
-                    {
-                        src: "",
-                        alt: "Apple Watch Ultra 2",
-                        color: ["white", "black", "yellow", "purple"],
-                        title: "Apple Watch Ultra 2",
-                        text: (<>最堅固、最強大，<br />登峰造極。</>),
-                        price: "NT$27,900",
-                        btn: ["進一步了解", "查看價格"],
-                        productInfoItem:
+                        product_info_item:
                             [
                                 { src: "", alt: "", text: (<></>) },
                             ]
