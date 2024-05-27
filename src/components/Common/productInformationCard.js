@@ -13,7 +13,7 @@ const ProductInformationCard = ({ src, alt, color, postscript, title, text, pric
                 src={src}
                 alt={alt}
             >
-                <div className="color-item">
+                {color && <div className="color-item">
                     {color && color.map((item, index) => {
                         return (
                             <ColorBox
@@ -22,7 +22,8 @@ const ProductInformationCard = ({ src, alt, color, postscript, title, text, pric
                             />
                         )
                     })}
-                </div>
+                </div>}
+
                 <CardInfo
                     ps={postscript}
                     title={title}
@@ -44,6 +45,7 @@ const ProductInformationCard = ({ src, alt, color, postscript, title, text, pric
                         <CardInformationInProduct
                             key={index}
                             src={item.src}
+                            src_2={item.src_2}
                             alt={item.alt}
                             text={item.text}
                         />

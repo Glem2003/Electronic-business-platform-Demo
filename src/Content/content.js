@@ -471,9 +471,9 @@ export const ipadContent = ([
             }
         ],
         section_3: [
-            { 
-                title: "探索全系列產品。", 
-                subtitle: "比較所有機型 > " ,
+            {
+                title: "探索全系列產品。",
+                subtitle: "比較所有機型 > ",
                 product_info_item: [
                     {
                         src: "https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_pro__6bgrkek0jnm2_xlarge.png",
@@ -559,15 +559,15 @@ export const ipadContent = ([
             }
         ],
         section_4: [
-            { 
-                title: "iPad 必備精選" ,
+            {
+                title: "iPad 必備精選",
                 info_item: [
                     { postscript: "全新", title: "Apple Pencil", text: "隨心所想，隨筆記下。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_pencil__b1ze600aojyq_xlarge.png", alt: "Apple Pencil" },
                     { postscript: "全新", title: "專為 iPad 設計的鍵盤", text: "打字高手，隨手帶。", link: "進一步了解", src: "https://www.apple.com/tw/ipad/home/images/overview/essentials/bc_keyboard__b2j4vh67cw76_xlarge.png", alt: "iPad keyboard" }
                 ]
             }
         ],
-        
+
     }
 ])
 
@@ -596,9 +596,9 @@ export const iphoneContent = ([
             }
         ],
         section_3: [
-            { 
-                title: "探索各個產品系列。", 
-                subtitle: "比較所有機型 > " ,
+            {
+                title: "探索各個產品系列。",
+                subtitle: "比較所有機型 > ",
                 product_info_item: [
                     {
                         src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15_pro__bpnjhcrxofqu_xlarge.png",
@@ -679,17 +679,17 @@ export const iphoneContent = ([
             }
         ],
         section_4: [
-            { 
-                title: "深入了解最新機型。" ,
+            {
+                title: "深入了解最新機型。",
                 info: [
                     { text: (<>帶你認識<br />iPhone 15 與<br />iPhone 15 Pro</>), link: ["觀看影片"] }
                 ]
             }
         ],
         section_5: [
-            { 
-                title: "iPhone 必備精選", 
-                subtitle: "各款 iPhone 配件 >" ,
+            {
+                title: "iPhone 必備精選",
+                subtitle: "各款 iPhone 配件 >",
                 info_item: [
                     { title: "MagSafe", text: (<>磁吸式保護殼、卡套都可貼合，還能同時貼。<br />並且盡享快速、高效的無線充電。</>), link: "選購 MagSafe 配件", src: "https://www.apple.com/v/iphone/home/bu/images/overview/essentials/magsafe__bfji5hb1mqsy_xlarge.jpg", alt: "MagSafe" },
                     { title: "AirTag", text: (<>在鑰匙圈上掛一個，背包裡也放一個，遺失時，<br />只要使用「尋找」app 就能找出它們的蹤跡。</>), link: "購買", src: "https://www.apple.com/tw/iphone/home/images/overview/essentials/airtag__b5lt0bcbd9ua_xlarge.jpg", alt: "AirTag" }
@@ -709,9 +709,9 @@ export const mainContent = ([
             { title: "最新登場。", subtitle: "現在就來看看有哪些新品推薦。" }
         ],
         section_2: [
-            { 
-                title: "周邊配件。", 
-                subtitle: "精彩配件，款款都是心愛裝置的必搭絕配。" ,
+            {
+                title: "周邊配件。",
+                subtitle: "精彩配件，款款都是心愛裝置的必搭絕配。",
                 info_item: [
                     {
                         title: {
@@ -778,7 +778,7 @@ export const mainContent = ([
                                 alt: "MT2M3",
                                 color: ["red", "orange", "skyblue"]
                             }
-        
+
                         ],
                         more: {
                             title: "探索所有配件。",
@@ -790,9 +790,9 @@ export const mainContent = ([
             }
         ],
         section_3: [
-            { 
-                title: "清亮動聽。", 
-                subtitle: "層次豐富的高音質，款款都是好選擇。" ,
+            {
+                title: "清亮動聽。",
+                subtitle: "層次豐富的高音質，款款都是好選擇。",
                 info_item: [
                     {
                         title: {
@@ -827,7 +827,7 @@ export const mainContent = ([
                                 price: "NT$17,990",
                                 src: "/images/airpods-max-select-silver-202011.jpg",
                                 alt: "airpods-max-silver",
-        
+
                             },
                             {
                                 subtitle: "免額外付費鐫刻服務",
@@ -973,7 +973,9 @@ export const airpodsContent = ([
                     { title: "音訊共享", src: "https://www.apple.com/tw/airpods/images/overview/tile_audio_sharing__ord9ku1kssq6_large.jpg" },
                     { title: "自動切換", src: "https://www.apple.com/tw/airpods/images/overview/tile_automatic_switching__etjisgj91gk2_large.jpg" },
                     { title: "Siri", src: "https://www.apple.com/v/airpods/u/images/overview/tile_siri__8ksinuow82qq_large.jpg" },
-                    { title: "輔助使用", src: "https://www.apple.com/v/airpods/u/images/overview/tile_accessibility__dx54ht0ycb8m_large.jpg" }
+                    { title: "輔助使用", src: "https://www.apple.com/v/airpods/u/images/overview/tile_accessibility__dx54ht0ycb8m_large.jpg" },
+                    { title: "", src: "" },
+                    { title: "", src: "" }
                 ],
             }
         ],
@@ -988,10 +990,16 @@ export const airpodsContent = ([
                         title: "AirPods",
                         text: "第 2 代",
                         price: "NT$4,290",
-                        btn: ["進一步了解", "查看價格"],
-                        product_info_item:
+                        btn: ["購買", "進一步了解"],
+                        productInfoItem:
                             [
-                                { src: "", alt: "", text: "—" },
+                                { text: "—" },
+                                { text: "—" },
+                                { text: "—" },
+                                { text: "—" },
+                                { text: "—" },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_2nd_gen__by79soh60lqq_large.png", text: "Lightning 充電盒" },
+                                { text: (<><h1><span>5</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 5 小時</>) },
                             ]
                     },
                     {
@@ -1000,10 +1008,16 @@ export const airpodsContent = ([
                         title: "AirPods",
                         text: "第 3 代",
                         price: "NT$5,590 起",
-                        btn: ["進一步了解", "查看價格"],
-                        product_info_item:
+                        btn: ["購買", "進一步了解"],
+                        productInfoItem:
                             [
-                                { src: "", alt: "", text: (<></>) },
+                                { text: "—" },
+                                { text: "—" },
+                                { text: "—" },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_spatial_audio__kmoa5vlnkdmm_large.png", text: (<>個人化空間音訊具備<br />動態頭部追蹤功能</>) },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_water_resistent__6yj92ikcoiaa_large.png", text: "抗汗抗水功能" },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_3rd_gen__c9jxrgyqb1me_large.png", text: (<>Lightning 充電盒或<br />MagSafe 充電盒</>) },
+                                { src: "", text: (<><h1><span>6</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 6 小時</>) },
                             ]
                     },
                     {
@@ -1012,10 +1026,20 @@ export const airpodsContent = ([
                         title: "AirPods Pro",
                         text: (<>第 2 代<br />(USB-C)</>),
                         price: "NT$7,490",
-                        btn: ["進一步了解", "查看價格"],
-                        product_info_item:
+                        btn: ["購買", "進一步了解"],
+                        productInfoItem:
                             [
-                                { src: "", alt: "", text: (<></>) },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_adaptive_audio__d8u8yljaa8mu_large.png", text: "適應性音訊" },
+                                {
+                                    src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_noise_cancellation__dte2s5scoscy_large.png",
+                                    src_2: 'https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_transparency__fdepuo39ruum_large.png', 
+                                    text: (<>主動式降噪與<br />通透模式</>)
+                                },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_conversation_awareness__f72duwcnafyy_large.png", text: "對話感知功能" },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_spatial_audio__kmoa5vlnkdmm_large.png", text: (<>個人化空間音訊具備<br />動態頭部追蹤功能</>) },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_water_resistent__6yj92ikcoiaa_large.png", text: "防塵與抗汗抗水功能" },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_pro__fd6x243wxsuy_large.png", text: (<>MagSafe 充電盒 (USB‑C)<br />配備揚聲器與掛繩孔</>) },
+                                { text: (<><h1><span>6</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 6 小時</>) },
                             ]
                     },
                     {
@@ -1023,10 +1047,20 @@ export const airpodsContent = ([
                         alt: "AirPods Max",
                         title: "AirPods Max",
                         price: "NT$17,990",
-                        btn: ["進一步了解", "查看價格"],
-                        product_info_item:
+                        btn: ["購買", "進一步了解"],
+                        productInfoItem:
                             [
-                                { src: "", alt: "", text: (<></>) },
+                                { text: "—" },
+                                {
+                                    src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_noise_cancellation__dte2s5scoscy_large.png",
+                                    src_2: 'https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_transparency__fdepuo39ruum_large.png', 
+                                    text: (<>主動式降噪與<br />通透模式</>)
+                                },
+                                { text: "—" },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_spatial_audio__kmoa5vlnkdmm_large.png", text: (<>個人化空間音訊具備<br />動態頭部追蹤功能</>) },
+                                { text: "—" },
+                                { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_max__utl1i3hqs6aq_large.png", text: "聰穎耳機套" },
+                                { text: (<><h1><span>20</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 20 小時</>) }
                             ]
                     }
                 ],
@@ -1071,9 +1105,9 @@ export const tvfamilyContent = ([
             { text: (<>Apple 全面保護<br />安全與隱私。</>), link: ["進一步了解隱私權"] }
         ],
         section_3: [
-            { 
-                title: (<>眾多配件，家中各處可用，<br />跨越裝置也好用。</>), 
-                subtitle: "選購配件" ,
+            {
+                title: (<>眾多配件，家中各處可用，<br />跨越裝置也好用。</>),
+                subtitle: "選購配件",
                 info_item: [
                     { title: "燈光照明", text: (<>以燈光、開關，安排你的日常作息，<br />營造家居氛圍。</>), link: ["選購電燈與燈泡、插座與開關"], src: "https://www.apple.com/tw/tv-home/images/overview/lighting__bwpnaru6q1w2_large.jpg", img_text: "Opro9 iU9 智慧燈泡插座" },
                     { title: "安全保護", text: "以攝影機、門鈴等，看顧你最在乎的一切。", link: ["選購攝影機與感測器"], src: "https://www.apple.com/tw/tv-home/images/overview/security__dbctk5zp4gcy_large.jpg", img_text: (<>Logitech Circle View 保全攝影機<br />(支援 Apple HomeKit)</>) }

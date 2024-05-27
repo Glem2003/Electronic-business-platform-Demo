@@ -140,7 +140,6 @@ const Airpods = () => {
                                     <ProductInformationCard
                                         key={index}
                                         src={info.src}
-                                        alt={info.alt}
                                         postscript={info.postscript}
                                         title={info.title}
                                         text={info.text}

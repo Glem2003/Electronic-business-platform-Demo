@@ -63,14 +63,12 @@
                     background-color: blue
                     &:hover
                         background-color: #050ddc
-
                 .btn:last-child
                     color: blue
                     &::after
                         content: ' > '
                     &:hover
                         text-decoration-line: underline
-
             >.text-info
                 z-index: 10
                 h1
@@ -79,7 +77,6 @@
                     font-size: 21px
                     font-weight: 200
                     line-height: 1.5
-
         .card-item:nth-child(3)
             .wrapper-item
                 display: flex
@@ -92,11 +89,9 @@
                     background-position: center
                     background-size: contain
                     background-repeat: no-repeat
-
         //component
         .card-item:nth-child(2)
             background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_3rd_gen__dhy5bknhvtqq_large.jpg)
-
         .card-item:nth-child(3) .wrapper-item
             div:first-child
                 background-size: 300px
@@ -105,7 +100,6 @@
             div:last-child
                 background-position-y: 290px
                 background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_2ndgen_right__gahfggwvcx6q_large.png)
-
         .card-item:nth-child(4)
             background-image: url(https://www.apple.com/v/airpods/u/images/overview/airpods_max__f265q4g4ddym_large.png)
 
@@ -172,9 +166,13 @@
                             opacity: 1
                         &:hover
                             background-color: #333333
+            .product-card.center:nth-child(7),.product-card.center:nth-child(8)
+                visibility: hidden
 
     .section3
         background-color: #f5f5f7
+        *
+            border: 1px solid black
         .title
             h3
                 color: blue
@@ -185,5 +183,26 @@
 
         .product-items
             display: flex
+            justify-content: center
+            gap: 35px
             .information-card
-                flex: 0 0 300px
+                flex: 0 0 200px
+                .product-card
+                    .card-image
+                        display: grid
+                        height: 200px
+                        img
+                            width: 120px
+                            height: auto
+                            justify-self: center
+                            align-self: end
+                    .button-item
+                        flex-direction: column
+                >.card-info
+                    display: none
+                .info-item
+                    width: 100%
+                    .card-images
+                .card-images
+                    display: flex
+                    flex-direction: column
