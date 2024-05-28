@@ -17,7 +17,7 @@ export const ProductCardCenter = ({ children, src, alt }) => {
             <div className="card-image">
                 {src && (
                     <img src={src} alt={alt} />
-                    )
+                )
                 }
             </div>
             {children}
@@ -25,13 +25,19 @@ export const ProductCardCenter = ({ children, src, alt }) => {
     )
 }
 
-export const CardInfo = ({ title, text, subtitle, ps }) => {
+export const CardInfo = ({ title, text, subtitle, ps, children ,src ,alt}) => {
     return (
         <div className="card-info">
+            {src && (
+                <div className="images-box">
+                    <img src={src} alt={alt}/>
+                </div>
+            )}
             <h6 className='postscript'>{ps}</h6>
             <h5 className='title'>{title}</h5>
             <h6 className='subtitle'>{subtitle}</h6>
             <h4 className='text'>{text}</h4>
+            {children}
         </div>
     )
 }

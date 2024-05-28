@@ -5,8 +5,9 @@ import { tvfamilyContent } from '../../Content/content.js';
 //import component
 import ProductItem from "../Common/productItem";
 import SectionTitle from '../Common/sectionTitle.js';
-import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
 import ButtonItem from '../Common/buttonItem.js';
+import ScrollBar from '../Common/scrollBar.js';
 
 const TvHome = () => {
 
@@ -59,22 +60,103 @@ const TvHome = () => {
                 {tvfamilyContent && tvfamilyContent.map((item) => {
                     return item.banner_item && item.banner_item.map((info, index) => {
                         return (
-                            <ProductCardWrapper
+                            <ProductCardCenter
                                 key={index}
                                 src={info.src}
                             >
                                 <CardInfo
                                     title={info.title}
-                                    subtitle={info.subtitle}
+                                    subtitle={info.text}
                                     text={info.price}
-                                />
-                                <ButtonItem 
-                                    props={info.link}
-                                />
-                            </ProductCardWrapper>
+                                    src={info.headerImg}
+                                >
+                                    <ButtonItem
+                                        props={info.link}
+                                    />
+                                </CardInfo>
+                            </ProductCardCenter>
                         )
                     })
                 })}
+            </div>
+
+            <div className="section section3">
+                {tvfamilyContent && tvfamilyContent.map((item) => {
+                    return item.section_2 && item.section_2.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                            subtitle={info.subtitle}
+                        />
+                    ));
+                })}
+
+                <ScrollBar>
+                    <div className="section-items">
+                        {tvfamilyContent && tvfamilyContent.map((item) => {
+                            return item.section_2 && item.section_2.map((items) => {
+                                return items.info_item && items.info_item.map((info, index) => {
+                                    return (
+                                        <ProductCardCenter
+                                            key={index}
+                                            src={info.src}
+                                        >
+                                            <div className="infos-item">
+                                                <CardInfo
+                                                    text={info.text}
+                                                >
+                                                    {info.link && (
+                                                        <ButtonItem
+                                                            props={info.link}
+                                                        />
+                                                    )}
+
+                                                </CardInfo>
+                                            </div>
+                                        </ProductCardCenter>
+                                    )
+                                })
+                            })
+                        })}
+                    </div>
+                </ScrollBar>
+
+            </div>
+
+            <div className="section section4">
+                {tvfamilyContent && tvfamilyContent.map((item) => {
+                    return item.section_3 && item.section_3.map((info, index) => (
+                        <SectionTitle
+                            key={index}
+                            title={info.title}
+                            subtitle={info.subtitle}
+                        />
+                    ));
+                })}
+                <div className="product-info-item">
+                    {tvfamilyContent && tvfamilyContent.map((item) => {
+                        return item.section_3 && item.section_3.map((item) => {
+                            return item.info_item && item.info_item.map((info, index) => {
+                                return (
+                                    <ProductCardCenter
+                                        key={index}
+                                        src={info.src}
+                                        alt={info.alt}
+                                    >
+                                        <CardInfo
+                                            title={info.title}
+                                            text={info.text}
+                                            ps={info.postscript}
+                                            subtitle={info.link}
+                                        />
+                                    </ProductCardCenter>
+                                )
+                            })
+                        })
+
+                    })}
+                </div>
+
             </div>
 
         </div>

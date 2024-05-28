@@ -96,8 +96,8 @@ const Airpods = () => {
                 <ScrollBar>
                     <div className="section-items">
                         {airpodsContent && airpodsContent.map((item) => {
-                            return item.section_info.map((items) => {
-                                return items.info_item.map((info, index) => {
+                            return item.section_info && item.section_info.map((items) => {
+                                return items.info_item && items.info_item.map((info, index) => {
                                     return (
                                         <ProductCardCenter
                                             key={index}
@@ -152,7 +152,7 @@ const Airpods = () => {
                         })
                     })}
                 </div>
-                <hr/>
+                <hr />
 
             </div>
 

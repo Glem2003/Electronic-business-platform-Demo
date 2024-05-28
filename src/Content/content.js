@@ -1095,14 +1095,21 @@ export const tvfamilyContent = ([
         banner_item: [
             { title: "HomePod", text: "聲聲，內蘊深遠。", price: "NT$9,300", link: ["購買", "進一步了解"], src: "https://www.apple.com/v/tv-home/k/images/overview/homepod__eam53jjm772a_large.jpg" },
             { title: "HomePod mini", text: (<>身形小巧，<br />聲音大大驚豔。</>), price: "NT$3,000", link: ["購買", "進一步了解"], src: "https://www.apple.com/v/tv-home/k/images/overview/room_filling_sound__zagu3551kwyi_large.jpg" },
-            { title: (<>極致的電視娛樂體驗，<br />等你來電感受。</>), price: "NT$4,490 起", link: ["購買", "進一步了解"], src: "https://www.apple.com/v/tv-home/k/images/overview/apple_tv_4k__b30wcqp0pdle_large.jpg" },
-            { title: "家庭 App", text: (<>更智慧的家，<br />由此開啟。</>), link: ["進一步了解"], src: "https://www.apple.com/tw/tv-home/images/overview/homeapp__cpc1k972xys2_large.jpg" }
+            { title: (<>極致的電視娛樂體驗，<br />等你來電感受。</>), price: "NT$4,490 起", link: ["購買", "進一步了解"], src: "https://www.apple.com/v/tv-home/k/images/overview/apple_tv_4k__b30wcqp0pdle_large.jpg" ,headerImg:"https://www.apple.com/v/tv-home/k/images/overview/apple_tv_4k_logo__vyjj7uki3tui_large.png"},
+            { title: "家庭 App", text: (<>更智慧的家，<br />由此開啟。</>), link: ["進一步了解"], src: "https://www.apple.com/tw/tv-home/images/overview/homeapp__cpc1k972xys2_large.jpg" ,headerImg:"https://www.apple.com/v/tv-home/k/images/overview/home_icon__9u57pp0qahea_large.png"}
         ],
-        section_2_item: [
-            { text: (<>用你常用的裝置，<br />隨時隨地輕鬆掌控你的家。</>), link: ["進一步了解家庭 App"] },
-            { text: "影音娛樂在每個房間，銜接無間。", link: ["進一步了解 HomePod"] },
-            { text: "動動口，全搞定。", link: ["進一步了解 Siri"] },
-            { text: (<>Apple 全面保護<br />安全與隱私。</>), link: ["進一步了解隱私權"] }
+        section_2: [
+            {
+                title: "把你的家變成智慧家庭，很有道理。",
+                info_item:[
+                    { text: (<>用你常用的裝置，<br />隨時隨地輕鬆掌控你的家。</>), link: ["進一步了解家庭 App"] ,src:"https://www.apple.com/tw/tv-home/images/overview/smart_control__dsa6v8m1pp0m_large.jpg"},
+                    { text: "影音娛樂在每個房間，銜接無間。", link: ["進一步了解 HomePod"] ,src:"https://www.apple.com/tw/tv-home/images/overview/smart_connect__d8o6agoqfh0m_large.jpg"},
+                    { text: "動動口，全搞定。", link: ["進一步了解 Siri"] },
+                    { text: (<>Apple 全面保護<br />安全與隱私。</>), link: ["進一步了解隱私權"] ,src:'https://www.apple.com/v/tv-home/k/images/overview/security_and_privacy__bzlguj2x29jm_large.jpg'},
+                    { text: "", src: "" },
+                    { text: "", src: "" }
+                ]
+            }
         ],
         section_3: [
             {
