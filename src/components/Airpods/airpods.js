@@ -152,8 +152,26 @@ const Airpods = () => {
                         })
                     })}
                 </div>
+                <hr/>
 
+            </div>
 
+            <div className="section section4">
+                {airpodsContent && airpodsContent.map((item) => {
+                    return item.section_4 && item.section_4.map((info, index) => {
+                        return (
+                            <ProductCardCenter
+                                key={index}
+                            >
+                                <CardInfo
+                                    title={info.title}
+                                    subtitle={info.text}
+                                    text={info.link}
+                                />
+                            </ProductCardCenter>
+                        )
+                    });
+                })}
             </div>
 
         </div>

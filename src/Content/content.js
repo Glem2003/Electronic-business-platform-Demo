@@ -999,7 +999,7 @@ export const airpodsContent = ([
                                 { text: "—" },
                                 { text: "—" },
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_2nd_gen__by79soh60lqq_large.png", text: "Lightning 充電盒" },
-                                { text: (<><h1><span>5</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 5 小時</>) },
+                                { text: (<><h1><span>5</span> 小時</h1><h4>充電一次的聆聽時間<br />最長可達 5 小時</h4></>) },
                             ]
                     },
                     {
@@ -1017,7 +1017,7 @@ export const airpodsContent = ([
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_spatial_audio__kmoa5vlnkdmm_large.png", text: (<>個人化空間音訊具備<br />動態頭部追蹤功能</>) },
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_water_resistent__6yj92ikcoiaa_large.png", text: "抗汗抗水功能" },
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_3rd_gen__c9jxrgyqb1me_large.png", text: (<>Lightning 充電盒或<br />MagSafe 充電盒</>) },
-                                { src: "", text: (<><h1><span>6</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 6 小時</>) },
+                                { src: "", text: (<><h1><span>6</span> 小時</h1><h4>充電一次的聆聽時間<br />最長可達 6 小時</h4></>) },
                             ]
                     },
                     {
@@ -1039,7 +1039,7 @@ export const airpodsContent = ([
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_spatial_audio__kmoa5vlnkdmm_large.png", text: (<>個人化空間音訊具備<br />動態頭部追蹤功能</>) },
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_water_resistent__6yj92ikcoiaa_large.png", text: "防塵與抗汗抗水功能" },
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_pro__fd6x243wxsuy_large.png", text: (<>MagSafe 充電盒 (USB‑C)<br />配備揚聲器與掛繩孔</>) },
-                                { text: (<><h1><span>6</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 6 小時</>) },
+                                { text: (<><h1><span>6</span> 小時</h1><h4>充電一次的聆聽時間<br />最長可達 6 小時</h4></>) },
                             ]
                     },
                     {
@@ -1060,17 +1060,17 @@ export const airpodsContent = ([
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_spatial_audio__kmoa5vlnkdmm_large.png", text: (<>個人化空間音訊具備<br />動態頭部追蹤功能</>) },
                                 { text: "—" },
                                 { src: "https://www.apple.com/v/airpods/shared/compare/d/images/compare/icon_airpods_max__utl1i3hqs6aq_large.png", text: "聰穎耳機套" },
-                                { text: (<><h1><span>20</span> 小時</h1><br />充電一次的聆聽時間<br />最長可達 20 小時</>) }
+                                { text: (<><h1><span>20</span> 小時</h1><h4>充電一次的聆聽時間<br />最長可達 20 小時</h4></>) }
                             ]
                     }
                 ],
             }
         ],
         section_4: [
-            { title: "免額外付費的次日送達服務", text: (<>下午 3 點前訂購現貨商品，即可享有<br />下一工作日內送達服務。</>), link: ["進一步了解"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/shipping/icon_large.svg" },
-            { title: "零利率分期", text: "提供零利率分期優惠。", link: ["進一步了解"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/financing/twd/icon_large.svg" },
-            { title: "取得購物協助", text: (<>如果有疑問，歡迎打電話或於線上和<br />專員聊聊。<br />請致電 0800-020-021</>), link: ["與我們聯絡"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/help/icon_large.svg" },
-            { title: "由你訂製，專屬於你", text: (<>為你的 AirPods 鐫刻暱稱或喜愛的<br />表情符號，免額外付費。<br />只在 Apple 提供。</>), link: ["進一步了解"], src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/engraving/icon_large.svg" }
+            { title: "免額外付費的次日送達服務", text: (<>下午 3 點前訂購現貨商品，即可享有<br />下一工作日內送達服務。</>), link: "進一步了解", src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/shipping/icon_large.svg" },
+            { title: "零利率分期", text: "提供零利率分期優惠。", link: "進一步了解", src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/financing/twd/icon_large.svg" },
+            { title: "取得購物協助", text: (<>如果有疑問，歡迎打電話或於線上和<br />專員聊聊。<br />請致電 0800-020-021</>), link: "與我們聯絡", src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/help/icon_large.svg" },
+            { title: "由你訂製，專屬於你", text: (<>為你的 AirPods 鐫刻暱稱或喜愛的<br />表情符號，免額外付費。<br />只在 Apple 提供。</>), link: "進一步了解", src: "https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/engraving/icon_large.svg" }
         ]
     }
 ])

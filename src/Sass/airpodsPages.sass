@@ -171,20 +171,25 @@
 
     .section3
         background-color: #f5f5f7
+        padding-bottom: 150px
         .title
+            justify-content: center
             h3
-                color: blue
+                color: #0066cc
                 cursor: pointer
                 line-height: 76px
+                position: absolute
+                bottom: 0
+                left: 50%
+                transform: translate(-50%,1750px)
+                &::after
+                    content: ' > '
                 &:hover
                     text-decoration-line: underline
-
         .product-items
             display: flex
             justify-content: center
             gap: 35px
-            *
-                border: 1px solid #000
             .information-card
                 flex: 0 0 200px
                 .product-card
@@ -211,21 +216,13 @@
                         justify-content: flex-start
                         gap: 0
                         height: 145px
-                        line-height: 28px
                         .title
                             font-size: 20px
                         .text
                             font-size: 14px
+                            line-height: 24px
                         .subtitle
                             font-size: 18px
-                .product-card:nth-child(1),.product-card:nth-child(2),.product-card:nth-child(4)
-                    >.card-info
-                        >h6.subtitle
-                            position: absolute
-                            bottom: 0
-                            left: 50%
-                            transform: translateX(-50%)
-                            width: 100%
                 hr
                     margin: 0
                 .info-item
@@ -234,3 +231,79 @@
                 .card-images
                     display: flex
                     flex-direction: column
+                    justify-content: center
+                    p
+                        font-size: 14px
+                        line-height: 25px
+                        h1
+                            font-size: 20px
+                            font-weight: 700
+                            >span
+                                font-size: 40px
+                        h4
+                            font-weight: 400
+                //component
+                .product-card:nth-child(1),.product-card:nth-child(2),.product-card:nth-child(4)
+                    >.card-info
+                        >h6.subtitle
+                            position: absolute
+                            bottom: 0
+                            left: 50%
+                            transform: translateX(-50%)
+                            width: 100%
+            .information-card:first-child,.information-card:last-child
+                .info-item
+                    .card-images:nth-child(6)
+                        justify-content: flex-start
+                        padding-top: 13px
+        hr
+            width: 80%
+            margin: 0 auto
+
+    .section4
+        padding: 80px 20%
+        display: flex
+        background-color: #f5f5f7
+        >.product-card
+            border-radius: 0
+            width: calc(100%/4)
+            text-align: center
+            .card-image
+                width: 50px
+                height: 50px
+                opacity: 0.6
+                background-repeat: no-repeat
+                background-position: center
+            .card-info
+                margin: 0
+                >*
+                    font-size: 12px
+                    color: black
+                    font-weight: 600
+                .title
+                    font-size: 16px
+                    font-weight: 700
+                .subtitle
+                    height: 70px
+                    text-wrap: nowrap
+                    line-height: 22px
+                .text
+                    color: blue
+                    cursor: pointer
+                    &::after
+                        content: ' >'
+                    &:hover
+                        text-decoration-line: underline
+        //component
+        .product-card:first-child
+            .card-image
+                background-image: url(https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/shipping/icon_large.svg)
+        .product-card:nth-child(2)
+            .card-image
+                background-image: url(https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/financing/twd/icon_large.svg)
+        .product-card:nth-child(3)
+            .card-image
+                background-image: url(https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/help/icon_large.svg)
+        .product-card:last-child
+            .card-image
+                background-image: url(https://www.apple.com/ac/globalfooter/8/zh_TW/assets/ac-buystrip/engraving/icon_large.svg)
