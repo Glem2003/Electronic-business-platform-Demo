@@ -171,8 +171,6 @@
 
     .section3
         background-color: #f5f5f7
-        *
-            border: 1px solid black
         .title
             h3
                 color: blue
@@ -185,6 +183,8 @@
             display: flex
             justify-content: center
             gap: 35px
+            *
+                border: 1px solid #000
             .information-card
                 flex: 0 0 200px
                 .product-card
@@ -198,8 +198,36 @@
                             align-self: end
                     .button-item
                         flex-direction: column
-                >.card-info
-                    display: none
+                        align-items: center
+                        >h4.btn
+                            font-size: 12px
+                            background-color: #4A4AFF
+                            padding: 3px 10px
+                            &:hover
+                                background-color: #2828FF
+                        >h4.btn:last-child
+                            background-color: transparent
+                    .card-info
+                        justify-content: flex-start
+                        gap: 0
+                        height: 145px
+                        line-height: 28px
+                        .title
+                            font-size: 20px
+                        .text
+                            font-size: 14px
+                        .subtitle
+                            font-size: 18px
+                .product-card:nth-child(1),.product-card:nth-child(2),.product-card:nth-child(4)
+                    >.card-info
+                        >h6.subtitle
+                            position: absolute
+                            bottom: 0
+                            left: 50%
+                            transform: translateX(-50%)
+                            width: 100%
+                hr
+                    margin: 0
                 .info-item
                     width: 100%
                     .card-images

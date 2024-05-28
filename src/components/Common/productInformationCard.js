@@ -24,21 +24,30 @@ const ProductInformationCard = ({ src, alt, color, postscript, title, text, pric
                     })}
                 </div>}
 
-                <CardInfo
-                    ps={postscript}
-                    title={title}
-                    text={text}
-                    subtitle={price}
-                />
+                {
+                    postscript || title || text || price ? (
+                        <CardInfo
+                            ps={postscript}
+                            title={title}
+                            text={text}
+                            subtitle={price}
+                        />
+                    ) : null
+                }
+
                 <ButtonItem
                     props={btn}
                 />
             </ProductCardCenter>
             <hr />
-            <CardInfo
-                title={cardTitle}
-                text={cardText}
-            />
+            {
+                cardTitle || cardText ? (
+                    <CardInfo
+                        title={cardTitle}
+                        text={cardText}
+                    />
+                ) : null
+            }
             <div className="info-item">
                 {productInfoItem && productInfoItem.map((item, index) => {
                     return (
