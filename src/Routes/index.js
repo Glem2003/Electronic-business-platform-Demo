@@ -8,10 +8,10 @@ const MacPages = lazy(() => import("../Pages/macPages"));
 const IpadPages = lazy(() => import("../Pages/ipadPages"));
 const WatchPages = lazy(() => import("../Pages/watchPages"));
 const AirpodsPages = lazy(() => import("../Pages/airpodsPages"));
-const FunnyPages = lazy(() => import("../Pages/funnyPages"));
-const CartPages = lazy(() => import("../Pages/cartPages"));
+const ShopPages = lazy(()=> import ("../Pages/shopPages"));
 const TvAndFamilyPages = lazy(() => import("../Pages/tvAndFamilyPages"));
 const IphonePages = lazy(() => import("../Pages/iphonePages"));
+const CartPages = lazy(() => import("../Pages/cartPages"));
 
 // Routes configuration
 const routes = [
@@ -21,10 +21,10 @@ const routes = [
     { path: "/ipad", element: <IpadPages /> },
     { path: "/watch", element: <WatchPages /> },
     { path: "/airPods", element: <AirpodsPages /> },
-    { path: "/funny", element: <FunnyPages /> },
-    { path: "/cart", element: <CartPages /> },
     { path: "/tv-and-family", element: <TvAndFamilyPages /> },
     { path: "/iPhone", element: <IphonePages /> },
+    { path: "/shop", element: <ShopPages /> },
+    { path: "/cart", element: <CartPages /> }
 ];
 
 const AppRoute = () => (

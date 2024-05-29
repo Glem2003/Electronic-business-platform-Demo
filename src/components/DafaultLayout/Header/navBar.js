@@ -11,7 +11,6 @@ import {
     navBarWatchList,
     navBarAirpodsList,
     navBarTvFamilyList,
-    navBarFunnyList,
     navBarShopList,
     navBarSupportList,
     navBarSearchList
@@ -31,7 +30,6 @@ const NavBar = () => {
         watch: navBarWatchList,
         airpods: navBarAirpodsList,
         tvAndFamily: navBarTvFamilyList,
-        funny: navBarFunnyList,
         shop: navBarShopList,
         support: navBarSupportList,
         search: navBarSearchList
@@ -45,7 +43,6 @@ const NavBar = () => {
         watch: false,
         airpods: false,
         tvAndFamily: false,
-        funny: false,
         shop: false,
         search: false,
         cart: false
@@ -111,7 +108,6 @@ const NavBar = () => {
                             </>
                         )}
                         {key === 'search' && (
-
                             <form>
                                 <CiSearch style={svgStyle} />
                                 <input type='search' placeholder='搜尋 apple.com' />
@@ -135,7 +131,6 @@ const NavBar = () => {
         { to: "/watch", text: "Watch", onMouseOver: () => handleMouseOver('watch') },
         { to: "/airPods", text: "AirPods", onMouseOver: () => handleMouseOver('airpods') },
         { to: "/tv-and-family", text: "TV 和家庭", onMouseOver: () => handleMouseOver('tvAndFamily') },
-        { to: "/funny", text: "娛樂", onMouseOver: () => handleMouseOver('funny') },
         { to: "/shop", text: "配件", onMouseOver: () => handleMouseOver('shop') },
         { to: "/support", text: "支援服務", onMouseOver: () => handleMouseOver('support') },
         { icon: <CiSearch style={svgStyle} />, onMouseOver: () => handleMouseOver('search') },

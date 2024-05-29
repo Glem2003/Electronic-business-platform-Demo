@@ -149,6 +149,7 @@ const TvHome = () => {
                                             ps={info.postscript}
                                             subtitle={info.link}
                                         />
+                                        <p>{info.img_text}</p>
                                     </ProductCardCenter>
                                 )
                             })

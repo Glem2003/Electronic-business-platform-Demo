@@ -250,29 +250,6 @@ export const navBarTvFamilyList = ([
     }
 ])
 
-export const navBarFunnyList = ([
-    {
-        title: "探索娛樂",
-        listItem: [
-            { subtitle: "探索娛樂" },
-            { subtitle: "Apple One" },
-            { subtitle: "Apple TV+" },
-            { subtitle: "Apple Music" },
-            { subtitle: "Apple Arcade" },
-            { subtitle: "Apple Podcast" },
-            { subtitle: "Apple Books" },
-            { subtitle: "Apple Store" }
-        ]
-    },
-    {
-        title: "支援服務",
-        listItem: [
-            { subtitle: "Apple TV+ 支援服務" },
-            { subtitle: "Apple Music 支援服務" }
-        ]
-    }
-])
-
 export const navBarShopList = ([
     {
         title: "選購配件",
@@ -1116,8 +1093,20 @@ export const tvfamilyContent = ([
                 title: (<>眾多配件，家中各處可用，<br />跨越裝置也好用。</>),
                 subtitle: "選購配件",
                 info_item: [
-                    { title: "燈光照明", text: (<>以燈光、開關，安排你的日常作息，<br />營造家居氛圍。</>), link: ["選購電燈與燈泡、插座與開關"], src: "https://www.apple.com/tw/tv-home/images/overview/lighting__bwpnaru6q1w2_large.jpg", img_text: "Opro9 iU9 智慧燈泡插座" },
-                    { title: "安全保護", text: "以攝影機、門鈴等，看顧你最在乎的一切。", link: ["選購攝影機與感測器"], src: "https://www.apple.com/tw/tv-home/images/overview/security__dbctk5zp4gcy_large.jpg", img_text: (<>Logitech Circle View 保全攝影機<br />(支援 Apple HomeKit)</>) }
+                    { 
+                        title: "燈光照明", 
+                        text: (<>以燈光、開關，安排你的日常作息，<br />營造家居氛圍。</>), 
+                        link: ["選購電燈與燈泡、插座與開關"], 
+                        src: "https://www.apple.com/tw/tv-home/images/overview/lighting__bwpnaru6q1w2_large.jpg", 
+                        img_text: "Opro9 iU9 智慧燈泡插座" 
+                    },
+                    { 
+                        title: "安全保護", 
+                        text: "以攝影機、門鈴等，看顧你最在乎的一切。", 
+                        link: ["選購攝影機與感測器"], 
+                        src: "https://www.apple.com/tw/tv-home/images/overview/security__dbctk5zp4gcy_large.jpg", 
+                        img_text: (<>Logitech Circle View 保全攝影機<br />(支援 Apple HomeKit)</>) 
+                    }
                 ]
             }
         ],
