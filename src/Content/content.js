@@ -1166,6 +1166,7 @@ export const shopContent = ([
         search: [
             {
                 title: "尋找你所需的配件。",
+                input_text:"搜尋配件",
                 product_item: [
                     {
                         title: "依產品瀏覽",

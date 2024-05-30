@@ -2,6 +2,7 @@ import { shopContent } from '../../Content/content.js';
 
 //import component
 import HeaderBanner from './headerBanner.js';
+import Search from '../Common/search.js';
 
 const Shop = () => {
     return (
@@ -26,18 +27,51 @@ const Shop = () => {
                         )
                     })
                 })}
-
             </div>
 
             <div className="section section2">
-                <h2>title</h2>
-                <form>
-                    <div>icon</div>
-                    <input type="search" placeholder="search product" />
-                </form>
+                {shopContent && shopContent.map((item) => {
+                    return item.search && item.search.map((info) => {
+                        return (
+                            <Search
+                                title={info.title}
+                                placeholderText={info.input_text}
+                            />
+                        )
+                    })
+                })}
             </div>
 
-            <div className="section section3"></div>
+            <div className="section section3">
+                <div className='title'>
+                    <ul>
+                        <li>text</li>
+                        <li>text</li>
+                    </ul>
+                </div>
+                <div className="container">
+                    <div className="boxItem">
+                        <div className="box"></div>
+                        <h4>1</h4>
+                    </div>
+                    <div className="boxItem">
+                        <div className="box"></div>
+                        <h4>2</h4>
+                    </div>
+                    <div className="boxItem">
+                        <div className="box"></div>
+                        <h4>3</h4>
+                    </div>
+                    <div className="boxItem">
+                        <div className="box"></div>
+                        <h4>4</h4>
+                    </div>
+                    <div className="boxItem">
+                        <div className="box"></div>
+                        <h4>5</h4>
+                    </div>
+                </div>
+            </div>
 
             <div className="section section4"></div>
 
