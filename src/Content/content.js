@@ -1120,7 +1120,7 @@ export const shopContent = ([
             {
                 title: "MagSafe。混‍搭，很⁠搭。",
                 text: "保護殼、卡套、無線充電器，全都可貼合。",
-                link: "選購 MagSafe"
+                link: "選購 MagSafe",
             }
         ],
         meun: [
