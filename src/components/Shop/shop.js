@@ -3,6 +3,7 @@ import { shopContent } from '../../Content/content.js';
 //import component
 import HeaderBanner from './headerBanner.js';
 import Search from '../Common/search.js';
+import MeunList from './menuList.js';
 
 const Shop = () => {
     return (
@@ -12,7 +13,23 @@ const Shop = () => {
                     <h2>text</h2>
                     <h3>more</h3>
                 </div>
-                <div className="content">content</div>
+                <div className="content">
+                    <ul>
+                        <h4>A</h4>
+                        <div className="item">
+                            <div className="list">
+                                <li>text</li>
+                                <li>text</li>
+                                <li>text</li>
+                                <li>text</li>
+                                <li>text</li>
+                                <li>text</li>
+                            </div>
+                        </div>
+                        
+                    </ul>
+                    <MeunList/>
+                </div>
             </div>
 
             <div className="section section1">
