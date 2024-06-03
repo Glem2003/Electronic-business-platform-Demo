@@ -22,6 +22,7 @@
         position: sticky
         top: 0
         z-index: 50
+        border-bottom: 1px solid grey
         >*
             padding: 0 10%
         .title
@@ -29,29 +30,28 @@
             justify-content: space-between
             opacity: 0.8
             backdrop-filter: blur(30px)
-            border-bottom: 1px solid grey
         .content
             visibility: hidden
             padding: 20px 10%
             width: 100%
             background-color: white
-            border: 1px solid blue
             display: flex
             ul
-                border: 1px solid black
                 flex: 1
                 .item
                     display: flex
                     .list
-                        border: 1px solid black
                         flex: 1
                         line-height: 2
+                        li
+                            cursor: pointer
+                            &:hover
+                                text-decoration-line: underline
                 &:last-child
                     border-left: 1px solid grey
                     flex: 2.5
                     padding-left: 20px
                 
-
     .section1
         width: 100%
         padding: 0 10%
@@ -117,3 +117,7 @@
                 h4
                     font-size: 1.5rem
                     text-align: center
+
+    .section4
+        *
+            border: 1px solid black

@@ -1123,11 +1123,11 @@ export const shopContent = ([
                 link: "選購 MagSafe",
             }
         ],
-        meun: [
+        menu: [
             {
                 title: "配件",
                 subtitle: "瀏覽所有",
-                meun_item: [
+                menu_item: [
                     {
                         title: "依產品選購",
                         list: [
