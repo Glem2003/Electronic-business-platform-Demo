@@ -5,16 +5,18 @@ import Slider from 'react-slick';
 import HeaderBanner from './headerBanner.js';
 import Search from '../Common/search.js';
 import MenuList from './menuList.js';
+import ShopItemCard from './shopItemCard.js';
 
 //import sass
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
 const Shop = () => {
     const settings = {
-        dots : true,
+        dots: true,
         speed: 500,
-        slidesToShow : 3,
+        slidesToShow: 3,
         slidesToScroll: 3,
         infinite: false
     }
@@ -111,23 +113,36 @@ const Shop = () => {
 
             <div className="section section4">
                 <div className="title">
-                    <h1>title</h1>
-                    <h5>link</h5>
+                    {shopContent.map((item) => {
+                        return item.ipad_item.map((info) => {
+                            return (
+                                <>
+                                    <h1>{info.title}</h1>
+                                    <h4>{info.subtitle}</h4>
+                                </>
+                            )
+                        })
+                    })}
+
                 </div>
                 <div className="content">
                     <Slider {...settings}>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>
-                        <div>7</div>
-                        <div>8</div>
-                        <div>9</div>
-                        <div>10</div>
-                        <div></div>
-                        <div></div>
+                        {shopContent && shopContent.map((item) => {
+                            return item.ipad_item.map((info) => {
+                                return info.product_item.map((item, index) => {
+                                    return (
+                                        <ShopItemCard
+                                            key={index}
+                                            src={item.src}
+                                            colors={item.color}
+                                            ps={item.postscript}
+                                            title={item.title}
+                                            price={item.price}
+                                        />
+                                    )
+                                })
+                            })
+                        })}
                     </Slider>
                 </div>
             </div>

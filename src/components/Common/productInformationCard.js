@@ -1,5 +1,4 @@
-import { CardInfo, ProductCardCenter } from "./productCard";
-import ColorBox from './colorBox';
+import { CardInfo, ProductCardCenter, ColorBox } from "./productCard";
 import ButtonItem from './buttonItem';
 import CardInformationInProduct from './cardInformationInProduct';
 

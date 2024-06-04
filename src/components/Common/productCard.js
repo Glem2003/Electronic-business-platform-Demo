@@ -1,4 +1,6 @@
+//import sass
 import '../../Sass/component/productCard.sass';
+import '../../Sass/component/colorBox.sass';
 
 export const ProductCardWrapper = ({ children, src, alt }) => {
     return (
@@ -38,6 +40,16 @@ export const CardInfo = ({ title, text, subtitle, ps, children ,src ,alt}) => {
             <h6 className='subtitle'>{subtitle}</h6>
             <h4 className='text'>{text}</h4>
             {children}
+        </div>
+    )
+}
+
+export const ColorBox = ({ color }) => {
+    return (
+        <div
+            id={color}
+            className="box"
+        >
         </div>
     )
 }
