@@ -1,14 +1,16 @@
 // watch
 .watch
-    >.Product-items 
-        >.col-10 
+    z-index: 3
+    position: relative
+    /* Global*/
+    >.Product-items
+        >.col-10
             >.item-info
                 line-height: 2
                 >h4.ps
                     font-size: 12px
                     color: black
                     top: 0
-
     >.section
         padding: 50px 10%
         >.title
@@ -17,7 +19,7 @@
             margin-bottom: 30px
             >h2
                 font-size: 50px
-
+    //section1
     .section1
         padding: 30px 10%
         >.title
@@ -30,7 +32,7 @@
             border: 1px solid black
             border-radius: 20px
             height: 500px
-
+    //section2
     .section2
         >.section
             padding-right: 10px
@@ -54,7 +56,6 @@
                 flex: 0 0 350px
                 height: 600px
                 z-index: 1
-
             .product-card.wrapper
                 flex: 0 0 350px
                 height: 600px
@@ -67,10 +68,9 @@
                     padding-left: 20px
                 &:hover
                     transform: scale(1.02)
-
             &:nth-child(1),&:nth-child(2),&:nth-child(3)
-                    color: white
-    
+                color: white
+    //section3
     .section3
         background-color: #f5f5f7
         .title
@@ -86,7 +86,6 @@
             padding-right: 10px
             .action-btns
                 display: none
-
             .product-items
                 display: flex
                 .information-card
@@ -94,10 +93,10 @@
                         display: none
                     >.info-item .card-images
                         height: 180px
-
+    //section4
     .section4
         background-color: #f5f5f7
-        >.product-card 
+        >.product-card
             height: 550px
             overflow: hidden
             margin: 0 auto
@@ -138,7 +137,7 @@
                             text-decoration-line: underline
             &:hover
                 transform: scale(1.02)
-
+    //section5
     .section5
         background-color: white
         >.product-info-item
@@ -174,14 +173,12 @@
                         order: 4
                         &::after
                             content: ' > '
-                            
                         &:hover
                             text-decoration-line: underline
-
             >&:first-child
                 .card-info
                     flex: 0
-
+    //section last
     .last
         background-color: #f5f5f7
         h2.title
