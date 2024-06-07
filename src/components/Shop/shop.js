@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import HeaderBanner from './headerBanner.js';
 import Search from '../Common/search.js';
 import MenuList from './menuList.js';
-import ShopItemCard from './shopItemCard.js';
+import { renderTitle, renderContent } from './shopRender.js';
 import { NextArrow, PrevArrow } from '../Common/arrowButton.js';
 import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
 import { GoChevronDown } from "react-icons/go";
@@ -14,43 +14,6 @@ import { GoChevronDown } from "react-icons/go";
 //import sass
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-
-// component
-const renderTitle = (items, itemType) => {
-    return items.map((item) => (
-        item.product_items && item.product_items.map((productItem) => (
-            productItem[itemType] && productItem[itemType].map((info) => (
-                <React.Fragment key={info.title}>
-                    <h1>{info.title}</h1>
-                    {info.subtitle && (
-                        <h4>{info.subtitle}</h4>
-                    )}
-                </React.Fragment>
-            ))
-        ))
-    ));
-};
-
-const renderContent = (items, itemType) => {
-    return items.map((item) => (
-        item.product_items && item.product_items.map((productItem) => (
-            productItem[itemType] && productItem[itemType].map((info) => (
-                info.product_item && info.product_item.map((item, index) => (
-                    <ShopItemCard
-                        key={index}
-                        src={item.src}
-                        colors={item.color}
-                        ps={item.postscript}
-                        title={item.title}
-                        price={item.price}
-                    />
-                ))
-            ))
-        ))
-    ));
-};
-
 
 const Shop = () => {
     const settings = {
