@@ -1,3 +1,6 @@
+import React from 'react';
+
+//component
 import ShopItemCard from './shopItemCard.js';
 
 export const renderTitle = (items, itemType) => {
