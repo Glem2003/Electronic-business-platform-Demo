@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { productData, productTextData } from "../../Api";
 import { mainContent } from '../../Content/content';
 
+//import component
 import ContantTitle from "./contantTitle";
 import ScrollBar from "../Common/scrollBar";
 import ProductItem from "../Common/productItem";

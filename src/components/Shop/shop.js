@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import { shopContent } from '../../Content/content.js';
 
 //import component
@@ -6,10 +7,49 @@ import HeaderBanner from './headerBanner.js';
 import Search from '../Common/search.js';
 import MenuList from './menuList.js';
 import ShopItemCard from './shopItemCard.js';
+import { NextArrow, PrevArrow } from '../Common/arrowButton.js';
+import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
+import { GoChevronDown } from "react-icons/go";
 
 //import sass
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+
+// component
+const renderTitle = (items, itemType) => {
+    return items.map((item) => (
+        item.product_items && item.product_items.map((productItem) => (
+            productItem[itemType] && productItem[itemType].map((info) => (
+                <React.Fragment key={info.title}>
+                    <h1>{info.title}</h1>
+                    {info.subtitle && (
+                        <h4>{info.subtitle}</h4>
+                    )}
+                </React.Fragment>
+            ))
+        ))
+    ));
+};
+
+const renderContent = (items, itemType) => {
+    return items.map((item) => (
+        item.product_items && item.product_items.map((productItem) => (
+            productItem[itemType] && productItem[itemType].map((info) => (
+                info.product_item && info.product_item.map((item, index) => (
+                    <ShopItemCard
+                        key={index}
+                        src={item.src}
+                        colors={item.color}
+                        ps={item.postscript}
+                        title={item.title}
+                        price={item.price}
+                    />
+                ))
+            ))
+        ))
+    ));
+};
 
 
 const Shop = () => {
@@ -18,11 +58,31 @@ const Shop = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: false
+        infinite: false,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />
     }
+
+    const contentRef = useRef(null);
+    const arrowRef = useRef(null);
+
+    const handleClick = () => {
+        if (contentRef.current) {
+            contentRef.current.classList.toggle('show');
+        } else {
+            console.error('Content element not found');
+        }
+
+        if (arrowRef.current) {
+            arrowRef.current.classList.toggle('open');
+        } else {
+            console.error('Arrow element not found');
+        }
+    };
 
     return (
         <div className="shop">
+
             <div className="menu">
                 <div className="title">
                     {shopContent && shopContent.map((i) => {
@@ -30,13 +90,13 @@ const Shop = () => {
                             return (
                                 <>
                                     <h2>{b.title}</h2>
-                                    <h3>{b.subtitle}</h3>
+                                    <h3 onClick={handleClick}>{b.subtitle}<span ref={arrowRef}><GoChevronDown /></span></h3>
                                 </>
                             )
                         })
                     })}
                 </div>
-                <div className="content">
+                <div className="content" ref={contentRef}>
                     {shopContent && shopContent.map((i) => {
                         return i.menu && i.menu.map((c) => {
                             return c.menu_item && c.menu_item.map((l, index) => {
@@ -112,43 +172,87 @@ const Shop = () => {
             </div>
 
             <div className="section section4">
-                <div className="title">
-                    {shopContent.map((item) => {
-                        return item.ipad_item.map((info) => {
-                            return (
-                                <>
-                                    <h1>{info.title}</h1>
-                                    <h4>{info.subtitle}</h4>
-                                </>
-                            )
-                        })
-                    })}
-
+                <div className='section-item' id='ipad'>
+                    <div className="title">
+                        {shopContent && renderTitle(shopContent, 'ipad_item')}
+                    </div>
+                    <div className="content">
+                        <Slider {...settings}>
+                            {shopContent && renderContent(shopContent, 'ipad_item')}
+                        </Slider>
+                    </div>
                 </div>
-                <div className="content">
-                    <Slider {...settings}>
-                        {shopContent && shopContent.map((item) => {
-                            return item.ipad_item.map((info) => {
-                                return info.product_item.map((item, index) => {
-                                    return (
-                                        <ShopItemCard
-                                            key={index}
-                                            src={item.src}
-                                            colors={item.color}
-                                            ps={item.postscript}
-                                            title={item.title}
-                                            price={item.price}
-                                        />
-                                    )
-                                })
-                            })
-                        })}
-                    </Slider>
+                <div className='section-item' id='iphone'>
+                    <div className="title">
+                        {shopContent && renderTitle(shopContent, 'iphone_item')}
+                    </div>
+                    <div className="content">
+                        <Slider {...settings}>
+                            {shopContent && renderContent(shopContent, 'iphone_item')}
+                        </Slider>
+                    </div>
+                </div>
+                <div className='section-item' id='watch'>
+                    <div className="title">
+                        {shopContent && renderTitle(shopContent, 'apple_watch_item')}
+                    </div>
+                    <div className="content">
+                        <Slider {...settings}>
+                            {shopContent && renderContent(shopContent, 'apple_watch_item')}
+                        </Slider>
+                    </div>
+                </div>
+                <div className='section-item' id='earphone'>
+                    <div className="title">
+                        {shopContent && renderTitle(shopContent, 'earphone_item')}
+                    </div>
+                    <div className="content">
+                        <Slider {...settings}>
+                            {shopContent && renderContent(shopContent, 'earphone_item')}
+                        </Slider>
+                    </div>
+                </div>
+                <div className='section-item' id='mac'>
+                    <div className="title">
+                        {shopContent && renderTitle(shopContent, 'mac_item')}
+                    </div>
+                    <div className="content">
+                        <Slider {...settings}>
+                            {shopContent && renderContent(shopContent, 'mac_item')}
+                        </Slider>
+                    </div>
+                </div>
+                <div className='section-item' id='airtag'>
+                    <div className="title">
+                        {shopContent && renderTitle(shopContent, 'airtag_item')}
+                    </div>
+                    <div className="content">
+                        <Slider {...settings}>
+                            {shopContent && renderContent(shopContent, 'airtag_item')}
+                        </Slider>
+                    </div>
                 </div>
             </div>
 
-        </div>
+            <div className='section section5'>
+                {shopContent && shopContent.map((item) => {
+                    return item.info_item && item.info_item.map((info, index) => {
+                        return (
+                            <ProductCardCenter
+                                key={index}
+                            >
+                                <CardInfo
+                                    title={info.title}
+                                    subtitle={info.text}
+                                    text={info.link}
+                                />
+                            </ProductCardCenter>
+                        )
+                    });
+                })}
+            </div>
 
+        </div>
     )
 }
 

@@ -6,13 +6,15 @@ const ShopItemCard = ({ src, alt, colors, ps, title, price }) => {
             src={src}
             alt={alt}
         >
-            {colors && colors.map((color) => {
-                return (
-                    <ColorBox
-                        color={color}
-                    />
-                )
-            })}
+            <div className='color-item'>
+                {colors && colors.map((color) => {
+                    return (
+                        <ColorBox
+                            color={color}
+                        />
+                    )
+                })}
+            </div>
             <CardInfo
                 ps={ps}
                 title={title}
