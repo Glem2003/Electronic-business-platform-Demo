@@ -1,3 +1,8 @@
+import React, { useState } from 'react';
+
+//import sass
+import '../../Sass/component/arrow-button.sass';
+
 export const ArrowButton = ({ className, style, onClick }) => {
     return (
         <div className={className}
@@ -28,7 +33,22 @@ export const PrevArrow = ({ className, style, onClick }) => {
             style={{ ...style, display: "block" }}
             onClick={onClick}
         >
-            <img src="/images/arrow.png" alt="button"/>
+            <img src="/images/arrow.png" alt="button" />
         </div>
     );
 }
+
+export const ArrowIcon = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleOpen = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className={`arrow-icon ${isOpen ? 'open' : ''}`} onClick={toggleOpen}>
+            <span className="left-bar"></span>
+            <span className="right-bar"></span>
+        </div>
+    );
+};

@@ -33,20 +33,16 @@
             backdrop-filter: blur(30px)
             >*
                 cursor: pointer
-            span svg
-                position: relative
-                top: 7px
-                width: 1.5em
-                height: 1.5em
-            span.open
-                svg
-                    transform: rotate(180deg)
+            h3
+                display: flex
         .content
             visibility: hidden
             padding: 20px 10%
             width: 100%
             background-color: white
             display: flex
+            opacity: 0
+            transition: all 0.8s
             ul
                 flex: 1
                 .item
@@ -63,6 +59,7 @@
                     flex: 2.5
                     padding-left: 20px
             &.show 
+                opacity: 1
                 visibility: visible
     //section1
     .section1
@@ -95,15 +92,11 @@
                 background-repeat: no-repeat
                 background-size: cover
                 background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/aalp-magsafe-header-09-202403?wid=2880&hei=960&fmt=png-alpha&.v=1709153439355)
-    //section2
-    .section2
-        +layoutCenter
     //section3
     .section3
         *
             //border: 1px solid black
         .title
-            padding-bottom: 10px
             border-bottom: 1px solid grey
             ul
                 +layoutCenter
@@ -111,11 +104,17 @@
                 width: 100%
                 gap: 30px
                 li
+                    padding: 10px 20px
                     cursor: pointer
+                    font-size: 24px
+                    font-weight: 300
+                    &.click
+                        border-bottom: 1px solid #000
         .container
             +layoutCenter
             flex-direction: row
-            justify-content: space-between
+            justify-content: center
+            gap: 40px
             padding-bottom: 60px
             border-bottom: 1px solid grey
             .boxItem

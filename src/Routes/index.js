@@ -11,6 +11,7 @@ const AirpodsPages = lazy(() => import("../Pages/airpodsPages"));
 const ShopPages = lazy(()=> import ("../Pages/shopPages"));
 const TvAndFamilyPages = lazy(() => import("../Pages/tvAndFamilyPages"));
 const IphonePages = lazy(() => import("../Pages/iphonePages"));
+const SupportPages = lazy(() => import("../Pages/supportPages"));
 const CartPages = lazy(() => import("../Pages/cartPages"));
 
 // Routes configuration
@@ -24,7 +25,9 @@ const routes = [
     { path: "/tv-and-family", element: <TvAndFamilyPages /> },
     { path: "/iPhone", element: <IphonePages /> },
     { path: "/shop", element: <ShopPages /> },
-    { path: "/cart", element: <CartPages /> }
+    { path: "/support", element: <SupportPages /> },
+    { path: "/cart", element: <CartPages /> },
+    { path: "*", element: (<>404</>) }
 ];
 
 const AppRoute = () => (

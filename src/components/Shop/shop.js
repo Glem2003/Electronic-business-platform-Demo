@@ -7,9 +7,8 @@ import HeaderBanner from './headerBanner.js';
 import Search from '../Common/search.js';
 import MenuList from './menuList.js';
 import { renderTitle, renderContent } from './shopRender.js';
-import { NextArrow, PrevArrow } from '../Common/arrowButton.js';
+import { ArrowIcon, NextArrow, PrevArrow } from '../Common/arrowButton.js';
 import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
-import { GoChevronDown } from "react-icons/go";
 
 //import sass
 import 'slick-carousel/slick/slick.css';
@@ -27,19 +26,12 @@ const Shop = () => {
     }
 
     const contentRef = useRef(null);
-    const arrowRef = useRef(null);
 
     const handleClick = () => {
         if (contentRef.current) {
             contentRef.current.classList.toggle('show');
         } else {
             console.error('Content element not found');
-        }
-
-        if (arrowRef.current) {
-            arrowRef.current.classList.toggle('open');
-        } else {
-            console.error('Arrow element not found');
         }
     };
 
@@ -53,7 +45,7 @@ const Shop = () => {
                             return (
                                 <>
                                     <h2>{b.title}</h2>
-                                    <h3 onClick={handleClick}>{b.subtitle}<span ref={arrowRef}><GoChevronDown /></span></h3>
+                                    <h3 onClick={handleClick}>{b.subtitle}<ArrowIcon/></h3>
                                 </>
                             )
                         })
@@ -106,31 +98,26 @@ const Shop = () => {
             <div className="section section3">
                 <div className='title'>
                     <ul>
-                        <li>text</li>
-                        <li>text</li>
+                        {shopContent && shopContent.flatMap(item =>
+                            item.menu && item.menu.flatMap(item =>
+                                item.menu_item && item.menu_item.flatMap((info ,index) =>
+                                    info.title && <li id={`list list${index+1}`}>{info.title}</li>
+                                )
+                            )
+                        )}
                     </ul>
                 </div>
                 <div className="container">
-                    <div className="boxItem">
-                        <div className="box"></div>
-                        <h4>1</h4>
-                    </div>
-                    <div className="boxItem">
-                        <div className="box"></div>
-                        <h4>2</h4>
-                    </div>
-                    <div className="boxItem">
-                        <div className="box"></div>
-                        <h4>3</h4>
-                    </div>
-                    <div className="boxItem">
-                        <div className="box"></div>
-                        <h4>4</h4>
-                    </div>
-                    <div className="boxItem">
-                        <div className="box"></div>
-                        <h4>5</h4>
-                    </div>
+                    {shopContent && shopContent.map((item, idx) => (
+                        item.menu.map((menuItem, menuIdx) => (
+                            menuItem.menu_item[0] && menuItem.menu_item[0].list.map((listItem, listIdx) => (
+                                <div className="boxItem" key={`list-item-${idx}-${menuIdx}-${listIdx}`}>
+                                    <div className="box"></div>
+                                    <h4>{listItem.text}</h4>
+                                </div>
+                            ))
+                        ))
+                    ))}
                 </div>
             </div>
 

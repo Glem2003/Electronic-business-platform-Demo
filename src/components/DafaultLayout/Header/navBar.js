@@ -134,7 +134,7 @@ const NavBar = () => {
         { to: "/shop", text: "配件", onMouseOver: () => handleMouseOver('shop') },
         { to: "/support", text: "支援服務", onMouseOver: () => handleMouseOver('support') },
         { icon: <CiSearch style={svgStyle} />, onMouseOver: () => handleMouseOver('search') },
-        { icon: <FaShoppingCart style={svgStyle} />, onMouseOver: () => setFlyoutContent(false) }
+        { to:"/cart",icon: <FaShoppingCart style={svgStyle} />, onMouseOver: () => setFlyoutContent(false) }
     ];
 
     return (

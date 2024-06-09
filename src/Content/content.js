@@ -1044,10 +1044,10 @@ export const airpodsContent = ([
             }
         ],
         section_4: [
-            { title: "免額外付費的次日送達服務", text: (<>下午 3 點前訂購現貨商品，即可享有<br />下一工作日內送達服務。</>), link: "進一步了解"},
-            { title: "零利率分期", text: "提供零利率分期優惠。", link: "進一步了解"},
-            { title: "取得購物協助", text: (<>如果有疑問，歡迎打電話或於線上和<br />專員聊聊。<br />請致電 0800-020-021</>), link: "與我們聯絡"},
-            { title: "由你訂製，專屬於你", text: (<>為你的 AirPods 鐫刻暱稱或喜愛的<br />表情符號，免額外付費。<br />只在 Apple 提供。</>), link: "進一步了解"}
+            { title: "免額外付費的次日送達服務", text: (<>下午 3 點前訂購現貨商品，即可享有<br />下一工作日內送達服務。</>), link: "進一步了解" },
+            { title: "零利率分期", text: "提供零利率分期優惠。", link: "進一步了解" },
+            { title: "取得購物協助", text: (<>如果有疑問，歡迎打電話或於線上和<br />專員聊聊。<br />請致電 0800-020-021</>), link: "與我們聯絡" },
+            { title: "由你訂製，專屬於你", text: (<>為你的 AirPods 鐫刻暱稱或喜愛的<br />表情符號，免額外付費。<br />只在 Apple 提供。</>), link: "進一步了解" }
         ]
     }
 ])
@@ -1135,8 +1135,7 @@ export const shopContent = ([
                             { text: "iPad" },
                             { text: "iPhone" },
                             { text: "手錶" },
-                            { text: "TV 和家庭" },
-                            { text: "所有產品" },
+                            { text: "TV 和家庭" }
                         ]
                     },
                     {
@@ -1735,45 +1734,53 @@ export const supportContent = ([
                     { text: "忘記 Apple ID 密碼", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-password_2x.svg" },
                     { text: "Apple 維修", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-repair_2x.svg" },
                     { text: "帳單和訂閱項目", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-billing_2x.svg" },
-                    { text: "如何過濾和封鎖不想收到的訊息。", subtitle: "進一步瞭解" },
                 ],
+                other_item: [
+                    { text: "如何過濾和封鎖不想收到的訊息。", subtitle: "進一步瞭解" },
+                ]
 
             }
         ],
         search: [
-            { title: "搜尋更多主題" }
+            { title: "搜尋更多主題", placeholder: "搜尋支援" }
         ],
         section_2: [
             {
+                id: "21",
                 title: "參加 Apple 直營店的免費課程",
                 text: "了解最新功能，以及如何更善加運用你的 Apple 裝置。",
                 link: "報名參加",
                 src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-feature-taa-fundamentals.image.large_2x.png"
             },
             {
+                id: "22",
                 title: "取得支援",
                 text: "請提供一些詳細資訊，我們將提供最佳解決方案。你可透過電話、線上對談、電子郵件等方式與我們聯繫。",
                 link: "立即開始",
                 src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-split-getsupport.image.large_2x.png"
             },
             {
+                id: "23",
                 title: "「Apple 支援」App",
                 text: "透過一個 App 即可為你所有的 Apple 產品取得協助，或聯絡專家。",
                 link: "下載",
                 src: "https://support.apple.com/content/dam/edam/applecare/images/zh_TW/psp_content/tile-split-supportapp.image.large_2x.png"
             },
             {
+                id: "24",
                 title: "我的支援",
                 text: "取得你 Apple 產品的最新資訊，包括保固範圍、維修等等。",
                 link: "登入「我的支援」",
             },
             {
+                id: "25",
                 title: "AppleCare+ 服務專案",
                 text: "享有不限次數的意外損壞保固維修服務，並能優先聯繫 Apple 專家等。",
                 link: "更多內容",
                 src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-feature-applecare-plus.image.large_2x.png"
             },
             {
+                id: "26",
                 title: "注意仿冒零件",
                 text: (
                     <>
@@ -1782,6 +1789,7 @@ export const supportContent = ([
                         或
                         <span>Apple 授權維修中心</span>
                         。若你需要更換新的轉接器來為 Apple 裝置充電，建議你選購 Apple 電源轉接器。
+                        <br />
                         <br />
                         此外，非原廠的替換顯示器可能會有較差的視覺品質，且可能無法正常運作。Apple 認證的螢幕維修是由受信任的專家使用原廠 Apple 零件來進行。
                     </>
