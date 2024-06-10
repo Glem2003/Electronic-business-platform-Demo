@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+//import content
 import { macProductData } from "../../Api/index.js";
 import { navBar, mac } from '../../Content/index.js';
+
+//import hook
+import useFetchData from "../../Hooks/useFetchData.js";
 
 //import component
 import ProductItem from "../Common/productItem.js";
@@ -14,22 +17,13 @@ import MacInfoBox from "./macInfoBox.js";
 
 const Mac = () => {
 
+    const { data, loading, error } = useFetchData(macProductData);
+    
     const selectedData = navBar.navBarMacList[0];
     const otherData = navBar.navBarMacList.slice(1);
 
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const products = await macProductData();
-            setData(products);
-        };
-        fetchData();
-    }, []);
-
-    if (data === null) {
-        return <div></div>;
-    }
+    if (loading) return <div></div>;
+    if (error) return <div>Error: {error.message}</div>;
 
     return (
         <div className="mac">

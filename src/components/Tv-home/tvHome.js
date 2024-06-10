@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+//import content
 import { tvHomeProductData } from "../../Api";
 import { tvFamily } from '../../Content/index.js';
+
+//import hook
+import useFetchData from "../../Hooks/useFetchData.js";
 
 //import component
 import ProductItem from "../Common/productItem";
@@ -11,19 +14,10 @@ import ScrollBar from '../Common/scrollBar.js';
 
 const TvHome = () => {
 
-    const [data, setData] = useState(null);
+    const { data, loading, error } = useFetchData(tvHomeProductData);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const products = await tvHomeProductData();
-            setData(products);
-        };
-        fetchData();
-    }, []);
-
-    if (data === null) {
-        return <div></div>;
-    }
+    if (loading) return <div></div>;
+    if (error) return <div>Error: {error.message}</div>;
 
     return (
         <div className="tv-home">

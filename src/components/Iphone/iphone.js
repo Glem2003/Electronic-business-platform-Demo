@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+//import content
 import { iPhoneProductData } from "../../Api";
 import { iphone, navBar } from '../../Content/index.js';
+
+//import hook
+import useFetchData from "../../Hooks/useFetchData.js";
 
 //import component
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
@@ -15,22 +18,13 @@ import ButtonItem from "../Common/buttonItem.js";
 
 const Iphone = () => {
 
+    const { data, loading, error } = useFetchData(iPhoneProductData);
+
     const selectedData = navBar.navBarIphoneList[0];
     const otherData = navBar.navBarIphoneList.slice(1);
 
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const products = await iPhoneProductData();
-            setData(products);
-        };
-        fetchData();
-    }, []);
-
-    if (data === null) {
-        return <div></div>;
-    }
+    if (loading) return <div></div>;
+    if (error) return <div>Error: {error.message}</div>;
 
     return (
         <div className="iphone">

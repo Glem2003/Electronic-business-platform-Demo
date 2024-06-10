@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { airpodProductData } from "../../Api/index.js";
 import { airpods } from '../../Content/index.js';
+
+//import hook
+import useFetchData from "../../Hooks/useFetchData.js";
 
 // import component
 import ProductItem from "../Common/productItem.js";
@@ -15,19 +17,10 @@ import ProductInformationCard from '../Common/productInformationCard.js';
 
 const Airpods = () => {
 
-    const [data, setData] = useState(null);
+    const { data, loading, error } = useFetchData(airpodProductData);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const products = await airpodProductData();
-            setData(products);
-        };
-        fetchData();
-    }, []);
-
-    if (data === null) {
-        return <div></div>;
-    }
+    if (loading) return <div></div>;
+    if (error) return <div>Error: {error.message}</div>;
 
     return (
         <div className="airpods">

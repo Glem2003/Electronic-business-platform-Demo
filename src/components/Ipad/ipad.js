@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+//import content
 import { iPadProductData } from "../../Api/index.js";
 import { ipad, navBar } from '../../Content/index.js';
+
+//import hook
+import useFetchData from "../../Hooks/useFetchData.js";
 
 // import component
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
@@ -13,22 +16,13 @@ import ProductInformationCard from "../Common/productInformationCard.js";
 
 const IPad = () => {
 
+    const { data, loading, error } = useFetchData(iPadProductData);
+
     const selectedData = navBar.navBarIpadList[0];
     const otherData = navBar.navBarIpadList.slice(1);
 
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const products = await iPadProductData();
-            setData(products);
-        };
-        fetchData();
-    }, []);
-
-    if (data === null) {
-        return <div></div>;
-    }
+    if (loading) return <div></div>;
+    if (error) return <div>Error: {error.message}</div>;
 
     return (
         <div className="iPad">
