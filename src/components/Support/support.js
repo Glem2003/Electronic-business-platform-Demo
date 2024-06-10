@@ -1,4 +1,4 @@
-import { supportContent } from '../../Content/content.js';
+import { support } from '../../Content/index.js';
 
 //import component
 import Search from '../Common/search.js';
@@ -13,7 +13,7 @@ const Support = () => {
             <div className="section section1">
 
                 <div className='product'>
-                    {supportContent && supportContent.map((item, itemIndex) => (
+                    {support && support.map((item, itemIndex) => (
                         item.section_1 && item.section_1.map((info, sectionIndex) => (
                             <>
                                 {info.title && <h1 className="title">{info.title}</h1>}
@@ -33,7 +33,7 @@ const Support = () => {
                 </div>
 
                 <div className='service'>
-                    {supportContent && supportContent.map((item) =>
+                    {support && support.map((item) =>
                         item.section_1 && item.section_1.map((sectionItem) =>
                             sectionItem.support_item && sectionItem.support_item.map((info, index) => (
                                 <div className='col' key={index}>
@@ -48,7 +48,7 @@ const Support = () => {
                 </div>
 
                 <div className='more'>
-                    {supportContent && supportContent.map((item) =>
+                    {support && support.map((item) =>
                         item.section_1 && item.section_1.map((sectionItem) =>
                             sectionItem.other_item && sectionItem.other_item.map((info, index) => (
                                 <div key={index}>
@@ -60,7 +60,7 @@ const Support = () => {
                     )}
                 </div>
 
-                {supportContent && supportContent.map((item) => (
+                {support && support.map((item) => (
                     item.search.map((info, index) => (
                         <Search
                             key={index}
@@ -73,7 +73,7 @@ const Support = () => {
             </div>
 
             <div className="section section2">
-                {supportContent && supportContent.map((item) => {
+                {support && support.map((item) => {
                     const firstInfo = item.section_2.slice(0, 1)
                     const secondInfo = item.section_2.slice(1, 3)
                     const otherInfo = item.section_2.slice(3, 6)
@@ -135,19 +135,19 @@ const Support = () => {
 
             <div className='section repair'>
                 <div className='repair'>
-                    {supportContent && supportContent.map((item) => (
+                    {support && support.map((item) => (
                         item.repair_solutions.map((info) => (
                             info.title && <h3 key={info.id}>{info.title}</h3>
                         ))
                     ))}
-                    {supportContent && supportContent.map((item) => (
+                    {support && support.map((item) => (
                         item.repair_solutions.map((info) => (
                             info.list.map((text) => (
                                 <h4 key={text.id}>{text.text}</h4>
                             ))
                         ))
                     ))}
-                    {supportContent && supportContent.map((item) => (
+                    {support && support.map((item) => (
                         item.repair_solutions.map((info) => (
                             info.subtitle && <h4 key={info.id} className='link'>{info.subtitle}</h4>
                         ))

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { watchProductData } from "../../Api/index.js";
-import { watchContent, navBarWatchList } from '../../Content/content.js';
+import { watch, navBar } from '../../Content/index.js';
 
 //import component
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
@@ -14,8 +14,8 @@ import ButtonItem from "../Common/buttonItem.js";
 
 const Watch = () => {
 
-    const selectedData = navBarWatchList[0];
-    const otherData = navBarWatchList.slice(1);
+    const selectedData = navBar.navBarWatchList[0];
+    const otherData = navBar.navBarWatchList.slice(1);
 
     const [data, setData] = useState(null);
 
@@ -48,7 +48,7 @@ const Watch = () => {
             </div>
 
             <div className="section section1">
-                {watchContent && watchContent.map((item) => {
+                {watch && watch.map((item) => {
                     return item.header && item.header.map((header, index) => (
                         <SectionTitle
                             key={index}
@@ -60,7 +60,7 @@ const Watch = () => {
             </div>
 
             <div className="section section2">
-                {watchContent && watchContent.map((item) => {
+                {watch && watch.map((item) => {
                     return item.section_2 && item.section_2.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -70,7 +70,7 @@ const Watch = () => {
                 })}
                 <ScrollBar>
                     <div className="section-items">
-                        {watchContent && watchContent.map((item) => {
+                        {watch && watch.map((item) => {
                             return item.section_2 && item.section_2.map((items) => {
                                 return items.info_item && items.info_item.map((info, index) => {
                                     return (
@@ -94,7 +94,7 @@ const Watch = () => {
             </div>
 
             <div className="section section3">
-                {watchContent && watchContent.map((item) => {
+                {watch && watch.map((item) => {
                     return item.section_3 && item.section_3.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -106,7 +106,7 @@ const Watch = () => {
 
                 <ScrollBar>
                     <div className="product-items">
-                        {watchContent && watchContent.map((item) => {
+                        {watch && watch.map((item) => {
                             return item.section_3 && item.section_3.map((items) => {
                                 return items.product_info_item && items.product_info_item.map((info, index) => {
                                     return (
@@ -132,7 +132,7 @@ const Watch = () => {
             </div>
 
             <div className="section section4">
-                {watchContent && watchContent.map((item) => {
+                {watch && watch.map((item) => {
                     return item.section_4 && item.section_4.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -142,7 +142,7 @@ const Watch = () => {
                     ));
                 })}
 
-                {watchContent && watchContent.map((item) => {
+                {watch && watch.map((item) => {
                     return item.section_4 && item.section_4.map((items) => {
                         return items.section_4_info && items.section_4_info.map((info) => {
                             return (
@@ -164,7 +164,7 @@ const Watch = () => {
             </div>
 
             <div className="section section5">
-                {watchContent && watchContent.map((item) => {
+                {watch && watch.map((item) => {
                     return item.section_5 && item.section_5.map((info, index) => {
                         return (
                             <SectionTitle
@@ -175,7 +175,7 @@ const Watch = () => {
                     })
                 })}
                 <div className="product-info-item">
-                    {watchContent && watchContent.map((item) => {
+                    {watch && watch.map((item) => {
                         return item.section_5 && item.section_5.map((item) => {
                             return item.info_item && item.info_item.map((info, index) => {
                                 return (

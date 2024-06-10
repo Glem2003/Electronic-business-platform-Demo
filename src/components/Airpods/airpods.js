@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { airpodProductData } from "../../Api/index.js";
-import { airpodsContent } from '../../Content/content.js';
+import { airpods } from '../../Content/index.js';
 
 // import component
 import ProductItem from "../Common/productItem.js";
@@ -45,7 +45,7 @@ const Airpods = () => {
                 })}
             </div>
 
-            {airpodsContent && airpodsContent.map((item) => {
+            {airpods && airpods.map((item) => {
                 return item.ads_text && item.ads_text.map((ads, index) => {
                     return (
                         <ProductInfoItem
@@ -58,7 +58,7 @@ const Airpods = () => {
             })}
 
             <div className="section section1">
-                {airpodsContent && airpodsContent.map((item) => {
+                {airpods && airpods.map((item) => {
                     return item.banner_item && item.banner_item.map((item, index) => {
                         return (
                             <WrapperCard
@@ -82,7 +82,7 @@ const Airpods = () => {
             </div>
 
             <div className="section section2">
-                {airpodsContent && airpodsContent.map((item) => {
+                {airpods && airpods.map((item) => {
                     return item.section_info && item.section_info.map((info, index) => {
                         return (
                             <SectionTitle
@@ -95,7 +95,7 @@ const Airpods = () => {
 
                 <ScrollBar>
                     <div className="section-items">
-                        {airpodsContent && airpodsContent.map((item) => {
+                        {airpods && airpods.map((item) => {
                             return item.section_info && item.section_info.map((items) => {
                                 return items.info_item && items.info_item.map((info, index) => {
                                     return (
@@ -122,7 +122,7 @@ const Airpods = () => {
             </div>
 
             <div className="section section3">
-                {airpodsContent && airpodsContent.map((item) => {
+                {airpods && airpods.map((item) => {
                     return item.section_3 && item.section_3.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -133,7 +133,7 @@ const Airpods = () => {
                 })}
 
                 <div className="product-items">
-                    {airpodsContent && airpodsContent.map((item) => {
+                    {airpods && airpods.map((item) => {
                         return item.section_3 && item.section_3.map((item) => {
                             return item.product_info_item && item.product_info_item.map((info, index) => {
                                 return (
@@ -157,7 +157,7 @@ const Airpods = () => {
             </div>
 
             <div className="section section4">
-                {airpodsContent && airpodsContent.map((item) => {
+                {airpods && airpods.map((item) => {
                     return item.section_4 && item.section_4.map((info, index) => {
                         return (
                             <ProductCardCenter

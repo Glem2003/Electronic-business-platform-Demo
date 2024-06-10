@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { shopContent } from '../../Content/content.js';
+import React, { useRef, useState } from 'react';
+import { shop } from '../../Content/index.js';
 
 //import component
 import Slider from 'react-slick';
@@ -30,29 +30,37 @@ const Shop = () => {
     const handleClick = () => {
         if (contentRef.current) {
             contentRef.current.classList.toggle('show');
+            setIsOpen(!isOpen);
         } else {
             console.error('Content element not found');
         }
     };
+
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className="shop">
 
             <div className="menu">
                 <div className="title">
-                    {shopContent && shopContent.map((i) => {
+                    {shop && shop.map((i) => {
                         return i.menu && i.menu.map((b) => {
                             return (
                                 <>
                                     <h2>{b.title}</h2>
-                                    <h3 onClick={handleClick}>{b.subtitle}<ArrowIcon/></h3>
+                                    <h3 onClick={handleClick}>
+                                        {b.subtitle}
+                                        <ArrowIcon 
+                                            isOpen={isOpen}
+                                        />
+                                    </h3>
                                 </>
                             )
                         })
                     })}
                 </div>
                 <div className="content" ref={contentRef}>
-                    {shopContent && shopContent.map((i) => {
+                    {shop && shop.map((i) => {
                         return i.menu && i.menu.map((c) => {
                             return c.menu_item && c.menu_item.map((l, index) => {
                                 return (
@@ -69,7 +77,7 @@ const Shop = () => {
             </div>
 
             <div className="section section1">
-                {shopContent && shopContent.map((item) => {
+                {shop && shop.map((item) => {
                     return item.header && item.header.map((info) => {
                         return (
                             <HeaderBanner
@@ -83,7 +91,7 @@ const Shop = () => {
             </div>
 
             <div className="section section2">
-                {shopContent && shopContent.map((item) => {
+                {shop && shop.map((item) => {
                     return item.search && item.search.map((info) => {
                         return (
                             <Search
@@ -98,17 +106,17 @@ const Shop = () => {
             <div className="section section3">
                 <div className='title'>
                     <ul>
-                        {shopContent && shopContent.flatMap(item =>
+                        {shop && shop.flatMap(item =>
                             item.menu && item.menu.flatMap(item =>
-                                item.menu_item && item.menu_item.flatMap((info ,index) =>
-                                    info.title && <li id={`list list${index+1}`}>{info.title}</li>
+                                item.menu_item && item.menu_item.flatMap((info, index) =>
+                                    info.title && <li id={`list list${index + 1}`}>{info.title}</li>
                                 )
                             )
                         )}
                     </ul>
                 </div>
                 <div className="container">
-                    {shopContent && shopContent.map((item, idx) => (
+                    {shop && shop.map((item, idx) => (
                         item.menu.map((menuItem, menuIdx) => (
                             menuItem.menu_item[0] && menuItem.menu_item[0].list.map((listItem, listIdx) => (
                                 <div className="boxItem" key={`list-item-${idx}-${menuIdx}-${listIdx}`}>
@@ -124,68 +132,68 @@ const Shop = () => {
             <div className="section section4">
                 <div className='section-item' id='ipad'>
                     <div className="title">
-                        {shopContent && renderTitle(shopContent, 'ipad_item')}
+                        {shop && renderTitle(shop, 'ipad_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shopContent && renderContent(shopContent, 'ipad_item')}
+                            {shop && renderContent(shop, 'ipad_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='iphone'>
                     <div className="title">
-                        {shopContent && renderTitle(shopContent, 'iphone_item')}
+                        {shop && renderTitle(shop, 'iphone_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shopContent && renderContent(shopContent, 'iphone_item')}
+                            {shop && renderContent(shop, 'iphone_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='watch'>
                     <div className="title">
-                        {shopContent && renderTitle(shopContent, 'apple_watch_item')}
+                        {shop && renderTitle(shop, 'apple_watch_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shopContent && renderContent(shopContent, 'apple_watch_item')}
+                            {shop && renderContent(shop, 'apple_watch_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='earphone'>
                     <div className="title">
-                        {shopContent && renderTitle(shopContent, 'earphone_item')}
+                        {shop && renderTitle(shop, 'earphone_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shopContent && renderContent(shopContent, 'earphone_item')}
+                            {shop && renderContent(shop, 'earphone_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='mac'>
                     <div className="title">
-                        {shopContent && renderTitle(shopContent, 'mac_item')}
+                        {shop && renderTitle(shop, 'mac_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shopContent && renderContent(shopContent, 'mac_item')}
+                            {shop && renderContent(shop, 'mac_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='airtag'>
                     <div className="title">
-                        {shopContent && renderTitle(shopContent, 'airtag_item')}
+                        {shop && renderTitle(shop, 'airtag_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shopContent && renderContent(shopContent, 'airtag_item')}
+                            {shop && renderContent(shop, 'airtag_item')}
                         </Slider>
                     </div>
                 </div>
             </div>
 
             <div className='section section5'>
-                {shopContent && shopContent.map((item) => {
+                {shop && shop.map((item) => {
                     return item.info_item && item.info_item.map((info, index) => {
                         return (
                             <ProductCardCenter

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { macProductData } from "../../Api/index.js";
-import { navBarMacList, macContent } from '../../Content/content.js';
+import { navBar, mac } from '../../Content/index.js';
 
 //import component
 import ProductItem from "../Common/productItem.js";
@@ -14,8 +14,8 @@ import MacInfoBox from "./macInfoBox.js";
 
 const Mac = () => {
 
-    const selectedData = navBarMacList[0];
-    const otherData = navBarMacList.slice(1);
+    const selectedData = navBar.navBarMacList[0];
+    const otherData = navBar.navBarMacList.slice(1);
 
     const [data, setData] = useState(null);
 
@@ -46,7 +46,7 @@ const Mac = () => {
                     )
                 })}
             </div>
-            {macContent && macContent.map((item) => {
+            {mac && mac.map((item) => {
                 return item.ads_text && item.ads_text.map((ads, index) => {
                     return (
                         <ProductInfoItem
@@ -59,7 +59,7 @@ const Mac = () => {
             })}
 
             <div className="section section1">
-                {macContent && macContent.map((item) => {
+                {mac && mac.map((item) => {
                     return item.header && item.header.map((header, index) => {
                         return (
                             <SectionTitle
@@ -73,7 +73,7 @@ const Mac = () => {
             </div>
 
             <div className="section section2">
-                {macContent && macContent.map((item) => {
+                {mac && mac.map((item) => {
                     return item.section_info && item.section_info.map((info, index) => {
                         return (
                             <SectionTitle
@@ -85,7 +85,7 @@ const Mac = () => {
                 })}
                 <ScrollBar>
                     <div className="section-items">
-                        {macContent && macContent.map((item) => {
+                        {mac && mac.map((item) => {
                             return item.section_info.map((items) => {
                                 return items.info_item.map((info, index) => {
                                     return (
@@ -108,7 +108,7 @@ const Mac = () => {
             </div>
 
             <div className="section section3">
-                {macContent && macContent.map((items) => {
+                {mac && mac.map((items) => {
                     return items.section_banner && items.section_banner.map((text, index) => {
                         return (
                             <SectionTitle
@@ -119,7 +119,7 @@ const Mac = () => {
                     })
                 })}
 
-                {macContent && macContent.map((items) => {
+                {mac && mac.map((items) => {
                     return items.section_banner && items.section_banner.map((item) => {
                         return item.banner_info && item.banner_info.map((info) => {
                             return info.text && info.text.map((text, index) => {

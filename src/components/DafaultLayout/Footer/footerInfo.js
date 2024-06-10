@@ -1,7 +1,7 @@
 import { FaApple } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 import ColumnList from './columnList.js';
-import { footerInfoList } from '../../../Content/content.js';
+import { footer } from '../../../Content/index.js';
 
 const FooterInfo = ({ logoTitle }) => {
 
@@ -23,7 +23,7 @@ const FooterInfo = ({ logoTitle }) => {
     const splitSizes = [2, 2, 1, 2, 2];
 
     // 分割footerInfoList
-    const footerInfoChunks = splitFooterInfoList(footerInfoList, splitSizes);
+    const footerInfoChunks = splitFooterInfoList(footer.footerInfoList, splitSizes);
 
     return (
         <div className="footer-info">

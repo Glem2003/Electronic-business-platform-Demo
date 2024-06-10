@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { tvHomeProductData } from "../../Api";
-import { tvfamilyContent } from '../../Content/content.js';
+import { tvFamily } from '../../Content/index.js';
 
 //import component
 import ProductItem from "../Common/productItem";
@@ -43,7 +43,7 @@ const TvHome = () => {
             </div>
 
             <div className="section section1">
-                {tvfamilyContent && tvfamilyContent.map((item) => {
+                {tvFamily && tvFamily.map((item) => {
                     return item.header && item.header.map((text, index) => {
                         return (
                             <SectionTitle
@@ -57,7 +57,7 @@ const TvHome = () => {
             </div>
 
             <div className="section section2">
-                {tvfamilyContent && tvfamilyContent.map((item) => {
+                {tvFamily && tvFamily.map((item) => {
                     return item.banner_item && item.banner_item.map((info, index) => {
                         return (
                             <ProductCardCenter
@@ -81,7 +81,7 @@ const TvHome = () => {
             </div>
 
             <div className="section section3">
-                {tvfamilyContent && tvfamilyContent.map((item) => {
+                {tvFamily && tvFamily.map((item) => {
                     return item.section_2 && item.section_2.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -93,7 +93,7 @@ const TvHome = () => {
 
                 <ScrollBar>
                     <div className="section-items">
-                        {tvfamilyContent && tvfamilyContent.map((item) => {
+                        {tvFamily && tvFamily.map((item) => {
                             return item.section_2 && item.section_2.map((items) => {
                                 return items.info_item && items.info_item.map((info, index) => {
                                     return (
@@ -124,7 +124,7 @@ const TvHome = () => {
             </div>
 
             <div className="section section4">
-                {tvfamilyContent && tvfamilyContent.map((item) => {
+                {tvFamily && tvFamily.map((item) => {
                     return item.section_3 && item.section_3.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -134,7 +134,7 @@ const TvHome = () => {
                     ));
                 })}
                 <div className="product-info-item">
-                    {tvfamilyContent && tvfamilyContent.map((item) => {
+                    {tvFamily && tvFamily.map((item) => {
                         return item.section_3 && item.section_3.map((item) => {
                             return item.info_item && item.info_item.map((info, index) => {
                                 return (

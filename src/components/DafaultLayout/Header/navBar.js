@@ -1,20 +1,12 @@
 import React, { useState } from 'react';
+import { navBar } from '../../../Content/index';
+
+//import component
 import NavBarLink from './navBarLink';
 import { FaApple, FaShoppingCart } from 'react-icons/fa';
 import { CiSearch } from 'react-icons/ci';
 import { NavBarLargeList, NavBarSmallList } from '../../Common/navbarList';
-import {
-    navBarMainList,
-    navBarMacList,
-    navBarIpadList,
-    navBarIphoneList,
-    navBarWatchList,
-    navBarAirpodsList,
-    navBarTvFamilyList,
-    navBarShopList,
-    navBarSupportList,
-    navBarSearchList
-} from '../../../Content/content';
+
 
 //import sass
 import '../../../Sass/component/navBar.sass';
@@ -23,16 +15,16 @@ const NavBar = () => {
     const svgStyle = { width: "1.5em", height: "1.5em" };
 
     const navData = {
-        main: navBarMainList,
-        mac: navBarMacList,
-        ipad: navBarIpadList,
-        iphone: navBarIphoneList,
-        watch: navBarWatchList,
-        airpods: navBarAirpodsList,
-        tvAndFamily: navBarTvFamilyList,
-        shop: navBarShopList,
-        support: navBarSupportList,
-        search: navBarSearchList
+        main: navBar.navBarMainList,
+        mac: navBar.navBarMacList,
+        ipad: navBar.navBarIpadList,
+        iphone: navBar.navBarIphoneList,
+        watch: navBar.navBarWatchList,
+        airpods: navBar.navBarAirpodsList,
+        tvAndFamily: navBar.navBarTvFamilyList,
+        shop: navBar.navBarShopList,
+        support: navBar.navBarSupportList,
+        search: navBar.navBarSearchList
     };
 
     const initialFlyoutState = {
@@ -134,7 +126,7 @@ const NavBar = () => {
         { to: "/shop", text: "配件", onMouseOver: () => handleMouseOver('shop') },
         { to: "/support", text: "支援服務", onMouseOver: () => handleMouseOver('support') },
         { icon: <CiSearch style={svgStyle} />, onMouseOver: () => handleMouseOver('search') },
-        { to:"/cart",icon: <FaShoppingCart style={svgStyle} />, onMouseOver: () => setFlyoutContent(false) }
+        { to: "/cart", icon: <FaShoppingCart style={svgStyle} />, onMouseOver: () => setFlyoutContent(false) }
     ];
 
     return (

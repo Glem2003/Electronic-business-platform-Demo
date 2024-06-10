@@ -1,4 +1,4 @@
-import { homeLargeBanner, homeSmallBanner } from '../../Content/content.js';
+import { home } from '../../Content/index.js';
 
 // import component
 import WrapperCard from "../Common/wrapperCard.js";
@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className="home">
             <div className="first-section">
-                {homeLargeBanner && homeLargeBanner.map((item, index) => {
+                {home.homeLargeBanner && home.homeLargeBanner.map((item, index) => {
                     return (
                         <WrapperCard
                             key={index}
@@ -25,7 +25,7 @@ const Home = () => {
 
             </div>
             <div className="second-section">
-                {homeSmallBanner && homeSmallBanner.map((item, index) => {
+                {home.homeSmallBanner && home.homeSmallBanner.map((item, index) => {
                     return (
                         <div className="section-col-6">
                             <WrapperCard

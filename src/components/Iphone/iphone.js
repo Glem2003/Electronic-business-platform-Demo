@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { iPhoneProductData } from "../../Api";
-import { iphoneContent, navBarIphoneList } from '../../Content/content.js';
+import { iphone, navBar } from '../../Content/index.js';
 
 //import component
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
@@ -15,8 +15,8 @@ import ButtonItem from "../Common/buttonItem.js";
 
 const Iphone = () => {
 
-    const selectedData = navBarIphoneList[0];
-    const otherData = navBarIphoneList.slice(1);
+    const selectedData = navBar.navBarIphoneList[0];
+    const otherData = navBar.navBarIphoneList.slice(1);
 
     const [data, setData] = useState(null);
 
@@ -48,7 +48,7 @@ const Iphone = () => {
                 })}
             </div>
 
-            {iphoneContent && iphoneContent.map((item) => {
+            {iphone && iphone.map((item) => {
                 return item.ads_text && item.ads_text.map((ads, index) => {
                     return (
                         <ProductInfoItem
@@ -60,7 +60,7 @@ const Iphone = () => {
                 })
             })}
             <div className="section section1">
-                {iphoneContent && iphoneContent.map((item) => {
+                {iphone && iphone.map((item) => {
                     return item.header.map((header, index) => {
                         return (
                             <SectionTitle
@@ -74,7 +74,7 @@ const Iphone = () => {
             </div>
 
             <div className="section section2">
-                {iphoneContent && iphoneContent.map((item) => {
+                {iphone && iphone.map((item) => {
                     return item.section_info && item.section_info.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -84,7 +84,7 @@ const Iphone = () => {
                 })}
                 <ScrollBar>
                     <div className="section-items">
-                        {iphoneContent && iphoneContent.map((item) => {
+                        {iphone && iphone.map((item) => {
                             return item.section_info.map((items) => {
                                 return items.info_item.map((info, index) => {
                                     return (
@@ -107,7 +107,7 @@ const Iphone = () => {
             </div>
 
             <div className="section section3">
-                {iphoneContent && iphoneContent.map((item) => {
+                {iphone && iphone.map((item) => {
                     return item.section_3 && item.section_3.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -119,7 +119,7 @@ const Iphone = () => {
 
                 <ScrollBar>
                     <div className="product-items">
-                        {iphoneContent && iphoneContent.map((item) => {
+                        {iphone && iphone.map((item) => {
                             return item.section_3 && item.section_3.map((item) => {
                                 return item.product_info_item && item.product_info_item.map((info, index) => {
                                     return (
@@ -145,7 +145,7 @@ const Iphone = () => {
             </div>
 
             <div className="section section4">
-                {iphoneContent && iphoneContent.map((item) => {
+                {iphone && iphone.map((item) => {
                     return item.section_4 && item.section_4.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -154,7 +154,7 @@ const Iphone = () => {
                     ));
                 })}
 
-                {iphoneContent && iphoneContent.map((item) => {
+                {iphone && iphone.map((item) => {
                     return item.section_4 && item.section_4.map((items) => {
                         return items.info && items.info.map((info) => {
                             return (
@@ -175,7 +175,7 @@ const Iphone = () => {
             </div>
 
             <div className="section section5">
-                {iphoneContent && iphoneContent.map((item) => {
+                {iphone && iphone.map((item) => {
                     return item.section_5 && item.section_5.map((info, index) => {
                         return (
                             <SectionTitle
@@ -188,7 +188,7 @@ const Iphone = () => {
                 })}
 
                 <div className="product-info-item">
-                    {iphoneContent && iphoneContent.map((item) => {
+                    {iphone && iphone.map((item) => {
                         return item.section_5 && item.section_5.map((item) => {
                             return item.info_item && item.info_item.map((info, index) => {
                                 return (

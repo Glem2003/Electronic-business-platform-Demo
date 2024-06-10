@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { iPadProductData } from "../../Api/index.js";
-import { ipadContent, navBarIpadList } from '../../Content/content.js';
+import { ipad, navBar } from '../../Content/index.js';
 
 // import component
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
@@ -13,8 +13,8 @@ import ProductInformationCard from "../Common/productInformationCard.js";
 
 const IPad = () => {
 
-    const selectedData = navBarIpadList[0];
-    const otherData = navBarIpadList.slice(1);
+    const selectedData = navBar.navBarIpadList[0];
+    const otherData = navBar.navBarIpadList.slice(1);
 
     const [data, setData] = useState(null);
 
@@ -46,9 +46,9 @@ const IPad = () => {
                     )
                 })}
             </div>
-            
+
             <div className="section section1">
-                {ipadContent && ipadContent.map((item) => {
+                {ipad && ipad.map((item) => {
                     return item.header.map((header, index) => {
                         return (
                             <SectionTitle
@@ -62,7 +62,7 @@ const IPad = () => {
             </div>
 
             <div className="section section2">
-                {ipadContent && ipadContent.map((item) => {
+                {ipad && ipad.map((item) => {
                     return item.section_info && item.section_info.map((info, index) => (
                         <SectionTitle
                             key={index}
@@ -72,7 +72,7 @@ const IPad = () => {
                 })}
                 <ScrollBar>
                     <div className="section-items">
-                        {ipadContent && ipadContent.map((item) => {
+                        {ipad && ipad.map((item) => {
                             return item.section_info.map((items) => {
                                 return items.info_item.map((info, index) => {
                                     return (
@@ -95,7 +95,7 @@ const IPad = () => {
             </div>
 
             <div className="section section3">
-                {ipadContent && ipadContent.map((item) => {
+                {ipad && ipad.map((item) => {
                     return item.section_3 && item.section_3.map((info, index) => {
                         return (
                             <SectionTitle
@@ -108,7 +108,7 @@ const IPad = () => {
                 })}
                 <ScrollBar>
                     <div className="product-items">
-                        {ipadContent && ipadContent.map((item) => {
+                        {ipad && ipad.map((item) => {
                             return item.section_3 && item.section_3.map((item) => {
                                 return item.product_info_item && item.product_info_item.map((info, index) => {
                                     return (
@@ -136,7 +136,7 @@ const IPad = () => {
             </div>
 
             <div className="section section4">
-                {ipadContent && ipadContent.map((item) => {
+                {ipad && ipad.map((item) => {
                     return item.section_4 && item.section_4.map((info, index) => {
                         return (
                             <SectionTitle
@@ -147,7 +147,7 @@ const IPad = () => {
                     })
                 })}
                 <div className="product-info-item">
-                    {ipadContent && ipadContent.map((item) => {
+                    {ipad && ipad.map((item) => {
                         return item.section_4 && item.section_4.map((item) => {
                             return item.info_item && item.info_item.map((info, index) => {
                                 return (

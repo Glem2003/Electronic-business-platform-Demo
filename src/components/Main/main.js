@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { productData, productTextData } from "../../Api";
-import { mainContent } from '../../Content/content';
+import { main } from '../../Content/index';
 
 //import component
 import ContantTitle from "./contantTitle";
@@ -40,7 +40,7 @@ const Main = () => {
         <div className="main">
 
             <div className="section-title">
-                {mainContent && mainContent.map((item) => {
+                {main && main.map((item) => {
                     return item.header.map((text, index) => {
                         return (
                             <ContantTitle
@@ -66,7 +66,7 @@ const Main = () => {
 
 
             <div className="section section1">
-                {mainContent && mainContent.map((item) => {
+                {main && main.map((item) => {
                     return item.section_1.map((text, index) => {
                         return (
                             <ContantTitle
@@ -102,7 +102,7 @@ const Main = () => {
             </div>
 
             <div className="section section2">
-                {mainContent && mainContent.map((item) => {
+                {main && main.map((item) => {
                     return item.section_2.map((text, index) => {
                         return (
                             <ContantTitle
@@ -116,7 +116,7 @@ const Main = () => {
 
                 <ScrollBar>
                     <div className="section-items">
-                        {mainContent && mainContent.map((item) => {
+                        {main && main.map((item) => {
                             return item.section_2 && item.section_2.map((item) => {
                                 return item.info_item && item.info_item.map((info, index) => {
                                     const titleInfo = info.title;
@@ -139,7 +139,7 @@ const Main = () => {
                             })
                         })}
 
-                        {mainContent && mainContent.map((item) => {
+                        {main && main.map((item) => {
                             return item.section_2 && item.section_2.map((item) => {
                                 return item.info_item && item.info_item.map((info) => {
                                     return info.content && info.content.map((item, index) => {
@@ -174,7 +174,7 @@ const Main = () => {
                             })
                         })}
 
-                        {mainContent && mainContent.map((item) => {
+                        {main && main.map((item) => {
                             return item.section_2 && item.section_2.map((item) => {
                                 return item.info_item && item.info_item.map((info, index) => {
                                     const lastInfo = info.more
@@ -203,7 +203,7 @@ const Main = () => {
             </div>
 
             <div className="section section3">
-                {mainContent && mainContent.map((item) => {
+                {main && main.map((item) => {
                     return item.section_3.map((text, index) => {
                         return (
                             <ContantTitle
@@ -217,7 +217,7 @@ const Main = () => {
 
                 <ScrollBar>
                     <div className="section-items">
-                        {mainContent && mainContent.map((item) => {
+                        {main && main.map((item) => {
                             return item.section_3 && item.section_3.map((item) => {
                                 return item.info_item && item.info_item.map((info, index) => {
                                     const titleInfo = info.title
@@ -241,7 +241,7 @@ const Main = () => {
                             })
                         })}
 
-                        {mainContent && mainContent.map((item) => {
+                        {main && main.map((item) => {
                             return item.section_3 && item.section_3.map((item) => {
                                 return item.info_item && item.info_item.map((info) => {
                                     return info.content && info.content.map((text, index) => {
