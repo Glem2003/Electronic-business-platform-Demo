@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+//import content
 import { productData, productTextData } from "../../Api";
 import { main } from '../../Content/index';
+
+//import hook
+import useFetchData from "../../Hooks/useFetchData.js";
 
 //import component
 import ContantTitle from "./contantTitle";
@@ -9,31 +12,20 @@ import ProductItem from "../Common/productItem";
 import { CardInfo, ProductCardWrapper, ProductCardCenter, ColorBox } from "../Common/productCard";
 
 const Main = () => {
-    const [isProductData, setProductData] = useState(null);
-    const [isProductTextData, setProductTextData] = useState(null);
+    
+    const { data: isProductData, loading: loadingProductData, error: errorProductData } = useFetchData(productData);
+    const { data: isProductTextData, loading: loadingProductTextData, error: errorProductTextData } = useFetchData(productTextData);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const products = await productData();
-            setProductData(products);
-        };
-        fetchData();
-    }, []);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const products = await productTextData();
-            setProductTextData(products);
-        };
-        fetchData();
-    }, []);
-
-    if (isProductData === null) {
-        return <div></div>;
+    if (loadingProductData || loadingProductTextData) {
+        return <div>Loading...</div>;
     }
 
-    if (isProductTextData === null) {
-        return <div></div>;
+    if (errorProductData || errorProductTextData) {
+        return <div>Error: {errorProductData?.message || errorProductTextData?.message}</div>;
+    }
+
+    if (!isProductData || !isProductTextData) {
+        return <div>No Data Available</div>;
     }
 
     return (
