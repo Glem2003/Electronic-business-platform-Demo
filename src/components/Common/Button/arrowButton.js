@@ -1,5 +1,5 @@
 //import sass
-import '../../Sass/component/arrow-button.sass';
+import '../../../Sass/component/arrow-button.sass';
 
 export const ArrowButton = ({ className, style, onClick }) => {
     return (

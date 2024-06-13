@@ -2,7 +2,7 @@ import { home } from '../../Content/index.js';
 
 // import component
 import WrapperCard from "../Common/wrapperCard.js";
-import ButtonItem from "../Common/buttonItem.js";
+import { ButtonItem } from "../Common/Button/buttonItem.js";
 
 const Home = () => {
     return (

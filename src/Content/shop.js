@@ -9,9 +9,13 @@ export const shopContent = ([
         ],
         menu: [
             {
-                title: "配件",
-                subtitle: "瀏覽所有",
-                menu_item: [
+                header_info: [
+                    {
+                        title: "配件",
+                        subtitle: "瀏覽所有"
+                    },
+                ],
+                header_item: [
                     {
                         title: "依產品選購",
                         list: [
@@ -19,7 +23,8 @@ export const shopContent = ([
                             { text: "iPad" },
                             { text: "iPhone" },
                             { text: "手錶" },
-                            { text: "TV 和家庭" }
+                            { text: "TV 和家庭" },
+                            { text: "所有產品" },
                         ]
                     },
                     {
@@ -40,9 +45,47 @@ export const shopContent = ([
                             { text: "創意工具" },
                             { text: "智慧家庭配件" },
                             { text: "軟體" },
-                            { text: "儲存裝置" },
+                            { text: "儲存裝置" }
                         ]
                     }
+                ],
+                menu_info_item: [
+                    {
+                        title: "依產品選購",
+                        list: [
+                            { text: "Mac", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-product-mac?wid=225&hei=225&fmt=png-alpha&.v=1700067558508" },
+                            { text: "iPad", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-product-ipad?wid=225&hei=225&fmt=png-alpha&.v=1699474605227" },
+                            { text: "iPhone", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-product-iphone?wid=225&hei=225&fmt=png-alpha&.v=1699474605231" },
+                            { text: "手錶", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-product-watch?wid=225&hei=225&fmt=png-alpha&.v=1699474605232" },
+                            { text: "TV 和家庭", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-product-tv?wid=225&hei=225&fmt=png-alpha&.v=1699474605227" },
+                        ]
+                    },
+                    {
+                        title: "依類別選購",
+                        list: [
+                            { text: "新品上市", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-new-arrivals?wid=150&hei=150&fmt=png-alpha&.v=1699572503991" },
+                            { text: "保護配件與防護", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-cases-protection?wid=150&hei=150&fmt=png-alpha&.v=1699561941827" },
+                            { text: "充電配件", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-charging-essentials?wid=150&hei=150&fmt=png-alpha&.v=1699561941713" },
+                            { text: "MagSafe", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-magsafe?wid=150&hei=150&fmt=png-alpha&.v=1699572503981" },
+                            { text: "耳機與揚聲器", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-audio-music?wid=150&hei=150&fmt=png-alpha&.v=1699561939556" }
+                        ],
+                        moreList: [
+                            { text: "Apple Watch 錶帶", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-watch-bands?wid=150&hei=150&fmt=png-alpha&.v=1699561944110" },
+                            { text: "居家辦公", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-house-wifi?wid=150&hei=150&fmt=png-alpha&.v=1699561944083" },
+                            { text: "滑鼠與鍵盤", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-mice-keyboards?wid=150&hei=150&fmt=png-alpha&.v=1699990131117" },
+                            { text: "AirTag 與配件", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-airtag?wid=150&hei=150&fmt=png-alpha&.v=1699572501949" },
+                            { text: "健康與健身", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-health-fitness?wid=150&hei=150&fmt=png-alpha&.v=1701727551310" },
+                            { text: "遊戲", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-gaming?wid=150&hei=150&fmt=png-alpha&.v=1699561941938" },
+                            { text: "攝影", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-photography-creativity?wid=150&hei=150&fmt=png-alpha&.v=1699561944122" },
+                            { text: "創意工具", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-creative-tools?wid=150&hei=150&fmt=png-alpha&.v=1699561941780" },
+                            { text: "智慧家庭配件", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-home-automation?wid=150&hei=150&fmt=png-alpha&.v=1699561941800" },
+                            { text: "軟體", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-software?wid=150&hei=150&fmt=png-alpha&.v=1699561944148" },
+                            { text: "儲存裝置", src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-category-storage?wid=150&hei=150&fmt=png-alpha&.v=1699561944054" },
+                        ]
+                    }
+                ],
+                button_text: [
+                    { text: "查看所有類別" }
                 ]
             }
         ],

@@ -1,5 +1,5 @@
 import { CardInfo, ProductCardCenter, ColorBox } from "./productCard";
-import ButtonItem from './buttonItem';
+import { ButtonItem } from './Button/buttonItem';
 import CardInformationInProduct from './cardInformationInProduct';
 
 //import sass

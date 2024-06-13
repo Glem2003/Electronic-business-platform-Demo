@@ -9,7 +9,7 @@ import useFetchData from "../../Hooks/useFetchData.js";
 import ProductItem from "../Common/productItem";
 import SectionTitle from '../Common/sectionTitle.js';
 import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
-import ButtonItem from '../Common/buttonItem.js';
+import { ButtonItem } from '../Common/Button/buttonItem.js';
 import ScrollBar from '../Common/scrollBar.js';
 
 const TvHome = () => {

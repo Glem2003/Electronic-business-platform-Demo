@@ -10,10 +10,10 @@ import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
 import ProductItem from "../Common/productItem.js";
 import SectionTitle from '../Common/sectionTitle.js';
 import ScrollBar from '../Common/scrollBar.js';
-import LinkButton from '../Common/linkButton.js';
+import LinkButton from '../Common/Button/linkButton.js';
 import { ProductCardWrapper, CardInfo, ProductCardCenter } from '../Common/productCard.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
-import ButtonItem from "../Common/buttonItem.js";
+import { ButtonItem } from "../Common/Button/buttonItem.js";
 
 const Watch = () => {
 

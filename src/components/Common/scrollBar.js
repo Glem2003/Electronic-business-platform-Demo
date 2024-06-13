@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { ArrowButton } from './arrowButton';
+import { ArrowButton } from './Button/arrowButton';
 
 // import sass
 import '../../Sass/component/scrollBar.sass';

@@ -1,16 +1,17 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { shop } from '../../Content/index.js';
 
-//import component
+// import components
 import Slider from 'react-slick';
 import HeaderBanner from './headerBanner.js';
 import Search from '../Common/search.js';
 import MenuList from './menuList.js';
-import { renderTitle, renderContent } from './shopRender.js';
-import { ArrowIcon, NextArrow, PrevArrow } from '../Common/arrowButton.js';
+import { renderTitle, renderContent, renderMenuItems, renderMoreListItems } from './shopRender.js';
+import { ArrowIcon, NextArrow, PrevArrow } from '../Common/Button/arrowButton.js';
 import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
+import { ClickButton, ClickedButton } from '../Common/Button/buttonItem.js';
 
-//import sass
+// import styles
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -23,109 +24,125 @@ const Shop = () => {
         infinite: false,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />
-    }
-
-    const contentRef = useRef(null);
-
-    const handleClick = () => {
-        if (contentRef.current) {
-            contentRef.current.classList.toggle('show');
-            setIsOpen(!isOpen);
-        } else {
-            console.error('Content element not found');
-        }
     };
 
     const [isOpen, setIsOpen] = useState(false);
+    const [activeList, setActiveList] = useState('list1');
+    const [moreOpen, setMoreOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleListClick = (list) => {
+        setActiveList(list);
+    };
+
+    const toggleMoreItems = () => {
+        setMoreOpen(!moreOpen);
+    };
 
     return (
         <div className="shop">
-
             <div className="menu">
                 <div className="title">
-                    {shop && shop.map((i) => {
-                        return i.menu && i.menu.map((b) => {
-                            return (
+                    {shop && shop.map(i =>
+                        i.menu && i.menu.map(b => (
+                            b.header_info.map((info) => (
                                 <>
-                                    <h2>{b.title}</h2>
-                                    <h3 onClick={handleClick}>
-                                        {b.subtitle}
-                                        <ArrowIcon 
-                                            isOpen={isOpen}
-                                        />
+                                    <h2>{info.title}</h2>
+                                    <h3 onClick={toggleMenu}>
+                                        {info.subtitle}
+                                        <ArrowIcon isOpen={isOpen} />
                                     </h3>
                                 </>
-                            )
-                        })
-                    })}
+                            ))
+
+                        ))
+                    )}
                 </div>
-                <div className="content" ref={contentRef}>
-                    {shop && shop.map((i) => {
-                        return i.menu && i.menu.map((c) => {
-                            return c.menu_item && c.menu_item.map((l, index) => {
-                                return (
-                                    <MenuList
-                                        key={index}
-                                        title={l.title}
-                                        menuData={l.list}
-                                    />
-                                )
-                            })
-                        })
-                    })}
+                <div className={`content ${isOpen ? 'show' : ''}`}>
+                    {shop && shop.map(i =>
+                        i.menu && i.menu.map(c =>
+                            c.header_item && c.header_item.map((l, index) => (
+                                <MenuList key={index} title={l.title} menuData={l.list} />
+                            ))
+                        )
+                    )}
                 </div>
             </div>
 
             <div className="section section1">
-                {shop && shop.map((item) => {
-                    return item.header && item.header.map((info) => {
-                        return (
-                            <HeaderBanner
-                                title={info.title}
-                                text={info.text}
-                                link={info.link}
-                            />
-                        )
-                    })
-                })}
+                {shop && shop.map(item =>
+                    item.header && item.header.map(info => (
+                        <HeaderBanner key={info.title} title={info.title} text={info.text} link={info.link} />
+                    ))
+                )}
             </div>
 
             <div className="section section2">
-                {shop && shop.map((item) => {
-                    return item.search && item.search.map((info) => {
-                        return (
-                            <Search
-                                title={info.title}
-                                placeholderText={info.input_text}
-                            />
-                        )
-                    })
-                })}
+                {shop && shop.map(item =>
+                    item.search && item.search.map(info => (
+                        <Search key={info.title} title={info.title} placeholderText={info.input_text} />
+                    ))
+                )}
             </div>
 
             <div className="section section3">
                 <div className='title'>
                     <ul>
                         {shop && shop.flatMap(item =>
-                            item.menu && item.menu.flatMap(item =>
-                                item.menu_item && item.menu_item.flatMap((info, index) =>
-                                    info.title && <li id={`list list${index + 1}`}>{info.title}</li>
+                            item.menu && item.menu.flatMap(menuItem =>
+                                menuItem.menu_info_item && menuItem.menu_info_item.flatMap((info, index) =>
+                                    info.title && (
+                                        <li
+                                            key={`title-${index}`}
+                                            className={activeList === `list${index + 1}` ? 'click' : ''}
+                                            onClick={() => handleListClick(`list${index + 1}`)}
+                                        >
+                                            {info.title}
+                                        </li>
+                                    )
                                 )
                             )
                         )}
                     </ul>
                 </div>
                 <div className="container">
-                    {shop && shop.map((item, idx) => (
-                        item.menu.map((menuItem, menuIdx) => (
-                            menuItem.menu_item[0] && menuItem.menu_item[0].list.map((listItem, listIdx) => (
-                                <div className="boxItem" key={`list-item-${idx}-${menuIdx}-${listIdx}`}>
-                                    <div className="box"></div>
-                                    <h4>{listItem.text}</h4>
-                                </div>
-                            ))
-                        ))
-                    ))}
+                    <div className={`item item_1 ${activeList === 'list1' ? '' : 'close'}`}>
+                        <div className='list'>
+                            {shop && shop.map((item, idx) =>
+                                renderMenuItems(item.menu.map(menuItem => menuItem.menu_info_item[0]), `item1-${idx}`)
+                            )}
+                        </div>
+                    </div>
+                    <div className={`item item_2 ${activeList === 'list2' ? '' : 'close'} ${moreOpen === true ? 'open' : ''}`}>
+                        <div className='list'>
+                            {shop && shop.map((item, idx) =>
+                                renderMenuItems(item.menu.map(menuItem => menuItem.menu_info_item[1]), `item2-${idx}`)
+                            )}
+                        </div>
+                        <div className='more'>
+                            <button onClick={toggleMoreItems}>
+                                {shop && shop.map((item) => (
+                                    item.menu.map((item) => (
+                                        item.button_text.map((text, index) => {
+                                            return (
+                                                moreOpen ? (
+                                                    <ClickedButton text={text.text} key={index}/>
+                                                ) : (
+                                                    <ClickButton text={text.text} key={index}/>
+                                                )
+                                            )
+                                        })
+                                    ))
+                                ))}
+                            </button>
+                            {shop && shop.map((item, idx) =>
+                                renderMoreListItems(item.menu.map(menuItem => menuItem.menu_info_item[1].moreList), `item2-more-${idx}`)
+                            )}
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -194,24 +211,19 @@ const Shop = () => {
 
             <div className='section section5'>
                 {shop && shop.map((item) => {
-                    return item.info_item && item.info_item.map((info, index) => {
-                        return (
-                            <ProductCardCenter
-                                key={index}
-                            >
-                                <CardInfo
-                                    title={info.title}
-                                    subtitle={info.text}
-                                    text={info.link}
-                                />
-                            </ProductCardCenter>
-                        )
-                    });
+                    return item.info_item && item.info_item.map((info, index) => (
+                        <ProductCardCenter key={index}>
+                            <CardInfo
+                                title={info.title}
+                                subtitle={info.text}
+                                text={info.link}
+                            />
+                        </ProductCardCenter>
+                    ));
                 })}
             </div>
-
         </div>
-    )
+    );
 }
 
 export default Shop;

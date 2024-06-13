@@ -58,7 +58,7 @@
                     border-left: 1px solid grey
                     flex: 2.5
                     padding-left: 20px
-            &.show 
+            &.show
                 opacity: 1
                 visibility: visible
     //section1
@@ -111,24 +111,73 @@
                     &.click
                         border-bottom: 1px solid #000
         .container
-            +layoutCenter
-            flex-direction: row
-            justify-content: center
-            gap: 40px
-            padding-bottom: 60px
             border-bottom: 1px solid grey
-            .boxItem
-                border: 1px solid red
-                cursor: pointer
+            padding: 10px 0
+            .item
+                display: flex
+                padding: 10px 0
+                flex-direction: column
+                &.item_2
+                    //height: 141px
+                    transition: all .4s
                 .box
-                    width: 180px
-                    height: 180px
-                    border-radius: 50%
-                    border: 1px solid orange
-                    margin-bottom: 15px
-                h4
-                    font-size: 1.5rem
-                    text-align: center
+                    border-radius: 0
+                    flex: 0 0 150px
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    cursor: pointer
+                    &:hover
+                        h4
+                            text-decoration-line: underline
+                            color: #0066cc
+                    .img
+                        border: 1px solid #000
+                        border-radius: 50%
+                        width: 150px
+                        height: 150px
+                        display: grid
+                        img
+                            width: 60%
+                            height: auto
+                            justify-self: center
+                            align-self: center                            
+                    h4
+                        margin-top: 30px
+                        text-wrap: nowrap
+                        font-size: 1.2rem
+                        text-align: center
+                .list
+                    display: flex
+                    justify-content: center
+                    gap: 10%
+                    margin: 10px 0
+                .more
+                    position: relative
+                    border: 1px solid white
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    visibility: hidden
+                    button
+                        padding: 0 12px
+                        background-color: white
+                        border: none
+                        position: absolute
+                        top: 20px
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        z-index: 10
+                        visibility: visible
+                        cursor: pointer
+                        >h4
+                            font-size: 22px
+                            color: #0066cc
+                    .list
+                        display: none
+                        width: 100%
+                        padding-bottom: 20px
     //section4
     .section4
         .section-item
@@ -233,6 +282,24 @@
                 .card-image
                     background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/icon-financing-grey-2017_GEO_TW?wid=80&hei=112&fmt=png-alpha&.v=1621555794000)
 
+//section3 function
+.section3
+    li.click
+        border-bottom: 1px solid black !important
+.section3
+    .item.close
+        display: none !important
+    .item.item_2.open
+        height: auto !important
+        gap: 20px
+        .more
+            visibility: visible
+            button
+                top: auto
+                bottom: -50px
+            .list
+                display: flex
+
 //slide component
 .slick-prev,.slick-next
     width: 60px
@@ -260,7 +327,7 @@
     img
         left: 50%
         top: 50%
-        transform: translate(-50%,-50%) 
+        transform: translate(-50%,-50%)
 .slick-dots
     bottom: -35px
 .slick-dots li button:before

@@ -8,11 +8,11 @@ import useFetchData from "../../Hooks/useFetchData.js";
 import ProductItem from "../Common/productItem.js";
 import ProductInfoItem from "../Common/productInfoItem";
 import WrapperCard from '../Common/wrapperCard.js';
-import ButtonItem from '../Common/buttonItem.js';
+import { ButtonItem } from '../Common/Button/buttonItem.js';
 import SectionTitle from '../Common/sectionTitle.js';
 import ScrollBar from '../Common/scrollBar.js';
 import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
-import LinkButton from '../Common/linkButton.js';
+import LinkButton from '../Common/Button/linkButton.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
 
 const Airpods = () => {
