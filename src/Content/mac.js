@@ -20,23 +20,6 @@ export const macContent = ([
                 ]
             }
         ],
-        section_banner: [
-            {
-                title: "看 Mac 在企業顯身手。",
-                banner_info: [
-                    {
-                        title: (<>在三頓半，人人愛用 Mac，<br />個個超能力爆棚。</>),
-                        text: [
-                            {
-                                des: "從設計、研發到法務，Mac 激發全員滿滿能量",
-                                linkText_1: "看看三頓半如何成為 Mac 粉絲 ",
-                                linkText_2: "商務選 Mac 的理由 "
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
         section_3: [
             {
                 title: "探索各個產品系列。",
@@ -116,15 +99,15 @@ export const macContent = ([
                                         { text: (<><span>-</span></>) },
                                         { text: "Apple M2 或 M2 Pro 晶片", src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_m2_pro__c5ftjeskmwuq_large_2x.png" },
                                         { text: (<><span>-</span></>) },
-                                        { text: (<><h4>最多可達</h4><h1>9 個連接埠</h1><h4>最多可達 4 個 Thunderbolt 4、2 個 USB‑A、HDMI、Gigabit 乙太<br/>網路、耳機插孔</h4></>) },
+                                        { text: (<><h4>最多可達</h4><h1>9 個連接埠</h1><h4>最多可達 4 個 Thunderbolt 4、2 個 USB‑A、HDMI、Gigabit 乙太<br />網路、耳機插孔</h4></>) },
                                     ]
                             },
                             {
-                                src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mac_studio__c24lhkuq4vee_large_2x.png",
+                                src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mac_studio__c24lhkuq4vee_large_2x.png",
                                 alt: "Mac Studio",
                                 title: "Mac Studio",
                                 subtitle: "M2 Max 或 M2 Ultra 晶片",
-                                text: (<>強大效能與廣泛連結力，<br/>為專業工作流程而生。</>),
+                                text: (<>強大效能與廣泛連結力，<br />為專業工作流程而生。</>),
                                 price: "NT$64,999 起",
                                 btn: ["進一步了解", "購買"],
                                 productInfoItem:
@@ -132,15 +115,15 @@ export const macContent = ([
                                         { text: (<><span>-</span></>) },
                                         { text: "Apple M2 Max 或 M2 Ultra 晶片", src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_m2_max_m2_ultra__d0wnaf44m6qa_large_2x.png" },
                                         { text: (<><span>-</span></>) },
-                                        { text: (<><h1>12 個連接埠</h1><h4>最多可達 6 個 Thunderbolt 4、2 個 USB‑A、最多可達 2 個<br/>USB‑C、HDMI、10Gb 乙太網路、SDXC、耳機插孔</h4></>) },
+                                        { text: (<><h1>12 個連接埠</h1><h4>最多可達 6 個 Thunderbolt 4、2 個 USB‑A、最多可達 2 個<br />USB‑C、HDMI、10Gb 乙太網路、SDXC、耳機插孔</h4></>) },
                                     ]
                             },
                             {
-                                src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mac_pro__6q3qt8073f6e_large_2x.png",
+                                src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mac_pro__6q3qt8073f6e_large_2x.png",
                                 alt: "Mac Pro",
                                 title: "Mac Pro",
                                 subtitle: "M2 Ultra 晶片",
-                                text: (<>具 PCIe 擴充性的專業工作站，<br/>駕馭最繁重的工作流程。</>),
+                                text: (<>具 PCIe 擴充性的專業工作站，<br />駕馭最繁重的工作流程。</>),
                                 price: "NT$229,900 起",
                                 btn: ["進一步了解", "購買"],
                                 productInfoItem:
@@ -148,7 +131,7 @@ export const macContent = ([
                                         { text: (<><span>-</span></>) },
                                         { text: "Apple M2 Ultra 晶片", src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_m2_ultra__4mmsok50gvmu_large_2x.png" },
                                         { text: (<><h1>PCIe</h1><h4>配備七個擴充槽，其中六個為 PCIe gen 4</h4></>) },
-                                        { text: (<><h1>18 個連接埠</h1><h4>8 個 Thunderbolt 4、3 個 USB‑A、2 個 HDMI、2 個 10Gb 乙太<br/>網路、2 個 Serial ATA、耳機插孔</h4></>) },
+                                        { text: (<><h1>18 個連接埠</h1><h4>8 個 Thunderbolt 4、3 個 USB‑A、2 個 HDMI、2 個 10Gb 乙太<br />網路、2 個 Serial ATA、耳機插孔</h4></>) },
                                     ]
                             },
                         ],
@@ -157,7 +140,7 @@ export const macContent = ([
                                 src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_studio_display__c0gbtkgtsx0m_large_2x.png",
                                 alt: "Studio Display",
                                 title: "Studio Display",
-                                text: (<>5K Retina 顯示器，<br/>自帶絕佳相機與音響。</>),
+                                text: (<>5K Retina 顯示器，<br />自帶絕佳相機與音響。</>),
                                 price: "NT$45,900 起",
                                 btn: ["進一步了解", "購買"],
                                 productInfoItem:
@@ -165,16 +148,16 @@ export const macContent = ([
                                         { text: (<><h1>27 吋</h1>Retina 顯示器具備 5120 x 2880 像素</>) },
                                         { text: (<><h1>5K</h1><h4>Retina 顯示器，呈現絢麗色彩與令人驚歎的細節</h4></>) },
                                         { text: (<><h1>600 尼特</h1><h4>亮度，呈現亮麗色彩</h4></>) },
-                                        { text: "1200 萬像素超廣角相機具備人物居中功能，帶來更自然的視訊通話" ,src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_video__br4ndidbu11e_large_2x.png"},
-                                        { text: (<>原彩顯示、抗反射鍍膜，並可選配 Nano-texture 玻璃，在任何光線下<br/>都能享有最佳的觀賞體驗</>) ,src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png"},
-                                        { text: (<><h1>4 個連接埠</h1>Thunderbolt 3 (USB‑C)、3 個 USB‑C</>) ,src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png"},
+                                        { text: "1200 萬像素超廣角相機具備人物居中功能，帶來更自然的視訊通話", src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_video__br4ndidbu11e_large_2x.png" },
+                                        { text: (<>原彩顯示、抗反射鍍膜，並可選配 Nano-texture 玻璃，在任何光線下<br />都能享有最佳的觀賞體驗</>), src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png" },
+                                        { text: (<><h1>4 個連接埠</h1>Thunderbolt 3 (USB‑C)、3 個 USB‑C</>), src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png" },
                                     ]
                             },
                             {
-                                src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_pro_display__duklzyfwl92e_large_2x.png",
+                                src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_pro_display__duklzyfwl92e_large_2x.png",
                                 alt: "Pro Display XDR",
                                 title: "Pro Display XDR",
-                                text: (<>先進的 6K XDR 顯示器，<br/>適用於專業工作流程。</>),
+                                text: (<>先進的 6K XDR 顯示器，<br />適用於專業工作流程。</>),
                                 price: "NT$159,900 起",
                                 btn: ["進一步了解", "購買"],
                                 productInfoItem:
@@ -182,13 +165,52 @@ export const macContent = ([
                                         { text: (<><h1>32 吋</h1>Retina XDR 顯示器具備 6016 x 3384 像素</>) },
                                         { text: (<><h1>6K</h1><h4>Retina XDR 顯示器，帶來最引人入勝的觀看體驗</h4></>) },
                                         { text: (<><h1>1000 尼特</h1><h4>亮度，色彩絢麗，峰值亮度最高可達 1600 尼特</h4></>) },
-                                        { text: (<><span>-</span></>)},
-                                        { text: (<>原彩顯示、抗反射鍍膜，並可選配 Nano-texture 玻璃，在任何光線下<br/>都能享有最佳的觀賞體驗</>) ,src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png"},
-                                        { text: (<><h1>4 個連接埠</h1>Thunderbolt 3 (USB‑C)、3 個 USB‑C</>) ,src:"https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png"},
+                                        { text: (<><span>-</span></>) },
+                                        { text: (<>原彩顯示、抗反射鍍膜，並可選配 Nano-texture 玻璃，在任何光線下<br />都能享有最佳的觀賞體驗</>), src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png" },
+                                        { text: (<><h1>4 個連接埠</h1>Thunderbolt 3 (USB‑C)、3 個 USB‑C</>), src: "https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_icon_screen__gfttd7yxs9ay_large_2x.png" },
                                     ]
                             },
                         ]
                     },
+                ]
+            }
+        ],
+        section4: [
+            {
+                title: "Mac 的必要裝備。",
+                subtitle: "所有 Mac 配件",
+                list_item:[
+                    {
+                        title:"Mac 配件",
+                        text:"探索鍵盤、滑鼠與其他必備配件。",
+                        link:"選購 Mac 配件",
+                        src:"https://www.apple.com/tw/mac/home/images/overview/essentials/essentials_accessories__dglhsic54owi_large_2x.jpg"
+                    },
+                    {
+                        title:"Studio Display",
+                        text:"27 吋 5K Retina 顯示器，可與任何 Mac 聯手漂亮出擊。",
+                        link:"進一步了解",
+                        src:"https://www.apple.com/v/mac/home/by/images/overview/essentials/essentials_display__bk3i351qm0c2_large_2x.jpg"
+                    }
+                ]
+            }
+        ],
+        product_information:[
+            {
+                title:"大家的好夥伴。",
+                list_item:[
+                    {
+                        title:"Mac 與 iPhone",
+                        text:"iPhone 的來電或訊息，直接在 Mac 上就能接聽或回覆。拷貝 iPhone 裡的圖片、影片或文字，接著貼到你手邊 Mac 的另一個 app 裡。搭配 iCloud，就能在 iPhone 或 Mac 上存取常用的檔案。好用之處，還有更多。"
+                    },
+                    {
+                        title:"Mac 與 iPad",
+                        text:"在 iPad 畫圖，立即就在 Mac 看到。或者，也能把 iPad 當作第二部顯示器，在一個螢幕上工作，同時參考另一個螢幕的內容。 你甚至還能在 iPad 上建立 Final Cut Pro 計畫案，然後在 Mac 上接著做。"
+                    },
+                    {
+                        title:"Mac 與 Apple Watch",
+                        text:"有了「自動解鎖」功能，當你戴著 Apple Watch 時，能自動登入自己的 Mac，無須輸入密碼。"
+                    }
                 ]
             }
         ]

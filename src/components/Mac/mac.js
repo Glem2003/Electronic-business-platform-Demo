@@ -13,18 +13,21 @@ import SectionTitle from '../Common/sectionTitle.js';
 import ScrollBar from '../Common/scrollBar.js';
 import ProductInfoItem from "../Common/productInfoItem.js";
 import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
-import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
+import { ProductCardWrapper, CardInfo, ProductCardCenter } from '../Common/productCard.js';
 import LinkButton from '../Common/Button/linkButton.js';
-import MacInfoBox from "./macInfoBox.js";
 import ProductInformationCard from "../Common/productInformationCard.js";
+import { ProductInformation as ProInfo } from '../../components/Common/proInfo.js';
 
 const Mac = () => {
 
     const { data, loading, error } = useFetchData(macProductData);
 
+    //take data
     const selectedData = navBar.navBarMacList[0];
     const otherData = navBar.navBarMacList.slice(1);
+    const proData = mac[0].product_information[0];
 
+    //set initial value
     const [activeList, setActiveList] = useState('list1');
 
     if (loading) return <div></div>;
@@ -112,12 +115,13 @@ const Mac = () => {
 
             <div className="section section3">
                 {mac && mac.map((item) => (
-                    item.section_3.map((info) => {
+                    item.section_3.map((info, index) => {
                         return (
-                            <div className="title">
-                                <h2>{info.title}</h2>
-                                <h4>{info.subtitle}</h4>
-                            </div>
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                                subtitle={info.subtitle}
+                            />
                         )
                     })
                 ))}
@@ -228,40 +232,59 @@ const Mac = () => {
             </div>
 
             <div className="section section4">
-                {mac && mac.map((items) => {
-                    return items.section_banner && items.section_banner.map((text, index) => {
+                {mac && mac.map((item) => (
+                    item.product_information.map((info, index) => {
                         return (
                             <SectionTitle
                                 key={index}
-                                title={text.title}
+                                title={info.title}
                             />
                         )
                     })
-                })}
+                ))}
+                <ProInfo textData={proData.list_item} />
+            </div>
 
-                {mac && mac.map((items) => {
-                    return items.section_banner && items.section_banner.map((item) => {
-                        return item.banner_info && item.banner_info.map((info) => {
-                            return info.text && info.text.map((text, index) => {
+            <div className="section section5">
+                {mac && mac.map((item) => (
+                    item.section4.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                                subtitle={info.subtitle}
+                            />
+                        )
+                    })
+                ))}
+
+                <div className="container">
+                    {mac && mac.map((item) => (
+                        item.section4.map((item) => (
+                            item.list_item.map((info, index) => {
                                 return (
-                                    <MacInfoBox
+                                    <ProductCardCenter
                                         key={index}
-                                        title={info.title}
-                                        text={text.des}
-                                        linkText_1={text.linkText_1}
-                                        linkText_2={text.linkText_2}
-                                    />
+                                        src={info.src}
+                                        alt={info.alt}
+                                    >
+                                        <CardInfo
+                                            title={info.title}
+                                            text={info.text}
+                                            ps={info.postscript}
+                                            subtitle={info.link}
+                                        />
+                                    </ProductCardCenter>
                                 )
                             })
-                        })
-                    })
-                })}
+                        ))
+                    ))}
+                </div>
             </div>
 
             <div className="section last">
                 <h2 className="title">Mac</h2>
                 <div className="section-last-info">
-
                     <NavBarLargeList
                         title={selectedData.title}
                         items={selectedData.listItem}
@@ -277,8 +300,7 @@ const Mac = () => {
                     ))}
                 </div>
             </div>
-
-        </div >
+        </div>
     )
 }
 
