@@ -105,11 +105,9 @@
                     background-color: black
                     color: white
                     cursor: default
-        .container
-            *
-                //border: 1px solid #000
-                margin-top: 60px
-                position: relative
+        >.contain
+            position: relative
+            margin-top: 60px
             .items
                 width: 100%
                 display: flex
@@ -242,7 +240,6 @@
                 &:last-child
                     background-image: url(https://www.apple.com/v/mac/home/by/images/overview/augment/world_mac_watch__dckn1orrpkqe_large_2x.jpg)
 
-
     .section5
         .title
             display: flex
@@ -256,7 +253,7 @@
                     text-decoration-line: underline
                 &::after
                     content: ' > '
-        .container
+        >.container
             display: flex
             gap: 30px
             .product-card

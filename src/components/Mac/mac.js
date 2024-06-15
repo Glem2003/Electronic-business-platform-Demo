@@ -142,7 +142,7 @@ const Mac = () => {
                     ))}
                 </ul>
 
-                <div className="container">
+                <div className="contain">
                     <div className={`items laptops ${activeList === 'list1' ? 'show' : ''}`}>
                         {mac && mac.map((item) => (
                             item.section_3.map((item) => (
