@@ -5,7 +5,7 @@ import CardInformationInProduct from './cardInformationInProduct';
 //import sass
 import '../../Sass/component/productInformationCard.sass';
 
-const ProductInformationCard = ({ src, alt, color, postscript, title, text, price, btn, productInfoItem, cardTitle, cardText }) => {
+const ProductInformationCard = ({ src, alt, color, postscript, title, text, price, btn, productInfoItem, cardTitle, cardText, subtitle }) => {
     return (
         <div className="information-card">
             <ProductCardCenter
@@ -30,7 +30,9 @@ const ProductInformationCard = ({ src, alt, color, postscript, title, text, pric
                             title={title}
                             text={text}
                             subtitle={price}
-                        />
+                        >
+                            <h3>{subtitle}</h3>
+                        </CardInfo>
                     ) : null
                 }
 

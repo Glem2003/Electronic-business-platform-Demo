@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 //import content
 import { macProductData } from "../../Api/index.js";
 import { navBar, mac } from '../../Content/index.js';
@@ -14,16 +16,23 @@ import { NavBarLargeList, NavBarSmallList } from "../Common/navbarList.js";
 import { ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 import LinkButton from '../Common/Button/linkButton.js';
 import MacInfoBox from "./macInfoBox.js";
+import ProductInformationCard from "../Common/productInformationCard.js";
 
 const Mac = () => {
 
     const { data, loading, error } = useFetchData(macProductData);
-    
+
     const selectedData = navBar.navBarMacList[0];
     const otherData = navBar.navBarMacList.slice(1);
 
+    const [activeList, setActiveList] = useState('list1');
+
     if (loading) return <div></div>;
     if (error) return <div>Error: {error.message}</div>;
+
+    const handleListClick = (list) => {
+        setActiveList(list);
+    };
 
     return (
         <div className="mac">
@@ -102,6 +111,123 @@ const Mac = () => {
             </div>
 
             <div className="section section3">
+                {mac && mac.map((item) => (
+                    item.section_3.map((info) => {
+                        return (
+                            <div className="title">
+                                <h2>{info.title}</h2>
+                                <h4>{info.subtitle}</h4>
+                            </div>
+                        )
+                    })
+                ))}
+
+                <ul>
+                    {mac && mac.map((item) => (
+                        item.section_3.map((info) => (
+                            info.selectList.map((text, index) => (
+                                <li
+                                    key={`${index}`}
+                                    className={activeList === `list${index + 1}` ? 'click' : ''}
+                                    onClick={() => handleListClick(`list${index + 1}`)}
+                                >
+                                    {text}
+                                </li>
+                            ))
+                        ))
+                    ))}
+                </ul>
+
+                <div className="container">
+                    <div className={`items laptops ${activeList === 'list1' ? 'show' : ''}`}>
+                        {mac && mac.map((item) => (
+                            item.section_3.map((item) => (
+                                item.product_info_item.map((item) => (
+                                    item.laptops.map((info, index) => {
+                                        return (
+                                            <ProductInformationCard
+                                                key={index}
+                                                src={info.src}
+                                                alt={info.alt}
+                                                color={info.color}
+                                                postscript={info.postscript}
+                                                title={info.title}
+                                                subtitle={info.subtitle}
+                                                text={info.text}
+                                                price={info.price}
+                                                btn={info.btn}
+                                                cardTitle={info.cardTitle}
+                                                cardText={info.cardText}
+                                                productInfoItem={info.productInfoItem}
+                                            />
+                                        )
+                                    })
+                                ))
+                            ))
+                        ))}
+                    </div>
+                    <div className={`items desktops ${activeList === 'list2' ? 'show' : ''}`}>
+                        <ScrollBar>
+                            <div className="product-items">
+                                {mac && mac.map((item) => (
+                                    item.section_3.map((item) => (
+                                        item.product_info_item.map((item) => (
+                                            item.desktops.map((info, index) => {
+                                                return (
+                                                    <ProductInformationCard
+                                                        key={index}
+                                                        src={info.src}
+                                                        alt={info.alt}
+                                                        color={info.color}
+                                                        postscript={info.postscript}
+                                                        title={info.title}
+                                                        subtitle={info.subtitle}
+                                                        text={info.text}
+                                                        price={info.price}
+                                                        btn={info.btn}
+                                                        cardTitle={info.cardTitle}
+                                                        cardText={info.cardText}
+                                                        productInfoItem={info.productInfoItem}
+                                                    />
+                                                )
+                                            })
+                                        ))
+                                    ))
+                                ))}
+                            </div>
+                        </ScrollBar>
+                    </div>
+                    <div className={`items displays ${activeList === 'list3' ? 'show' : ''}`}>
+                        {mac && mac.map((item) => (
+                            item.section_3.map((item) => (
+                                item.product_info_item.map((item) => (
+                                    item.displays.map((info, index) => {
+                                        return (
+                                            <ProductInformationCard
+                                                key={index}
+                                                src={info.src}
+                                                alt={info.alt}
+                                                color={info.color}
+                                                postscript={info.postscript}
+                                                title={info.title}
+                                                subtitle={info.subtitle}
+                                                text={info.text}
+                                                price={info.price}
+                                                btn={info.btn}
+                                                cardTitle={info.cardTitle}
+                                                cardText={info.cardText}
+                                                productInfoItem={info.productInfoItem}
+                                            />
+                                        )
+                                    })
+                                ))
+                            ))
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className="section section4">
                 {mac && mac.map((items) => {
                     return items.section_banner && items.section_banner.map((text, index) => {
                         return (
@@ -152,7 +278,7 @@ const Mac = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
