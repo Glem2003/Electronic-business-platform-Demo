@@ -121,6 +121,25 @@ export const iphoneContent = ([
                     { title: "AirTag", text: (<>在鑰匙圈上掛一個，背包裡也放一個，遺失時，<br />只要使用「尋找」app 就能找出它們的蹤跡。</>), link: "購買", src: "https://www.apple.com/tw/iphone/home/images/overview/essentials/airtag__b5lt0bcbd9ua_xlarge.jpg", alt: "AirTag" }
                 ]
             }
+        ],
+        product_information: [
+            {
+                title: "大家的好夥伴。",
+                list_item: [
+                    {
+                        title: "iPhone 與 Mac",
+                        text: "iPhone 的來電或訊息，能直接在 Mac 上接聽或回覆。拷貝 iPhone 裡的圖片、影片或文字，接著貼到你手邊 Mac 的另一個 app 裡。搭配 iCloud，就能在 iPhone 或 Mac 上存取常用的檔案。"
+                    },
+                    {
+                        title: "iPhone 與 Apple Watch",
+                        text:"找不到 iPhone？Apple Watch 最新錶款可以為你顯示它大概的距離和方向13。用你的 iPhone 拍合照時，你也能和大家排排站，將手上的 Apple Watch 當成觀景窗，就能直接拍攝。在 Apple Watch 接聽的電話，只要輕點 iPhone，就能用手機繼續接著說。"
+                    },
+                    {
+                        title: "iPhone 與 AirPods",
+                        text:"輕點一下，即可在 iPhone 上設定 AirPods。「適應性音訊」會根據你日常生活中的環境變化和交流互動，自動為你調整噪音控制的程度，營造最佳的聆聽體驗，讓你一試就愛。"
+                    }
+                ]
+            }
         ]
     }
 ])

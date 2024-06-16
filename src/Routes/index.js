@@ -27,7 +27,7 @@ const routes = [
     { path: "/shop", element: <ShopPages /> },
     { path: "/support", element: <SupportPages /> },
     { path: "/cart", element: <CartPages /> },
-    { path: "*", element: (<>404</>) }
+    { path: "*", element: <HomePages /> }
 ];
 
 const AppRoute = () => (

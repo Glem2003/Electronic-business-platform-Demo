@@ -15,13 +15,16 @@ import LinkButton from '../Common/Button/linkButton.js';
 import { ButtonItem } from "../Common/Button/buttonItem.js";
 import { ProductCardCenter, ProductCardWrapper, CardInfo } from '../Common/productCard.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
+import { ProductInformation as ProInfo } from '../../components/Common/proInfo.js';
 
 const Iphone = () => {
 
     const { data, loading, error } = useFetchData(iPhoneProductData);
 
+    //take data
     const selectedData = navBar.navBarIphoneList[0];
     const otherData = navBar.navBarIphoneList.slice(1);
+    const proData = iphone[0].product_information[0];
 
     if (loading) return <div></div>;
     if (error) return <div>Error: {error.message}</div>;
@@ -203,6 +206,20 @@ const Iphone = () => {
                     })}
                 </div>
 
+            </div>
+
+            <div className="section section6">
+                {iphone && iphone.map((item) => (
+                    item.product_information.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                            />
+                        )
+                    })
+                ))}
+                <ProInfo textData={proData.list_item} />
             </div>
 
             <div className="section last">

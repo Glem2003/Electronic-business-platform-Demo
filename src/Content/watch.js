@@ -95,6 +95,20 @@ export const watchContent = ([
                 ]
             }
         ],
-
+        product_information: [
+            {
+                title: "天作之合。",
+                list_item: [
+                    {
+                        title: "Apple Watch 與 iPhone",
+                        text:"Apple Watch 搭配 iPhone，為眾多功能開啟一片天，讓彼此表現更出色。你可以在 iPhone 上取得路線指引，該轉彎時 Apple Watch 就會輕點你的手腕提醒你。或是用 iPhone 拍合照，然後在你的手錶查看取景並直接拍照。"
+                    },
+                    {
+                        title: "Apple Watch 與 AirPods",
+                        text:"Apple Watch 搭配 AirPods，給你更多精彩。強強聯手，讓你可以接電話、串流播放音樂與 podcast、收聽新通知，甚至可讓你以 Siri 回覆訊息。一切，不需要帶著 iPhone 全都能做到。"
+                    },
+                ]
+            }
+        ]
     }
 ])

@@ -13,13 +13,16 @@ import LinkButton from '../Common/Button/linkButton.js';
 import ScrollBar from '../Common/scrollBar.js';
 import { ProductCardWrapper, CardInfo, ProductCardCenter } from '../Common/productCard.js';
 import ProductInformationCard from "../Common/productInformationCard.js";
+import { ProductInformation as ProInfo } from '../../components/Common/proInfo.js';
 
 const IPad = () => {
 
     const { data, loading, error } = useFetchData(iPadProductData);
 
+    //take data
     const selectedData = navBar.navBarIpadList[0];
     const otherData = navBar.navBarIpadList.slice(1);
+    const proData = ipad[0].product_information[0];
 
     if (loading) return <div></div>;
     if (error) return <div>Error: {error.message}</div>;
@@ -163,6 +166,20 @@ const IPad = () => {
                     })}
                 </div>
 
+            </div>
+
+            <div className="section section5">
+                {ipad && ipad.map((item) => (
+                    item.product_information.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                            />
+                        )
+                    })
+                ))}
+                <ProInfo textData={proData.list_item} />
             </div>
 
             <div className="section last">

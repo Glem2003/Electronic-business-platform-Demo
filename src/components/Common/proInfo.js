@@ -16,7 +16,7 @@ export const ProductInformation = ({ textData }) => {
     }
 
     return (
-        <div className='productInformation'>
+        <div className='product-information'>
             <div className="container">
                 <div className="info-text">
                     {textData && textData.map((info, index) => {

@@ -113,6 +113,20 @@ export const ipadContent = ([
                 ]
             }
         ],
-
+        product_information: [
+            {
+                title: "大家的好夥伴。",
+                list_item: [
+                    {
+                        title: "iPad 與 iPhone",
+                        text: "iPad 就像一張引人入勝的畫布，讓眼前的一切生動活現，用來呈現 iPhone 拍攝的內容，再適合不過。你可以用 iPhone 拍攝影片和照片，然後在 iPad 寬大的顯示器上剪輯和加入動畫等；也可以透過「接力」功能，在兩部裝置間轉換，從之前未完成的地方接續做下去。"
+                    },
+                    {
+                        title: "iPad 與 Mac",
+                        text: "iPad 與 Mac 經過精心設計，合作起來默契十足，形成極致創意搭檔。有了「並行」功能，在 iPad 畫圖，立即就能在 Mac 上看到；接著，你可以在 iPad 上以 Apple Pencil 來畫圖或編輯，也能把 iPad 當作第二部顯示器使用。你可以到新的地方展開工作，當你回到桌前，還能透過「通用控制」功能，用同一個滑鼠或觸控式軌跡板在兩部裝置之間順暢工作。"
+                    }
+                ]
+            }
+        ]
     }
 ])

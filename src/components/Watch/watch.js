@@ -14,13 +14,16 @@ import LinkButton from '../Common/Button/linkButton.js';
 import { ProductCardWrapper, CardInfo, ProductCardCenter } from '../Common/productCard.js';
 import ProductInformationCard from '../Common/productInformationCard.js';
 import { ButtonItem } from "../Common/Button/buttonItem.js";
+import { ProductInformation as ProInfo } from '../../components/Common/proInfo.js';
 
 const Watch = () => {
 
     const { data, loading, error } = useFetchData(watchProductData);
 
+    //take data
     const selectedData = navBar.navBarWatchList[0];
     const otherData = navBar.navBarWatchList.slice(1);
+    const proData = watch[0].product_information[0];
 
     if (loading) return <div></div>;
     if (error) return <div>Error: {error.message}</div>;
@@ -192,6 +195,20 @@ const Watch = () => {
                     })}
                 </div>
 
+            </div>
+
+            <div className="section section6">
+                {watch && watch.map((item) => (
+                    item.product_information.map((info, index) => {
+                        return (
+                            <SectionTitle
+                                key={index}
+                                title={info.title}
+                            />
+                        )
+                    })
+                ))}
+                <ProInfo textData={proData.list_item} />
             </div>
 
             <div className="section last">
