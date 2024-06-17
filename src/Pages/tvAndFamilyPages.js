@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import TvHome from '../components/Tv-home/tvHome';
 
 //import sass
@@ -6,9 +6,9 @@ import '../Sass/tvHomePages.sass';
 
 const TvAndFamilyPages = () => {
     return (
-        <DafaultLayout logoTitle="TV 和家庭">
+        <DefaultLayout logoTitle="TV 和家庭">
             <TvHome/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

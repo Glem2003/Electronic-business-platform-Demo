@@ -1,10 +1,13 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 
 const CartPages = () => {
+    const now = new Date()
+    const hour = now.getHours()
+
     return (
-        <DafaultLayout>
-            <h1>This is CartPages</h1>
-        </DafaultLayout>
+        <DefaultLayout>
+            <h1>Comming Soon <br/>Now is {hour}hour</h1>
+        </DefaultLayout>
     )
 }
 

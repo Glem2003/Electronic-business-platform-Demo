@@ -4,7 +4,7 @@ import Header from "./Header/header";
 // import sass
 import '../../Sass/defaultLayout.sass';
 
-const DafaultLayout = ({ children, logoTitle }) => {
+const DefaultLayout = ({ children, logoTitle }) => {
     return (
         <div>
             <Header />
@@ -14,4 +14,4 @@ const DafaultLayout = ({ children, logoTitle }) => {
     )
 }
 
-export default DafaultLayout;
+export default DefaultLayout;

@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import Shop from '../components/Shop/shop';
 
 //import sass
@@ -6,9 +6,9 @@ import '../Sass/shopPages.sass';
 
 const ShopPages = () => {
     return (
-        <DafaultLayout logoTitle="所有配件">
+        <DefaultLayout logoTitle="所有配件">
             <Shop/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

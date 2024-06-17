@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import Main from "../components/Main/main";
 
 // import sass
@@ -8,9 +8,9 @@ import '../Sass/component/productCard.sass';
 
 const MainPages = () => {
     return (
-        <DafaultLayout logoTitle="Apple Store 線上商店">
+        <DefaultLayout logoTitle="Apple Store 線上商店">
             <Main/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

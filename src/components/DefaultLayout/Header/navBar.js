@@ -115,18 +115,66 @@ const NavBar = () => {
     };
 
     const navItems = [
-        { to: "/", icon: <FaApple style={svgStyle} />, text: "首頁", onMouseOver: () => setFlyoutContent(false) },
-        { to: "/main", text: "商店", onMouseOver: () => handleMouseOver('main') },
-        { to: "/mac", text: "Mac", onMouseOver: () => handleMouseOver('mac') },
-        { to: "/iPad", text: "iPad", onMouseOver: () => handleMouseOver('ipad') },
-        { to: "/iPhone", text: "iPhone", onMouseOver: () => handleMouseOver('iphone') },
-        { to: "/watch", text: "Watch", onMouseOver: () => handleMouseOver('watch') },
-        { to: "/airPods", text: "AirPods", onMouseOver: () => handleMouseOver('airpods') },
-        { to: "/tv-and-family", text: "TV 和家庭", onMouseOver: () => handleMouseOver('tvAndFamily') },
-        { to: "/shop", text: "配件", onMouseOver: () => handleMouseOver('shop') },
-        { to: "/support", text: "支援服務", onMouseOver: () => handleMouseOver('support') },
-        { icon: <CiSearch style={svgStyle} />, onMouseOver: () => handleMouseOver('search') },
-        { to: "/cart", icon: <FaShoppingCart style={svgStyle} />, onMouseOver: () => setFlyoutContent(false) }
+        {
+            to: "/",
+            icon: <FaApple style={svgStyle} />,
+            text: "首頁",
+            onMouseOver: () => setFlyoutContent(false)
+        },
+        {
+            to: "/main",
+            text: "商店",
+            onMouseOver: () => handleMouseOver('main')
+        },
+        {
+            to: "/mac",
+            text: "Mac",
+            onMouseOver: () => handleMouseOver('mac')
+        },
+        {
+            to: "/iPad",
+            text: "iPad",
+            onMouseOver: () => handleMouseOver('ipad')
+        },
+        {
+            to: "/iPhone",
+            text: "iPhone",
+            onMouseOver: () => handleMouseOver('iphone')
+        },
+        {
+            to: "/watch",
+            text: "Watch",
+            onMouseOver: () => handleMouseOver('watch')
+        },
+        {
+            to: "/airPods",
+            text: "AirPods",
+            onMouseOver: () => handleMouseOver('airpods')
+        },
+        {
+            to: "/tv-and-family",
+            text: "TV 和家庭",
+            onMouseOver: () => handleMouseOver('tvAndFamily')
+        },
+        {
+            to: "/shop",
+            text: "配件",
+            onMouseOver: () => handleMouseOver('shop')
+        },
+        {
+            to: "/support",
+            text: "支援服務",
+            onMouseOver: () => handleMouseOver('support')
+        },
+        {
+            icon: <CiSearch style={svgStyle} />,
+            onClick: () => handleMouseOver('search'),
+        },
+        {
+            to: "/cart",
+            icon: <FaShoppingCart style={svgStyle} />,
+            onMouseOver: () => setFlyoutContent(false)
+        }
     ];
 
     return (
@@ -138,6 +186,7 @@ const NavBar = () => {
                             key={index}
                             to={item.to}
                             onMouseOver={item.onMouseOver}
+                            onClick={item.onClick}
                             className={item.text ? item.text.toLowerCase() : ""}
                         >
                             {item.icon ? item.icon : <p>{item.text}</p>}

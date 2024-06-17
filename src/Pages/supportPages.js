@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import Support from "../components/Support/support";
 
 //import sass
@@ -6,9 +6,9 @@ import '../Sass/supportPages.sass';
 
 const SupportPages = () => {
     return (
-        <DafaultLayout logoTitle="支援服務">
+        <DefaultLayout logoTitle="支援服務">
             <Support/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

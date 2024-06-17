@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout.js";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import Mac from '../components/Mac/mac.js';
 
 // import sass
@@ -6,9 +6,9 @@ import '../Sass/macPages.sass';
 
 const MacPages = () => {
     return (
-        <DafaultLayout logoTitle="Mac">
+        <DefaultLayout logoTitle="Mac">
             <Mac/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

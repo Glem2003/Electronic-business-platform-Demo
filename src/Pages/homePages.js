@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import Home from "../components/Home/home";
 
 //import sass
@@ -6,9 +6,9 @@ import '../Sass/homePages.sass';
 
 const HomePages = () => {
     return (
-        <DafaultLayout logoTitle="Apple store">
+        <DefaultLayout logoTitle="Apple store">
             <Home/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import Airpods from "../components/Airpods/airpods";
 
 //import sass
@@ -6,9 +6,9 @@ import '../Sass/airpodsPages.sass';
 
 const AirpodsPages = () => {
     return (
-        <DafaultLayout logoTitle="Airpods">
+        <DefaultLayout logoTitle="Airpods">
             <Airpods/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

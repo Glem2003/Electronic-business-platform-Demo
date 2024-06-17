@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import Watch from '../components/Watch/watch';
 
 // import sass
@@ -6,9 +6,9 @@ import '../Sass/watchPages.sass';
 
 const WatchPages = () => {
     return (
-        <DafaultLayout logoTitle="Watch">
+        <DefaultLayout logoTitle="Watch">
             <Watch/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 

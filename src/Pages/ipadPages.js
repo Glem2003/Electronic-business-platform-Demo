@@ -1,4 +1,4 @@
-import DafaultLayout from "../components/DafaultLayout/dafaultLayout.js";
+import DefaultLayout from "../components/DefaultLayout/defaultLayout";
 import IPad from "../components/Ipad/ipad.js";
 
 // import sass
@@ -6,9 +6,9 @@ import '../Sass/ipadPages.sass';
 
 const IpadPages = () => {
     return (
-        <DafaultLayout logoTitle="ipad">
+        <DefaultLayout logoTitle="ipad">
             <IPad/>
-        </DafaultLayout>
+        </DefaultLayout>
     )
 }
 
