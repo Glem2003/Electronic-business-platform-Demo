@@ -1,12 +1,20 @@
 import DefaultLayout from "../components/DefaultLayout/defaultLayout";
+import Cart from "../components/Cart/cart";
+
+//import data
+import { footerTitle } from '../Content/Footer/index.js';
+
+//import sass
+import '../Sass/cartPages.sass';
 
 const CartPages = () => {
-    const now = new Date()
-    const hour = now.getHours()
+
+    //take data
+    const title = footerTitle.map(item => item.cart);
 
     return (
-        <DefaultLayout>
-            <h1>Comming Soon <br/>Now is {hour}hour</h1>
+        <DefaultLayout logoTitle={title}>
+            <Cart/>
         </DefaultLayout>
     )
 }
