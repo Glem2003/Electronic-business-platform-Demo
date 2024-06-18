@@ -1,0 +1,343 @@
+{
+    "mac": [
+        {
+            "id": 1,
+            "text": "MacBook Air",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/macbookair_light__dfypt7o3xfgy_large.svg",
+            "postscript": "全新"
+        },
+        {
+            "id": 2,
+            "text": "MacBook Pro",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/macbook_pro_light__bvnmtmeikj1e_large.svg"
+        },
+        {
+            "id": 3,
+            "text": "iMac",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/imac_light__cx5ex9nbqxme_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "Mac mini",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/mac_mini_light__e7ojhup2ezau_large.svg"
+        },
+        {
+            "id": 5,
+            "text": "Mac Studio",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/mac_studio_light__fcr3455qk0i2_large.svg"
+        },
+        {
+            "id": 6,
+            "text": "Mac Pro",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/mac_pro_light__bly2b0ua4seq_large.svg"
+        },
+        {
+            "id": 7,
+            "text": "比較",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/mac_compare_light__capy8s4wrbhy_large.svg"
+        },
+        {
+            "id": 8,
+            "text": "顯示器",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/displays_light__d67yrnk0qsa6_large.svg"
+        },
+        {
+            "id": 9,
+            "text": "配件",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/mac_accessories_light__esnwbnk4bxqq_large.svg"
+        },
+        {
+            "id": 10,
+            "text": "Sonoma",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/mac_os_light__6mb5pqhztcie_large.svg"
+        },
+        {
+            "id": 11,
+            "text": "選購 Mac",
+            "src": "https://www.apple.com/v/mac/home/by/images/chapternav/mac_shop_light__f0m72gc7jguq_large.svg"
+        }
+    ],
+    "iPad": [
+        {
+            "id": 1,
+            "text": "iPad Pro",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/ipadpro_light__bbws9fokxn3m_large.svg",
+            "postscript": "全新"
+        },
+        {
+            "id": 2,
+            "text": "iPad Air",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/pa_ipadair13_gen6_ipadair11_gen6_light__des6pp5gjg2u_large.svg",
+            "postscript": "全新"
+        },
+        {
+            "id": 3,
+            "text": "iPad",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/pa_ipadair_gen5_light__cboe3o98m36u_large.svg",
+            "postscript": "新價格"
+        },
+        {
+            "id": 3,
+            "text": "iPad mini",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/ipadmini_light__chl9hj51b9qq_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "比較",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/ipad_compare_light__29tc9jjpoeqe_large.svg"
+        },
+        {
+            "id": 5,
+            "text": "Apple Pencil",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/apple_pencil_light__kv36e49avuq2_large.svg",
+            "postscript": "全新"
+        },
+        {
+            "id": 6,
+            "text": "鍵盤",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/keyboard_light__f5t6yntcyq2q_large.svg",
+            "postscript": "全新"
+        },
+        {
+            "id": 7,
+            "text": "配件",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/pa_case_ipad_gen10_light__b2tng4s4n9n6_large.svg"
+        },
+        {
+            "id": 8,
+            "text": "iPadOS 17",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/ipados_light__ebqgefp11ogi_large.svg"
+        },
+        {
+            "id": 9,
+            "text": "選購 iPad",
+            "src": "https://www.apple.com/v/ipad/home/cj/images/chapternav/shop_ipad_light__btk7x6ps41yq_large.svg"
+        }
+    ],
+    "iPhone": [
+        {
+            "id": 1,
+            "text": "iPhone 15 Pro",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/iphone_15_pro_light__diyvo6c7yu82_large.svg"
+        },
+        {
+            "id": 2,
+            "text": "iPhone 15",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/iphone_15_light__euftnkhrzdea_large.svg"
+        },
+        {
+            "id": 3,
+            "text": "iPhone 14",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/iphone_14_light__fwknsxkf80uq_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "iPhone 13",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/iphone_13_light__ewo3e0sf67o2_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "iPhone SE",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/iphone_se_light__fhg8duy6ffau_large.svg"
+        },
+        {
+            "id": 5,
+            "text": "比較",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/iphone_compare_light__f4jj7brpbvm2_large.svg"
+        },
+        {
+            "id": 6,
+            "text": "AirPods",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/airpods_light__8oj157p2476a_large.svg"
+        },
+        {
+            "id": 7,
+            "text": "AirTag",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/airtag_light__cb2bmnv6aoeu_large.svg"
+        },
+        {
+            "id": 8,
+            "text": "配件",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/accessories_light__ed5l6ipsevqu_large.svg"
+        },
+        {
+            "id": 9,
+            "text": "IOS 17",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/iphone_ios_light__b8s4ws8o77iq_large.svg"
+        },
+        {
+            "id": 10,
+            "text": "選購IPhone",
+            "src": "https://www.apple.com/v/iphone/home/bu/images/chapternav/shop_iphone_light__b2toggskllle_large.svg"
+        }
+    ],
+    "Watch": [
+        {
+            "id": 1,
+            "text": "Apple Watch",
+            "postscript": "Series 9",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_series_8_light__f0gx30xkqhui_large.svg"
+        },
+        {
+            "id": 2,
+            "text": "Apple Watch",
+            "postscript": "Ultra 2",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_ultra_light__dnosu8kc2tme_large.svg"
+        },
+        {
+            "id": 3,
+            "text": "Apple Watch",
+            "postscript": "SE",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_se_light__ch5dbdx2ybo2_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "Apple Watch",
+            "postscript": "Nike",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_nike_light__c36zk943xfo2_large.svg"
+        },
+        {
+            "id": 5,
+            "text": "Apple Watch",
+            "postscript": "Hermès",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_hermes_light__q9veqdmv73ey_large.svg"
+        },
+        {
+            "id": 6,
+            "text": "Apple Watch",
+            "postscript": "工坊",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_studio_light__dzd9rwk2242u_large.svg"
+        },
+        {
+            "id": 7,
+            "text": "比較",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_compare__cdkbsrx8arw2_large.svg"
+        },
+        {
+            "id": 8,
+            "text": "錶帶",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_bands__b9c37m8hpgya_large.svg"
+        },
+        {
+            "id": 9,
+            "text": "AirPods",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_airpods__e9283t02ry2y_large.svg"
+        },
+        {
+            "id": 10,
+            "text": "配件",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_accessories__glsax9gul7ue_large.svg"
+        },
+        {
+            "id": 11,
+            "text": "watchOS 10",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_watch_os__bpf576367ple_large.svg"
+        },
+        {
+            "id": 12,
+            "text": "選購 Watch",
+            "src": "https://www.apple.com/v/watch/bm/images/chapternav/watch_nav_shop_watch_light__f4fr5gzdhjyy_large.svg"
+        }
+    ],
+    "Airpods": [
+        {
+            "id": 1,
+            "text": ["AirPods","第2代"],
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_2gen_light__ckwbqlgv1r9e_large.svg"
+        },
+        {
+            "id": 2,
+            "text": ["AirPods","第3代"],
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_3gen_light__6r7zooyk4lua_large.svg"
+        },
+        {
+            "id": 3,
+            "text": ["AirPods Pro","第2代"],
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_pro_light__ets5a19rt3au_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "AirPods Max",
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_max_light__cvaaddhgazqu_large.svg"
+        },
+        {
+            "id": 5,
+            "text": "比較",
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/airpods_compare_light__cmuvdvbxj1w2_large.svg"
+        },
+        {
+            "id": 6,
+            "text": "Apple Music",
+            "src": "https://www.apple.com/v/airpods/u/images/chapternav/apple_music_light__fexraacz3dme_large.svg"
+        }
+    ],
+    "TvHome": [
+        {
+            "id": 1,
+            "text": "Apple TV 4K",
+            "src": "https://www.apple.com/v/tv-home/k/images/chapternav/light/apple_tv4k_fill_light__b2wtl9srjwb6_large.svg"
+        },
+        {
+            "id": 2,
+            "text": "Apple TV App",
+            "src": "https://www.apple.com/v/tv-home/k/images/chapternav/light/apple_tv_app_light__f6s7yq5zej2a_large.svg"
+        },
+        {
+            "id": 3,
+            "text": "Apple TV+",
+            "src": "https://www.apple.com/v/tv-home/k/images/chapternav/light/apple_tv_plus_light__fjwmgqxuwomu_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "HomePod",
+            "src": "https://www.apple.com/v/tv-home/k/images/chapternav/light/homepod_light__b9tveb5xovhy_large.svg"
+        },
+        {
+            "id": 5,
+            "text": "HomePod mini",
+            "src": "https://www.apple.com/v/tv-home/k/images/chapternav/light/homepodmini_light__genrqjukfl26_large.svg"
+        },
+        {
+            "id": 6,
+            "text": "家庭 App",
+            "src": "https://www.apple.com/v/tv-home/k/images/chapternav/light/homekit_light__bu42vvqsjaj6_large.svg"
+        },
+        {
+            "id": 7,
+            "text": "配件",
+            "src": "https://www.apple.com/v/tv-home/k/images/chapternav/light/home_accessories_light__eu5v1y6592eu_large.svg"
+        }
+    ],
+    "funny": [
+        {
+            "id": 1,
+            "text": "Apple One",
+            "src": "https://www.apple.com/v/services/h/images/services/chapternav/dark/apple_one_dark__eu2pb1ea55g2_large.svg"
+        },
+        {
+            "id": 2,
+            "text": "Apple TV+",
+            "src": "https://www.apple.com/v/services/h/images/services/chapternav/dark/apple_tv_plus_dark__chseq8uiremq_large.svg"
+        },
+        {
+            "id": 3,
+            "text": "Apple Music",
+            "src": "https://www.apple.com/v/services/h/images/services/chapternav/dark/apple_music_dark__bhacur3ulple_large.svg"
+        },
+        {
+            "id": 4,
+            "text": "Apple Arcade",
+            "src": "https://www.apple.com/v/services/h/images/services/chapternav/dark/apple_arcade_dark__ghynnqrgnguq_large.svg"
+        },
+        {
+            "id": 5,
+            "text": "Apple Podcast",
+            "src": "https://www.apple.com/v/services/h/images/services/chapternav/dark/podcasts_dark__f2foq4r9qvyy_large.svg"
+        },
+        {
+            "id": 6,
+            "text": "Apple Books",
+            "src": "https://www.apple.com/v/services/h/images/services/chapternav/dark/books_dark__9v2055vsgb6a_large.svg"
+        }
+    ]
+}

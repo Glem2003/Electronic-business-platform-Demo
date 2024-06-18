@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "為行動而設計。",
+        "name": "MACBOOK AIR",
+        "price": "NT$32,900 起",
+        "src": "/images/macbook.jpg"
+    },
+    {
+        "id": 2,
+        "title": "鈦金屬",
+        "name": "IPHONE 15 PRO",
+        "price": "NT$36,900 起",
+        "src": "/images/iphone-15-pro.jpg"
+    },
+    {
+        "id": 3,
+        "title": "智慧升級，亮度、實力再晉級。",
+        "name": "APPLE WATCH SERIES 9",
+        "price": "NT$13,500 起",
+        "src": "/images/watch-s9.jpg"
+    },
+    {
+        "id": 4,
+        "title": "可愛、可畫，可圈可點。",
+        "name": "IPAD",
+        "price": "NT$29,900 起",
+        "src": "/images/ipad.jpg"
+    },
+    {
+        "id": 5,
+        "title": "新的愛，狂比心。",
+        "name": "IPHONE 15",
+        "price": "NT$14,900 起",
+        "src": "/images/iphone-15.jpg"
+    },
+    {
+        "id": 6,
+        "title": "炫技，炫目。",
+        "name": "MACBOOK PRO",
+        "price": "NT$54,900 起",
+        "src": "/images/macbook-pro.jpg"
+    },
+    {
+        "id": 7,
+        "title": "征途，再超越。",
+        "name": "APPLE WATCH ULTRA 2",
+        "price": "NT$27,900 起",
+        "src": "/images/watch-ultra.jpg"
+    },
+    {
+        "id": 8,
+        "title": "來自 M2 的超強驅動。",
+        "name": "IPAD PRO",
+        "price": "NT$27,900 起",
+        "src": "/images/ipad-pro.jpg"
+    },
+    {
+        "id": 9,
+        "title": "超有才，輕鬆愛",
+        "name": "APPLE WATCH SE",
+        "price": "NT$27,900 起",
+        "src": "/images/watch-se.jpg"
+    },
+    {
+        "id": 10,
+        "title": "吸睛新色，腕上放閃。",
+        "name": "全新",
+        "price": "選購最新款式與顏色的錶帶",
+        "src": "/images/watch-bands.jpg"
+    }
+]
