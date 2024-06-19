@@ -10,6 +10,7 @@ import { airpodsContent } from './airpods';
 import { ipadContent } from './ipad';
 import { macContent } from './mac';
 import { iphoneContent } from './iphone';
+import { cartContent } from './cart';
 
 export {
     navBar,
@@ -23,5 +24,6 @@ export {
     airpodsContent as airpods,
     ipadContent as ipad,
     macContent as mac,
-    iphoneContent as iphone
+    iphoneContent as iphone,
+    cartContent as cart
 };
