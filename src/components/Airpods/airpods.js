@@ -94,7 +94,7 @@ const Airpods = () => {
                                     return (
                                         <ProductCardCenter
                                             key={index}
-                                            src={info.src}
+                                            src={`${process.env.PUBLIC_URL}${info.src}`}
                                         >
                                             <div className="infos-item">
                                                 <CardInfo
@@ -132,7 +132,7 @@ const Airpods = () => {
                                 return (
                                     <ProductInformationCard
                                         key={index}
-                                        src={info.src}
+                                        src={`${process.env.PUBLIC_URL}${info.src}`}
                                         postscript={info.postscript}
                                         title={info.title}
                                         text={info.text}

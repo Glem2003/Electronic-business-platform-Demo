@@ -44,6 +44,7 @@ const Shop = () => {
 
     return (
         <div className="shop">
+            
             <div className="menu">
                 <div className="title">
                     {shop && shop.map(i =>

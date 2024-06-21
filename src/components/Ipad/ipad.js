@@ -75,7 +75,7 @@ const IPad = () => {
                                     return (
                                         <ProductCardWrapper
                                             key={index}
-                                            src={info.src}
+                                            src={`${process.env.PUBLIC_URL}${info.src}`}
                                         >
                                             <CardInfo
                                                 title={info.title}
@@ -111,7 +111,7 @@ const IPad = () => {
                                     return (
                                         <ProductInformationCard
                                             key={index}
-                                            src={info.src}
+                                            src={`${process.env.PUBLIC_URL}${info.src}`}
                                             alt={info.alt}
                                             color={info.color}
                                             postscript={info.postscript}
@@ -150,7 +150,7 @@ const IPad = () => {
                                 return (
                                     <ProductCardCenter
                                         key={index}
-                                        src={info.src}
+                                        src={`${process.env.PUBLIC_URL}${info.src}`}
                                         alt={info.alt}
                                     >
                                         <CardInfo

@@ -4,8 +4,8 @@ const CardInformationInProduct = ({ src, alt, text, src_2, alt_2 }) => {
             {src ? (
                 <div className="card-images">
                     <div className="img-box">
-                        <img src={src} alt={alt} />
-                        {src_2 && <img src={src_2} alt={alt_2} />}
+                        <img src={`${process.env.PUBLIC_URL}${src}`} alt={alt} />
+                        {src_2 && <img src={`${process.env.PUBLIC_URL}${src_2}`} alt={alt_2} />}
                     </div>
                     <p>{text}</p>
                 </div>

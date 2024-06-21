@@ -4,13 +4,13 @@ export const supportContent = ([
             {
                 title: "Apple 支援",
                 list_item: [
-                    { text: "iPhone", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-iphone_2x.png" },
-                    { text: "Mac", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-mac_2x.png" },
-                    { text: "iPad", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-ipad_2x.png" },
-                    { text: "Watch", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-watch-_2x.png" },
-                    { text: "AirPods", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-airpods_2x.png" },
-                    { text: "Music", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-music_2x.png" },
-                    { text: "TV", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-tv_2x.png" }
+                    { text: "iPhone", src: "/images/support/image-grid-iphone_2x.png" },
+                    { text: "Mac", src: "/images/support/image-grid-mac_2x.png" },
+                    { text: "iPad", src: "/images/support/image-grid-ipad_2x.png" },
+                    { text: "Watch", src: "/images/support/image-grid-watch-_2x.png" },
+                    { text: "AirPods", src: "/images/support/image-grid-airpods_2x.png" },
+                    { text: "Music", src: "/images/support/image-grid-music_2x.png" },
+                    { text: "TV", src: "/images/support/image-grid-tv_2x.png" }
                 ],
                 support_item: [
                     { text: "忘記 Apple ID 密碼", src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-password_2x.svg" },
@@ -32,21 +32,21 @@ export const supportContent = ([
                 title: "參加 Apple 直營店的免費課程",
                 text: "了解最新功能，以及如何更善加運用你的 Apple 裝置。",
                 link: "報名參加",
-                src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-feature-taa-fundamentals.image.large_2x.png"
+                src: "/images/support/tile-feature-taa-fundamentals.image.large_2x.png"
             },
             {
                 id: "22",
                 title: "取得支援",
                 text: "請提供一些詳細資訊，我們將提供最佳解決方案。你可透過電話、線上對談、電子郵件等方式與我們聯繫。",
                 link: "立即開始",
-                src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-split-getsupport.image.large_2x.png"
+                src: "/images/support/tile-split-getsupport.image.large_2x.png"
             },
             {
                 id: "23",
                 title: "「Apple 支援」App",
                 text: "透過一個 App 即可為你所有的 Apple 產品取得協助，或聯絡專家。",
                 link: "下載",
-                src: "https://support.apple.com/content/dam/edam/applecare/images/zh_TW/psp_content/tile-split-supportapp.image.large_2x.png"
+                src: "/images/support/tile-split-supportapp.image.large_2x.png"
             },
             {
                 id: "24",
@@ -59,7 +59,7 @@ export const supportContent = ([
                 title: "AppleCare+ 服務專案",
                 text: "享有不限次數的意外損壞保固維修服務，並能優先聯繫 Apple 專家等。",
                 link: "更多內容",
-                src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-feature-applecare-plus.image.large_2x.png"
+                src: "/images/support/tile-feature-applecare-plus.image.large_2x.png"
             },
             {
                 id: "26",

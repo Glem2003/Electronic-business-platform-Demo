@@ -21,7 +21,7 @@ const Support = () => {
                                     {info.list_item && info.list_item.map((listInfo, listIndex) => (
                                         <div className="col" key={`list-${itemIndex}-${sectionIndex}-${listIndex}`}>
                                             <div>
-                                                <img src={listInfo.src} alt='' />
+                                                <img src={`${process.env.PUBLIC_URL}${listInfo.src}`} alt='' />
                                             </div>
                                             <h4>{listInfo.text}</h4>
                                         </div>
@@ -85,7 +85,7 @@ const Support = () => {
                                     firstInfo.map((info, index) => (
                                         <ProductCardCenter
                                             key={index}
-                                            src={info.src}
+                                            src={`${process.env.PUBLIC_URL}${info.src}`}
                                         >
                                             <CardInfo
                                                 title={info.title}
@@ -101,7 +101,7 @@ const Support = () => {
                                     secondInfo.map((info, index) => (
                                         <ProductCardCenter
                                             key={index}
-                                            src={info.src}
+                                            src={`${process.env.PUBLIC_URL}${info.src}`}
                                         >
                                             <CardInfo
                                                 title={info.title}
@@ -115,16 +115,28 @@ const Support = () => {
                             {
                                 otherInfo.map((info, index) => (
                                     <div className='info-item' key={item.id}>
-                                        <ProductCardCenter
-                                            key={index}
-                                            src={info.src}
-                                        >
-                                            <CardInfo
-                                                title={info.title}
-                                                text={info.text}
-                                                subtitle={info.link}
-                                            />
-                                        </ProductCardCenter>
+                                        {info.src ? (
+                                            <ProductCardCenter
+                                                key={index}
+                                                src={`${process.env.PUBLIC_URL}${info.src}`}
+                                            >
+                                                <CardInfo
+                                                    title={info.title}
+                                                    text={info.text}
+                                                    subtitle={info.link}
+                                                />
+                                            </ProductCardCenter>
+                                        ) : (
+                                            <ProductCardCenter
+                                                key={index}
+                                            >
+                                                <CardInfo
+                                                    title={info.title}
+                                                    text={info.text}
+                                                    subtitle={info.link}
+                                                />
+                                            </ProductCardCenter>
+                                        )}
                                     </div>
                                 ))
                             }
