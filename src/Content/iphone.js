@@ -33,7 +33,7 @@ export const iphoneContent = ([
                         title: "iPhone 15 Pro",
                         text: "iPhone 的極致。",
                         price: "NT$36,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         productInfoItem:
                             [
                                 { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a17_pro__dpmksmevf1m6_large.png", alt: "A17 Pro 晶片", text: "A17 Pro 晶片配備 6 核心 GPU" },
@@ -48,7 +48,7 @@ export const iphoneContent = ([
                         title: "iPhone 15",
                         text: "滿載強大實力。",
                         price: "NT$29,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         productInfoItem:
                             [
                                 { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a16__fo5o85ip3dui_large.png", alt: "A16 仿生晶片", text: "A16 仿生晶片配備 5 核心 GPU" },
@@ -63,7 +63,7 @@ export const iphoneContent = ([
                         title: "iPhone 14",
                         text: "還是超讚，沒變",
                         price: "NT$25,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         productInfoItem:
                             [
                                 { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 5 核心 GPU" },
@@ -78,7 +78,7 @@ export const iphoneContent = ([
                         title: "iPhone 13",
                         text: "各種厲害於一身。",
                         price: "NT$21,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         productInfoItem:
                             [
                                 { src: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png", alt: "A15 仿生晶片", text: "A15 仿生晶片配備 4 核心 GPU" },

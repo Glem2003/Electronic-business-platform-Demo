@@ -34,7 +34,7 @@ const navBarMacList = ([
             { subtitle: "Mac 商務應用" },
             { subtitle: "教育" },
         ]
-    }
+    },
 ])
 
 export default navBarMacList;

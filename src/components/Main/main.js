@@ -17,7 +17,7 @@ const Main = () => {
     const { data: isProductTextData, loading: loadingProductTextData, error: errorProductTextData } = useFetchData(productTextData);
 
     if (loadingProductData || loadingProductTextData) {
-        return <div>Loading...</div>;
+        return <div></div>;
     }
 
     if (errorProductData || errorProductTextData) {
@@ -116,7 +116,7 @@ const Main = () => {
                                         <div className="item-col">
                                             <ProductCardWrapper
                                                 key={index}
-                                                src={titleInfo.src}
+                                                src={`${process.env.PUBLIC_URL}${titleInfo.src}`}
                                                 alt={titleInfo.alt}
                                             >
                                                 <CardInfo
@@ -139,7 +139,7 @@ const Main = () => {
                                             <div className="item-col">
                                                 <ProductCardCenter
                                                     key={index}
-                                                    src={item.src}
+                                                    src={`${process.env.PUBLIC_URL}${item.src}`}
                                                     alt={item.alt}
                                                 >
                                                     <div className="color-box">
@@ -174,7 +174,7 @@ const Main = () => {
                                         <div className="item-col">
                                             <ProductCardWrapper
                                                 key={index}
-                                                src={lastInfo.src}
+                                                src={`${process.env.PUBLIC_URL}${lastInfo.src}`}
                                                 alt={lastInfo.alt}
                                             >
                                                 <CardInfo
@@ -217,7 +217,7 @@ const Main = () => {
                                         <div className="item-col">
                                             <ProductCardWrapper
                                                 key={index}
-                                                src={titleInfo.src}
+                                                src={`${process.env.PUBLIC_URL}${titleInfo.src}`}
                                                 alt={titleInfo.alt}
                                             >
                                                 <CardInfo
@@ -241,7 +241,7 @@ const Main = () => {
                                             <div className="item-col">
                                                 <ProductCardCenter
                                                     key={index}
-                                                    src={text.src}
+                                                    src={`${process.env.PUBLIC_URL}${text.src}`}
                                                     alt={text.alt}
                                                 >
                                                     <CardInfo

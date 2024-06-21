@@ -1,18 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { navBar } from '../../../Content/index';
+import { useLocation } from 'react-router-dom'; 
 
-//import component
+// import component
 import NavBarLink from './navBarLink';
-import { FaApple, FaShoppingCart } from 'react-icons/fa';
-import { CiSearch } from 'react-icons/ci';
 import { NavBarLargeList, NavBarSmallList } from '../../Common/navbarList';
+import Badge from '@mui/material/Badge';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { blue } from '@mui/material/colors';
 
+// import icon
+import LocalMallIcon from '@mui/icons-material/LocalMall';
+import SearchIcon from '@mui/icons-material/Search';
+import AppleIcon from '@mui/icons-material/Apple';
 
-//import sass
+// import sass
 import '../../../Sass/component/navBar.sass';
 
 const NavBar = () => {
-    const svgStyle = { width: "1.5em", height: "1.5em" };
+    const value = useSelector(state => state.shop.value);
+
+    const theme = createTheme({
+        palette: {
+            primary: {
+                main: blue[500],
+            }
+        },
+    });
 
     const navData = {
         main: navBar.navBarMainList,
@@ -45,8 +60,31 @@ const NavBar = () => {
     const handleMouseLeave = () => setFlyoutContent(initialFlyoutState);
 
     const handleMouseOver = (content) => {
-        setFlyoutContent({ ...initialFlyoutState, [content]: true })
+        setFlyoutContent({ ...initialFlyoutState, [content]: true });
     };
+
+    // Take current route location
+    const location = useLocation();
+
+    // Set title based on current route
+    useEffect(() => {
+        const pathToTitleMap = {
+            '/': 'Apple (台灣)',
+            '/main': 'Apple Store 線上商店 - Apple (台灣)',
+            '/mac': 'Mac - Apple (台灣)',
+            '/iPad': 'iPad - Apple (台灣)',
+            '/iPhone': 'iPhone - Apple (台灣)',
+            '/watch': 'Watch - Apple (台灣)',
+            '/airPods': 'AirPods - Apple (台灣)',
+            '/tv-and-family': 'TV 和家庭 - Apple (台灣)',
+            '/shop': '適用於 Apple Watch、iPhone、iPad 與 Mac 的 Apple 配件 - Apple (台灣)',
+            '/support': '官方的 Apple 支援',
+            '/cart': '購物袋 - Apple (台灣)',
+        };
+
+        const title = pathToTitleMap[location.pathname] || 'Apple (台灣)';
+        document.title = title;
+    }, [location]);
 
     const renderFlyoutContent = (key) => {
         const selectedData = navData[key][0];
@@ -62,47 +100,71 @@ const NavBar = () => {
                         {key === 'mac' && (
                             <>
                                 <br />
-                                <h4>比較 Mac 模型</h4>
-                                <h4>Mac 辦得到</h4>
+                                {navBar.navBarOtherList && navBar.navBarOtherList.flatMap((item) => (
+                                    item.mac && item.mac.map((text, index) => (
+                                        <h4 key={index}>{text}</h4>
+                                    ))
+                                ))}
                             </>
                         )}
                         {key === 'ipad' && (
                             <>
                                 <br />
-                                <h4>比較 iPad 機型</h4>
-                                <h4>選 iPad 理由</h4>
+                                {navBar.navBarOtherList && navBar.navBarOtherList.flatMap((item) => (
+                                    item.ipad && item.ipad.map((text, index) => (
+                                        <h4 key={index}>{text}</h4>
+                                    ))
+                                ))}
                             </>
                         )}
                         {key === 'iphone' && (
                             <>
                                 <br />
-                                <h4>比較 iPhone 機型</h4>
-                                <h4>從 Android 轉用</h4>
+                                {navBar.navBarOtherList && navBar.navBarOtherList.flatMap((item) => (
+                                    item.iphone && item.iphone.map((text, index) => (
+                                        <h4 key={index}>{text}</h4>
+                                    ))
+                                ))}
                             </>
                         )}
                         {key === 'watch' && (
                             <>
                                 <br />
-                                <h4>比較 Watch 錶款</h4>
-                                <h4>Apple Watch 的好處</h4>
+                                {navBar.navBarOtherList && navBar.navBarOtherList.flatMap((item) => (
+                                    item.watch && item.watch.map((text, index) => (
+                                        <h4 key={index}>{text}</h4>
+                                    ))
+                                ))}
                             </>
                         )}
                         {key === 'airpods' && (
                             <>
                                 <br />
-                                <h4>比較 AirPods 機型</h4>
+                                {navBar.navBarOtherList && navBar.navBarOtherList.flatMap((item) => (
+                                    item.airpods && item.airpods.map((text, index) => (
+                                        <h4 key={index}>{text}</h4>
+                                    ))
+                                ))}
                             </>
                         )}
                         {key === 'support' && (
                             <>
                                 <br />
-                                <h4>探索支援服務</h4>
+                                {navBar.navBarOtherList && navBar.navBarOtherList.flatMap((item) => (
+                                    item.support && item.support.map((text, index) => (
+                                        <h4 key={index}>{text}</h4>
+                                    ))
+                                ))}
                             </>
                         )}
                         {key === 'search' && (
                             <form>
-                                <CiSearch style={svgStyle} />
-                                <input type='search' placeholder='搜尋 apple.com' />
+                                <SearchIcon />
+                                {navBar.navBarOtherList && navBar.navBarOtherList.flatMap((item) => (
+                                    item.search && item.search.map((text) => (
+                                        <input type='search' placeholder={text} key={text} />
+                                    ))
+                                ))}
                             </form>
                         )}
                     </NavBarLargeList>
@@ -114,10 +176,11 @@ const NavBar = () => {
         );
     };
 
+    // Navigation bar configuration
     const navItems = [
         {
             to: "/",
-            icon: <FaApple style={svgStyle} />,
+            icon: <AppleIcon />,
             text: "首頁",
             onMouseOver: () => setFlyoutContent(false)
         },
@@ -167,12 +230,18 @@ const NavBar = () => {
             onMouseOver: () => handleMouseOver('support')
         },
         {
-            icon: <CiSearch style={svgStyle} />,
-            onClick: () => handleMouseOver('search'),
+            icon: <SearchIcon />,
+            onClick: () => handleMouseOver('search')
         },
         {
             to: "/cart",
-            icon: <FaShoppingCart style={svgStyle} />,
+            icon: (
+                <ThemeProvider theme={theme}>
+                    <Badge badgeContent={value} color="primary" anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
+                        <LocalMallIcon color='inherit' />
+                    </Badge>
+                </ThemeProvider>
+            ),
             onMouseOver: () => setFlyoutContent(false)
         }
     ];
@@ -200,6 +269,6 @@ const NavBar = () => {
             </div>
         </nav>
     );
-}
+};
 
 export default NavBar;

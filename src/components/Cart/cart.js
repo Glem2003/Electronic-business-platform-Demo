@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem, removeItem } from '../../reducer/shopSlice.js';
 
 //import data
 import { cart } from '../../Content/index.js';
@@ -12,6 +14,16 @@ import { RightOutlined } from '@ant-design/icons';
 import '../../Sass/cartPages.sass';
 
 const Cart = () => {
+
+    const dispatch = useDispatch();
+    const value = useSelector(state => state.shop.value);
+
+    const handleAddItem = () => {
+        dispatch(addItem());
+    };
+    const handleRemoveItem = () => {
+        (value > 0) && dispatch(removeItem());
+    };
 
     // Convert question_info to the data format of the Collapse component
     const itemsNest = cart[0].question_info[0].list.map((item, index) => ({
@@ -68,6 +80,11 @@ const Cart = () => {
         <div className="cart">
 
             <div className="section section1">
+                <div className='devTool' style={{ opacity: '0.3' }}>
+                    <h2>devTool</h2>
+                    <button onClick={handleAddItem}>ADD_ITEM</button>
+                    <button onClick={handleRemoveItem}>REMOVE_ITEM</button>
+                </div>
                 {cart && cart.map((item) => (
                     item.header_info.map((info, index) => (
                         <InfoCard

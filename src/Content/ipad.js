@@ -29,7 +29,7 @@ export const ipadContent = ([
                         title: "iPad Pro",
                         text: "極致 iPad 體驗，來自最先進科技。",
                         price: "$34,900起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         cardTitle: "13 吋或 11 吋",
                         cardText: (<>Ultra Retina XDR 顯示器3<br />ProMotion 自動適應更新頻率技術<br />P3 廣色域<br />1TB 與 2TB 機型可選配 Nano-texture 顯示器玻璃</>),
                         productInfoItem:
@@ -49,7 +49,7 @@ export const ipadContent = ([
                         title: "iPad Air",
                         text: "重量級表現，輕裝上陣。",
                         price: "NT$19,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         cardTitle: "13 吋或 11 吋",
                         cardText: (<>Liquid Retina 顯示器<br />P3 廣色域<br />以矩形對角線量測時，13 吋 iPad Air 機型為 12.9 吋；<br />11 吋 iPad Air 機型為 10.86 吋。實際可視區較小。</>),
                         productInfoItem:
@@ -69,7 +69,7 @@ export const ipadContent = ([
                         title: "iPad",
                         text: "多彩的全螢幕 iPad，助你做好日常大小事。",
                         price: "NT$11,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         cardTitle: "10.9 吋",
                         cardText: (<>Liquid Retina 顯示器<br />sRGB 色域</>),
                         productInfoItem:
@@ -89,7 +89,7 @@ export const ipadContent = ([
                         title: "iPad mini",
                         text: "完整 iPad 體驗，超好攜帶的設計。",
                         price: "NT$16,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         cardTitle: "8.3 吋",
                         cardText: (<>Liquid Retina 顯示器<br />P3 廣色域</>),
                         productInfoItem:

@@ -8,6 +8,7 @@ import navBarShopList from './navBarShopList';
 import navBarSupportList from './navBarSupportList';
 import navBarTvFamilyList from './navBarTvFamilyList';
 import navBarWatchList from './navBarWatchList';
+import navBarOtherList from './navBarOtherList';
 
 export {
     navBarAirpodsList,
@@ -19,5 +20,6 @@ export {
     navBarShopList,
     navBarSupportList,
     navBarTvFamilyList,
-    navBarWatchList
+    navBarWatchList,
+    navBarOtherList
 }

@@ -30,7 +30,7 @@ export const watchContent = ([
                         title: "iPhone 15 Pro",
                         text: (<>滿滿實用功能，<br />超值入手。</>),
                         price: "NT$7,900 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         productInfoItem:
                             [
                                 { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_sizes__frpc80tcj9me_large.png", alt: "鋁金屬錶殼", text: (<>44 公釐或 40 公釐<br />鋁金屬錶殼</>) },
@@ -47,7 +47,7 @@ export const watchContent = ([
                         title: "Apple Watch Series 9",
                         text: (<>強大的感測器，<br />先進的健康功能。</>),
                         price: "NT$13,500 起",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         productInfoItem:
                             [
                                 { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_sizes__frpc80tcj9me_large.png", alt: "鋁金屬錶殼", text: (<>45 公釐或 41 公釐<br />鋁金屬或不鏽鋼錶殼</>) },
@@ -64,7 +64,7 @@ export const watchContent = ([
                         title: "Apple Watch Ultra 2",
                         text: (<>最堅固、最強大，<br />登峰造極。</>),
                         price: "NT$27,900",
-                        btn: ["進一步了解", "查看價格"],
+                        btn: ["進一步了解", "購買"],
                         productInfoItem:
                             [
                                 { src: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case__fnvx2dhaljue_large.png", alt: "鋁金屬錶殼", text: (<>49 公釐<br />鈦金屬錶殼</>) },

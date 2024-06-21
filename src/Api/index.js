@@ -4,8 +4,13 @@ export const productData = () => {
       .then((response) => {
         return response.json();
       })
-      .then((data) => {
-        resolve(data);
+      .then(data => {
+        // Dynamically replace image paths and display data
+        const updatedData = data.map(item => ({
+          ...item,
+          src: `${process.env.PUBLIC_URL}${item.src}`
+        }));
+        resolve(updatedData);
       })
       .catch((error) => {
         console.log('Error fetching productData:', error);
@@ -20,8 +25,13 @@ export const productTextData = () => {
       .then((response) => {
         return response.json();
       })
-      .then((data) => {
-        resolve(data);
+      .then(data => {
+        // Dynamically replace image paths and display data
+        const updatedData = data.map(item => ({
+          ...item,
+          src: `${process.env.PUBLIC_URL}${item.src}`
+        }));
+        resolve(updatedData);
       })
       .catch((error) => {
         console.log('Error fetching productText:', error);

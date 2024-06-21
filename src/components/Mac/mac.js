@@ -37,6 +37,8 @@ const Mac = () => {
         setActiveList(list);
     };
 
+    
+
     return (
         <div className="mac">
             <div className="Product-items">
