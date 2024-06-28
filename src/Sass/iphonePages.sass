@@ -1,0 +1,243 @@
+//iPhone
+.iphone
+    z-index: 3
+    position: relative
+    /* Global*/
+    >.wrapper-layout
+        background-color: #f5f5f7
+        padding: 10px
+        font-size: 12px
+        text-align: center
+        a
+            color: blue
+    >.section
+        padding: 30px 10%
+        >.title
+            margin-bottom: 25px
+            display: flex
+            justify-content: space-between
+            >h2
+                font-size: 50px
+
+    //section1
+    .section1
+        >.title
+            align-items: center
+            >h2
+                font-size: 70px
+            >h3
+                max-width: 220px
+                font-size: 28px
+        >.video
+            border: 1px solid black
+            border-radius: 20px
+            height: 500px
+
+    //section2
+    .section2
+        >.section
+            padding-right: 10px
+            >.action-btns
+                justify-content: flex-end
+                position: relative
+                opacity: 1
+                margin-top: 30px
+                gap: 30px
+                button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40px
+                    height: 40px
+                    img
+                        width: auto
+                        height: 24px
+                        position: relative
+                        top: 2px
+                        opacity: 0.8
+            .item-col
+                border-radius: 25px
+                flex: 0 0 350px
+                height: 600px
+                z-index: 1
+            .product-card.wrapper
+                flex: 0 0 350px
+                height: 600px
+                margin-right: 15px
+                cursor: pointer
+                transition: all 0.5s
+                img
+                    height: 600px
+                >.card-info
+                    color: white
+                    padding-left: 20px
+                &:hover
+                    transform: scale(1.02)
+                &:last-child
+                    >.card-info
+                        color: black
+
+    //section3
+    .section3
+        background-color: #f5f5f7
+        .title
+            h3
+                color: blue
+                cursor: pointer
+                line-height: 76px
+                &:hover
+                    text-decoration-line: underline
+        .section
+            padding-right: 10px
+            .action-btns
+                justify-content: flex-end
+                position: relative
+                opacity: 1
+                margin-top: 30px
+                gap: 30px
+                button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40px
+                    height: 40px
+                    img
+                        width: auto
+                        height: 24px
+                        position: relative
+                        top: 2px
+                        opacity: 0.8
+            .product-items
+                display: flex
+                .information-card
+                    >.info-item .card-images
+                        height: 180px
+
+    //section4
+    .section4
+        background-color: #f5f5f7
+        padding: 30px 10%
+        >.product-card
+            height: 550px
+            overflow: hidden
+            margin: 0 auto
+            cursor: pointer
+            transition: all 0.8s
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            background-image: url(../../public/images/iphone/guided_tour__c40f88on9o8y_xlarge.jpg)
+            .text-info
+                position: absolute
+                display: flex
+                flex-direction: column
+                align-items: center
+                top: 0
+                transform: translate(30%,80%)
+                gap: 15px
+                z-index: 10
+                .card-info
+                    width: 300px
+                    color: white
+                    text-align: center
+                    line-height: 2
+                    .text
+                        font-size: 24px
+                .button-item
+                    width: max-content
+                    .btn
+                        padding: 10px 15px
+                        border-radius: 20px
+                        background-color: #f5f5f7
+                        &:hover
+                            background-color: white
+            &:hover
+                transform: scale(1.02)
+
+    //section5
+    .section5
+        padding: 30px 10% 100px 10%
+        >.title
+            h3
+                line-height: 76px
+                color: blue
+                cursor: pointer
+                &:hover
+                    text-decoration-line: underline
+        >.product-info-item
+            display: flex
+            gap: 40px
+            >.product-card
+                background-color: #f5f5f7
+                width: 50%
+                height: 100%
+                >.card-image
+                    width: 100%
+                    height: 500px
+                    order: 2
+                .card-image:first-child
+                    img
+                        width: 1150px
+                        transform: translateX(-25%)
+                .card-image:last-child
+                    img
+                        width: 1100px
+                        transform: translateX(-22%)
+                >.card-info
+                    height: 100%
+                    text-align: center
+                    gap: 15px
+                    margin: 0
+                    padding: 30px 0
+                    h5.title
+                        color: black
+                        font-size: 24px
+                    h4.text
+                        font-size: 20px
+                        font-weight: 300
+                    h6.subtitle
+                        font-size: 18px
+                        cursor: pointer
+                        color: blue
+                        order: 4
+                        &::after
+                            content: ' > '
+                        &:hover
+                            text-decoration-line: underline
+
+    //section6
+    .section6
+        .larger-image
+            .background-image
+                &.active
+                    display: block
+                &:first-child
+                    background-image: url(../../public/images/iphone/mac__eo52ocrn8g02_large_2x.jpg)
+                &:nth-child(2)
+                    background-position-x: center
+                    background-size: contain
+                    background-image: url(../../public/images/iphone/watch__c8ayb7bdtxme_large_2x.jpg)
+                &:last-child
+                    background-position-x: center
+                    background-size: contain
+                    background-image: url(../../public/images/iphone/airpods__eb24cvhoe26a_large_2x.jpg)
+
+    //section last
+    .last
+        padding-top: 30px
+        padding-bottom: 30px
+        background-color: #f5f5f7
+        h1.title
+            margin-bottom: 40px
+        >.section-last-info
+            display: flex
+            gap: 40px
+            >ul
+                flex: 0 0 22%
+                >*
+                    margin-bottom: 15px
+                >h1
+                    font-size: 24px
+                >h6
+                    font-size: 17px
+                    color: grey

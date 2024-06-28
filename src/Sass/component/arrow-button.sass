@@ -1,0 +1,52 @@
+.arrow-button
+    width: 30px
+    height: 30px
+
+.arrow-icon
+    width: 1em
+    height: 1em
+    padding: 0.5em
+    top: 10px
+    background-color: transparent
+    display: block
+    position: relative
+    cursor: pointer
+    border-radius: 4px
+    margin-left: 8px
+    .left-bar,.right-bar
+        position: absolute
+        background-color: transparent
+        display: block
+        float: right
+        border-radius: 2px
+        width: 15px
+        height: 6px
+        &:after
+            content: ""
+            background-color: black
+            width: 15px
+            height: 6px
+            display: block
+            float: right
+            transition: all 0.5s cubic-bezier(.25,1.7,.35,.8)
+            z-index: -1
+    .left-bar
+        top: 8px
+        left: -2px
+        transform: rotate(35deg)
+        &:after
+            border-radius: 6px 10px 10px 6px
+    .right-bar
+        top: 8px
+        left: 7px
+        transform: rotate(-35deg)
+        &:after
+            border-radius: 10px 6px 6px 10px
+    //animation
+    &.open
+        .left-bar:after
+            transform-origin: center
+            transform: rotate(-70deg)
+        .right-bar:after
+            transform-origin: center
+            transform: rotate(70deg)

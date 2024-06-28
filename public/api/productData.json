@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Mac",
+    "src": "/images/main/mac.png"
+  },
+  {
+    "id": 2,
+    "name": "iPhone",
+    "src": "/images/main/iphone.png"
+  },
+  {
+    "id": 3,
+    "name": "iPad",
+    "src": "/images/main/iPad.png"
+  },
+  {
+    "id": 4,
+    "name": "Apple Watch",
+    "src": "/images/main/Applewatch.png"
+  },
+  {
+    "id": 5,
+    "name": "Airpods",
+    "src": "/images/main/airpods.png"
+  },
+  {
+    "id": 6,
+    "name": "AirTag",
+    "src": "/images/main/airtags.png"
+  },
+  {
+    "id": 7,
+    "name": "Apple TV 4K",
+    "src": "/images/main/appletv.png"
+  },
+  {
+    "id": 8,
+    "name": "HomePod",
+    "src": "/images/main/homepod.png"
+  },
+  {
+    "id": 9,
+    "name": "配件",
+    "src": "/images/main/accessories.png"
+  },
+  {
+    "id": 10,
+    "name": "Apple Store 禮品卡",
+    "src": "/images/main/giftcards.png"
+  }
+]

@@ -1,0 +1,128 @@
+//cart
+.cart
+    z-index: 3
+    position: relative
+    /* Global*/
+    *
+        position: relative
+    >.section
+        padding: 30px 10%
+        >.title
+            margin-bottom: 25px
+            display: flex
+            justify-content: space-between
+            >h2
+                font-size: 50px
+
+    .section1
+        .info
+            display: flex
+            flex-direction: column
+            align-items: start
+            gap: 40px
+            h1
+                font-size: 40px
+            h4
+                font-size: 17px
+                font-weight: 400
+            h3
+                font-size: 17px
+                font-weight: 400
+                color: blue
+                border: 1px solid blue
+                border-radius: 20px
+                padding: 20px 180px
+                text-align: center
+                cursor: pointer
+                &:hover
+                    background-color: #0076df
+                    color: white
+
+    .about
+        border: 1px solid #d2d2d7
+        h4
+            font-size: 17px
+        span
+            color: #0066cc
+            text-decoration: underline
+            cursor: pointer
+
+    .section2
+        .container
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            background-image: url(../../public/images/cart/apple-new-arrivals-checkout-201804.jpg)
+            height: 550px
+            .info
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                gap: 20px
+                width: 45%
+                height: 100%
+                h1
+                    font-size: 32px
+                h4
+                    font-size: 17px
+                    font-weight: 400
+                h3.link
+                    font-size: 17px
+                    font-weight: 400
+                    color: blue
+                    cursor: pointer
+                    &::after
+                        content: ' >'
+                    &:hover
+                        text-decoration-line: underline
+
+    .section3
+        border-top: 1px solid #d2d2d7
+        .ant-collapse
+            background-color: white
+            h1
+                font-size: 40px
+            h2
+                font-size: 24px
+            .ant-collapse-header
+                display: flex
+                align-items: center
+            //Custom span
+            .ant-collapse-item
+                &:nth-child(4),&:nth-child(8)
+                    .info
+                        span.link
+                            &::after
+                                content: ''
+                >.ant-collapse-content
+                    .ant-collapse-item
+                        border-bottom: unset
+                        border-top: 1px solid #d9d9d9
+            >.ant-collapse-item>.ant-collapse-content>.ant-collapse-content-box
+                padding: 0
+            //icon
+            .anticon
+                font-size: 45px
+            .ant-collapse-content-box
+                .info
+                    width: 80%
+                    padding: 16px
+                    ul
+                        padding-left: 16px
+                        margin: 15px 0
+                        li
+                            list-style: circle
+                    p
+                        font-size: 14px
+                    span.link
+                        font-size: 14px
+                        color: blue
+                        cursor: pointer
+                        &::after
+                            content: '>'
+                        &:hover
+                            text-decoration-line: underline
+                //children icon
+                .anticon
+                    font-size: 24px
