@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
 import { navBar } from '../../../Content/index';
-import { useLocation } from 'react-router-dom'; 
+import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // import component
 import NavBarLink from './navBarLink';
@@ -19,7 +19,6 @@ import AppleIcon from '@mui/icons-material/Apple';
 import '../../../Sass/component/navBar.sass';
 
 const NavBar = () => {
-    const value = useSelector(state => state.shop.value);
 
     const theme = createTheme({
         palette: {
@@ -85,6 +84,9 @@ const NavBar = () => {
         const title = pathToTitleMap[location.pathname] || 'Apple (台灣)';
         document.title = title;
     }, [location]);
+
+    // 計算總數量
+    const value = useSelector((state) => state.shop.totalQuantity);
 
     const renderFlyoutContent = (key) => {
         const selectedData = navData[key][0];

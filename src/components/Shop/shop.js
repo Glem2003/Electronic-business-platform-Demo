@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import HeaderBanner from './headerBanner.js';
 import Search from '../Common/search.js';
 import MenuList from './menuList.js';
-import { renderTitle, renderContent, renderMenuItems, renderMoreListItems } from './shopRender.js';
+import { RenderTitle, RenderContent, RenderMenuItems, RenderMoreListItems } from './shopRender.js';
 import { ArrowIcon, NextArrow, PrevArrow } from '../Common/Button/arrowButton.js';
 import { ProductCardCenter, CardInfo } from '../Common/productCard.js';
 import { ClickButton, ClickedButton } from '../Common/Button/buttonItem.js';
@@ -42,9 +42,11 @@ const Shop = () => {
         setMoreOpen(!moreOpen);
     };
 
+    
+
     return (
         <div className="shop">
-            
+
             <div className="menu">
                 <div className="title">
                     {shop && shop.map(i =>
@@ -113,14 +115,14 @@ const Shop = () => {
                     <div className={`item item_1 ${activeList === 'list1' ? '' : 'close'}`}>
                         <div className='list'>
                             {shop && shop.map((item, idx) =>
-                                renderMenuItems(item.menu.map(menuItem => menuItem.menu_info_item[0]), `item1-${idx}`)
+                                RenderMenuItems(item.menu.map(menuItem => menuItem.menu_info_item[0]), `item1-${idx}`)
                             )}
                         </div>
                     </div>
                     <div className={`item item_2 ${activeList === 'list2' ? '' : 'close'} ${moreOpen === true ? 'open' : ''}`}>
                         <div className='list'>
                             {shop && shop.map((item, idx) =>
-                                renderMenuItems(item.menu.map(menuItem => menuItem.menu_info_item[1]), `item2-${idx}`)
+                                RenderMenuItems(item.menu.map(menuItem => menuItem.menu_info_item[1]), `item2-${idx}`)
                             )}
                         </div>
                         <div className='more'>
@@ -130,9 +132,9 @@ const Shop = () => {
                                         item.button_text.map((text, index) => {
                                             return (
                                                 moreOpen ? (
-                                                    <ClickedButton text={text.text} key={index}/>
+                                                    <ClickedButton text={text.text} key={index} />
                                                 ) : (
-                                                    <ClickButton text={text.text} key={index}/>
+                                                    <ClickButton text={text.text} key={index} />
                                                 )
                                             )
                                         })
@@ -140,7 +142,7 @@ const Shop = () => {
                                 ))}
                             </button>
                             {shop && shop.map((item, idx) =>
-                                renderMoreListItems(item.menu.map(menuItem => menuItem.menu_info_item[1].moreList), `item2-more-${idx}`)
+                                RenderMoreListItems(item.menu.map(menuItem => menuItem.menu_info_item[1].moreList), `item2-more-${idx}`)
                             )}
                         </div>
                     </div>
@@ -150,61 +152,61 @@ const Shop = () => {
             <div className="section section4">
                 <div className='section-item' id='ipad'>
                     <div className="title">
-                        {shop && renderTitle(shop, 'ipad_item')}
+                        {shop && RenderTitle(shop, 'ipad_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shop && renderContent(shop, 'ipad_item')}
+                            {shop && RenderContent(shop, 'ipad_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='iphone'>
                     <div className="title">
-                        {shop && renderTitle(shop, 'iphone_item')}
+                        {shop && RenderTitle(shop, 'iphone_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shop && renderContent(shop, 'iphone_item')}
+                            {shop && RenderContent(shop, 'iphone_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='watch'>
                     <div className="title">
-                        {shop && renderTitle(shop, 'apple_watch_item')}
+                        {shop && RenderTitle(shop, 'apple_watch_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shop && renderContent(shop, 'apple_watch_item')}
+                            {shop && RenderContent(shop, 'apple_watch_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='earphone'>
                     <div className="title">
-                        {shop && renderTitle(shop, 'earphone_item')}
+                        {shop && RenderTitle(shop, 'earphone_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shop && renderContent(shop, 'earphone_item')}
+                            {shop && RenderContent(shop, 'earphone_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='mac'>
                     <div className="title">
-                        {shop && renderTitle(shop, 'mac_item')}
+                        {shop && RenderTitle(shop, 'mac_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shop && renderContent(shop, 'mac_item')}
+                            {shop && RenderContent(shop, 'mac_item')}
                         </Slider>
                     </div>
                 </div>
                 <div className='section-item' id='airtag'>
                     <div className="title">
-                        {shop && renderTitle(shop, 'airtag_item')}
+                        {shop && RenderTitle(shop, 'airtag_item')}
                     </div>
                     <div className="content">
                         <Slider {...settings}>
-                            {shop && renderContent(shop, 'airtag_item')}
+                            {shop && RenderContent(shop, 'airtag_item')}
                         </Slider>
                     </div>
                 </div>

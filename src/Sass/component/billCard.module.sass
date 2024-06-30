@@ -1,0 +1,73 @@
+.bill
+    margin-top: 80px
+    margin-left: auto
+    width: 75%
+
+    &__head
+        height: 150px
+        display: flex
+        flex-direction: column
+        justify-content: start
+        line-height: calc(100px/3)
+        font-size: 17px
+        margin-bottom: 20px
+        *
+            //border: 1px solid black
+
+    &__total
+        border-top: 1px solid #c8c5c5
+        display: flex
+        font-size: 24px
+        font-weight: 600
+        padding-top: 20px
+
+    &__row
+        flex: 1
+        display: flex
+        justify-content: space-between
+
+    &__col
+        flex: 1
+        &--right
+            text-align: right
+        &--sm
+            flex: 0.8
+
+    &__input
+        width: 60%
+        height: 40px
+        border: 1px solid #c8c5c5
+        border-radius: 10px
+        padding: 5px 10px
+        font-size: 1em
+
+    &__btn
+        cursor: pointer
+        background: #0071e3
+        color: white
+        border: none
+        font-size: 1.3rem
+        font-weight: 600
+        border-radius: 10px
+        padding: 5px 10px
+        width: 360px
+        height: 55px
+        &--coupon
+            height: 40px
+            padding: 5px 20px
+            font-size: 1rem
+            letter-spacing: 3px
+            width: max-content
+            justify-self: end
+        &:hover
+            background: #2c88e4
+        
+
+    &__info
+        margin-bottom: 50px
+
+    &__des
+        margin-top: 10px
+        font-size: 14px
+        font-weight: 400
+        color: #1d1d1f
