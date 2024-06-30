@@ -1,9 +1,11 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../reducer/shopSlice';
 
 //component
 import ShopItemCard from './shopItemCard.js';
 
-export const renderTitle = (items, itemType) => {
+export const RenderTitle = (items, itemType) => {
     return items.map((item) => (
         item.product_items && item.product_items.map((productItem) => (
             productItem[itemType] && productItem[itemType].map((info) => (
@@ -18,26 +20,41 @@ export const renderTitle = (items, itemType) => {
     ));
 };
 
-export const renderContent = (items, itemType) => {
+export const RenderContent = (items, itemType) => {
+
+    const dispatch = useDispatch();
+    const handleAddItem = (item) => {
+        const filteredItem = {
+            price: item.price,
+            name: item.title,
+            id: item.key,
+            src: item.src,
+            quantity: 1
+        };
+        dispatch(addItem(filteredItem));
+        //console.log(item);
+    };
+
     return items.map((item) => (
         item.product_items && item.product_items.map((productItem) => (
             productItem[itemType] && productItem[itemType].map((info) => (
-                info.product_item && info.product_item.map((item, index) => (
-                    <ShopItemCard
-                        key={index}
-                        src={`${process.env.PUBLIC_URL}${item.src}`}
-                        colors={item.color}
-                        ps={item.postscript}
-                        title={item.title}
-                        price={item.price}
-                    />
+                info.product_item && info.product_item.map((item) => (
+                    <div onClick={() => handleAddItem(item)} key={item.key}>
+                        <ShopItemCard
+                            src={`${process.env.PUBLIC_URL}${item.src}`}
+                            colors={item.color}
+                            ps={item.postscript}
+                            title={item.title}
+                            price={`NT$ ${item.price.toLocaleString('en-US')}`}
+                        />
+                    </div>
                 ))
             ))
         ))
     ));
 };
 
-export const renderMenuItems = (menuItems, prefix) => {
+export const RenderMenuItems = (menuItems, prefix) => {
     return menuItems.map((menuItem, menuIdx) => (
         menuItem && menuItem.list.map((listItem, listIdx) => (
             <div className="box" key={`${prefix}-${menuIdx}-${listIdx}`}>
@@ -50,7 +67,7 @@ export const renderMenuItems = (menuItems, prefix) => {
     ));
 };
 
-export const renderMoreListItems = (moreListItems, prefix) => {
+export const RenderMoreListItems = (moreListItems, prefix) => {
     return moreListItems.map((listItem, listIdx) => {
         const itemFront = listItem.slice(0, 5);
         const itemBack = listItem.slice(5, 10);

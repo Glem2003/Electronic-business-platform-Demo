@@ -21,6 +21,16 @@ const loadFromLocalStorage = () => {
   }
 };
 
+const clearLocalStorage = () => {
+  try {
+    localStorage.removeItem('state'); 
+  } catch (e) {
+    console.warn('清除 Local Storage 出錯:', e);
+  }
+};
+
+//clearLocalStorage();
+
 const persistedState = loadFromLocalStorage();
 
 const store = configureStore({
