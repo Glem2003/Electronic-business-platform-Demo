@@ -20,12 +20,15 @@
             flex-direction: column
             align-items: start
             gap: 40px
+            margin-bottom: 50px
+            &--center
+                align-items: center
             h1
                 font-size: 40px
             h4
                 font-size: 17px
                 font-weight: 400
-            h3
+            button.link
                 font-size: 17px
                 font-weight: 400
                 color: blue
@@ -36,6 +39,9 @@
                 cursor: pointer
                 &:hover
                     background-color: #0076df
+                    color: white
+                &--bill
+                    background-color: #0071e3
                     color: white
 
     .about
@@ -67,13 +73,15 @@
                 h4
                     font-size: 17px
                     font-weight: 400
-                h3.link
+                button.link
                     font-size: 17px
                     font-weight: 400
                     color: blue
+                    border: none
+                    text-align: center
                     cursor: pointer
                     &::after
-                        content: ' >'
+                        content: ' > '
                     &:hover
                         text-decoration-line: underline
 
